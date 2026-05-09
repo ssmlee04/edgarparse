@@ -1,0 +1,214 @@
+{
+  "quarterly": {
+    "startDate": "2024-07-01",
+    "endDate": "2024-09-30",
+    "months": 4,
+    "facts": [
+      {
+        "concept": "us-gaap:DepreciationDepletionAndAmortization",
+        "label": "depreciation, depletion and amortization",
+        "value": 159000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:GainLossOnDispositionOfAssets",
+        "label": "gain (loss) on asset disposals",
+        "value": -1000000,
+        "unit": "USD"
+      }
+    ]
+  },
+  "ytd": {
+    "startDate": "2024-01-01",
+    "endDate": "2024-09-30",
+    "months": 10,
+    "facts": [
+      {
+        "concept": "us-gaap:DepreciationDepletionAndAmortization",
+        "label": "depreciation, depletion and amortization",
+        "value": 483000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:DeferredIncomeTaxExpenseBenefit",
+        "label": "deferred income taxes",
+        "value": -8000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncomeLossFromEquityMethodInvestmentsNetOfDividendsOrDistributions",
+        "label": "equity method investment income, net",
+        "value": -2000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:GainLossOnDispositionOfAssets1",
+        "label": "gain (loss) on asset disposals",
+        "value": -18000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ShareBasedCompensation",
+        "label": "stock-based compensation",
+        "value": 31000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OtherNoncashIncomeExpense",
+        "label": "other non-cash items",
+        "value": -33000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInReceivables",
+        "label": "change in receivables",
+        "value": 202000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInInventories",
+        "label": "change in inventories",
+        "value": -79000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets",
+        "label": "change in prepaid and other assets",
+        "value": 12000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInAccountsPayableTrade",
+        "label": "change in accounts payable",
+        "value": -149000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInAccruedLiabilities",
+        "label": "change in accrued liabilities",
+        "value": -88000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInAccruedTaxesPayable",
+        "label": "change in accrued taxes",
+        "value": 55000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PensionContributions",
+        "label": "pension contributions",
+        "value": 14000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInOtherNoncurrentAssets",
+        "label": "change in other non-current assets",
+        "value": 4000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInOtherNoncurrentLiabilities",
+        "label": "change in other non-current liabilities",
+        "value": -113000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+        "label": "net cash from operating activities",
+        "value": 207000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:RepaymentsOfLongTermDebt",
+        "label": "repayments of long-term debt",
+        "value": 285000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsOfDividendsCommonStock",
+        "label": "dividends paid - common",
+        "value": 63000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
+        "label": "tax withholding on stock awards",
+        "value": 15000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromMinorityShareholders",
+        "label": "proceeds from noncontrolling interests",
+        "value": 65000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsOfDividendsMinorityInterest",
+        "label": "dividends to noncontrolling interests",
+        "value": 49000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromPaymentsForOtherFinancingActivities",
+        "label": "other financing activities",
+        "value": -5000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInFinancingActivities",
+        "label": "net cash from financing activities",
+        "value": 595000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+        "label": "capital expenditures",
+        "value": 411000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromSaleOfPropertyPlantAndEquipment",
+        "label": "proceeds from asset sales",
+        "value": 2000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToAcquireInvestments",
+        "label": "purchases of investments",
+        "value": 30000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsForProceedsFromOtherInvestingActivities",
+        "label": "other investing activities",
+        "value": -5000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInInvestingActivities",
+        "label": "net cash from investing activities",
+        "value": -434000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents",
+        "label": "effect of exchange rate on cash",
+        "value": -5000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
+        "label": "net change in cash",
+        "value": 363000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:GainLossOnDispositionOfAssets",
+        "label": "gain (loss) on asset disposals",
+        "value": -18000000,
+        "unit": "USD"
+      }
+    ]
+  }
+}

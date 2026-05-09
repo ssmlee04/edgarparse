@@ -1,0 +1,244 @@
+{
+  "quarterly": {
+    "startDate": "2023-07-01",
+    "endDate": "2023-09-30",
+    "months": 4,
+    "facts": [
+      {
+        "concept": "us-gaap:NetIncomeLoss",
+        "label": "net income",
+        "value": 9879000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:DepreciationDepletionAndAmortization",
+        "label": "depreciation, depletion and amortization",
+        "value": 12131000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ShareBasedCompensation",
+        "label": "stock-based compensation",
+        "value": 5829000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "label": "revenue",
+        "value": 143083000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:CostOfGoodsAndServicesSold",
+        "label": "cost of revenue",
+        "value": 75022000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:GeneralAndAdministrativeExpense",
+        "label": "general and administrative",
+        "value": 2561000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OtherOperatingIncomeExpenseNet",
+        "label": "other operating income (expense)",
+        "value": -244000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:CostsAndExpenses",
+        "label": "total costs and expenses",
+        "value": 131895000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OperatingIncomeLoss",
+        "label": "operating income",
+        "value": 11188000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestExpense",
+        "label": "interest expense",
+        "value": 806000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OtherNonoperatingIncomeExpense",
+        "label": "other non-operating income (expense)",
+        "value": 1031000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NonoperatingIncomeExpense",
+        "label": "other income (expense)",
+        "value": 1001000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments",
+        "label": "income before income taxes",
+        "value": 12189000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncomeTaxExpenseBenefit",
+        "label": "income tax expense (benefit)",
+        "value": 2306000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncomeLossFromEquityMethodInvestments",
+        "label": "equity method investment income",
+        "value": -4000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EarningsPerShareBasic",
+        "label": "earnings per share - basic",
+        "value": 0.96,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EarningsPerShareDiluted",
+        "label": "earnings per share - diluted",
+        "value": 0.94,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OtherComprehensiveIncomeLossNetOfTax",
+        "label": "other comprehensive income (loss)",
+        "value": -1323000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ComprehensiveIncomeNetOfTax",
+        "label": "comprehensive income",
+        "value": 8556000000,
+        "unit": "USD"
+      }
+    ]
+  },
+  "ytd": {
+    "startDate": "2023-01-01",
+    "endDate": "2023-09-30",
+    "months": 10,
+    "facts": [
+      {
+        "concept": "us-gaap:NetIncomeLoss",
+        "label": "net income",
+        "value": 19801000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:DepreciationDepletionAndAmortization",
+        "label": "depreciation, depletion and amortization",
+        "value": 34843000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ShareBasedCompensation",
+        "label": "stock-based compensation",
+        "value": 17704000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "label": "revenue",
+        "value": 404824000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:CostOfGoodsAndServicesSold",
+        "label": "cost of revenue",
+        "value": 212186000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:GeneralAndAdministrativeExpense",
+        "label": "general and administrative",
+        "value": 8806000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OtherOperatingIncomeExpenseNet",
+        "label": "other operating income (expense)",
+        "value": -613000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:CostsAndExpenses",
+        "label": "total costs and expenses",
+        "value": 381181000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OperatingIncomeLoss",
+        "label": "operating income",
+        "value": 23643000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestExpense",
+        "label": "interest expense",
+        "value": 2469000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OtherNonoperatingIncomeExpense",
+        "label": "other non-operating income (expense)",
+        "value": 649000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NonoperatingIncomeExpense",
+        "label": "other income (expense)",
+        "value": 228000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments",
+        "label": "income before income taxes",
+        "value": 23871000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncomeTaxExpenseBenefit",
+        "label": "income tax expense (benefit)",
+        "value": 4058000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncomeLossFromEquityMethodInvestments",
+        "label": "equity method investment income",
+        "value": -12000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EarningsPerShareBasic",
+        "label": "earnings per share - basic",
+        "value": 1.93,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EarningsPerShareDiluted",
+        "label": "earnings per share - diluted",
+        "value": 1.89,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OtherComprehensiveIncomeLossNetOfTax",
+        "label": "other comprehensive income (loss)",
+        "value": -516000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ComprehensiveIncomeNetOfTax",
+        "label": "comprehensive income",
+        "value": 19285000000,
+        "unit": "USD"
+      }
+    ]
+  }
+}

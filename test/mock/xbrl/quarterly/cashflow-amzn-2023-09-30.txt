@@ -1,0 +1,178 @@
+{
+  "quarterly": {
+    "startDate": "2023-07-01",
+    "endDate": "2023-09-30",
+    "months": 4,
+    "facts": [
+      {
+        "concept": "us-gaap:DepreciationDepletionAndAmortization",
+        "label": "depreciation, depletion and amortization",
+        "value": 12131000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ShareBasedCompensation",
+        "label": "stock-based compensation",
+        "value": 5829000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OtherNoncashIncomeExpense",
+        "label": "other non-cash items",
+        "value": 990000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:DeferredIncomeTaxExpenseBenefit",
+        "label": "deferred income taxes",
+        "value": -1196000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInInventories",
+        "label": "change in inventories",
+        "value": -808000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInAccountsPayable",
+        "label": "change in accounts payable",
+        "value": 2820000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInContractWithCustomerLiability",
+        "label": "change in deferred revenue",
+        "value": -25000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+        "label": "net cash from operating activities",
+        "value": 21217000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInInvestingActivities",
+        "label": "net cash from investing activities",
+        "value": -11753000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromShortTermDebt",
+        "label": "proceeds from short-term debt",
+        "value": 216000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:RepaymentsOfShortTermDebt",
+        "label": "repayments of short-term debt",
+        "value": 8095000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInFinancingActivities",
+        "label": "net cash from financing activities",
+        "value": -8948000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
+        "label": "net change in cash",
+        "value": 14000000,
+        "unit": "USD"
+      }
+    ]
+  },
+  "ytd": {
+    "startDate": "2023-01-01",
+    "endDate": "2023-09-30",
+    "months": 10,
+    "facts": [
+      {
+        "concept": "us-gaap:DepreciationDepletionAndAmortization",
+        "label": "depreciation, depletion and amortization",
+        "value": 34843000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ShareBasedCompensation",
+        "label": "stock-based compensation",
+        "value": 17704000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OtherNoncashIncomeExpense",
+        "label": "other non-cash items",
+        "value": 409000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:DeferredIncomeTaxExpenseBenefit",
+        "label": "deferred income taxes",
+        "value": -4412000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInInventories",
+        "label": "change in inventories",
+        "value": 1194000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInAccountsPayable",
+        "label": "change in accounts payable",
+        "value": -5415000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInContractWithCustomerLiability",
+        "label": "change in deferred revenue",
+        "value": 949000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+        "label": "net cash from operating activities",
+        "value": 42481000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInInvestingActivities",
+        "label": "net cash from investing activities",
+        "value": -37232000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromShortTermDebt",
+        "label": "proceeds from short-term debt",
+        "value": 17395000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:RepaymentsOfShortTermDebt",
+        "label": "repayments of short-term debt",
+        "value": 19339000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:RepaymentsOfLongTermDebt",
+        "label": "repayments of long-term debt",
+        "value": 3386000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInFinancingActivities",
+        "label": "net cash from financing activities",
+        "value": -9133000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
+        "label": "net change in cash",
+        "value": -4172000000,
+        "unit": "USD"
+      }
+    ]
+  }
+}
