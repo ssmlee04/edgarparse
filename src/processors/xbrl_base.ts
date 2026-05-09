@@ -41,7 +41,7 @@ const extractPeriodOfReport = (content: string): string | null => {
 export default class XBRLStatementProcessor {
     cik!: string;
     datestr!: string;
-    protected timeframe: string = 'quarterly';
+    protected formType: string = '10-q';   // overridden to '10-k' in annual processors
     protected statementType: string = 'xbrl';
 
     private contextMap: Map<string, ContextInfo> = new Map();
@@ -60,7 +60,7 @@ export default class XBRLStatementProcessor {
     }
 
     private readSourceData(): string {
-        const filename = `./data/txt/10-q/${this.cik}-${this.datestr}.txt`;
+        const filename = `./data/txt/${this.formType}/${this.cik}-${this.datestr}.txt`;
         return fs.readFileSync(filename).toString();
     }
 
@@ -111,7 +111,7 @@ export default class XBRLStatementProcessor {
         }
     }
 
-    protected getConsolidatedContextIds(periodType: 'quarterly' | 'ytd' | 'instant'): Set<string> {
+    protected getConsolidatedContextIds(periodType: 'quarterly' | 'ytd' | 'annual' | 'instant'): Set<string> {
         const ids = new Set<string>();
         for (const [id, ctx] of this.contextMap) {
             if (ctx.hasSegment) continue;
@@ -122,14 +122,16 @@ export default class XBRLStatementProcessor {
                 const diff = monthDiff(ctx.startDate!, ctx.endDate);
                 // quarterly → month diff ≈ 2 (Jul–Sep, Oct–Dec, etc.)
                 // ytd (9m)  → month diff ≈ 8
+                // annual    → month diff ≈ 11 (fiscal year, any start month)
                 if (periodType === 'quarterly' && diff >= 1 && diff <= 3) ids.add(id);
                 if (periodType === 'ytd' && diff >= 7 && diff <= 9) ids.add(id);
+                if (periodType === 'annual' && diff >= 10 && diff <= 13) ids.add(id);
             }
         }
         return ids;
     }
 
-    protected getPeriodMeta(periodType: 'quarterly' | 'ytd'): { startDate: string; endDate: string; months: number } | null {
+    protected getPeriodMeta(periodType: 'quarterly' | 'ytd' | 'annual'): { startDate: string; endDate: string; months: number } | null {
         for (const [, ctx] of this.contextMap) {
             if (ctx.hasSegment || ctx.type !== 'duration' || ctx.endDate !== this.datestr) continue;
             const diff = monthDiff(ctx.startDate!, ctx.endDate);
@@ -137,6 +139,9 @@ export default class XBRLStatementProcessor {
                 return { startDate: ctx.startDate!, endDate: ctx.endDate, months: diff + 1 };
             }
             if (periodType === 'ytd' && diff >= 7 && diff <= 9) {
+                return { startDate: ctx.startDate!, endDate: ctx.endDate, months: diff + 1 };
+            }
+            if (periodType === 'annual' && diff >= 10 && diff <= 13) {
                 return { startDate: ctx.startDate!, endDate: ctx.endDate, months: diff + 1 };
             }
         }
@@ -183,7 +188,7 @@ export default class XBRLStatementProcessor {
     }
 
     private createTestFile(data: any) {
-        const dir = `./test/mock/xbrl/10-q`;
+        const dir = `./test/mock/xbrl/${this.formType}`;
         fs.mkdirSync(dir, { recursive: true });
         const filename = `${dir}/${this.statementType}-${this.cik}-${this.datestr}.txt`;
         fs.writeFileSync(filename, JSON.stringify(data, null, 2));
