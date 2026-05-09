@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EdgarParse — SEC Filings API for AI Agents</title>
+  <meta name="description" content="Give your AI agents direct access to 10-Ks, 10-Qs, 8-Ks, and all SEC filings. Structured data, real-time, in seconds.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0a0e17;
+      --surface: #111827;
+      --border: #1f2937;
+      --primary: #10b981;
+      --primary-dim: rgba(16, 185, 129, 0.12);
+      --accent: #f59e0b;
+      --text: #f9fafb;
+      --muted: #9ca3af;
+      --code-bg: #0d1117;
+      --radius: 12px;
+      --radius-sm: 8px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Nav */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(10, 14, 23, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+    .logo {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo-mark {
+      width: 32px;
+      height: 32px;
+      background: var(--primary);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--bg);
+    }
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+    }
+    .nav-links a {
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 500;
+      transition: color 150ms;
+    }
+    .nav-links a:hover { color: var(--text); text-decoration: none; }
+    .nav-cta {
+      background: var(--primary);
+      color: var(--bg);
+      padding: 8px 20px;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      font-size: 14px;
+      transition: transform 150ms, box-shadow 150ms;
+    }
+    .nav-cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 20px rgba(16, 185, 129, 0.3);
+      text-decoration: none;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 160px 0 100px;
+      text-align: center;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--primary-dim);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--primary);
+      margin-bottom: 24px;
+    }
+    .hero-badge .dot {
+      width: 6px;
+      height: 6px;
+      background: var(--primary);
+      border-radius: 50%;
+    }
+    .hero h1 {
+      font-size: clamp(40px, 6vw, 72px);
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 20px;
+      letter-spacing: -0.03em;
+    }
+    .hero h1 .highlight {
+      color: var(--primary);
+    }
+    .hero-sub {
+      font-size: 18px;
+      color: var(--muted);
+      max-width: 560px;
+      margin: 0 auto 40px;
+    }
+    .hero-cta {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 64px;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: var(--bg);
+      padding: 14px 28px;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      font-size: 15px;
+      transition: transform 150ms, box-shadow 150ms;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(16, 185, 129, 0.35);
+    }
+    .btn-ghost {
+      background: transparent;
+      color: var(--text);
+      padding: 14px 28px;
+      border-radius: var(--radius-sm);
+      font-weight: 500;
+      font-size: 15px;
+      border: 1px solid var(--border);
+      cursor: pointer;
+      transition: border-color 150ms, background 150ms;
+    }
+    .btn-ghost:hover {
+      border-color: var(--muted);
+      background: rgba(255,255,255,0.04);
+    }
+
+    /* Code preview */
+    .code-preview {
+      background: var(--code-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      text-align: left;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .code-preview-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 16px;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+    }
+    .code-preview-header-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+    .code-preview-header-dot:nth-child(1) { background: #ff5f57; }
+    .code-preview-header-dot:nth-child(2) { background: #ffbd2e; }
+    .code-preview-header-dot:nth-child(3) { background: #27c93f; }
+    .code-preview-header-title {
+      margin-left: 12px;
+      font-size: 12px;
+      color: var(--muted);
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .code-preview-header-url {
+      margin-left: auto;
+      font-size: 12px;
+      color: var(--muted);
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .code-preview pre {
+      padding: 20px 24px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      line-height: 1.7;
+      overflow-x: auto;
+      color: #e2e8f0;
+    }
+    .token { color: #7dd3fc; }
+    .string { color: #86efac; }
+    .number { color: #fcd34d; }
+    .key { color: #c4b5fd; }
+
+    /* Features */
+    .features {
+      padding: 100px 0;
+    }
+    .section-label {
+      text-align: center;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+    .section-title {
+      text-align: center;
+      font-size: clamp(28px, 4vw, 42px);
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .section-sub {
+      text-align: center;
+      color: var(--muted);
+      font-size: 16px;
+      max-width: 520px;
+      margin: 0 auto 64px;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+    .feature-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      transition: border-color 150ms;
+    }
+    .feature-card:hover { border-color: rgba(16, 185, 129, 0.3); }
+    .feature-icon {
+      width: 44px;
+      height: 44px;
+      background: var(--primary-dim);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+    .feature-card h3 {
+      font-size: 17px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .feature-card p {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    /* How it works */
+    .how {
+      padding: 100px 0;
+      background: var(--surface);
+    }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 48px;
+      margin-top: 64px;
+    }
+    .step {
+      text-align: center;
+      position: relative;
+    }
+    .step-num {
+      width: 56px;
+      height: 56px;
+      background: var(--primary);
+      color: var(--bg);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0 auto 20px;
+    }
+    .step h3 { font-size: 18px; font-weight: 600; margin-bottom: 10px; }
+    .step p { font-size: 14px; color: var(--muted); }
+
+    /* Example response */
+    .example {
+      padding: 100px 0;
+    }
+    .example-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+    .example-text h2 {
+      font-size: clamp(28px, 4vw, 38px);
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .example-text p {
+      color: var(--muted);
+      font-size: 15px;
+      margin-bottom: 24px;
+    }
+    .example-text ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+    .example-text li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .example-text li::before {
+      content: '✓';
+      color: var(--primary);
+      font-weight: 600;
+    }
+    .example-card {
+      background: var(--code-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .example-card-header {
+      padding: 12px 16px;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--muted);
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .example-card pre {
+      padding: 20px 24px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      line-height: 1.7;
+      overflow-x: auto;
+    }
+
+    /* Pricing */
+    .pricing {
+      padding: 100px 0;
+    }
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    .price-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+    }
+    .price-card.recommended {
+      border-color: var(--primary);
+      position: relative;
+    }
+    .price-card.recommended::before {
+      content: 'Recommended';
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--primary);
+      color: var(--bg);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 999px;
+      letter-spacing: 0.05em;
+    }
+    .price-card h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .price-card .price {
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .price-card .price span {
+      font-size: 14px;
+      color: var(--muted);
+      font-weight: 400;
+    }
+    .price-card .desc {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+    .price-card ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+    .price-card li {
+      font-size: 13px;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .price-card li::before {
+      content: '✓';
+      color: var(--primary);
+      font-weight: 600;
+    }
+    .price-card .btn {
+      width: 100%;
+      text-align: center;
+      padding: 12px;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 150ms;
+      border: none;
+    }
+    .price-card .btn-primary {
+      background: var(--primary);
+      color: var(--bg);
+    }
+    .price-card .btn-primary:hover {
+      box-shadow: 0 4px 20px rgba(16, 185, 129, 0.3);
+    }
+    .price-card .btn-ghost {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+    .price-card .btn-ghost:hover {
+      border-color: var(--muted);
+    }
+
+    /* CTA */
+    .cta {
+      padding: 100px 0;
+      text-align: center;
+      background: linear-gradient(180deg, var(--surface) 0%, var(--bg) 100%);
+    }
+    .cta h2 {
+      font-size: clamp(28px, 4vw, 44px);
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .cta p {
+      color: var(--muted);
+      font-size: 16px;
+      margin-bottom: 40px;
+    }
+    .cta-form {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+    .cta-form input {
+      flex: 1;
+      min-width: 220px;
+      padding: 14px 18px;
+      background: var(--code-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      color: var(--text);
+      font-size: 14px;
+      font-family: inherit;
+      outline: none;
+      transition: border-color 150ms;
+    }
+    .cta-form input:focus {
+      border-color: var(--primary);
+    }
+    .cta-form input::placeholder {
+      color: var(--muted);
+    }
+
+    /* Footer */
+    footer {
+      padding: 48px 0;
+      border-top: 1px solid var(--border);
+    }
+    footer .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+    footer .logo { font-size: 16px; }
+    footer .footer-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+    }
+    footer .footer-links a {
+      font-size: 13px;
+      color: var(--muted);
+    }
+    footer .footer-links a:hover { color: var(--text); }
+    footer .copy {
+      font-size: 13px;
+      color: var(--muted);
+      width: 100%;
+      text-align: center;
+      margin-top: 24px;
+    }
+
+    /* Success state */
+    .success-msg {
+      display: none;
+      color: var(--primary);
+      font-size: 14px;
+      font-weight: 500;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    .success-msg.show { display: flex; }
+    .form-wrap { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+    .form-wrap.hidden { display: none; }
+
+    /* Animations */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 500ms ease, transform 500ms ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 768px) {
+      .example-layout {
+        grid-template-columns: 1fr;
+      }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <div class="logo">
+      <div class="logo-mark">EP</div>
+      EdgarParse
+    </div>
+    <ul class="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#how">How it Works</a></li>
+      <li><a href="#example">API</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+    </ul>
+    <a href="#cta" class="nav-cta">Get API Key</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      Live SEC EDGAR data
+    </div>
+    <h1>SEC filings for<br><span class="highlight">AI agents</span></h1>
+    <p class="hero-sub">Give your AI agents direct access to 10-Ks, 10-Qs, 8-Ks, and all SEC filings. Structured data, real-time, in seconds.</p>
+    <div class="hero-cta">
+      <button class="btn-primary" onclick="document.getElementById('cta').scrollIntoView({behavior:'smooth'})">Start Free</button>
+      <button class="btn-ghost" onclick="document.getElementById('example').scrollIntoView({behavior:'smooth'})">View Example</button>
+    </div>
+    <div class="code-preview">
+      <div class="code-preview-header">
+        <span class="code-preview-header-dot"></span>
+        <span class="code-preview-header-dot"></span>
+        <span class="code-preview-header-dot"></span>
+        <span class="code-preview-header-title">bash</span>
+        <span class="code-preview-header-url">api.edgarparse.io/v1/filings</span>
+      </div>
+      <pre><span class="token">curl</span> -H <span class="string">"Authorization: Bearer YOUR_API_KEY"</span> \
+  <span class="token">https://api.edgarparse.io/v1/filings</span> \
+  -d <span class="string">'{
+    "ticker": "AAPL",
+    "form": "10-K",
+    "year": 2024
+  }'</span>
+
+<span style="color:#6b7280"># Response: structured income statement, balance sheet, cashflow</span></pre>
+    </div>
+  </div>
+</section>
+
+<section class="features" id="features">
+  <div class="container">
+    <p class="section-label">Features</p>
+    <h2 class="section-title">Built for AI agent workflows</h2>
+    <p class="section-sub">Structured SEC data structured for machines, not humans. Parsed into JSON that AI models can actually use.</p>
+    <div class="features-grid">
+      <div class="feature-card fade-in">
+        <div class="feature-icon">📊</div>
+        <h3>Parsed Financial Statements</h3>
+        <p>Income statements, balance sheets, and cash flow statements extracted and normalized into clean JSON. No more scraping PDF tables.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <div class="feature-icon">⚡</div>
+        <h3>Sub-Second Response</h3>
+        <p>Most requests return in under 300ms. Designed for real-time AI agent decisions, not batch analysis pipelines.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <div class="feature-icon">🔄</div>
+        <h3>All SEC Form Types</h3>
+        <p>10-K, 10-Q, 8-K, S-1, 4, DEF 14A, and 50+ other SEC filing types. One API for the full regulatory landscape.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <div class="feature-icon">📅</div>
+        <h3>Full Historical Record</h3>
+        <p>Access filings going back to 1994. Run longitudinal analysis on 30 years of regulatory filings without data wrangling.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <div class="feature-icon">🏷️</div>
+        <h3>Standardized Taxonomy</h3>
+        <p>GAAP-compliant concept codes (e.g., NetIncomeLoss, RevenueFromContractWithCustomer). Consistent across all companies.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <div class="feature-icon">🔍</div>
+        <h3>Semantic Search</h3>
+        <p>Search across all filing text, risk factors, and management discussion. Find relevant disclosures without parsing PDFs yourself.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="how" id="how">
+  <div class="container">
+    <p class="section-label">How it works</p>
+    <h2 class="section-title">From sign-up to first insight in minutes</h2>
+    <div class="steps">
+      <div class="step fade-in">
+        <div class="step-num">1</div>
+        <h3>Create an account</h3>
+        <p>Sign up and get your API key instantly. No approval process, no sales call.</p>
+      </div>
+      <div class="step fade-in">
+        <div class="step-num">2</div>
+        <h3>Make your first request</h3>
+        <p>Use your API key with any HTTP client. We support REST and have SDKs for Python, TypeScript, and Go.</p>
+      </div>
+      <div class="step fade-in">
+        <div class="step-num">3</div>
+        <h3>Build your agent</h3>
+        <p>Plug the API into your AI agent. Get financial context in your agent's context window in seconds.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="example" id="example">
+  <div class="container">
+    <div class="example-layout">
+      <div class="example-text fade-in">
+        <p class="section-label">API Example</p>
+        <h2>Structured data your agent can reason about</h2>
+        <p>Every response is normalized JSON. No HTML parsing, no PDF scraping, no regex tricks. Just data.</p>
+        <ul>
+          <li>Income statements with revenue, COGS, operating expenses</li>
+          <li>Balance sheets with assets, liabilities, equity</li>
+          <li>Cash flow with operating, investing, financing activities</li>
+          <li>Per-share metrics computed and included</li>
+          <li>YoY and QoQ growth rates auto-calculated</li>
+        </ul>
+        <button class="btn-primary" onclick="document.getElementById('cta').scrollIntoView({behavior:'smooth'})">Get API Key</button>
+      </div>
+      <div class="example-card fade-in">
+        <div class="example-card-header">GET /v1/filings/AAPL/income-statement</div>
+        <pre>{
+  <span class="key">"ticker"</span>: <span class="string">"AAPL"</span>,
+  <span class="key">"form"</span>: <span class="string">"10-K"</span>,
+  <span class="key">"fiscal_year"</span>: <span class="number">2024</span>,
+  <span class="key">"revenue"</span>: <span class="number">391035000000</span>,
+  <span class="key">"net_income"</span>: <span class="number">97369000000</span>,
+  <span class="key">"earnings_per_share"</span>: {
+    <span class="key">"basic"</span>: <span class="number">6.23</span>,
+    <span class="key">"diluted"</span>: <span class="number">6.18</span>
+  },
+  <span class="key">"profit_margin"</span>: <span class="number">24.9</span>,
+  <span class="key">"yoy_growth"</span>: {
+    <span class="key">"revenue"</span>: <span class="number">3.9</span>,
+    <span class="key">"net_income"</span>: <span class="number">12.1</span>
+  }
+}</pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="container">
+    <p class="section-label">Pricing</p>
+    <h2 class="section-title">Simple, predictable pricing</h2>
+    <p class="section-sub">Start free, scale as you grow. No per-seat fees, no surprise bills.</p>
+    <div class="pricing-grid">
+      <div class="price-card fade-in">
+        <h3>Free</h3>
+        <div class="price">$0<span>/mo</span></div>
+        <p class="desc">For prototypes and experiments</p>
+        <ul>
+          <li>1,000 requests/month</li>
+          <li>All form types</li>
+          <li>7-year historical</li>
+          <li>Community support</li>
+        </ul>
+        <button class="btn btn-ghost">Start Free</button>
+      </div>
+      <div class="price-card recommended fade-in">
+        <h3>Pro</h3>
+        <div class="price">$79<span>/mo</span></div>
+        <p class="desc">For production AI agents</p>
+        <ul>
+          <li>100,000 requests/month</li>
+          <li>All form types</li>
+          <li>Full historical (30 years)</li>
+          <li>Semantic search</li>
+          <li>Priority support</li>
+        </ul>
+        <button class="btn btn-primary">Get Pro</button>
+      </div>
+      <div class="price-card fade-in">
+        <h3>Enterprise</h3>
+        <div class="price">Custom</div>
+        <p class="desc">For high-volume workloads</p>
+        <ul>
+          <li>Unlimited requests</li>
+          <li>Dedicated infrastructure</li>
+          <li>Custom data feeds</li>
+          <li>99.99% SLA</li>
+          <li>Dedicated support</li>
+        </ul>
+        <button class="btn btn-ghost">Contact Us</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="cta">
+  <div class="container">
+    <h2>Get your API key</h2>
+    <p>Start building in minutes. No credit card required for free tier.</p>
+    <div class="form-wrap" id="cta-form-wrap">
+      <form class="cta-form" id="cta-form" onsubmit="return handleSubmit(event)">
+        <input type="email" placeholder="you@company.com" required id="cta-email">
+        <button type="submit" class="btn-primary">Get API Key</button>
+      </form>
+    </div>
+    <div class="success-msg" id="success-msg">
+      <span>✓</span>
+      Check your email — your API key is on its way.
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="logo">
+      <div class="logo-mark">EP</div>
+      EdgarParse
+    </div>
+    <ul class="footer-links">
+      <li><a href="#">Documentation</a></li>
+      <li><a href="#">API Reference</a></li>
+      <li><a href="#">Status</a></li>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Terms</a></li>
+    </ul>
+    <p class="copy">© 2026 EdgarParse. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  function handleSubmit(e) {
+    e.preventDefault();
+    document.getElementById('cta-form-wrap').classList.add('hidden');
+    document.getElementById('success-msg').classList.add('show');
+    return false;
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>

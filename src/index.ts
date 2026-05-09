@@ -3,6 +3,7 @@ import XBRLBalanceQuarterlyProcessor from './processors/xbrl_balance_quarterly_p
 import XBRLCashflowQuarterlyProcessor from './processors/xbrl_cashflow_quarterly_processor';
 import XBRLIncomeAnnualProcessor from './processors/xbrl_income_annual_processor';
 import XBRLBalanceAnnualProcessor from './processors/xbrl_balance_annual_processor';
+import XBRLCashflowAnnualProcessor from './processors/xbrl_cashflow_annual_processor';
 
 export {
     XBRLIncomeQuarterlyProcessor,
@@ -10,6 +11,7 @@ export {
     XBRLCashflowQuarterlyProcessor,
     XBRLIncomeAnnualProcessor,
     XBRLBalanceAnnualProcessor,
+    XBRLCashflowAnnualProcessor,
 };
 
 export type { XBRLFact, PeriodFacts, ContextInfo, RawFact } from './xbrl_types';
