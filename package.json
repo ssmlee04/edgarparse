@@ -6,8 +6,8 @@
   "scripts": {
     "build": "npx babel src --out-dir dist/src --extensions \".ts,.tsx\" --config-file ./.babelrc.json",
     "test": "jest --forceExit",
-    "test:10q": "jest --testPathPattern xbrl.spec --forceExit",
-    "test:10k": "jest --testPathPattern xbrl_10k --forceExit",
+    "test:10q": "jest xbrl.spec --forceExit",
+    "test:10k": "jest xbrl_10k --forceExit",
     "download": "npx ts-node scripts/download-filings.ts"
   },
   "devDependencies": {
