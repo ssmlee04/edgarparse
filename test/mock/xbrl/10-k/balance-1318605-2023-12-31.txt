@@ -1,0 +1,197 @@
+{
+  "endDate": "2023-12-31",
+  "facts": [
+    {
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "label": "cash and cash equivalents",
+      "value": 16398000000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:ShortTermInvestments",
+      "label": "short-term investments",
+      "value": 12696000000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:AccountsReceivableNetCurrent",
+      "label": "accounts receivable, net",
+      "value": 3508000000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:InventoryNet",
+      "label": "inventories",
+      "value": 13626000000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:PrepaidExpenseAndOtherAssetsCurrent",
+      "label": "prepaid expenses and other current assets",
+      "value": 3388000000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:AssetsCurrent",
+      "label": "total current assets",
+      "value": 49616000000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:PropertyPlantAndEquipmentNet",
+      "label": "property, plant and equipment, net",
+      "value": 29725000000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:OperatingLeaseRightOfUseAsset",
+      "label": "operating lease right-of-use assets",
+      "value": 4180000000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:IntangibleAssetsNetExcludingGoodwill",
+      "label": "intangible assets, net",
+      "value": 178000000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:Goodwill",
+      "label": "goodwill",
+      "value": 253000000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:DeferredIncomeTaxAssetsNet",
+      "label": "deferred tax assets",
+      "value": 6733000000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:OtherAssetsNoncurrent",
+      "label": "other assets",
+      "value": 4531000000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:Assets",
+      "label": "total assets",
+      "value": 106618000000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:AccountsPayableCurrent",
+      "label": "accounts payable",
+      "value": 14431000000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:ContractWithCustomerLiabilityCurrent",
+      "label": "deferred revenue, current",
+      "value": 2864000000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:LiabilitiesCurrent",
+      "label": "total current liabilities",
+      "value": 28748000000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:ContractWithCustomerLiabilityNoncurrent",
+      "label": "deferred revenue, non-current",
+      "value": 3251000000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:OtherLiabilitiesNoncurrent",
+      "label": "other liabilities",
+      "value": 8153000000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:Liabilities",
+      "label": "total liabilities",
+      "value": 43009000000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:CommonStockValue",
+      "label": "common stock",
+      "value": 3000000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:AccumulatedOtherComprehensiveIncomeLossNetOfTax",
+      "label": "accumulated other comprehensive income (loss)",
+      "value": -143000000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:RetainedEarningsAccumulatedDeficit",
+      "label": "retained earnings (accumulated deficit)",
+      "value": 27882000000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:StockholdersEquity",
+      "label": "stockholders equity",
+      "value": 62634000000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:MinorityInterest",
+      "label": "noncontrolling interests",
+      "value": 733000000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:LiabilitiesAndStockholdersEquity",
+      "label": "total liabilities and equity",
+      "value": 106618000000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+      "label": "total equity",
+      "value": 63367000000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:RestrictedCashCurrent",
+      "label": "restricted cash, current",
+      "value": 543000000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:PropertyPlantAndEquipmentGross",
+      "label": "property, plant and equipment, gross",
+      "value": 41782000000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:AccumulatedDepreciationDepletionAndAmortizationPropertyPlantAndEquipment",
+      "label": "accumulated depreciation",
+      "value": 12057000000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:EmployeeRelatedLiabilitiesCurrent",
+      "label": "accrued compensation",
+      "value": 1325000000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:OperatingLeaseLiabilityNoncurrent",
+      "label": "operating lease liabilities, non-current",
+      "value": 3671000000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:LongTermDebt",
+      "label": "long-term debt",
+      "value": 2682000000,
+      "unit": "USD"
+    }
+  ]
+}

@@ -3,7 +3,9 @@
     "allow": [
       "Skill(update-config)",
       "Skill(gstack)",
-      "Bash(kill 24796)"
+      "Bash(kill 24796)",
+      "Bash(npx wrangler *)",
+      "Bash(npx wrangler@3 *)"
     ]
   }
 }
