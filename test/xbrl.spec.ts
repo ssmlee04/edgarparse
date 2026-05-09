@@ -3,7 +3,7 @@ import XBRLIncomeQuarterlyProcessor from '../src/processors/xbrl_income_quarterl
 import XBRLBalanceQuarterlyProcessor from '../src/processors/xbrl_balance_quarterly_processor';
 import XBRLCashflowQuarterlyProcessor from '../src/processors/xbrl_cashflow_quarterly_processor';
 
-const MOCK_DIR = './test/mock/xbrl/quarterly';
+const MOCK_DIR = './test/mock/xbrl/10-q';
 
 const parseName = (filename: string) => {
     const parts = filename.replace('.txt', '').split('-');

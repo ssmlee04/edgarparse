@@ -24,7 +24,7 @@ import {
 // Income statement — quarterly + YTD
 // First arg is the CIK (stable EDGAR company identifier, never changes unlike tickers)
 const income = new XBRLIncomeQuarterlyProcessor();
-income.initialize('789019', '2023-09-30');  // reads data/txt/quarterly/789019-2023-09-30.txt
+income.initialize('789019', '2023-09-30');  // reads data/txt/10-q/789019-2023-09-30.txt
 const result = income.extract();
 
 result.quarterly.facts.forEach(f => console.log(f.label, f.value));
@@ -82,7 +82,7 @@ Facts are returned in document order, which matches the statement layout (revenu
 Raw EDGAR submission files are not committed to this repo (they are large). They should be placed at:
 
 ```
-data/txt/quarterly/{cik}-{date}.txt
+data/txt/10-q/{cik}-{date}.txt
 ```
 
 To download the filings needed for the test suite:
@@ -91,7 +91,7 @@ To download the filings needed for the test suite:
 npm run download
 ```
 
-This fetches each filing from SEC EDGAR's public API and saves it to `data/txt/quarterly/`. You only need to run this once. To add your own filing for a different ticker, download it from [EDGAR full-text search](https://efts.sec.gov/LATEST/search-index?q=10-Q&forms=10-Q) and drop the `.txt` file in that directory.
+This fetches each filing from SEC EDGAR's public API and saves it to `data/txt/10-q/`. You only need to run this once. To add your own filing for a different ticker, download it from [EDGAR full-text search](https://efts.sec.gov/LATEST/search-index?q=10-Q&forms=10-Q) and drop the `.txt` file in that directory.
 
 ## How it works
 

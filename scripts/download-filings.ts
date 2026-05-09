@@ -18,7 +18,7 @@ const FILINGS: { ticker: string; cik: string; period: string }[] = [
     { ticker: 'nvda', cik: '1045810', period: '2022-04-30' },
 ];
 
-const OUT_DIR = path.join(__dirname, '../data/txt/quarterly');
+const OUT_DIR = path.join(__dirname, '../data/txt/10-q');
 // SEC requires a User-Agent with a name and contact email
 const USER_AGENT = 'edgarparse contact@example.com';
 

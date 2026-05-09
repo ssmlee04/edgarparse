@@ -47,7 +47,7 @@ export default class XBRLStatementProcessor {
     }
 
     private readSourceData(): string {
-        const filename = `./data/txt/${this.timeframe}/${this.cik}-${this.datestr}.txt`;
+        const filename = `./data/txt/10-q/${this.cik}-${this.datestr}.txt`;
         return fs.readFileSync(filename).toString();
     }
 
@@ -165,7 +165,7 @@ export default class XBRLStatementProcessor {
     }
 
     private createTestFile(data: any) {
-        const dir = `./test/mock/xbrl/${this.timeframe}`;
+        const dir = `./test/mock/xbrl/10-q`;
         fs.mkdirSync(dir, { recursive: true });
         const filename = `${dir}/${this.statementType}-${this.cik}-${this.datestr}.txt`;
         fs.writeFileSync(filename, JSON.stringify(data, null, 2));
