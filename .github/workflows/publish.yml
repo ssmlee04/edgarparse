@@ -7,23 +7,20 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          registry-url: 'https://registry.npmjs.org'
-      - name: Extract version from tag
+          node-version: 20
+      - name: Configure npm auth
         run: |
-          TAG=${GITHUB_REF#refs/tags/}
-          VERSION=${TAG#v}
-          echo "VERSION=$VERSION" >> $GITHUB_ENV
-      - name: Update package.json version
-        run: |
-          npm version $VERSION --no-git-tag-version
-      - run: npm ci
-      - run: npm publish
+          echo "//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}" > .npmrc
+          echo "registry=https://registry.npmjs.org/" >> .npmrc
+          echo "always-auth=true" >> .npmrc
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - run: cat ~/.npmrc | sed 's/_authToken=.*/_authToken=***MASKED***/'
+      - run: npm whoami
+      - run: npm ci
+      - run: npm publish
