@@ -55,7 +55,13 @@
       {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 2539000000,
+        "value": -2539000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromSaleOfProductiveAssets",
+        "label": "proceeds from asset sales",
+        "value": 77000000,
         "unit": "USD"
       },
       {
@@ -67,7 +73,7 @@
       {
         "concept": "us-gaap:PaymentsOfDividends",
         "label": "dividends paid",
-        "value": 6863000000,
+        "value": -6863000000,
         "unit": "USD"
       },
       {
@@ -79,13 +85,13 @@
       {
         "concept": "us-gaap:RepaymentsOfLongTermDebt",
         "label": "repayments of long-term debt",
-        "value": 2335000000,
+        "value": -2335000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
         "label": "repurchase of common stock",
-        "value": 3490000000,
+        "value": -3490000000,
         "unit": "USD"
       },
       {

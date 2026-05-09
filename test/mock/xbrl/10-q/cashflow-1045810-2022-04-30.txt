@@ -65,9 +65,21 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ProceedsFromMaturitiesPrepaymentsAndCallsOfAvailableForSaleSecurities",
+        "label": "maturities of investments",
+        "value": 5947000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToAcquireAvailableForSaleSecuritiesDebt",
+        "label": "purchases of investments",
+        "value": -3932000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:PaymentsToAcquireBusinessesNetOfCashAcquired",
         "label": "acquisitions, net of cash",
-        "value": 36000000,
+        "value": -36000000,
         "unit": "USD"
       },
       {
@@ -85,19 +97,19 @@
       {
         "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
         "label": "repurchase of common stock",
-        "value": 1996000000,
+        "value": -1996000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
         "label": "tax withholding on stock awards",
-        "value": 532000000,
+        "value": -532000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsOfDividends",
         "label": "dividends paid",
-        "value": 100000000,
+        "value": -100000000,
         "unit": "USD"
       },
       {

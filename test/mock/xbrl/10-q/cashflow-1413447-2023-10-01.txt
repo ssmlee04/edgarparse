@@ -42,6 +42,18 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:AmortizationOfDebtDiscountPremium",
+        "label": "amortization of debt discount/premium",
+        "value": 2000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:AmortizationOfFinancingCosts",
+        "label": "amortization of financing costs",
+        "value": 6000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:GainLossOnDispositionOfAssets",
         "label": "gain (loss) on asset disposals",
         "value": 1000000,
@@ -78,15 +90,27 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:PaymentsToAcquireIntangibleAssets",
+        "label": "purchases of intangible assets",
+        "value": -135000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 652000000,
+        "value": -652000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:ProceedsFromSaleOfPropertyPlantAndEquipment",
         "label": "proceeds from asset sales",
         "value": 1000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToAcquireAvailableForSaleSecuritiesDebt",
+        "label": "purchases of investments",
+        "value": -93000000,
         "unit": "USD"
       },
       {
@@ -98,7 +122,7 @@
       {
         "concept": "us-gaap:PaymentsOfDividendsCommonStock",
         "label": "dividends paid - common",
-        "value": 745000000,
+        "value": -745000000,
         "unit": "USD"
       },
       {
@@ -110,7 +134,7 @@
       {
         "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
         "label": "repurchase of common stock",
-        "value": 619000000,
+        "value": -619000000,
         "unit": "USD"
       },
       {

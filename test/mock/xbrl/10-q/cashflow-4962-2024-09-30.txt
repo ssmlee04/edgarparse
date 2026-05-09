@@ -29,9 +29,15 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ProceedsFromMaturitiesPrepaymentsAndCallsOfAvailableForSaleSecurities",
+        "label": "maturities of investments",
+        "value": 1875000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:PaymentsToAcquireInvestments",
         "label": "purchases of investments",
-        "value": 1210000000,
+        "value": -1210000000,
         "unit": "USD"
       },
       {
@@ -43,13 +49,13 @@
       {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 1416000000,
+        "value": -1416000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsToAcquireBusinessesNetOfCashAcquired",
         "label": "acquisitions, net of cash",
-        "value": 90000000,
+        "value": -90000000,
         "unit": "USD"
       },
       {
@@ -67,19 +73,25 @@
       {
         "concept": "us-gaap:RepaymentsOfLongTermDebt",
         "label": "repayments of long-term debt",
-        "value": 7358000000,
+        "value": -7358000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromIssuanceOfCommonStock",
+        "label": "proceeds from issuance of common stock",
+        "value": 49000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
         "label": "repurchase of common stock",
-        "value": 4989000000,
+        "value": -4989000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsOfDividends",
         "label": "dividends paid",
-        "value": 1489000000,
+        "value": -1489000000,
         "unit": "USD"
       },
       {

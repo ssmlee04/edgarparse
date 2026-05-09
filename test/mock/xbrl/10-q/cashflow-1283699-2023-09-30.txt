@@ -17,6 +17,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ProvisionForDoubtfulAccounts",
+        "label": "provision for credit losses",
+        "value": 228000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:IncreaseDecreaseInAccountsReceivable",
         "label": "change in accounts receivable",
         "value": 1046000000,
@@ -26,6 +32,12 @@
         "concept": "us-gaap:IncreaseDecreaseInInventories",
         "label": "change in inventories",
         "value": 309000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInOperatingLeaseLiability",
+        "label": "change in operating lease liabilities",
+        "value": -692000000,
         "unit": "USD"
       },
       {
@@ -43,7 +55,13 @@
       {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 2424000000,
+        "value": -2424000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToAcquireIntangibleAssets",
+        "label": "purchases of intangible assets",
+        "value": -119000000,
         "unit": "USD"
       },
       {
@@ -65,21 +83,27 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:FinanceLeasePrincipalPayments",
+        "label": "finance lease principal payments",
+        "value": -304000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:RepaymentsOfLongTermDebt",
         "label": "repayments of long-term debt",
-        "value": 4474000000,
+        "value": -4474000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
         "label": "repurchase of common stock",
-        "value": 2681000000,
+        "value": -2681000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
         "label": "tax withholding on stock awards",
-        "value": 10000000,
+        "value": -10000000,
         "unit": "USD"
       },
       {
@@ -120,6 +144,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ProvisionForDoubtfulAccounts",
+        "label": "provision for credit losses",
+        "value": 663000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:IncreaseDecreaseInAccountsReceivable",
         "label": "change in accounts receivable",
         "value": 3828000000,
@@ -129,6 +159,12 @@
         "concept": "us-gaap:IncreaseDecreaseInInventories",
         "label": "change in inventories",
         "value": -182000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInOperatingLeaseLiability",
+        "label": "change in operating lease liabilities",
+        "value": -2884000000,
         "unit": "USD"
       },
       {
@@ -146,7 +182,13 @@
       {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 8214000000,
+        "value": -8214000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToAcquireIntangibleAssets",
+        "label": "purchases of intangible assets",
+        "value": -225000000,
         "unit": "USD"
       },
       {
@@ -168,21 +210,27 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:FinanceLeasePrincipalPayments",
+        "label": "finance lease principal payments",
+        "value": -914000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:RepaymentsOfLongTermDebt",
         "label": "repayments of long-term debt",
-        "value": 4828000000,
+        "value": -4828000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
         "label": "repurchase of common stock",
-        "value": 10891000000,
+        "value": -10891000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
         "label": "tax withholding on stock awards",
-        "value": 267000000,
+        "value": -267000000,
         "unit": "USD"
       },
       {
@@ -201,6 +249,12 @@
         "concept": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
         "label": "net change in cash",
         "value": 525000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInContractWithCustomerAsset",
+        "label": "change in contract assets",
+        "value": 83000000,
         "unit": "USD"
       },
       {

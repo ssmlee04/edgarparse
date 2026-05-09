@@ -25,7 +25,7 @@
       {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 5074000000,
+        "value": -5074000000,
         "unit": "USD"
       },
       {
@@ -43,19 +43,19 @@
       {
         "concept": "us-gaap:PaymentsOfDividendsCommonStock",
         "label": "dividends paid - common",
-        "value": 3808000000,
+        "value": -3808000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsOfDividendsMinorityInterest",
         "label": "dividends to noncontrolling interests",
-        "value": 166000000,
+        "value": -166000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
         "label": "repurchase of common stock",
-        "value": 3011000000,
+        "value": -3011000000,
         "unit": "USD"
       },
       {

@@ -5,9 +5,15 @@
     "months": 4,
     "facts": [
       {
+        "concept": "us-gaap:EquitySecuritiesFvNiUnrealizedGainLoss",
+        "label": "unrealized gain (loss) on equity securities",
+        "value": -1790000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
         "label": "repurchase of common stock",
-        "value": 400038000,
+        "value": -400038000,
         "unit": "USD"
       }
     ]
@@ -27,6 +33,12 @@
         "concept": "us-gaap:ShareBasedCompensation",
         "label": "stock-based compensation",
         "value": 862517000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EquitySecuritiesFvNiUnrealizedGainLoss",
+        "label": "unrealized gain (loss) on equity securities",
+        "value": 1105000,
         "unit": "USD"
       },
       {
@@ -74,19 +86,31 @@
       {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 22014000,
+        "value": -22014000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsToAcquireBusinessesNetOfCashAcquired",
         "label": "acquisitions, net of cash",
-        "value": 279534000,
+        "value": -279534000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToAcquireIntangibleAssets",
+        "label": "purchases of intangible assets",
+        "value": -28744000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsToAcquireInvestments",
         "label": "purchases of investments",
-        "value": 2095329000,
+        "value": -2095329000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromMaturitiesPrepaymentsAndCallsOfAvailableForSaleSecurities",
+        "label": "maturities of investments",
+        "value": 2751148000,
         "unit": "USD"
       },
       {
@@ -104,13 +128,13 @@
       {
         "concept": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
         "label": "tax withholding on stock awards",
-        "value": 273828000,
+        "value": -273828000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
         "label": "repurchase of common stock",
-        "value": 591732000,
+        "value": -591732000,
         "unit": "USD"
       },
       {

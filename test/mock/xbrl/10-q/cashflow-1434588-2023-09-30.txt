@@ -55,7 +55,7 @@
       {
         "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
         "label": "repurchase of common stock",
-        "value": 120285000,
+        "value": -120285000,
         "unit": "USD"
       },
       {

@@ -26,7 +26,7 @@
       {
         "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
         "label": "repurchase of common stock",
-        "value": 20890000,
+        "value": -20890000,
         "unit": "USD"
       },
       {
@@ -60,6 +60,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:IncreaseDecreaseInOtherCurrentAssets",
+        "label": "change in other current assets",
+        "value": 1784000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:IncreaseDecreaseInAccountsPayable",
         "label": "change in accounts payable",
         "value": 2464000,
@@ -80,7 +86,7 @@
       {
         "concept": "us-gaap:PaymentsToAcquireBusinessesNetOfCashAcquired",
         "label": "acquisitions, net of cash",
-        "value": 9820000,
+        "value": -9820000,
         "unit": "USD"
       },
       {
@@ -92,13 +98,19 @@
       {
         "concept": "us-gaap:RepaymentsOfLongTermDebt",
         "label": "repayments of long-term debt",
-        "value": 4313000,
+        "value": -4313000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToMinorityShareholders",
+        "label": "payments to noncontrolling interests",
+        "value": -19287000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
         "label": "tax withholding on stock awards",
-        "value": 13865000,
+        "value": -13865000,
         "unit": "USD"
       },
       {

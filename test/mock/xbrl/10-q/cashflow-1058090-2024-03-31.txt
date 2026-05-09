@@ -17,6 +17,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ProvisionForDoubtfulAccounts",
+        "label": "provision for credit losses",
+        "value": -412000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:ShareBasedCompensation",
         "label": "stock-based compensation",
         "value": 36003000,
@@ -53,6 +59,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:IncreaseDecreaseInEmployeeRelatedLiabilities",
+        "label": "change in accrued compensation",
+        "value": -85289000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:IncreaseDecreaseInAccruedLiabilities",
         "label": "change in accrued liabilities",
         "value": 25322000,
@@ -65,6 +77,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:IncreaseDecreaseInOperatingLeaseLiability",
+        "label": "change in operating lease liabilities",
+        "value": -51537000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
         "label": "net cash from operating activities",
         "value": 569234000,
@@ -73,7 +91,7 @@
       {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 132703000,
+        "value": -132703000,
         "unit": "USD"
       },
       {
@@ -85,13 +103,13 @@
       {
         "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
         "label": "repurchase of common stock",
-        "value": 27005000,
+        "value": -27005000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
         "label": "tax withholding on stock awards",
-        "value": 72654000,
+        "value": -72654000,
         "unit": "USD"
       },
       {

@@ -29,6 +29,18 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:PaymentsToAcquireAvailableForSaleSecuritiesDebt",
+        "label": "purchases of investments",
+        "value": -309549000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromMaturitiesPrepaymentsAndCallsOfAvailableForSaleSecurities",
+        "label": "maturities of investments",
+        "value": 266878000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:PaymentsForProceedsFromOtherInvestingActivities",
         "label": "other investing activities",
         "value": 12072000,
@@ -43,7 +55,7 @@
       {
         "concept": "us-gaap:PaymentsOfDividendsCommonStock",
         "label": "dividends paid - common",
-        "value": 20706000,
+        "value": -20706000,
         "unit": "USD"
       },
       {
@@ -62,6 +74,12 @@
         "concept": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
         "label": "net change in cash",
         "value": -167067000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EquitySecuritiesFvNiUnrealizedGainLoss",
+        "label": "unrealized gain (loss) on equity securities",
+        "value": 803000,
         "unit": "USD"
       }
     ]

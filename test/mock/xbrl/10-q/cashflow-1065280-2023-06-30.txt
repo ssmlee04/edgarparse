@@ -23,6 +23,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:IncreaseDecreaseInOtherCurrentAssets",
+        "label": "change in other current assets",
+        "value": 183049000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:IncreaseDecreaseInAccountsPayable",
         "label": "change in accounts payable",
         "value": 38332000,
@@ -49,7 +55,7 @@
       {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 100972000,
+        "value": -100972000,
         "unit": "USD"
       },
       {
@@ -67,7 +73,7 @@
       {
         "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
         "label": "repurchase of common stock",
-        "value": 645146000,
+        "value": -645146000,
         "unit": "USD"
       },
       {

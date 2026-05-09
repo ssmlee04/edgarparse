@@ -5,6 +5,12 @@
     "months": 4,
     "facts": [
       {
+        "concept": "us-gaap:AmortizationOfFinancingCosts",
+        "label": "amortization of financing costs",
+        "value": 977000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:ShareBasedCompensation",
         "label": "stock-based compensation",
         "value": 129138000,
@@ -23,6 +29,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:IncreaseDecreaseInContractWithCustomerAsset",
+        "label": "change in contract assets",
+        "value": 27680000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets",
         "label": "change in prepaid and other assets",
         "value": -1349000,
@@ -32,6 +44,12 @@
         "concept": "us-gaap:IncreaseDecreaseInAccountsPayable",
         "label": "change in accounts payable",
         "value": 4596000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInEmployeeRelatedLiabilities",
+        "label": "change in accrued compensation",
+        "value": -39232000,
         "unit": "USD"
       },
       {
@@ -49,13 +67,25 @@
       {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 28659000,
+        "value": -28659000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsToAcquireBusinessesNetOfCashAcquired",
         "label": "acquisitions, net of cash",
-        "value": 4377000,
+        "value": -4377000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToAcquireAvailableForSaleSecuritiesDebt",
+        "label": "purchases of investments",
+        "value": -375929000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromMaturitiesPrepaymentsAndCallsOfAvailableForSaleSecurities",
+        "label": "maturities of investments",
+        "value": 253849000,
         "unit": "USD"
       },
       {

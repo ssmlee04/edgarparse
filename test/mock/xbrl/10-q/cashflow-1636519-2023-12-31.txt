@@ -11,6 +11,18 @@
     "months": 10,
     "facts": [
       {
+        "concept": "us-gaap:ProvisionForDoubtfulAccounts",
+        "label": "provision for credit losses",
+        "value": 544000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:AssetImpairmentCharges",
+        "label": "asset impairment charges",
+        "value": 90000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:IncreaseDecreaseInAccountsReceivable",
         "label": "change in accounts receivable",
         "value": -17846000,
@@ -41,6 +53,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ProceedsFromSaleOfProductiveAssets",
+        "label": "proceeds from asset sales",
+        "value": 157000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:NetCashProvidedByUsedInInvestingActivities",
         "label": "net cash from investing activities",
         "value": -15130000,
@@ -49,19 +67,19 @@
       {
         "concept": "us-gaap:RepaymentsOfLongTermDebt",
         "label": "repayments of long-term debt",
-        "value": 172308000,
+        "value": -172308000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
         "label": "repurchase of common stock",
-        "value": 10640000,
+        "value": -10640000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsOfDividends",
         "label": "dividends paid",
-        "value": 8855000,
+        "value": -8855000,
         "unit": "USD"
       },
       {

@@ -67,19 +67,31 @@
       {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 48331000,
+        "value": -48331000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsToAcquireBusinessesNetOfCashAcquired",
         "label": "acquisitions, net of cash",
-        "value": 45692000,
+        "value": -45692000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToAcquireIntangibleAssets",
+        "label": "purchases of intangible assets",
+        "value": -7856000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:NetCashProvidedByUsedInInvestingActivities",
         "label": "net cash from investing activities",
         "value": -101879000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromIssuanceOfCommonStock",
+        "label": "proceeds from issuance of common stock",
+        "value": 62278000,
         "unit": "USD"
       },
       {

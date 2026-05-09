@@ -17,6 +17,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:AssetImpairmentCharges",
+        "label": "asset impairment charges",
+        "value": 21000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:OtherNoncashIncomeExpense",
         "label": "other non-cash items",
         "value": -10000000,
@@ -29,6 +35,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:IncreaseDecreaseInContractWithCustomerAsset",
+        "label": "change in contract assets",
+        "value": 1357000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:IncreaseDecreaseInContractWithCustomerLiability",
         "label": "change in deferred revenue",
         "value": 2718000000,
@@ -38,6 +50,12 @@
         "concept": "us-gaap:IncreaseDecreaseInInventories",
         "label": "change in inventories",
         "value": 3778000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInOtherCurrentAssets",
+        "label": "change in other current assets",
+        "value": 249000000,
         "unit": "USD"
       },
       {
@@ -61,7 +79,7 @@
       {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 567000000,
+        "value": -567000000,
         "unit": "USD"
       },
       {
@@ -73,7 +91,7 @@
       {
         "concept": "us-gaap:PaymentsToAcquireInvestments",
         "label": "purchases of investments",
-        "value": 243000000,
+        "value": -243000000,
         "unit": "USD"
       },
       {
@@ -97,7 +115,7 @@
       {
         "concept": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
         "label": "tax withholding on stock awards",
-        "value": 65000000,
+        "value": -65000000,
         "unit": "USD"
       },
       {
@@ -122,6 +140,12 @@
         "concept": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
         "label": "net change in cash",
         "value": -5778000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProvisionForDoubtfulAccounts",
+        "label": "provision for credit losses",
+        "value": 16000000,
         "unit": "USD"
       }
     ]

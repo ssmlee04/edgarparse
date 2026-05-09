@@ -3,13 +3,32 @@
     "startDate": "2023-07-01",
     "endDate": "2023-09-30",
     "months": 4,
-    "facts": []
+    "facts": [
+      {
+        "concept": "us-gaap:AmortizationOfFinancingCosts",
+        "label": "amortization of financing costs",
+        "value": 1329000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:AmortizationOfDebtDiscountPremium",
+        "label": "amortization of debt discount/premium",
+        "value": 25000,
+        "unit": "USD"
+      }
+    ]
   },
   "ytd": {
     "startDate": "2023-01-01",
     "endDate": "2023-09-30",
     "months": 10,
     "facts": [
+      {
+        "concept": "us-gaap:EquitySecuritiesFvNiUnrealizedGainLoss",
+        "label": "unrealized gain (loss) on equity securities",
+        "value": -15622000,
+        "unit": "USD"
+      },
       {
         "concept": "us-gaap:DeferredIncomeTaxExpenseBenefit",
         "label": "deferred income taxes",
@@ -49,13 +68,13 @@
       {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 89268000,
+        "value": -89268000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsToAcquireBusinessesNetOfCashAcquired",
         "label": "acquisitions, net of cash",
-        "value": 50000000,
+        "value": -50000000,
         "unit": "USD"
       },
       {
@@ -95,9 +114,27 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:AmortizationOfFinancingCosts",
+        "label": "amortization of financing costs",
+        "value": 4021000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:AmortizationOfDebtDiscountPremium",
+        "label": "amortization of debt discount/premium",
+        "value": 81000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:ProceedsFromStockOptionsExercised",
         "label": "proceeds from stock option exercises",
         "value": 2900000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:FinanceLeasePrincipalPayments",
+        "label": "finance lease principal payments",
+        "value": -2545000,
         "unit": "USD"
       }
     ]

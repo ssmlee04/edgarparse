@@ -29,6 +29,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:AmortizationOfFinancingCosts",
+        "label": "amortization of financing costs",
+        "value": 940000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:IncreaseDecreaseInAccountsReceivable",
         "label": "change in accounts receivable",
         "value": -119948000,
@@ -67,13 +73,19 @@
       {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 268958000,
+        "value": -268958000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsToAcquireBusinessesNetOfCashAcquired",
         "label": "acquisitions, net of cash",
-        "value": 6165000,
+        "value": -6165000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToAcquireIntangibleAssets",
+        "label": "purchases of intangible assets",
+        "value": -1500000,
         "unit": "USD"
       },
       {
@@ -83,9 +95,21 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ProceedsFromIssuanceOfCommonStock",
+        "label": "proceeds from issuance of common stock",
+        "value": 42706000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
         "label": "tax withholding on stock awards",
-        "value": 150000,
+        "value": -150000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsOfDebtIssuanceCosts",
+        "label": "debt issuance costs paid",
+        "value": -154000,
         "unit": "USD"
       },
       {

@@ -11,6 +11,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ProvisionForDoubtfulAccounts",
+        "label": "provision for credit losses",
+        "value": 95000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:ShareBasedCompensation",
         "label": "stock-based compensation",
         "value": 25000000,
@@ -54,6 +60,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:IncreaseDecreaseInEmployeeRelatedLiabilities",
+        "label": "change in accrued compensation",
+        "value": -202000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
         "label": "net cash from operating activities",
         "value": 5148000000,
@@ -62,13 +74,13 @@
       {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 2969000000,
+        "value": -2969000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsToAcquireInvestments",
         "label": "purchases of investments",
-        "value": 90000000,
+        "value": -90000000,
         "unit": "USD"
       },
       {
@@ -80,7 +92,7 @@
       {
         "concept": "us-gaap:PaymentsToAcquireBusinessesNetOfCashAcquired",
         "label": "acquisitions, net of cash",
-        "value": 479000000,
+        "value": -479000000,
         "unit": "USD"
       },
       {
@@ -104,19 +116,25 @@
       {
         "concept": "us-gaap:RepaymentsOfLongTermDebt",
         "label": "repayments of long-term debt",
-        "value": 1145000000,
+        "value": -1145000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
         "label": "repurchase of common stock",
-        "value": 1000000000,
+        "value": -1000000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromIssuanceOfCommonStock",
+        "label": "proceeds from issuance of common stock",
+        "value": 133000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsOfDividends",
         "label": "dividends paid",
-        "value": 4045000000,
+        "value": -4045000000,
         "unit": "USD"
       },
       {
@@ -141,6 +159,18 @@
         "concept": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
         "label": "net change in cash",
         "value": 652000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProvisionForDoubtfulAccounts",
+        "label": "provision for credit losses",
+        "value": 267000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:FinanceLeasePrincipalPayments",
+        "label": "finance lease principal payments",
+        "value": -93000000,
         "unit": "USD"
       }
     ]

@@ -17,6 +17,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ProvisionForDoubtfulAccounts",
+        "label": "provision for credit losses",
+        "value": 29000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:ShareBasedCompensation",
         "label": "stock-based compensation",
         "value": 790000000,
@@ -41,9 +47,15 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ProceedsFromSaleAndMaturityOfAvailableForSaleSecurities",
+        "label": "proceeds from investments",
+        "value": 10000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:PaymentsToAcquireBusinessesNetOfCashAcquired",
         "label": "acquisitions, net of cash",
-        "value": 90000000,
+        "value": -90000000,
         "unit": "USD"
       },
       {
@@ -55,7 +67,13 @@
       {
         "concept": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
         "label": "tax withholding on stock awards",
-        "value": 9000000,
+        "value": -9000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsOfDebtIssuanceCosts",
+        "label": "debt issuance costs paid",
+        "value": -10000000,
         "unit": "USD"
       },
       {
@@ -67,7 +85,7 @@
       {
         "concept": "us-gaap:RepaymentsOfLinesOfCredit",
         "label": "repayments of revolving credit",
-        "value": 20000000,
+        "value": -20000000,
         "unit": "USD"
       },
       {
@@ -79,7 +97,7 @@
       {
         "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
         "label": "repurchase of common stock",
-        "value": 608000000,
+        "value": -608000000,
         "unit": "USD"
       },
       {
@@ -92,6 +110,12 @@
         "concept": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
         "label": "net change in cash",
         "value": -977000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInContractWithCustomerAsset",
+        "label": "change in contract assets",
+        "value": -2000000,
         "unit": "USD"
       },
       {

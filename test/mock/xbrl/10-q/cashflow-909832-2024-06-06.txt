@@ -50,7 +50,7 @@
       {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 3133000000,
+        "value": -3133000000,
         "unit": "USD"
       },
       {
@@ -68,7 +68,7 @@
       {
         "concept": "us-gaap:RepaymentsOfShortTermDebt",
         "label": "repayments of short-term debt",
-        "value": 637000000,
+        "value": -637000000,
         "unit": "USD"
       },
       {
@@ -86,19 +86,25 @@
       {
         "concept": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
         "label": "tax withholding on stock awards",
-        "value": 313000000,
+        "value": -313000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
         "label": "repurchase of common stock",
-        "value": 484000000,
+        "value": -484000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsOfDividends",
         "label": "dividends paid",
-        "value": 8527000000,
+        "value": -8527000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:FinanceLeasePrincipalPayments",
+        "label": "finance lease principal payments",
+        "value": -112000000,
         "unit": "USD"
       },
       {

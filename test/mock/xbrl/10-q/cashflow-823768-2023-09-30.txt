@@ -42,6 +42,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:IncreaseDecreaseInOtherCurrentAssets",
+        "label": "change in other current assets",
+        "value": 26000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:IncreaseDecreaseInOtherNoncurrentAssets",
         "label": "change in other non-current assets",
         "value": -67000000,
@@ -56,7 +62,7 @@
       {
         "concept": "us-gaap:PaymentsToAcquireBusinessesNetOfCashAcquired",
         "label": "acquisitions, net of cash",
-        "value": 139000000,
+        "value": -139000000,
         "unit": "USD"
       },
       {
@@ -74,13 +80,13 @@
       {
         "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
         "label": "repurchase of common stock",
-        "value": 990000000,
+        "value": -990000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsOfDividendsCommonStock",
         "label": "dividends paid - common",
-        "value": 855000000,
+        "value": -855000000,
         "unit": "USD"
       },
       {
@@ -92,7 +98,7 @@
       {
         "concept": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
         "label": "tax withholding on stock awards",
-        "value": 28000000,
+        "value": -28000000,
         "unit": "USD"
       },
       {

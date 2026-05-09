@@ -55,7 +55,7 @@
       {
         "concept": "us-gaap:PaymentsToAcquireInvestments",
         "label": "purchases of investments",
-        "value": 39000000,
+        "value": -39000000,
         "unit": "USD"
       },
       {
@@ -67,7 +67,7 @@
       {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 596000000,
+        "value": -596000000,
         "unit": "USD"
       },
       {
@@ -85,19 +85,19 @@
       {
         "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
         "label": "repurchase of common stock",
-        "value": 700000000,
+        "value": -700000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
         "label": "tax withholding on stock awards",
-        "value": 521000000,
+        "value": -521000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsOfDividendsCommonStock",
         "label": "dividends paid - common",
-        "value": 336000000,
+        "value": -336000000,
         "unit": "USD"
       },
       {
@@ -109,7 +109,7 @@
       {
         "concept": "us-gaap:RepaymentsOfLongTermDebt",
         "label": "repayments of long-term debt",
-        "value": 3477000000,
+        "value": -3477000000,
         "unit": "USD"
       },
       {
@@ -134,6 +134,12 @@
         "concept": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
         "label": "net change in cash",
         "value": -1545000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EquitySecuritiesFvNiUnrealizedGainLoss",
+        "label": "unrealized gain (loss) on equity securities",
+        "value": -35000000,
         "unit": "USD"
       }
     ]

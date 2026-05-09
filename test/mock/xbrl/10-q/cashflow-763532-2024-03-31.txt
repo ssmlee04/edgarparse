@@ -42,9 +42,27 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ProvisionForDoubtfulAccounts",
+        "label": "provision for credit losses",
+        "value": 57000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InventoryWriteDown",
+        "label": "inventory write-down",
+        "value": -1259000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:IncreaseDecreaseInInventories",
         "label": "change in inventories",
         "value": -4646000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInIncomeTaxesReceivable",
+        "label": "change in income taxes receivable",
+        "value": -466000,
         "unit": "USD"
       },
       {
@@ -80,7 +98,7 @@
       {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 4626000,
+        "value": -4626000,
         "unit": "USD"
       },
       {
@@ -92,7 +110,7 @@
       {
         "concept": "us-gaap:RepaymentsOfLongTermDebt",
         "label": "repayments of long-term debt",
-        "value": 102366000,
+        "value": -102366000,
         "unit": "USD"
       },
       {
@@ -104,13 +122,19 @@
       {
         "concept": "us-gaap:PaymentsOfDividendsCommonStock",
         "label": "dividends paid - common",
-        "value": 4280000,
+        "value": -4280000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
         "label": "tax withholding on stock awards",
-        "value": 304000,
+        "value": -304000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:FinanceLeasePrincipalPayments",
+        "label": "finance lease principal payments",
+        "value": -241000,
         "unit": "USD"
       },
       {
@@ -134,7 +158,7 @@
       {
         "concept": "us-gaap:PaymentsOfDividends",
         "label": "dividends paid",
-        "value": 4300000,
+        "value": -4300000,
         "unit": "USD"
       }
     ]

@@ -37,7 +37,7 @@
       {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 87848000,
+        "value": -87848000,
         "unit": "USD"
       },
       {
@@ -49,13 +49,13 @@
       {
         "concept": "us-gaap:PaymentsOfDividendsCommonStock",
         "label": "dividends paid - common",
-        "value": 26692000,
+        "value": -26692000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
         "label": "repurchase of common stock",
-        "value": 248852000,
+        "value": -248852000,
         "unit": "USD"
       },
       {
@@ -67,7 +67,7 @@
       {
         "concept": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
         "label": "tax withholding on stock awards",
-        "value": 2494000,
+        "value": -2494000,
         "unit": "USD"
       },
       {

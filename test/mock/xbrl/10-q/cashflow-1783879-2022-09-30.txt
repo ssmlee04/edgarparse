@@ -17,6 +17,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ProvisionForDoubtfulAccounts",
+        "label": "provision for credit losses",
+        "value": 28000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:ShareBasedCompensation",
         "label": "stock-based compensation",
         "value": 494000000,
@@ -35,9 +41,21 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:IncreaseDecreaseInOperatingLeaseLiability",
+        "label": "change in operating lease liabilities",
+        "value": -2000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
         "label": "net cash from operating activities",
         "value": -1033000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToAcquireAvailableForSaleSecuritiesDebt",
+        "label": "purchases of investments",
+        "value": -27000000,
         "unit": "USD"
       },
       {
@@ -61,7 +79,13 @@
       {
         "concept": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
         "label": "tax withholding on stock awards",
-        "value": 9000000,
+        "value": -9000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsOfDebtIssuanceCosts",
+        "label": "debt issuance costs paid",
+        "value": -10000000,
         "unit": "USD"
       },
       {
@@ -73,7 +97,7 @@
       {
         "concept": "us-gaap:RepaymentsOfLinesOfCredit",
         "label": "repayments of revolving credit",
-        "value": 21000000,
+        "value": -21000000,
         "unit": "USD"
       },
       {
@@ -92,6 +116,12 @@
         "concept": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
         "label": "net change in cash",
         "value": -1106000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInContractWithCustomerAsset",
+        "label": "change in contract assets",
+        "value": -10000000,
         "unit": "USD"
       }
     ]

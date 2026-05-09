@@ -98,7 +98,7 @@
       {
         "concept": "us-gaap:PensionContributions",
         "label": "pension contributions",
-        "value": 14000000,
+        "value": -14000000,
         "unit": "USD"
       },
       {
@@ -122,19 +122,19 @@
       {
         "concept": "us-gaap:RepaymentsOfLongTermDebt",
         "label": "repayments of long-term debt",
-        "value": 285000000,
+        "value": -285000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsOfDividendsCommonStock",
         "label": "dividends paid - common",
-        "value": 63000000,
+        "value": -63000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
         "label": "tax withholding on stock awards",
-        "value": 15000000,
+        "value": -15000000,
         "unit": "USD"
       },
       {
@@ -146,7 +146,7 @@
       {
         "concept": "us-gaap:PaymentsOfDividendsMinorityInterest",
         "label": "dividends to noncontrolling interests",
-        "value": 49000000,
+        "value": -49000000,
         "unit": "USD"
       },
       {
@@ -164,7 +164,7 @@
       {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 411000000,
+        "value": -411000000,
         "unit": "USD"
       },
       {
@@ -176,7 +176,7 @@
       {
         "concept": "us-gaap:PaymentsToAcquireInvestments",
         "label": "purchases of investments",
-        "value": 30000000,
+        "value": -30000000,
         "unit": "USD"
       },
       {

@@ -23,9 +23,21 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:AmortizationOfFinancingCostsAndDiscounts",
+        "label": "amortization of financing costs",
+        "value": 3529000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:DeferredIncomeTaxExpenseBenefit",
         "label": "deferred income taxes",
         "value": -588000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProvisionForDoubtfulAccounts",
+        "label": "provision for credit losses",
+        "value": 9527000,
         "unit": "USD"
       },
       {
@@ -38,6 +50,12 @@
         "concept": "us-gaap:IncreaseDecreaseInAccountsReceivable",
         "label": "change in accounts receivable",
         "value": 60451000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInContractWithCustomerAsset",
+        "label": "change in contract assets",
+        "value": 3397000,
         "unit": "USD"
       },
       {
@@ -79,7 +97,25 @@
       {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 83580000,
+        "value": -83580000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToAcquireIntangibleAssets",
+        "label": "purchases of intangible assets",
+        "value": -16637000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToAcquireAvailableForSaleSecuritiesDebt",
+        "label": "purchases of investments",
+        "value": -1293014000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromMaturitiesPrepaymentsAndCallsOfAvailableForSaleSecurities",
+        "label": "maturities of investments",
+        "value": 1288364000,
         "unit": "USD"
       },
       {
@@ -103,13 +139,19 @@
       {
         "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
         "label": "repurchase of common stock",
-        "value": 34000,
+        "value": -34000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromIssuanceOfCommonStock",
+        "label": "proceeds from issuance of common stock",
+        "value": 10450000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
         "label": "tax withholding on stock awards",
-        "value": 5643000,
+        "value": -5643000,
         "unit": "USD"
       },
       {

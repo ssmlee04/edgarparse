@@ -164,10 +164,11 @@ export default class XBRLStatementProcessor {
             if (seen.has(raw.concept)) continue;
             seen.add(raw.concept);
 
+            const value = entry.negate ? -raw.value : raw.value;
             facts.push({
                 concept: raw.concept,
                 label: entry.label,
-                value: entry.negate ? -raw.value : raw.value,
+                value: value || 0, // normalize -0 → 0
                 unit: 'USD',
             });
         }

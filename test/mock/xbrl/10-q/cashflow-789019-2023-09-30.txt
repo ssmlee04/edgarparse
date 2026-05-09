@@ -29,6 +29,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:IncreaseDecreaseInOtherCurrentAssets",
+        "label": "change in other current assets",
+        "value": 796000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:IncreaseDecreaseInOtherNoncurrentAssets",
         "label": "change in other non-current assets",
         "value": 2013000000,
@@ -47,6 +53,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:IncreaseDecreaseInOtherCurrentLiabilities",
+        "label": "change in other current liabilities",
+        "value": -4106000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:IncreaseDecreaseInOtherNoncurrentLiabilities",
         "label": "change in other non-current liabilities",
         "value": 291000000,
@@ -59,15 +71,21 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ProceedsFromIssuanceOfCommonStock",
+        "label": "proceeds from issuance of common stock",
+        "value": 685000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
         "label": "repurchase of common stock",
-        "value": 4831000000,
+        "value": -4831000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsOfDividendsCommonStock",
         "label": "dividends paid - common",
-        "value": 5051000000,
+        "value": -5051000000,
         "unit": "USD"
       },
       {
@@ -85,13 +103,19 @@
       {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 9917000000,
+        "value": -9917000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsToAcquireInvestments",
         "label": "purchases of investments",
-        "value": 8460000000,
+        "value": -8460000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromMaturitiesPrepaymentsAndCallsOfAvailableForSaleSecurities",
+        "label": "maturities of investments",
+        "value": 15718000000,
         "unit": "USD"
       },
       {
@@ -113,9 +137,21 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:EquitySecuritiesFvNiUnrealizedGainLoss",
+        "label": "unrealized gain (loss) on equity securities",
+        "value": -123000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:FinanceLeasePrincipalPayments",
+        "label": "finance lease principal payments",
+        "value": -285000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
         "label": "tax withholding on stock awards",
-        "value": 1300000000,
+        "value": -1300000000,
         "unit": "USD"
       }
     ]

@@ -56,7 +56,7 @@
       {
         "concept": "us-gaap:PensionContributions",
         "label": "pension contributions",
-        "value": 44000000,
+        "value": -44000000,
         "unit": "USD"
       },
       {
@@ -68,13 +68,13 @@
       {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 2237000000,
+        "value": -2237000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsToAcquireBusinessesNetOfCashAcquired",
         "label": "acquisitions, net of cash",
-        "value": 110000000,
+        "value": -110000000,
         "unit": "USD"
       },
       {
@@ -92,19 +92,25 @@
       {
         "concept": "us-gaap:RepaymentsOfLongTermDebt",
         "label": "repayments of long-term debt",
-        "value": 1725000000,
+        "value": -1725000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromIssuanceOfCommonStock",
+        "label": "proceeds from issuance of common stock",
+        "value": 24000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
         "label": "repurchase of common stock",
-        "value": 4478000000,
+        "value": -4478000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsOfDividendsCommonStock",
         "label": "dividends paid - common",
-        "value": 1758000000,
+        "value": -1758000000,
         "unit": "USD"
       },
       {
@@ -129,6 +135,12 @@
         "concept": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
         "label": "net change in cash",
         "value": 933000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProvisionForDoubtfulAccounts",
+        "label": "provision for credit losses",
+        "value": 112000000,
         "unit": "USD"
       }
     ]

@@ -67,7 +67,13 @@
       {
         "concept": "us-gaap:RepaymentsOfShortTermDebt",
         "label": "repayments of short-term debt",
-        "value": 8095000000,
+        "value": -8095000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:FinanceLeasePrincipalPayments",
+        "label": "finance lease principal payments",
+        "value": -1005000000,
         "unit": "USD"
       },
       {
@@ -152,13 +158,19 @@
       {
         "concept": "us-gaap:RepaymentsOfShortTermDebt",
         "label": "repayments of short-term debt",
-        "value": 19339000000,
+        "value": -19339000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:RepaymentsOfLongTermDebt",
         "label": "repayments of long-term debt",
-        "value": 3386000000,
+        "value": -3386000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:FinanceLeasePrincipalPayments",
+        "label": "finance lease principal payments",
+        "value": -3605000000,
         "unit": "USD"
       },
       {
@@ -171,6 +183,12 @@
         "concept": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
         "label": "net change in cash",
         "value": -4172000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:AssetImpairmentCharges",
+        "label": "asset impairment charges",
+        "value": 420000000,
         "unit": "USD"
       }
     ]

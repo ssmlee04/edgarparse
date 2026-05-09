@@ -29,6 +29,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:AssetImpairmentCharges",
+        "label": "asset impairment charges",
+        "value": 12000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:OtherNoncashIncomeExpense",
         "label": "other non-cash items",
         "value": 21000000,
@@ -41,6 +47,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:IncreaseDecreaseInContractWithCustomerAsset",
+        "label": "change in contract assets",
+        "value": 547000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:IncreaseDecreaseInContractWithCustomerLiability",
         "label": "change in deferred revenue",
         "value": 2963000000,
@@ -50,6 +62,12 @@
         "concept": "us-gaap:IncreaseDecreaseInInventories",
         "label": "change in inventories",
         "value": 940000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInOtherCurrentAssets",
+        "label": "change in other current assets",
+        "value": -707000000,
         "unit": "USD"
       },
       {
@@ -73,7 +91,7 @@
       {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 1096000000,
+        "value": -1096000000,
         "unit": "USD"
       },
       {
@@ -85,13 +103,13 @@
       {
         "concept": "us-gaap:PaymentsToAcquireBusinessesNetOfCashAcquired",
         "label": "acquisitions, net of cash",
-        "value": 19000000,
+        "value": -19000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsToAcquireInvestments",
         "label": "purchases of investments",
-        "value": 14485000000,
+        "value": -14485000000,
         "unit": "USD"
       },
       {
@@ -121,7 +139,7 @@
       {
         "concept": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
         "label": "tax withholding on stock awards",
-        "value": 52000000,
+        "value": -52000000,
         "unit": "USD"
       },
       {
@@ -146,6 +164,12 @@
         "concept": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
         "label": "net change in cash",
         "value": -7815000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProvisionForDoubtfulAccounts",
+        "label": "provision for credit losses",
+        "value": 8000000,
         "unit": "USD"
       }
     ]

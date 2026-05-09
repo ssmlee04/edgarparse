@@ -23,6 +23,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:AmortizationOfFinancingCosts",
+        "label": "amortization of financing costs",
+        "value": 982000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:IncreaseDecreaseInAccountsReceivable",
         "label": "change in accounts receivable",
         "value": -93174000,
@@ -47,6 +53,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:IncreaseDecreaseInOperatingLeaseLiability",
+        "label": "change in operating lease liabilities",
+        "value": -46837000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:IncreaseDecreaseInDeferredRevenue",
         "label": "change in deferred revenue",
         "value": 360098000,
@@ -61,19 +73,25 @@
       {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 255470000,
+        "value": -255470000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsToAcquireBusinessesNetOfCashAcquired",
         "label": "acquisitions, net of cash",
-        "value": 3859000,
+        "value": -3859000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToAcquireIntangibleAssets",
+        "label": "purchases of intangible assets",
+        "value": -13500000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsToAcquireInvestments",
         "label": "purchases of investments",
-        "value": 3803911000,
+        "value": -3803911000,
         "unit": "USD"
       },
       {
@@ -86,6 +104,12 @@
         "concept": "us-gaap:NetCashProvidedByUsedInInvestingActivities",
         "label": "net cash from investing activities",
         "value": -2773964000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromIssuanceOfCommonStock",
+        "label": "proceeds from issuance of common stock",
+        "value": 47316000,
         "unit": "USD"
       },
       {

@@ -60,6 +60,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:IncreaseDecreaseInEmployeeRelatedLiabilities",
+        "label": "change in accrued compensation",
+        "value": 12099000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:IncreaseDecreaseInDeferredRevenue",
         "label": "change in deferred revenue",
         "value": 18580000,
@@ -72,9 +78,27 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:PaymentsToAcquireAvailableForSaleSecuritiesDebt",
+        "label": "purchases of investments",
+        "value": -214516000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromMaturitiesPrepaymentsAndCallsOfAvailableForSaleSecurities",
+        "label": "maturities of investments",
+        "value": 194617000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 130024000,
+        "value": -130024000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToAcquireIntangibleAssets",
+        "label": "purchases of intangible assets",
+        "value": -10600000,
         "unit": "USD"
       },
       {
@@ -105,6 +129,12 @@
         "concept": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect",
         "label": "net change in cash (excl. fx)",
         "value": -239695000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromSaleAndMaturityOfAvailableForSaleSecurities",
+        "label": "proceeds from investments",
+        "value": 2807000,
         "unit": "USD"
       }
     ]

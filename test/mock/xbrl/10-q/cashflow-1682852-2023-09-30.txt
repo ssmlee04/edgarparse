@@ -5,6 +5,12 @@
     "months": 4,
     "facts": [
       {
+        "concept": "us-gaap:InventoryWriteDown",
+        "label": "inventory write-down",
+        "value": 1300000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:DepreciationDepletionAndAmortization",
         "label": "depreciation, depletion and amortization",
         "value": 246000000,
@@ -72,21 +78,39 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:IncreaseDecreaseInOperatingLeaseLiability",
+        "label": "change in operating lease liabilities",
+        "value": 605000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
         "label": "net cash from operating activities",
         "value": -3740000000,
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:PaymentsToAcquireAvailableForSaleSecuritiesDebt",
+        "label": "purchases of investments",
+        "value": -2097000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromMaturitiesPrepaymentsAndCallsOfAvailableForSaleSecurities",
+        "label": "maturities of investments",
+        "value": 4711000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 487000000,
+        "value": -487000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsToAcquireBusinessesNetOfCashAcquired",
         "label": "acquisitions, net of cash",
-        "value": 85000000,
+        "value": -85000000,
         "unit": "USD"
       },
       {
@@ -98,7 +122,7 @@
       {
         "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
         "label": "repurchase of common stock",
-        "value": 1153000000,
+        "value": -1153000000,
         "unit": "USD"
       },
       {
@@ -111,6 +135,12 @@
         "concept": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
         "label": "net change in cash",
         "value": -264000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InventoryWriteDown",
+        "label": "inventory write-down",
+        "value": 1900000000,
         "unit": "USD"
       },
       {

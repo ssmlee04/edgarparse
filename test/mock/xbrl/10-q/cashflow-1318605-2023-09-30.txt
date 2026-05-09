@@ -17,6 +17,18 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:InventoryWriteDown",
+        "label": "inventory write-down",
+        "value": 361000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ForeignCurrencyTransactionGainLossUnrealized",
+        "label": "unrealized foreign currency gain (loss)",
+        "value": 317000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:IncreaseDecreaseInAccountsReceivable",
         "label": "change in accounts receivable",
         "value": -377000000,
@@ -61,13 +73,13 @@
       {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 6592000000,
+        "value": -6592000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsToAcquireInvestments",
         "label": "purchases of investments",
-        "value": 13221000000,
+        "value": -13221000000,
         "unit": "USD"
       },
       {
@@ -79,13 +91,31 @@
       {
         "concept": "us-gaap:PaymentsToAcquireBusinessesNetOfCashAcquired",
         "label": "acquisitions, net of cash",
-        "value": 64000000,
+        "value": -64000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:NetCashProvidedByUsedInInvestingActivities",
         "label": "net cash from investing activities",
         "value": -10780000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:FinanceLeasePrincipalPayments",
+        "label": "finance lease principal payments",
+        "value": -340000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsOfDebtIssuanceCosts",
+        "label": "debt issuance costs paid",
+        "value": -23000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToMinorityShareholders",
+        "label": "payments to noncontrolling interests",
+        "value": -105000000,
         "unit": "USD"
       },
       {

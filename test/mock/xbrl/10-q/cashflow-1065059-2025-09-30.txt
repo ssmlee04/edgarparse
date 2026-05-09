@@ -3,7 +3,20 @@
     "startDate": "2025-07-01",
     "endDate": "2025-09-30",
     "months": 4,
-    "facts": []
+    "facts": [
+      {
+        "concept": "us-gaap:ForeignCurrencyTransactionGainLossUnrealized",
+        "label": "unrealized foreign currency gain (loss)",
+        "value": -100000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:AmortizationOfFinancingCosts",
+        "label": "amortization of financing costs",
+        "value": 900000,
+        "unit": "USD"
+      }
+    ]
   },
   "ytd": {
     "startDate": "2025-01-01",
@@ -43,7 +56,7 @@
       {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 10100000,
+        "value": -10100000,
         "unit": "USD"
       },
       {
@@ -53,9 +66,15 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ProceedsFromIssuanceOfCommonStock",
+        "label": "proceeds from issuance of common stock",
+        "value": 139700000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
         "label": "tax withholding on stock awards",
-        "value": 2900000,
+        "value": -2900000,
         "unit": "USD"
       },
       {
@@ -80,6 +99,18 @@
         "concept": "us-gaap:IncreaseDecreaseInDeferredRevenue",
         "label": "change in deferred revenue",
         "value": -28800000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ForeignCurrencyTransactionGainLossUnrealized",
+        "label": "unrealized foreign currency gain (loss)",
+        "value": 100000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:AmortizationOfFinancingCosts",
+        "label": "amortization of financing costs",
+        "value": 2000000,
         "unit": "USD"
       }
     ]

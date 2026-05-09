@@ -3,7 +3,14 @@
     "startDate": "2019-07-01",
     "endDate": "2019-09-30",
     "months": 4,
-    "facts": []
+    "facts": [
+      {
+        "concept": "us-gaap:ProvisionForDoubtfulAccounts",
+        "label": "provision for credit losses",
+        "value": 400000,
+        "unit": "USD"
+      }
+    ]
   },
   "ytd": {
     "startDate": "2019-01-01",
@@ -23,6 +30,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ProvisionForDoubtfulAccounts",
+        "label": "provision for credit losses",
+        "value": 861000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:OtherNoncashIncomeExpense",
         "label": "other non-cash items",
         "value": -27000,
@@ -32,6 +45,12 @@
         "concept": "us-gaap:IncreaseDecreaseInAccountsReceivable",
         "label": "change in accounts receivable",
         "value": 7911000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInContractWithCustomerAsset",
+        "label": "change in contract assets",
+        "value": -82000,
         "unit": "USD"
       },
       {
@@ -73,7 +92,25 @@
       {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 30981000,
+        "value": -30981000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToAcquireIntangibleAssets",
+        "label": "purchases of intangible assets",
+        "value": -11332000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToAcquireAvailableForSaleSecuritiesDebt",
+        "label": "purchases of investments",
+        "value": -157075000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromMaturitiesPrepaymentsAndCallsOfAvailableForSaleSecurities",
+        "label": "maturities of investments",
+        "value": 132398000,
         "unit": "USD"
       },
       {
@@ -97,13 +134,13 @@
       {
         "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
         "label": "repurchase of common stock",
-        "value": 155000,
+        "value": -155000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:RepaymentsOfLongTermDebt",
         "label": "repayments of long-term debt",
-        "value": 218000,
+        "value": -218000,
         "unit": "USD"
       },
       {

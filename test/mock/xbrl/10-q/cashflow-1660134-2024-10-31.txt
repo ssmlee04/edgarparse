@@ -41,6 +41,18 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:IncreaseDecreaseInEmployeeRelatedLiabilities",
+        "label": "change in accrued compensation",
+        "value": -21000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInOperatingLeaseLiability",
+        "label": "change in operating lease liabilities",
+        "value": -26000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:IncreaseDecreaseInContractWithCustomerLiability",
         "label": "change in deferred revenue",
         "value": -70000000,
@@ -55,13 +67,25 @@
       {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 7000000,
+        "value": -7000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToAcquireAvailableForSaleSecuritiesDebt",
+        "label": "purchases of investments",
+        "value": -1253000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromMaturitiesPrepaymentsAndCallsOfAvailableForSaleSecurities",
+        "label": "maturities of investments",
+        "value": 1187000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsToAcquireBusinessesNetOfCashAcquired",
         "label": "acquisitions, net of cash",
-        "value": 56000000,
+        "value": -56000000,
         "unit": "USD"
       },
       {
@@ -73,7 +97,7 @@
       {
         "concept": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
         "label": "tax withholding on stock awards",
-        "value": 113000000,
+        "value": -113000000,
         "unit": "USD"
       },
       {

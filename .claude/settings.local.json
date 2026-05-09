@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Skill(update-config)"
+      "Skill(update-config)",
+      "Skill(gstack)",
+      "Bash(kill 24796)"
     ]
   }
 }

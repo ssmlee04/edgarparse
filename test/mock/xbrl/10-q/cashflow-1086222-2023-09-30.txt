@@ -29,6 +29,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:AmortizationOfFinancingCosts",
+        "label": "amortization of financing costs",
+        "value": 3600000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:OtherNoncashIncomeExpense",
         "label": "other non-cash items",
         "value": -45202000,
@@ -53,6 +59,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:IncreaseDecreaseInOtherCurrentLiabilities",
+        "label": "change in other current liabilities",
+        "value": 2290000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
         "label": "net cash from operating activities",
         "value": 959246000,
@@ -61,13 +73,25 @@
       {
         "concept": "us-gaap:PaymentsToAcquireBusinessesNetOfCashAcquired",
         "label": "acquisitions, net of cash",
-        "value": 106171000,
+        "value": -106171000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 387505000,
+        "value": -387505000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToAcquireAvailableForSaleSecuritiesDebt",
+        "label": "purchases of investments",
+        "value": -1569837000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromMaturitiesPrepaymentsAndCallsOfAvailableForSaleSecurities",
+        "label": "maturities of investments",
+        "value": 582641000,
         "unit": "USD"
       },
       {
@@ -91,13 +115,13 @@
       {
         "concept": "us-gaap:RepaymentsOfLinesOfCredit",
         "label": "repayments of revolving credit",
-        "value": 90000000,
+        "value": -90000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
         "label": "repurchase of common stock",
-        "value": 599155000,
+        "value": -599155000,
         "unit": "USD"
       },
       {
@@ -122,6 +146,12 @@
         "concept": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
         "label": "net change in cash",
         "value": -80732000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProvisionForDoubtfulAccounts",
+        "label": "provision for credit losses",
+        "value": 10209000,
         "unit": "USD"
       }
     ]

@@ -68,7 +68,13 @@
       {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 2267000,
+        "value": -2267000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromSaleOfProductiveAssets",
+        "label": "proceeds from asset sales",
+        "value": 100000,
         "unit": "USD"
       },
       {
@@ -86,7 +92,7 @@
       {
         "concept": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
         "label": "tax withholding on stock awards",
-        "value": 11482000,
+        "value": -11482000,
         "unit": "USD"
       },
       {

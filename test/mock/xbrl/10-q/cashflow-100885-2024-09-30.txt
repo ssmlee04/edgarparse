@@ -30,6 +30,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:IncreaseDecreaseInOtherCurrentAssets",
+        "label": "change in other current assets",
+        "value": 92000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:IncreaseDecreaseInAccruedTaxesPayable",
         "label": "change in accrued taxes",
         "value": 51000000,
@@ -44,7 +50,7 @@
       {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 2530000000,
+        "value": -2530000000,
         "unit": "USD"
       },
       {
@@ -62,13 +68,13 @@
       {
         "concept": "us-gaap:PaymentsOfDividends",
         "label": "dividends paid",
-        "value": 2403000000,
+        "value": -2403000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
         "label": "repurchase of common stock",
-        "value": 831000000,
+        "value": -831000000,
         "unit": "USD"
       },
       {

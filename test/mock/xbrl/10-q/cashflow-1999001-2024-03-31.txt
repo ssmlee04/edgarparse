@@ -41,6 +41,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:IncreaseDecreaseInIncomeTaxesReceivable",
+        "label": "change in income taxes receivable",
+        "value": 30325000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
         "label": "net cash from operating activities",
         "value": -110610000,
@@ -61,7 +67,7 @@
       {
         "concept": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
         "label": "tax withholding on stock awards",
-        "value": 4653000,
+        "value": -4653000,
         "unit": "USD"
       },
       {

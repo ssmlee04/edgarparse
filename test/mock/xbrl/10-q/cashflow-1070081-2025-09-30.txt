@@ -3,7 +3,20 @@
     "startDate": "2025-07-01",
     "endDate": "2025-09-30",
     "months": 4,
-    "facts": []
+    "facts": [
+      {
+        "concept": "us-gaap:InventoryWriteDown",
+        "label": "inventory write-down",
+        "value": 500000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProvisionForDoubtfulAccounts",
+        "label": "provision for credit losses",
+        "value": 800000,
+        "unit": "USD"
+      }
+    ]
   },
   "ytd": {
     "startDate": "2025-01-01",
@@ -17,15 +30,33 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:EquitySecuritiesFvNiUnrealizedGainLoss",
+        "label": "unrealized gain (loss) on equity securities",
+        "value": 3160000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:DeferredIncomeTaxExpenseBenefit",
         "label": "deferred income taxes",
         "value": -4000,
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:AmortizationOfFinancingCosts",
+        "label": "amortization of financing costs",
+        "value": 906000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:ShareBasedCompensation",
         "label": "stock-based compensation",
         "value": 56029000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ForeignCurrencyTransactionGainLossUnrealized",
+        "label": "unrealized foreign currency gain (loss)",
+        "value": -4768000,
         "unit": "USD"
       },
       {
@@ -61,13 +92,25 @@
       {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 6486000,
+        "value": -6486000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:ProceedsFromSaleOfPropertyPlantAndEquipment",
         "label": "proceeds from asset sales",
         "value": 70000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToAcquireAvailableForSaleSecuritiesDebt",
+        "label": "purchases of investments",
+        "value": -1051267000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToAcquireIntangibleAssets",
+        "label": "purchases of intangible assets",
+        "value": -256235000,
         "unit": "USD"
       },
       {
@@ -92,6 +135,24 @@
         "concept": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
         "label": "net change in cash",
         "value": -109016000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InventoryWriteDown",
+        "label": "inventory write-down",
+        "value": 4800000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProvisionForDoubtfulAccounts",
+        "label": "provision for credit losses",
+        "value": 8600000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:FinanceLeasePrincipalPayments",
+        "label": "finance lease principal payments",
+        "value": -1611000,
         "unit": "USD"
       }
     ]

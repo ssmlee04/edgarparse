@@ -3,13 +3,26 @@
     "startDate": "2023-07-01",
     "endDate": "2023-09-30",
     "months": 4,
-    "facts": []
+    "facts": [
+      {
+        "concept": "us-gaap:ProvisionForDoubtfulAccounts",
+        "label": "provision for credit losses",
+        "value": 277000000,
+        "unit": "USD"
+      }
+    ]
   },
   "ytd": {
     "startDate": "2023-01-01",
     "endDate": "2023-09-30",
     "months": 10,
     "facts": [
+      {
+        "concept": "us-gaap:ProvisionForDoubtfulAccounts",
+        "label": "provision for credit losses",
+        "value": 751000000,
+        "unit": "USD"
+      },
       {
         "concept": "us-gaap:DepreciationAndAmortization",
         "label": "depreciation and amortization",
@@ -37,7 +50,7 @@
       {
         "concept": "us-gaap:PaymentsToAcquireInvestments",
         "label": "purchases of investments",
-        "value": 15540000000,
+        "value": -15540000000,
         "unit": "USD"
       },
       {
@@ -49,7 +62,7 @@
       {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 329000000,
+        "value": -329000000,
         "unit": "USD"
       },
       {
@@ -59,9 +72,15 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:FinanceLeasePrincipalPayments",
+        "label": "finance lease principal payments",
+        "value": -21000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
         "label": "repurchase of common stock",
-        "value": 356000000,
+        "value": -356000000,
         "unit": "USD"
       },
       {

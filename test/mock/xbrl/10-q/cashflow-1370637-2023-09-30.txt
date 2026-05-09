@@ -11,6 +11,12 @@
     "months": 10,
     "facts": [
       {
+        "concept": "us-gaap:AssetImpairmentCharges",
+        "label": "asset impairment charges",
+        "value": 68091000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:ShareBasedCompensation",
         "label": "stock-based compensation",
         "value": 216082000,
@@ -20,6 +26,18 @@
         "concept": "us-gaap:DepreciationDepletionAndAmortization",
         "label": "depreciation, depletion and amortization",
         "value": 68290000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProvisionForDoubtfulAccounts",
+        "label": "provision for credit losses",
+        "value": 14390000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ForeignCurrencyTransactionGainLossUnrealized",
+        "label": "unrealized foreign currency gain (loss)",
+        "value": 4113000,
         "unit": "USD"
       },
       {
@@ -35,15 +53,21 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:PaymentsToAcquireIntangibleAssets",
+        "label": "purchases of intangible assets",
+        "value": -12000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 7740000,
+        "value": -7740000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsToAcquireInvestments",
         "label": "purchases of investments",
-        "value": 288226000,
+        "value": -288226000,
         "unit": "USD"
       },
       {
@@ -61,19 +85,31 @@
       {
         "concept": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
         "label": "tax withholding on stock awards",
-        "value": 58008000,
+        "value": -58008000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
         "label": "repurchase of common stock",
-        "value": 483987000,
+        "value": -483987000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:ProceedsFromStockOptionsExercised",
         "label": "proceeds from stock option exercises",
         "value": 8448000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsOfDebtIssuanceCosts",
+        "label": "debt issuance costs paid",
+        "value": -2215000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:FinanceLeasePrincipalPayments",
+        "label": "finance lease principal payments",
+        "value": -4723000,
         "unit": "USD"
       },
       {

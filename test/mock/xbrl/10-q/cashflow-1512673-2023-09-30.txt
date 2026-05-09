@@ -35,9 +35,21 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:PaymentsToAcquireAvailableForSaleSecuritiesDebt",
+        "label": "purchases of investments",
+        "value": -934904000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromMaturitiesPrepaymentsAndCallsOfAvailableForSaleSecurities",
+        "label": "maturities of investments",
+        "value": 994740000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 99457000,
+        "value": -99457000,
         "unit": "USD"
       },
       {
@@ -49,7 +61,7 @@
       {
         "concept": "us-gaap:RepaymentsOfLinesOfCredit",
         "label": "repayments of revolving credit",
-        "value": 16840000,
+        "value": -16840000,
         "unit": "USD"
       },
       {

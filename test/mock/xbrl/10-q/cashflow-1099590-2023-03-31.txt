@@ -5,6 +5,12 @@
     "months": 4,
     "facts": [
       {
+        "concept": "us-gaap:ProvisionForDoubtfulAccounts",
+        "label": "provision for credit losses",
+        "value": 252000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:DepreciationAndAmortization",
         "label": "depreciation and amortization",
         "value": 126000000,
@@ -31,7 +37,7 @@
       {
         "concept": "us-gaap:PaymentsToAcquireInvestments",
         "label": "purchases of investments",
-        "value": 5124000000,
+        "value": -5124000000,
         "unit": "USD"
       },
       {
@@ -43,7 +49,7 @@
       {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 89000000,
+        "value": -89000000,
         "unit": "USD"
       },
       {
@@ -53,9 +59,15 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:FinanceLeasePrincipalPayments",
+        "label": "finance lease principal payments",
+        "value": -6000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
         "label": "repurchase of common stock",
-        "value": 61000000,
+        "value": -61000000,
         "unit": "USD"
       },
       {

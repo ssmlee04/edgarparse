@@ -7,7 +7,7 @@
       {
         "concept": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
         "label": "tax withholding on stock awards",
-        "value": 10310000,
+        "value": -10310000,
         "unit": "USD"
       }
     ]
@@ -17,6 +17,12 @@
     "endDate": "2023-10-28",
     "months": 10,
     "facts": [
+      {
+        "concept": "us-gaap:AssetImpairmentCharges",
+        "label": "asset impairment charges",
+        "value": 4436000,
+        "unit": "USD"
+      },
       {
         "concept": "us-gaap:DepreciationAndAmortization",
         "label": "depreciation and amortization",
@@ -44,7 +50,7 @@
       {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 128601000,
+        "value": -128601000,
         "unit": "USD"
       },
       {
@@ -57,6 +63,12 @@
         "concept": "us-gaap:NetCashProvidedByUsedInInvestingActivities",
         "label": "net cash from investing activities",
         "value": -127986000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsOfDebtIssuanceCosts",
+        "label": "debt issuance costs paid",
+        "value": -180000,
         "unit": "USD"
       },
       {
@@ -86,7 +98,7 @@
       {
         "concept": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
         "label": "tax withholding on stock awards",
-        "value": 29079000,
+        "value": -29079000,
         "unit": "USD"
       }
     ]

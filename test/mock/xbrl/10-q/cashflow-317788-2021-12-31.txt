@@ -3,7 +3,20 @@
     "startDate": "2021-10-01",
     "endDate": "2021-12-31",
     "months": 4,
-    "facts": []
+    "facts": [
+      {
+        "concept": "us-gaap:ProvisionForDoubtfulAccounts",
+        "label": "provision for credit losses",
+        "value": 512000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:AmortizationOfFinancingCosts",
+        "label": "amortization of financing costs",
+        "value": 190000,
+        "unit": "USD"
+      }
+    ]
   },
   "ytd": {
     "startDate": "2021-04-01",
@@ -53,6 +66,18 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:IncreaseDecreaseInEmployeeRelatedLiabilities",
+        "label": "change in accrued compensation",
+        "value": -33506000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInOtherCurrentLiabilities",
+        "label": "change in other current liabilities",
+        "value": 1114000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:IncreaseDecreaseInOtherNoncurrentLiabilities",
         "label": "change in other non-current liabilities",
         "value": -1177000,
@@ -67,13 +92,19 @@
       {
         "concept": "us-gaap:PaymentsToAcquireBusinessesNetOfCashAcquired",
         "label": "acquisitions, net of cash",
-        "value": 148192000,
+        "value": -148192000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:NetCashProvidedByUsedInInvestingActivities",
         "label": "net cash from investing activities",
         "value": -163884000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsOfDebtIssuanceCosts",
+        "label": "debt issuance costs paid",
+        "value": -4044000,
         "unit": "USD"
       },
       {
@@ -85,13 +116,13 @@
       {
         "concept": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
         "label": "tax withholding on stock awards",
-        "value": 7587000,
+        "value": -7587000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:RepaymentsOfLongTermDebt",
         "label": "repayments of long-term debt",
-        "value": 52623000,
+        "value": -52623000,
         "unit": "USD"
       },
       {
@@ -104,6 +135,18 @@
         "concept": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
         "label": "net change in cash",
         "value": 84322000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProvisionForDoubtfulAccounts",
+        "label": "provision for credit losses",
+        "value": 693000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:AmortizationOfFinancingCosts",
+        "label": "amortization of financing costs",
+        "value": 500000,
         "unit": "USD"
       }
     ]

@@ -5,6 +5,12 @@
     "months": 4,
     "facts": [
       {
+        "concept": "us-gaap:InventoryWriteDown",
+        "label": "inventory write-down",
+        "value": 1807000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:DepreciationDepletionAndAmortization",
         "label": "depreciation, depletion and amortization",
         "value": 2023000,
@@ -18,9 +24,21 @@
     "months": 10,
     "facts": [
       {
+        "concept": "us-gaap:IncreaseDecreaseInOperatingLeaseLiability",
+        "label": "change in operating lease liabilities",
+        "value": 2639000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:DepreciationAndAmortization",
         "label": "depreciation and amortization",
         "value": 6021000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProvisionForDoubtfulAccounts",
+        "label": "provision for credit losses",
+        "value": 1642000,
         "unit": "USD"
       },
       {
@@ -80,7 +98,13 @@
       {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": 49535000,
+        "value": -49535000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToAcquireIntangibleAssets",
+        "label": "purchases of intangible assets",
+        "value": -1611000,
         "unit": "USD"
       },
       {
@@ -98,7 +122,7 @@
       {
         "concept": "us-gaap:RepaymentsOfShortTermDebt",
         "label": "repayments of short-term debt",
-        "value": 49730000,
+        "value": -49730000,
         "unit": "USD"
       },
       {
@@ -110,7 +134,7 @@
       {
         "concept": "us-gaap:PaymentsOfDividends",
         "label": "dividends paid",
-        "value": 3951000,
+        "value": -3951000,
         "unit": "USD"
       },
       {
@@ -135,6 +159,12 @@
         "concept": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
         "label": "net change in cash",
         "value": -40790000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InventoryWriteDown",
+        "label": "inventory write-down",
+        "value": 5031000,
         "unit": "USD"
       },
       {

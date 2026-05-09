@@ -55,13 +55,13 @@
       {
         "concept": "us-gaap:PaymentsOfDividendsCommonStock",
         "label": "dividends paid - common",
-        "value": 2522000000,
+        "value": -2522000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
         "label": "repurchase of common stock",
-        "value": 276000000,
+        "value": -276000000,
         "unit": "USD"
       },
       {
@@ -73,7 +73,7 @@
       {
         "concept": "us-gaap:RepaymentsOfLongTermDebt",
         "label": "repayments of long-term debt",
-        "value": 35563000000,
+        "value": -35563000000,
         "unit": "USD"
       },
       {

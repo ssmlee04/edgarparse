@@ -30,6 +30,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:AmortizationOfFinancingCosts",
+        "label": "amortization of financing costs",
+        "value": 3938000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:OtherOperatingActivitiesCashFlowStatement",
         "label": "other operating activities",
         "value": 143000,
@@ -39,6 +45,18 @@
         "concept": "us-gaap:IncreaseDecreaseInAccountsReceivable",
         "label": "change in accounts receivable",
         "value": -373000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInIncomeTaxesReceivable",
+        "label": "change in income taxes receivable",
+        "value": 1896000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInOtherCurrentAssets",
+        "label": "change in other current assets",
+        "value": 360000,
         "unit": "USD"
       },
       {
@@ -74,19 +92,19 @@
       {
         "concept": "us-gaap:PaymentsOfDividendsCommonStock",
         "label": "dividends paid - common",
-        "value": 331820000,
+        "value": -331820000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsOfDividendsPreferredStockAndPreferenceStock",
         "label": "dividends paid - preferred",
-        "value": 413000,
+        "value": -413000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
         "label": "repurchase of common stock",
-        "value": 86669000,
+        "value": -86669000,
         "unit": "USD"
       },
       {
@@ -98,13 +116,13 @@
       {
         "concept": "us-gaap:RepaymentsOfLinesOfCredit",
         "label": "repayments of revolving credit",
-        "value": 1494200000,
+        "value": -1494200000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
         "label": "tax withholding on stock awards",
-        "value": 27089000,
+        "value": -27089000,
         "unit": "USD"
       },
       {
