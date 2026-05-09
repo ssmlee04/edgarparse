@@ -1,0 +1,8 @@
+{
+  "quarterly": {
+    "startDate": "2023-05-01",
+    "endDate": "2023-07-30",
+    "months": 4,
+    "facts": []
+  }
+}

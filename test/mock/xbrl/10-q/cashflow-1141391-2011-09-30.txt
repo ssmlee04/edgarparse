@@ -1,0 +1,14 @@
+{
+  "quarterly": {
+    "startDate": "2011-07-01",
+    "endDate": "2011-09-30",
+    "months": 4,
+    "facts": []
+  },
+  "ytd": {
+    "startDate": "2011-01-01",
+    "endDate": "2011-09-30",
+    "months": 10,
+    "facts": []
+  }
+}

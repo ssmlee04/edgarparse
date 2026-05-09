@@ -1,0 +1,14 @@
+{
+  "quarterly": {
+    "startDate": "2020-07-01",
+    "endDate": "2020-09-30",
+    "months": 4,
+    "facts": []
+  },
+  "ytd": {
+    "startDate": "2020-01-01",
+    "endDate": "2020-09-30",
+    "months": 10,
+    "facts": []
+  }
+}

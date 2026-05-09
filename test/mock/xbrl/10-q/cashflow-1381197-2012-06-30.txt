@@ -1,0 +1,8 @@
+{
+  "quarterly": {
+    "startDate": "2012-04-01",
+    "endDate": "2012-06-30",
+    "months": 4,
+    "facts": []
+  }
+}
