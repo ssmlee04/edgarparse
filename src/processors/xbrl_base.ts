@@ -30,7 +30,7 @@ const camelToWords = (str: string): string =>
 // ── Base Processor ────────────────────────────────────────────────────────────
 
 export default class XBRLStatementProcessor {
-    ticker!: string;
+    cik!: string;
     datestr!: string;
     protected timeframe: string = 'quarterly';
     protected statementType: string = 'xbrl';
@@ -38,8 +38,8 @@ export default class XBRLStatementProcessor {
     private contextMap: Map<string, ContextInfo> = new Map();
     private rawFacts: RawFact[] = [];
 
-    initialize(ticker: string, datestr: string, rawFilingString: string = '') {
-        this.ticker = ticker;
+    initialize(cik: string, datestr: string, rawFilingString: string = '') {
+        this.cik = cik;
         this.datestr = datestr;
         const content = rawFilingString || this.readSourceData();
         this.buildContextMap(content);
@@ -47,7 +47,7 @@ export default class XBRLStatementProcessor {
     }
 
     private readSourceData(): string {
-        const filename = `./data/txt/${this.timeframe}/${this.ticker.toLowerCase()}-${this.datestr}.txt`;
+        const filename = `./data/txt/${this.timeframe}/${this.cik}-${this.datestr}.txt`;
         return fs.readFileSync(filename).toString();
     }
 
@@ -167,7 +167,7 @@ export default class XBRLStatementProcessor {
     private createTestFile(data: any) {
         const dir = `./test/mock/xbrl/${this.timeframe}`;
         fs.mkdirSync(dir, { recursive: true });
-        const filename = `${dir}/${this.statementType}-${this.ticker.toLowerCase()}-${this.datestr}.txt`;
+        const filename = `${dir}/${this.statementType}-${this.cik}-${this.datestr}.txt`;
         fs.writeFileSync(filename, JSON.stringify(data, null, 2));
     }
 }

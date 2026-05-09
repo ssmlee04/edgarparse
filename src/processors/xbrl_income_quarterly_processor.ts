@@ -15,7 +15,7 @@ export default class XBRLIncomeQuarterlyProcessor extends XBRLStatementProcessor
         const q3Meta = this.getPeriodMeta('quarterly');
         const ytdMeta = this.getPeriodMeta('ytd');
 
-        if (!q3Meta) throw new Error(`No quarterly consolidated context found for ${this.ticker} ${this.datestr}`);
+        if (!q3Meta) throw new Error(`No quarterly consolidated context found for ${this.cik} ${this.datestr}`);
 
         const quarterly: PeriodFacts = {
             startDate: q3Meta.startDate,

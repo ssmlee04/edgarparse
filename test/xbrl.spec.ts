@@ -7,16 +7,16 @@ const MOCK_DIR = './test/mock/xbrl/quarterly';
 
 const parseName = (filename: string) => {
     const parts = filename.replace('.txt', '').split('-');
-    return { ticker: parts[1], datestr: parts.slice(2).join('-') };
+    return { cik: parts[1], datestr: parts.slice(2).join('-') };
 };
 
 describe('xbrl income tests', () => {
     const files = fs.readdirSync(MOCK_DIR).filter(f => f.startsWith('income-'));
     files.forEach(filename => {
-        const { ticker, datestr } = parseName(filename);
+        const { cik, datestr } = parseName(filename);
         it(`quarterly income ${filename}`, () => {
             const processor = new XBRLIncomeQuarterlyProcessor();
-            processor.initialize(ticker, datestr);
+            processor.initialize(cik, datestr);
             const result = processor.extract();
             const expected = JSON.parse(fs.readFileSync(`${MOCK_DIR}/${filename}`, 'utf8'));
             expect(result).toEqual(expected);
@@ -27,10 +27,10 @@ describe('xbrl income tests', () => {
 describe('xbrl balance tests', () => {
     const files = fs.readdirSync(MOCK_DIR).filter(f => f.startsWith('balance-'));
     files.forEach(filename => {
-        const { ticker, datestr } = parseName(filename);
+        const { cik, datestr } = parseName(filename);
         it(`quarterly balance ${filename}`, () => {
             const processor = new XBRLBalanceQuarterlyProcessor();
-            processor.initialize(ticker, datestr);
+            processor.initialize(cik, datestr);
             const result = processor.extract();
             const expected = JSON.parse(fs.readFileSync(`${MOCK_DIR}/${filename}`, 'utf8'));
             expect(result).toEqual(expected);
@@ -41,10 +41,10 @@ describe('xbrl balance tests', () => {
 describe('xbrl cashflow tests', () => {
     const files = fs.readdirSync(MOCK_DIR).filter(f => f.startsWith('cashflow-'));
     files.forEach(filename => {
-        const { ticker, datestr } = parseName(filename);
+        const { cik, datestr } = parseName(filename);
         it(`quarterly cashflow ${filename}`, () => {
             const processor = new XBRLCashflowQuarterlyProcessor();
-            processor.initialize(ticker, datestr);
+            processor.initialize(cik, datestr);
             const result = processor.extract();
             const expected = JSON.parse(fs.readFileSync(`${MOCK_DIR}/${filename}`, 'utf8'));
             expect(result).toEqual(expected);

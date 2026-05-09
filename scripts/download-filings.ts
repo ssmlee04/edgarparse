@@ -85,9 +85,9 @@ const main = async () => {
     fs.mkdirSync(OUT_DIR, { recursive: true });
 
     for (const { ticker, cik, period } of FILINGS) {
-        const dest = path.join(OUT_DIR, `${ticker}-${period}.txt`);
+        const dest = path.join(OUT_DIR, `${cik}-${period}.txt`);
         if (fs.existsSync(dest)) {
-            console.log(`skip ${ticker}-${period}.txt (already exists)`);
+            console.log(`skip ${cik}-${period}.txt (already exists)`);
             continue;
         }
         console.log(`\nfetching ${ticker} ${period} ...`);
@@ -95,7 +95,7 @@ const main = async () => {
             const accession = await findAccession(cik, period);
             console.log(`  accession: ${accession}`);
             await sleep(200); // be polite to SEC servers
-            await downloadFiling(cik, accession, ticker, period);
+            await downloadFiling(cik, accession, cik, period);
         } catch (err: any) {
             console.error(`  ERROR: ${err.message}`);
         }

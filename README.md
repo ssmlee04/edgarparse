@@ -22,8 +22,9 @@ import {
 } from 'edgarparse';
 
 // Income statement — quarterly + YTD
+// First arg is the CIK (stable EDGAR company identifier, never changes unlike tickers)
 const income = new XBRLIncomeQuarterlyProcessor();
-income.initialize('msft', '2023-09-30');   // reads data/txt/quarterly/msft-2023-09-30.txt
+income.initialize('789019', '2023-09-30');  // reads data/txt/quarterly/789019-2023-09-30.txt
 const result = income.extract();
 
 result.quarterly.facts.forEach(f => console.log(f.label, f.value));
@@ -34,12 +35,12 @@ result.quarterly.facts.forEach(f => console.log(f.label, f.value));
 
 // Balance sheet
 const balance = new XBRLBalanceQuarterlyProcessor();
-balance.initialize('msft', '2023-09-30');
+balance.initialize('789019', '2023-09-30');
 const { endDate, facts } = balance.extract();
 
 // Cash flow statement — quarterly + YTD
 const cashflow = new XBRLCashflowQuarterlyProcessor();
-cashflow.initialize('msft', '2023-09-30');
+cashflow.initialize('789019', '2023-09-30');
 const cf = cashflow.extract();
 ```
 
@@ -47,7 +48,7 @@ You can also pass the raw filing string directly instead of reading from disk:
 
 ```ts
 const raw = fs.readFileSync('./my-filing.txt', 'utf8');
-processor.initialize('msft', '2023-09-30', raw);
+processor.initialize('789019', '2023-09-30', raw);
 ```
 
 ## Output format
@@ -81,7 +82,7 @@ Facts are returned in document order, which matches the statement layout (revenu
 Raw EDGAR submission files are not committed to this repo (they are large). They should be placed at:
 
 ```
-data/txt/quarterly/{ticker}-{date}.txt
+data/txt/quarterly/{cik}-{date}.txt
 ```
 
 To download the filings needed for the test suite:
@@ -113,8 +114,8 @@ To add a new ticker to the test suite, generate a fixture file then re-run:
 
 ```ts
 const processor = new XBRLIncomeQuarterlyProcessor();
-processor.initialize('aapl', '2023-09-30');
-processor.process(processor.extract(), true); // writes test/mock/xbrl/quarterly/income-aapl-2023-09-30.txt
+processor.initialize('320193', '2023-09-30');  // 320193 = AAPL's CIK
+processor.process(processor.extract(), true);  // writes test/mock/xbrl/quarterly/income-320193-2023-09-30.txt
 ```
 
 ```sh
