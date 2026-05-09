@@ -1,0 +1,7 @@
+data/
+test/
+scripts/
+src/
+*.spec.*
+jest.config.js
+tsconfig.json

@@ -5,7 +5,12 @@
       "Skill(gstack)",
       "Bash(kill 24796)",
       "Bash(npx wrangler *)",
-      "Bash(npx wrangler@3 *)"
+      "Bash(npx wrangler@3 *)",
+      "Bash(npm whoami *)",
+      "Bash(npm view *)",
+      "Bash(npm run *)",
+      "Bash(npm pack *)",
+      "Bash(npm publish *)"
     ]
   }
 }

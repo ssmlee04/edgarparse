@@ -1,22 +1,22 @@
 {
   "name": "edgarparse",
   "version": "0.1.0",
-  "description": "Parse SEC EDGAR 10-Q filings via inline XBRL extraction",
-  "main": "dist/src/index.js",
+  "description": "Parse SEC EDGAR 10-Q and 10-K filings via inline XBRL extraction",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
-    "build": "npx babel src --out-dir dist/src --extensions \".ts,.tsx\" --config-file ./.babelrc.json",
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
     "test": "jest --forceExit",
     "test:10q": "jest xbrl.spec --forceExit",
     "test:10k": "jest xbrl_10k --forceExit",
     "download": "npx ts-node scripts/download-filings.ts"
   },
   "devDependencies": {
-    "@babel/cli": "^7.28.3",
-    "@babel/core": "^7.28.5",
-    "@babel/plugin-proposal-class-properties": "^7.18.6",
-    "@babel/plugin-proposal-decorators": "^7.28.0",
-    "@babel/preset-env": "^7.28.5",
-    "@babel/preset-typescript": "^7.28.5",
     "@types/jest": "^29.5.12",
     "@types/node": "^20.12.7",
     "ts-jest": "^29.1.2",
