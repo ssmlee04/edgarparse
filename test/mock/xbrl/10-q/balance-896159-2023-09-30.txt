@@ -2,6 +2,12 @@
   "endDate": "2023-09-30",
   "facts": [
     {
+      "concept": "us-gaap:RestrictedCash",
+      "label": "restricted cash",
+      "value": 192000000,
+      "unit": "USD"
+    },
+    {
       "concept": "us-gaap:Goodwill",
       "label": "goodwill",
       "value": 19554000000,
@@ -46,7 +52,7 @@
     {
       "concept": "us-gaap:TreasuryStockValue",
       "label": "treasury stock",
-      "value": 3747000000,
+      "value": -3747000000,
       "unit": "USD"
     },
     {
@@ -83,6 +89,12 @@
       "concept": "us-gaap:LiabilitiesAndStockholdersEquity",
       "label": "total liabilities and equity",
       "value": 222748000000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:RestrictedCashAndCashEquivalents",
+      "label": "restricted cash",
+      "value": 192000000,
       "unit": "USD"
     },
     {

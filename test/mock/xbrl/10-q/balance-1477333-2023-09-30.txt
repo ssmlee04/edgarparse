@@ -20,6 +20,18 @@
       "unit": "USD"
     },
     {
+      "concept": "us-gaap:ContractWithCustomerAssetNetCurrent",
+      "label": "contract assets, current",
+      "value": 11689000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:RestrictedCashCurrent",
+      "label": "restricted cash, current",
+      "value": 1612000,
+      "unit": "USD"
+    },
+    {
       "concept": "us-gaap:PrepaidExpenseAndOtherAssetsCurrent",
       "label": "prepaid expenses and other current assets",
       "value": 70929000,
@@ -143,6 +155,12 @@
       "concept": "us-gaap:LiabilitiesAndStockholdersEquity",
       "label": "total liabilities and equity",
       "value": 2589910000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:RestrictedCash",
+      "label": "restricted cash",
+      "value": 3500000,
       "unit": "USD"
     },
     {

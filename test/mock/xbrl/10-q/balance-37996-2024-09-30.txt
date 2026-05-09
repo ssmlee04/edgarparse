@@ -94,7 +94,7 @@
     {
       "concept": "us-gaap:TreasuryStockValue",
       "label": "treasury stock",
-      "value": 2660000000,
+      "value": -2660000000,
       "unit": "USD"
     },
     {
@@ -119,6 +119,12 @@
       "concept": "us-gaap:LiabilitiesAndStockholdersEquity",
       "label": "total liabilities and equity",
       "value": 287047000000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:RestrictedCash",
+      "label": "restricted cash",
+      "value": 234000000,
       "unit": "USD"
     },
     {

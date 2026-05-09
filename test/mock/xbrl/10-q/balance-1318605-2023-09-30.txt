@@ -152,6 +152,12 @@
       "unit": "USD"
     },
     {
+      "concept": "us-gaap:RestrictedCashCurrent",
+      "label": "restricted cash, current",
+      "value": 453000000,
+      "unit": "USD"
+    },
+    {
       "concept": "us-gaap:PropertyPlantAndEquipmentGross",
       "label": "property, plant and equipment, gross",
       "value": 38984000000,

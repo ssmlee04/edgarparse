@@ -27,6 +27,15 @@ const monthDiff = (startDate: string, endDate: string): number => {
 const camelToWords = (str: string): string =>
     str.replace(/([A-Z])/g, ' $1').toLowerCase().trim();
 
+// Extract the actual period of report from the SGML envelope header.
+// CONFORMED PERIOD OF REPORT is in YYYYMMDD format.
+const extractPeriodOfReport = (content: string): string | null => {
+    const m = content.match(/conformed period of report:\s*(\d{8})/i);
+    if (!m) return null;
+    const d = m[1];
+    return `${d.slice(0, 4)}-${d.slice(4, 6)}-${d.slice(6, 8)}`;
+};
+
 // ── Base Processor ────────────────────────────────────────────────────────────
 
 export default class XBRLStatementProcessor {
@@ -42,6 +51,10 @@ export default class XBRLStatementProcessor {
         this.cik = cik;
         this.datestr = datestr;
         const content = rawFilingString || this.readSourceData();
+        // Override datestr with the actual period from the SGML header — filenames
+        // for non-calendar fiscal companies may not match the true period end date.
+        const actualPeriod = extractPeriodOfReport(content);
+        if (actualPeriod) this.datestr = actualPeriod;
         this.buildContextMap(content);
         this.extractRawFacts(content);
     }
@@ -154,7 +167,7 @@ export default class XBRLStatementProcessor {
             facts.push({
                 concept: raw.concept,
                 label: entry.label,
-                value: raw.value,
+                value: entry.negate ? -raw.value : raw.value,
                 unit: 'USD',
             });
         }

@@ -134,6 +134,12 @@
       "unit": "USD"
     },
     {
+      "concept": "us-gaap:RestrictedCash",
+      "label": "restricted cash",
+      "value": 297000,
+      "unit": "USD"
+    },
+    {
       "concept": "us-gaap:CashCashEquivalentsAndShortTermInvestments",
       "label": "cash, equivalents and short-term investments",
       "value": 734406000,

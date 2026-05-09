@@ -122,6 +122,12 @@
       "unit": "USD"
     },
     {
+      "concept": "us-gaap:UnbilledReceivablesNotBillableAtBalanceSheetDate",
+      "label": "unbilled receivables",
+      "value": 290202000,
+      "unit": "USD"
+    },
+    {
       "concept": "us-gaap:PropertyPlantAndEquipmentNet",
       "label": "property, plant and equipment, net",
       "value": 31973000,

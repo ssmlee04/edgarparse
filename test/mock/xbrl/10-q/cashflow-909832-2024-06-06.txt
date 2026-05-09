@@ -1,0 +1,130 @@
+{
+  "quarterly": {
+    "startDate": "2024-02-19",
+    "endDate": "2024-05-12",
+    "months": 4,
+    "facts": [
+      {
+        "concept": "us-gaap:ShareBasedCompensation",
+        "label": "stock-based compensation",
+        "value": 106000000,
+        "unit": "USD"
+      }
+    ]
+  },
+  "ytd": {
+    "startDate": "2023-09-04",
+    "endDate": "2024-05-12",
+    "months": 9,
+    "facts": [
+      {
+        "concept": "us-gaap:DepreciationDepletionAndAmortization",
+        "label": "depreciation, depletion and amortization",
+        "value": 1531000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ShareBasedCompensation",
+        "label": "stock-based compensation",
+        "value": 686000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInInventories",
+        "label": "change in inventories",
+        "value": 831000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInAccountsPayable",
+        "label": "change in accounts payable",
+        "value": 1380000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+        "label": "net cash from operating activities",
+        "value": 8381000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+        "label": "capital expenditures",
+        "value": 3133000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsForProceedsFromOtherInvestingActivities",
+        "label": "other investing activities",
+        "value": 7000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInInvestingActivities",
+        "label": "net cash from investing activities",
+        "value": -2706000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:RepaymentsOfShortTermDebt",
+        "label": "repayments of short-term debt",
+        "value": 637000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromShortTermDebt",
+        "label": "proceeds from short-term debt",
+        "value": 628000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromIssuanceOfLongTermDebt",
+        "label": "proceeds from long-term debt",
+        "value": 498000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
+        "label": "tax withholding on stock awards",
+        "value": 313000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
+        "label": "repurchase of common stock",
+        "value": 484000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsOfDividends",
+        "label": "dividends paid",
+        "value": 8527000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromPaymentsForOtherFinancingActivities",
+        "label": "other financing activities",
+        "value": -1000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInFinancingActivities",
+        "label": "net cash from financing activities",
+        "value": -8948000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents",
+        "label": "effect of exchange rate on cash",
+        "value": -23000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
+        "label": "net change in cash",
+        "value": -3296000000,
+        "unit": "USD"
+      }
+    ]
+  }
+}

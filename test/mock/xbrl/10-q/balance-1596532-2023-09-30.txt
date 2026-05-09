@@ -164,6 +164,12 @@
       "unit": "USD"
     },
     {
+      "concept": "us-gaap:RestrictedCashAndCashEquivalents",
+      "label": "restricted cash",
+      "value": 858000,
+      "unit": "USD"
+    },
+    {
       "concept": "us-gaap:OtherAssetsCurrent",
       "label": "other current assets",
       "value": 274114000,

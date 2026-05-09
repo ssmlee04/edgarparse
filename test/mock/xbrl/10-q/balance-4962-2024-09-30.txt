@@ -8,6 +8,12 @@
       "unit": "USD"
     },
     {
+      "concept": "us-gaap:RestrictedCashAndCashEquivalents",
+      "label": "restricted cash",
+      "value": 471000000,
+      "unit": "USD"
+    },
+    {
       "concept": "us-gaap:AccumulatedDepreciationDepletionAndAmortizationPropertyPlantAndEquipment",
       "label": "accumulated depreciation",
       "value": 10867000000,

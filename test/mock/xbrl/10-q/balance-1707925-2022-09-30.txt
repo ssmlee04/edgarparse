@@ -14,6 +14,12 @@
       "unit": "USD"
     },
     {
+      "concept": "us-gaap:ContractWithCustomerAssetNetCurrent",
+      "label": "contract assets, current",
+      "value": 104000000,
+      "unit": "USD"
+    },
+    {
       "concept": "us-gaap:InventoryNet",
       "label": "inventories",
       "value": 1855000000,
@@ -118,7 +124,7 @@
     {
       "concept": "us-gaap:TreasuryStockValue",
       "label": "treasury stock",
-      "value": 14135000000,
+      "value": -14135000000,
       "unit": "USD"
     },
     {

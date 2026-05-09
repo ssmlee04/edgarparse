@@ -94,7 +94,7 @@
     {
       "concept": "us-gaap:TreasuryStockValue",
       "label": "treasury stock",
-      "value": 55481000000,
+      "value": -55481000000,
       "unit": "USD"
     },
     {

@@ -98,6 +98,12 @@
       "unit": "USD"
     },
     {
+      "concept": "us-gaap:TreasuryStockCommonValue",
+      "label": "treasury stock",
+      "value": -7837000000,
+      "unit": "USD"
+    },
+    {
       "concept": "us-gaap:AdditionalPaidInCapital",
       "label": "additional paid-in capital",
       "value": 92711000000,
@@ -137,6 +143,12 @@
       "concept": "us-gaap:ContractWithCustomerLiabilityNoncurrent",
       "label": "deferred revenue, non-current",
       "value": 2700000000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:RestrictedCashCurrent",
+      "label": "restricted cash, current",
+      "value": 465000000,
       "unit": "USD"
     },
     {

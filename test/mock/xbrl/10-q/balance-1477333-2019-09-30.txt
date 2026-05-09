@@ -20,6 +20,12 @@
       "unit": "USD"
     },
     {
+      "concept": "us-gaap:ContractWithCustomerAssetNetCurrent",
+      "label": "contract assets, current",
+      "value": 1470000,
+      "unit": "USD"
+    },
+    {
       "concept": "us-gaap:PrepaidExpenseAndOtherAssetsCurrent",
       "label": "prepaid expenses and other current assets",
       "value": 16898000,

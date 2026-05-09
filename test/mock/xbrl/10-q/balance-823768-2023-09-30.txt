@@ -110,6 +110,12 @@
       "unit": "USD"
     },
     {
+      "concept": "us-gaap:TreasuryStockCommonValue",
+      "label": "treasury stock",
+      "value": -12507000000,
+      "unit": "USD"
+    },
+    {
       "concept": "us-gaap:StockholdersEquity",
       "label": "stockholders equity",
       "value": 6950000000,

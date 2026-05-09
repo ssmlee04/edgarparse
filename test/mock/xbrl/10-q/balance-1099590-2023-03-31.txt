@@ -116,6 +116,12 @@
       "unit": "USD"
     },
     {
+      "concept": "us-gaap:TreasuryStockCommonValue",
+      "label": "treasury stock",
+      "value": -992000000,
+      "unit": "USD"
+    },
+    {
       "concept": "us-gaap:RetainedEarningsAccumulatedDeficit",
       "label": "retained earnings (accumulated deficit)",
       "value": 1114000000,

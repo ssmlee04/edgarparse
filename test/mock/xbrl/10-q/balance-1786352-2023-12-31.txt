@@ -152,6 +152,12 @@
       "unit": "USD"
     },
     {
+      "concept": "us-gaap:RestrictedCashCurrent",
+      "label": "restricted cash, current",
+      "value": 103462000,
+      "unit": "USD"
+    },
+    {
       "concept": "us-gaap:LongTermDebt",
       "label": "long-term debt",
       "value": 1843229000,

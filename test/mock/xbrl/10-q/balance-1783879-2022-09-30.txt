@@ -108,6 +108,12 @@
       "label": "total liabilities and equity",
       "value": 24601000000,
       "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:RestrictedCash",
+      "label": "restricted cash",
+      "value": 23000000,
+      "unit": "USD"
     }
   ]
 }

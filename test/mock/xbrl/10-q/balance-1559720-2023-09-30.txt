@@ -134,6 +134,12 @@
       "unit": "USD"
     },
     {
+      "concept": "us-gaap:RestrictedCashAndCashEquivalents",
+      "label": "restricted cash",
+      "value": 24000000,
+      "unit": "USD"
+    },
+    {
       "concept": "us-gaap:EmployeeRelatedLiabilitiesCurrent",
       "label": "accrued compensation",
       "value": 451000000,

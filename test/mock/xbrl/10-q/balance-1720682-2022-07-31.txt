@@ -92,6 +92,18 @@
       "unit": "USD"
     },
     {
+      "concept": "us-gaap:RestrictedCash",
+      "label": "restricted cash",
+      "value": 1800000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:UnbilledReceivablesNotBillableAtBalanceSheetDate",
+      "label": "unbilled receivables",
+      "value": 226812000,
+      "unit": "USD"
+    },
+    {
       "concept": "us-gaap:PropertyPlantAndEquipmentNet",
       "label": "property, plant and equipment, net",
       "value": 19347000,

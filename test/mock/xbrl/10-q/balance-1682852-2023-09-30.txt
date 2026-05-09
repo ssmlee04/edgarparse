@@ -134,6 +134,12 @@
       "unit": "USD"
     },
     {
+      "concept": "us-gaap:RestrictedCashCurrent",
+      "label": "restricted cash, current",
+      "value": 17000000,
+      "unit": "USD"
+    },
+    {
       "concept": "us-gaap:OtherAssetsCurrent",
       "label": "other current assets",
       "value": 96000000,
@@ -149,6 +155,12 @@
       "concept": "us-gaap:FiniteLivedIntangibleAssetsNet",
       "label": "intangible assets, net",
       "value": 45000000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:RestrictedCash",
+      "label": "restricted cash",
+      "value": 4000000,
       "unit": "USD"
     },
     {

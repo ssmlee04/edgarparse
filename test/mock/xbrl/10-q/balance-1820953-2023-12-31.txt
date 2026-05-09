@@ -8,6 +8,12 @@
       "unit": "USD"
     },
     {
+      "concept": "us-gaap:RestrictedCash",
+      "label": "restricted cash",
+      "value": 411259000,
+      "unit": "USD"
+    },
+    {
       "concept": "us-gaap:PropertyPlantAndEquipmentNet",
       "label": "property, plant and equipment, net",
       "value": 369854000,

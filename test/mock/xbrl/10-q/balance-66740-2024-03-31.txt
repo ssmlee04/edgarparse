@@ -128,6 +128,12 @@
       "unit": "USD"
     },
     {
+      "concept": "us-gaap:TreasuryStockCommonValue",
+      "label": "treasury stock",
+      "value": -32762000000,
+      "unit": "USD"
+    },
+    {
       "concept": "us-gaap:AccumulatedOtherComprehensiveIncomeLossNetOfTax",
       "label": "accumulated other comprehensive income (loss)",
       "value": -6826000000,

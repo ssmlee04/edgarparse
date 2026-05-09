@@ -122,6 +122,12 @@
       "unit": "USD"
     },
     {
+      "concept": "us-gaap:RestrictedCashCurrent",
+      "label": "restricted cash, current",
+      "value": 414267000,
+      "unit": "USD"
+    },
+    {
       "concept": "us-gaap:InventoryNet",
       "label": "inventories",
       "value": 101655000,

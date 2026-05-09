@@ -8,6 +8,12 @@
       "unit": "USD"
     },
     {
+      "concept": "us-gaap:RestrictedCashCurrent",
+      "label": "restricted cash, current",
+      "value": 11444000,
+      "unit": "USD"
+    },
+    {
       "concept": "us-gaap:AccountsReceivableNetCurrent",
       "label": "accounts receivable, net",
       "value": 13643000,

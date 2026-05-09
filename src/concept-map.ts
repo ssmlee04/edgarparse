@@ -3,6 +3,7 @@ export type StatementType = 'income' | 'balance' | 'cashflow';
 export type ConceptEntry = {
     label: string;
     statement: StatementType | StatementType[];
+    negate?: boolean; // invert sign at extraction time (e.g. treasury stock, accumulated depreciation)
 };
 
 export const CONCEPT_MAP: Record<string, ConceptEntry> = {
@@ -76,6 +77,10 @@ export const CONCEPT_MAP: Record<string, ConceptEntry> = {
 
     // ── Balance Sheet ─────────────────────────────────────────────────────────
     'us-gaap:CashAndCashEquivalentsAtCarryingValue': { label: 'cash and cash equivalents', statement: 'balance' },
+    'us-gaap:RestrictedCashAndCashEquivalentsCurrent': { label: 'restricted cash, current', statement: 'balance' },
+    'us-gaap:RestrictedCashAndCashEquivalents': { label: 'restricted cash', statement: 'balance' },
+    'us-gaap:RestrictedCash': { label: 'restricted cash', statement: 'balance' },
+    'us-gaap:RestrictedCashCurrent': { label: 'restricted cash, current', statement: 'balance' },
     'us-gaap:CashCashEquivalentsAndShortTermInvestments': { label: 'cash, equivalents and short-term investments', statement: 'balance' },
     'us-gaap:ShortTermInvestments': { label: 'short-term investments', statement: 'balance' },
     'us-gaap:MarketableSecuritiesCurrent': { label: 'marketable securities, current', statement: 'balance' },
@@ -83,6 +88,8 @@ export const CONCEPT_MAP: Record<string, ConceptEntry> = {
     'us-gaap:AvailableForSaleSecuritiesDebtSecuritiesCurrent': { label: 'available-for-sale securities, current', statement: 'balance' },
     'us-gaap:AccountsReceivableNetCurrent': { label: 'accounts receivable, net', statement: 'balance' },
     'us-gaap:ReceivablesNetCurrent': { label: 'receivables, net', statement: 'balance' },
+    'us-gaap:ContractWithCustomerAssetNetCurrent': { label: 'contract assets, current', statement: 'balance' },
+    'us-gaap:UnbilledReceivablesNotBillableAtBalanceSheetDate': { label: 'unbilled receivables', statement: 'balance' },
     'us-gaap:InventoryNet': { label: 'inventories', statement: 'balance' },
     'us-gaap:PrepaidExpenseAndOtherAssetsCurrent': { label: 'prepaid expenses and other current assets', statement: 'balance' },
     'us-gaap:OtherAssetsCurrent': { label: 'other current assets', statement: 'balance' },
@@ -117,8 +124,10 @@ export const CONCEPT_MAP: Record<string, ConceptEntry> = {
     'us-gaap:CommonStockValue': { label: 'common stock', statement: 'balance' },
     'us-gaap:AdditionalPaidInCapital': { label: 'additional paid-in capital', statement: 'balance' },
     'us-gaap:RetainedEarningsAccumulatedDeficit': { label: 'retained earnings (accumulated deficit)', statement: 'balance' },
-    'us-gaap:TreasuryStockValue': { label: 'treasury stock', statement: 'balance' },
+    'us-gaap:TreasuryStockValue': { label: 'treasury stock', statement: 'balance', negate: true },
+    'us-gaap:TreasuryStockCommonValue': { label: 'treasury stock', statement: 'balance', negate: true },
     'us-gaap:AccumulatedOtherComprehensiveIncomeLossNetOfTax': { label: 'accumulated other comprehensive income (loss)', statement: 'balance' },
+    'us-gaap:AccumulatedOtherComprehensiveIncomeLoss': { label: 'accumulated other comprehensive income (loss)', statement: 'balance' },
     'us-gaap:StockholdersEquity': { label: 'stockholders equity', statement: 'balance' },
     'us-gaap:MinorityInterest': { label: 'noncontrolling interests', statement: 'balance' },
     'us-gaap:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest': { label: 'total equity', statement: 'balance' },

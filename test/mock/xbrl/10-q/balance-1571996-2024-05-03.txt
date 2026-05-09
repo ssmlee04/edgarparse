@@ -110,6 +110,12 @@
       "unit": "USD"
     },
     {
+      "concept": "us-gaap:TreasuryStockCommonValue",
+      "label": "treasury stock",
+      "value": -6622000000,
+      "unit": "USD"
+    },
+    {
       "concept": "us-gaap:RetainedEarningsAccumulatedDeficit",
       "label": "retained earnings (accumulated deficit)",
       "value": -4001000000,
@@ -167,6 +173,12 @@
       "concept": "us-gaap:FiniteLivedIntangibleAssetsNet",
       "label": "intangible assets, net",
       "value": 2453000000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:RestrictedCashCurrent",
+      "label": "restricted cash, current",
+      "value": 127000000,
       "unit": "USD"
     },
     {
