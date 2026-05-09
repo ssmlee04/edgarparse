@@ -1,0 +1,7 @@
+[
+  { "ticker": "aa",   "cik": "1675149", "period": "2024-09-30" },
+  { "ticker": "msft", "cik": "789019",  "period": "2023-09-30" },
+  { "ticker": "tsla", "cik": "1318605", "period": "2023-09-30" },
+  { "ticker": "amzn", "cik": "1018724", "period": "2023-09-30" },
+  { "ticker": "nvda", "cik": "1045810", "period": "2022-04-30" }
+]

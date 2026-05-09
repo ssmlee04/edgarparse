@@ -1,22 +1,33 @@
 /**
- * Downloads raw EDGAR 10-Q submission files needed to run the test suite.
- * Files are saved to data/txt/quarterly/ which is gitignored.
+ * Downloads raw EDGAR 10-Q submission files.
+ * Files are saved to data/txt/10-q/ which is gitignored.
  *
  * Usage:
  *   npx ts-node scripts/download-filings.ts
+ *
+ * To customise which filings to download, create scripts/filings.json
+ * (see scripts/filings.json.example). If the file does not exist the
+ * built-in defaults below are used.
  */
 
 import * as https from 'https';
 import * as fs from 'fs';
 import * as path from 'path';
 
-const FILINGS: { ticker: string; cik: string; period: string }[] = [
+type Filing = { ticker: string; cik: string; period: string };
+
+const DEFAULT_FILINGS: Filing[] = [
     { ticker: 'aa',   cik: '1675149', period: '2024-09-30' },
     { ticker: 'msft', cik: '789019',  period: '2023-09-30' },
     { ticker: 'tsla', cik: '1318605', period: '2023-09-30' },
     { ticker: 'amzn', cik: '1018724', period: '2023-09-30' },
     { ticker: 'nvda', cik: '1045810', period: '2022-04-30' },
 ];
+
+const FILINGS_JSON = path.join(__dirname, 'filings.json');
+const FILINGS: Filing[] = fs.existsSync(FILINGS_JSON)
+    ? JSON.parse(fs.readFileSync(FILINGS_JSON, 'utf8'))
+    : DEFAULT_FILINGS;
 
 const OUT_DIR = path.join(__dirname, '../data/txt/10-q');
 // SEC requires a User-Agent with a name and contact email
