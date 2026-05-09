@@ -47,6 +47,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ForeignCurrencyTransactionGainLossBeforeTax",
+        "label": "foreign currency gain (loss)",
+        "value": -327581,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:NonoperatingIncomeExpense",
         "label": "other income (expense)",
         "value": -352670,
@@ -86,6 +92,18 @@
         "concept": "us-gaap:EarningsPerShareDiluted",
         "label": "earnings per share - diluted",
         "value": 0.03,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 74609195,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 78473866,
         "unit": "USD"
       },
       {
@@ -150,6 +168,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ForeignCurrencyTransactionGainLossBeforeTax",
+        "label": "foreign currency gain (loss)",
+        "value": -451217,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:NonoperatingIncomeExpense",
         "label": "other income (expense)",
         "value": -219127,
@@ -189,6 +213,18 @@
         "concept": "us-gaap:EarningsPerShareDiluted",
         "label": "earnings per share - diluted",
         "value": 0.09,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 73758731,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 77782459,
         "unit": "USD"
       },
       {

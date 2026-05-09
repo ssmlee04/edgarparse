@@ -89,6 +89,18 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 1132400000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 1135400000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:OtherComprehensiveIncomeLossNetOfTax",
         "label": "other comprehensive income (loss)",
         "value": -63700000,
@@ -98,6 +110,12 @@
         "concept": "us-gaap:ComprehensiveIncomeNetOfTax",
         "label": "comprehensive income",
         "value": 708800000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:LaborAndRelatedExpense",
+        "label": "labor costs",
+        "value": 2139400000,
         "unit": "USD"
       },
       {

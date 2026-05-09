@@ -59,6 +59,30 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:EarningsPerShareBasic",
+        "label": "earnings per share - basic",
+        "value": 3.75,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EarningsPerShareDiluted",
+        "label": "earnings per share - diluted",
+        "value": 3.72,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 34466141,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 34749721,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:ComprehensiveIncomeNetOfTax",
         "label": "comprehensive income",
         "value": 129186000,
@@ -68,6 +92,12 @@
         "concept": "us-gaap:OperatingIncomeLoss",
         "label": "operating income",
         "value": 189913000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InvestmentIncomeInterest",
+        "label": "interest income",
+        "value": 150000,
         "unit": "USD"
       }
     ]
@@ -132,6 +162,30 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:EarningsPerShareBasic",
+        "label": "earnings per share - basic",
+        "value": 11.47,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EarningsPerShareDiluted",
+        "label": "earnings per share - diluted",
+        "value": 11.38,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 34931378,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 35201658,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:ComprehensiveIncomeNetOfTax",
         "label": "comprehensive income",
         "value": 400684000,
@@ -159,6 +213,12 @@
         "concept": "us-gaap:OperatingIncomeLoss",
         "label": "operating income",
         "value": 588431000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InvestmentIncomeInterest",
+        "label": "interest income",
+        "value": 523000,
         "unit": "USD"
       }
     ]

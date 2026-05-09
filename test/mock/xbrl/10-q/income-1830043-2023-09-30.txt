@@ -125,6 +125,18 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 136457412,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 191417812,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:CostOfRevenue",
         "label": "cost of revenue",
         "value": 14000000,
@@ -258,6 +270,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ForeignCurrencyTransactionGainLossBeforeTax",
+        "label": "foreign currency gain (loss)",
+        "value": 3300000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:GoodwillImpairmentLoss",
         "label": "goodwill impairment",
         "value": 167431000,
@@ -273,6 +291,18 @@
         "concept": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
         "label": "net income attributable to common stockholders",
         "value": 21447000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 135185151,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 192261769,
         "unit": "USD"
       },
       {

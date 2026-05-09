@@ -107,6 +107,18 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 151359000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 154976000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:ComprehensiveIncomeNetOfTax",
         "label": "comprehensive income",
         "value": 143034000,
@@ -222,6 +234,18 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 153020000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 154855000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:ComprehensiveIncomeNetOfTax",
         "label": "comprehensive income",
         "value": 389324000,
@@ -237,6 +261,12 @@
         "concept": "us-gaap:ShareBasedCompensation",
         "label": "stock-based compensation",
         "value": 236344000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:GainLossOnInvestments",
+        "label": "gain (loss) on investments",
+        "value": 311000,
         "unit": "USD"
       }
     ]

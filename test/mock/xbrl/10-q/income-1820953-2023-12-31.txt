@@ -17,6 +17,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:InterestExpenseDebt",
+        "label": "interest expense",
+        "value": 84617000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:SellingAndMarketingExpense",
         "label": "sales and marketing",
         "value": 161265000,
@@ -86,6 +92,18 @@
         "concept": "us-gaap:EarningsPerShareDiluted",
         "label": "earnings per share - diluted",
         "value": -0.54,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 307571602,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 307571602,
         "unit": "USD"
       },
       {

@@ -125,9 +125,33 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 708000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 727000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:GainLossOnInvestments",
+        "label": "gain (loss) on investments",
+        "value": -30000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:InterestExpense",
         "label": "interest expense",
         "value": 343000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ForeignCurrencyTransactionGainLossBeforeTax",
+        "label": "foreign currency gain (loss)",
+        "value": -38000000,
         "unit": "USD"
       },
       {

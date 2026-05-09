@@ -11,6 +11,18 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:LaborAndRelatedExpense",
+        "label": "compensation and benefits",
+        "value": 1228000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:FuelCosts",
+        "label": "fuel",
+        "value": 610000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:CostsAndExpenses",
         "label": "total costs and expenses",
         "value": 3675000000,
@@ -65,6 +77,18 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 607600000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 608600000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:ComprehensiveIncomeNetOfTax",
         "label": "comprehensive income",
         "value": 1585000000,
@@ -87,6 +111,18 @@
         "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
         "label": "revenue",
         "value": 18129000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:LaborAndRelatedExpense",
+        "label": "compensation and benefits",
+        "value": 3638000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:FuelCosts",
+        "label": "fuel",
+        "value": 1893000000,
         "unit": "USD"
       },
       {
@@ -141,6 +177,18 @@
         "concept": "us-gaap:EarningsPerShareDiluted",
         "label": "earnings per share - diluted",
         "value": 8.18,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 608700000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 609700000,
         "unit": "USD"
       },
       {

@@ -99,6 +99,18 @@
         "label": "earnings per share - diluted",
         "value": 0,
         "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 180649000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 184075000,
+        "unit": "USD"
       }
     ]
   },
@@ -207,6 +219,18 @@
         "concept": "us-gaap:EarningsPerShareDiluted",
         "label": "earnings per share - diluted",
         "value": -0.86,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 179817000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 179817000,
         "unit": "USD"
       },
       {

@@ -35,6 +35,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:InvestmentIncomeInterest",
+        "label": "interest income",
+        "value": 104000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:OtherNonoperatingIncomeExpense",
         "label": "other non-operating income (expense)",
         "value": 260000000,
@@ -101,6 +107,18 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 2360500000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 2472000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:RestructuringCharges",
         "label": "restructuring charges",
         "value": 70000000,
@@ -141,6 +159,12 @@
         "concept": "us-gaap:InterestExpense",
         "label": "interest expense",
         "value": 705000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InvestmentIncomeInterest",
+        "label": "interest income",
+        "value": 366000000,
         "unit": "USD"
       },
       {
@@ -219,6 +243,18 @@
         "concept": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
         "label": "net income attributable to common stockholders",
         "value": 11533000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 2359500000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 2471800000,
         "unit": "USD"
       },
       {

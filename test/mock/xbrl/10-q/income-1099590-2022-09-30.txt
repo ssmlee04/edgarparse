@@ -3,12 +3,272 @@
     "startDate": "2022-07-01",
     "endDate": "2022-09-30",
     "months": 4,
-    "facts": []
+    "facts": [
+      {
+        "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "label": "revenue",
+        "value": 2690000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:CostOfGoodsAndServicesSold",
+        "label": "cost of revenue",
+        "value": 1342000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:GrossProfit",
+        "label": "gross profit",
+        "value": 1348000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ResearchAndDevelopmentExpense",
+        "label": "research and development",
+        "value": 278000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:SellingAndMarketingExpense",
+        "label": "sales and marketing",
+        "value": 333000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:GeneralAndAdministrativeExpense",
+        "label": "general and administrative",
+        "value": 153000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OperatingExpenses",
+        "label": "total operating expenses",
+        "value": 1052000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OperatingIncomeLoss",
+        "label": "operating income",
+        "value": 296000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InvestmentIncomeInterest",
+        "label": "interest income",
+        "value": 65000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ForeignCurrencyTransactionGainLossBeforeTax",
+        "label": "foreign currency gain (loss)",
+        "value": -71000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+        "label": "income before income taxes",
+        "value": 198000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncomeTaxExpenseBenefit",
+        "label": "income tax expense (benefit)",
+        "value": 69000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetIncomeLoss",
+        "label": "net income",
+        "value": 129000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EarningsPerShareBasic",
+        "label": "earnings per share - basic",
+        "value": 2.57,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 50325075,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EarningsPerShareDiluted",
+        "label": "earnings per share - diluted",
+        "value": 2.56,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 51315343,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OtherComprehensiveIncomeLossNetOfTax",
+        "label": "other comprehensive income (loss)",
+        "value": -38000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ComprehensiveIncomeNetOfTax",
+        "label": "comprehensive income",
+        "value": 91000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
+        "label": "net income attributable to common stockholders",
+        "value": 129000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:AmortizationOfIntangibleAssets",
+        "label": "amortization of intangibles",
+        "value": 1000000,
+        "unit": "USD"
+      }
+    ]
   },
   "ytd": {
     "startDate": "2022-01-01",
     "endDate": "2022-09-30",
     "months": 10,
-    "facts": []
+    "facts": [
+      {
+        "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "label": "revenue",
+        "value": 7535000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:CostOfGoodsAndServicesSold",
+        "label": "cost of revenue",
+        "value": 3830000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:GrossProfit",
+        "label": "gross profit",
+        "value": 3705000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ResearchAndDevelopmentExpense",
+        "label": "research and development",
+        "value": 774000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:SellingAndMarketingExpense",
+        "label": "sales and marketing",
+        "value": 916000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:GeneralAndAdministrativeExpense",
+        "label": "general and administrative",
+        "value": 485000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OperatingExpenses",
+        "label": "total operating expenses",
+        "value": 3020000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OperatingIncomeLoss",
+        "label": "operating income",
+        "value": 685000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InvestmentIncomeInterest",
+        "label": "interest income",
+        "value": 142000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ForeignCurrencyTransactionGainLossBeforeTax",
+        "label": "foreign currency gain (loss)",
+        "value": -134000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+        "label": "income before income taxes",
+        "value": 472000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncomeTaxExpenseBenefit",
+        "label": "income tax expense (benefit)",
+        "value": 154000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetIncomeLoss",
+        "label": "net income",
+        "value": 317000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EarningsPerShareBasic",
+        "label": "earnings per share - basic",
+        "value": 6.3,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 50365813,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EarningsPerShareDiluted",
+        "label": "earnings per share - diluted",
+        "value": 6.29,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 51356081,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OtherComprehensiveIncomeLossNetOfTax",
+        "label": "other comprehensive income (loss)",
+        "value": -12000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ComprehensiveIncomeNetOfTax",
+        "label": "comprehensive income",
+        "value": 305000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:DepreciationAndAmortization",
+        "label": "depreciation and amortization",
+        "value": 281000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
+        "label": "net income attributable to common stockholders",
+        "value": 317000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:AmortizationOfIntangibleAssets",
+        "label": "amortization of intangibles",
+        "value": 4000000,
+        "unit": "USD"
+      }
+    ]
   }
 }

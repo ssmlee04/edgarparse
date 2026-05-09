@@ -89,6 +89,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ForeignCurrencyTransactionGainLossBeforeTax",
+        "label": "foreign currency gain (loss)",
+        "value": -67000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:IncomeLossFromEquityMethodInvestments",
         "label": "equity method investment income",
         "value": 150000000,
@@ -104,6 +110,18 @@
         "concept": "us-gaap:InterestIncomeExpenseNet",
         "label": "interest income (expense), net",
         "value": -174000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 409505454,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 412605959,
         "unit": "USD"
       }
     ]
@@ -204,6 +222,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ForeignCurrencyTransactionGainLossBeforeTax",
+        "label": "foreign currency gain (loss)",
+        "value": -122000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:OtherNonoperatingIncomeExpense",
         "label": "other non-operating income (expense)",
         "value": 550000000,
@@ -213,6 +237,18 @@
         "concept": "us-gaap:InterestIncomeExpenseNet",
         "label": "interest income (expense), net",
         "value": -499000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 412076470,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 415365410,
         "unit": "USD"
       }
     ]

@@ -101,6 +101,18 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 606900000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 606900000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:OtherComprehensiveIncomeLossNetOfTax",
         "label": "other comprehensive income (loss)",
         "value": -91000000,
@@ -141,6 +153,12 @@
         "concept": "us-gaap:ResearchAndDevelopmentExpense",
         "label": "research and development",
         "value": 2496000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:GainLossOnDispositionOfAssets",
+        "label": "gain (loss) on asset disposals",
+        "value": 1000000,
         "unit": "USD"
       },
       {
@@ -219,6 +237,18 @@
         "concept": "us-gaap:DepreciationDepletionAndAmortization",
         "label": "depreciation, depletion and amortization",
         "value": 1380000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 604700000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 604700000,
         "unit": "USD"
       },
       {

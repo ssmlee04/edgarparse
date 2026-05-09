@@ -35,6 +35,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:MarketingExpense",
+        "label": "marketing",
+        "value": 10551000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:GeneralAndAdministrativeExpense",
         "label": "general and administrative",
         "value": 2561000000,
@@ -56,6 +62,12 @@
         "concept": "us-gaap:OperatingIncomeLoss",
         "label": "operating income",
         "value": 11188000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InvestmentIncomeInterest",
+        "label": "interest income",
+        "value": 776000000,
         "unit": "USD"
       },
       {
@@ -107,6 +119,18 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 10322000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 10558000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:OtherComprehensiveIncomeLossNetOfTax",
         "label": "other comprehensive income (loss)",
         "value": -1323000000,
@@ -116,6 +140,12 @@
         "concept": "us-gaap:ComprehensiveIncomeNetOfTax",
         "label": "comprehensive income",
         "value": 8556000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ForeignCurrencyTransactionGainLossBeforeTax",
+        "label": "foreign currency gain (loss)",
+        "value": -94000000,
         "unit": "USD"
       }
     ]
@@ -156,6 +186,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:MarketingExpense",
+        "label": "marketing",
+        "value": 31468000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:GeneralAndAdministrativeExpense",
         "label": "general and administrative",
         "value": 8806000000,
@@ -177,6 +213,12 @@
         "concept": "us-gaap:OperatingIncomeLoss",
         "label": "operating income",
         "value": 23643000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InvestmentIncomeInterest",
+        "label": "interest income",
+        "value": 2048000000,
         "unit": "USD"
       },
       {
@@ -228,6 +270,18 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 10286000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 10452000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:OtherComprehensiveIncomeLossNetOfTax",
         "label": "other comprehensive income (loss)",
         "value": -516000000,
@@ -237,6 +291,12 @@
         "concept": "us-gaap:ComprehensiveIncomeNetOfTax",
         "label": "comprehensive income",
         "value": 19285000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ForeignCurrencyTransactionGainLossBeforeTax",
+        "label": "foreign currency gain (loss)",
+        "value": -15000000,
         "unit": "USD"
       }
     ]

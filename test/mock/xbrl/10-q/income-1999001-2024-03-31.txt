@@ -47,6 +47,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ForeignCurrencyTransactionGainLossBeforeTax",
+        "label": "foreign currency gain (loss)",
+        "value": -5240000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:OtherNonoperatingIncomeExpense",
         "label": "other non-operating income (expense)",
         "value": 337000,

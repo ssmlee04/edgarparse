@@ -35,6 +35,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:LaborAndRelatedExpense",
+        "label": "labor and related expense",
+        "value": 600000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:AmortizationOfIntangibleAssets",
         "label": "amortization of intangibles",
         "value": 1100000,
@@ -44,6 +50,18 @@
         "concept": "us-gaap:OperatingIncomeLoss",
         "label": "operating income",
         "value": -16600000.000000002,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestExpenseDebt",
+        "label": "interest expense",
+        "value": 3400000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InvestmentIncomeInterest",
+        "label": "interest income",
+        "value": 12900000,
         "unit": "USD"
       },
       {
@@ -80,6 +98,18 @@
         "concept": "us-gaap:EarningsPerShareDiluted",
         "label": "earnings per share - diluted",
         "value": 0.19,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 18317000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 20677000,
         "unit": "USD"
       }
     ]
@@ -120,6 +150,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:LaborAndRelatedExpense",
+        "label": "labor and related expense",
+        "value": 5300000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:AmortizationOfIntangibleAssets",
         "label": "amortization of intangibles",
         "value": 5900000,
@@ -129,6 +165,18 @@
         "concept": "us-gaap:OperatingIncomeLoss",
         "label": "operating income",
         "value": 37400000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestExpenseDebt",
+        "label": "interest expense",
+        "value": 9900000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InvestmentIncomeInterest",
+        "label": "interest income",
+        "value": 28200000,
         "unit": "USD"
       },
       {
@@ -159,6 +207,18 @@
         "concept": "us-gaap:EarningsPerShareDiluted",
         "label": "earnings per share - diluted",
         "value": 3.16,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 17672000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 18965000,
         "unit": "USD"
       },
       {

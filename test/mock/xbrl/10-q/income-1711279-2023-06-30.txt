@@ -45,6 +45,18 @@
         "label": "earnings per share - diluted",
         "value": -1.25,
         "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 26656883,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 26656883,
+        "unit": "USD"
       }
     ]
   }

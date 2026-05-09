@@ -39,9 +39,22 @@ export const CONCEPT_MAP: Record<string, ConceptEntry> = {
     'us-gaap:OtherOperatingIncomeExpenseNet': { label: 'other operating income (expense)', statement: 'income' },
     'us-gaap:InterestExpense': { label: 'interest expense', statement: 'income' },
     'us-gaap:InterestAndDebtExpense': { label: 'interest expense', statement: 'income' },
+    'us-gaap:InterestExpenseDebt': { label: 'interest expense', statement: 'income' },
     'us-gaap:InterestIncome': { label: 'interest income', statement: 'income' },
+    'us-gaap:InvestmentIncomeInterest': { label: 'interest income', statement: 'income' },
     'us-gaap:InterestIncomeExpenseNet': { label: 'interest income (expense), net', statement: 'income' },
     'us-gaap:InterestIncomeExpenseNonoperatingNet': { label: 'interest income (expense), net', statement: 'income' },
+    'us-gaap:GainLossOnInvestments': { label: 'gain (loss) on investments', statement: 'income' },
+    'us-gaap:GainLossOnSaleOfBusiness': { label: 'gain (loss) on sale of business', statement: 'income' },
+    'us-gaap:GainLossOnDispositionOfAssets': { label: 'gain (loss) on asset disposals', statement: ['income', 'cashflow'] },
+    'us-gaap:ImpairmentOfIntangibleAssetsExcludingGoodwill': { label: 'impairment of intangibles', statement: 'income' },
+    'us-gaap:GainLossOnExtinguishmentOfDebt': { label: 'gain (loss) on extinguishment of debt', statement: 'income' },
+    'us-gaap:ForeignCurrencyTransactionGainLossBeforeTax': { label: 'foreign currency gain (loss)', statement: 'income' },
+    'us-gaap:LaborAndRelatedExpense': { label: 'labor and related expense', statement: 'income' },
+    'us-gaap:OccupancyNet': { label: 'occupancy costs', statement: 'income' },
+    'us-gaap:FoodAndBeverageCosts': { label: 'food and beverage costs', statement: 'income' },
+    'us-gaap:FulfillmentExpense': { label: 'fulfillment', statement: 'income' },
+    'us-gaap:TechnologyAndInfrastructure': { label: 'technology and infrastructure', statement: 'income' },
     'us-gaap:IncomeLossFromEquityMethodInvestments': { label: 'equity method investment income', statement: 'income' },
     'us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest': { label: 'income before income taxes', statement: 'income' },
     'us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments': { label: 'income before income taxes', statement: 'income' },
@@ -53,8 +66,10 @@ export const CONCEPT_MAP: Record<string, ConceptEntry> = {
     'us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic': { label: 'net income attributable to common stockholders', statement: 'income' },
     'us-gaap:EarningsPerShareBasic': { label: 'earnings per share - basic', statement: 'income' },
     'us-gaap:EarningsPerShareDiluted': { label: 'earnings per share - diluted', statement: 'income' },
+    // Share counts use U_shares unit (not USD) — unit filter is bypassed for concept-map entries
     'us-gaap:WeightedAverageNumberOfSharesOutstandingBasic': { label: 'weighted-average shares - basic', statement: 'income' },
     'us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding': { label: 'weighted-average shares - diluted', statement: 'income' },
+    'us-gaap:WeightedAverageNumberOfSharesOutstandingDiluted': { label: 'weighted-average shares - diluted', statement: 'income' },
     'us-gaap:ComprehensiveIncomeNetOfTax': { label: 'comprehensive income', statement: 'income' },
     'us-gaap:OtherComprehensiveIncomeLossNetOfTax': { label: 'other comprehensive income (loss)', statement: 'income' },
     'us-gaap:ShareBasedCompensation': { label: 'stock-based compensation', statement: ['income', 'cashflow'] },
@@ -120,7 +135,6 @@ export const CONCEPT_MAP: Record<string, ConceptEntry> = {
     'us-gaap:EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents': { label: 'effect of exchange rate on cash', statement: 'cashflow' },
     'us-gaap:DeferredIncomeTaxExpenseBenefit': { label: 'deferred income taxes', statement: 'cashflow' },
     'us-gaap:IncomeLossFromEquityMethodInvestmentsNetOfDividendsOrDistributions': { label: 'equity method investment income, net', statement: 'cashflow' },
-    'us-gaap:GainLossOnDispositionOfAssets': { label: 'gain (loss) on asset disposals', statement: 'cashflow' },
     'us-gaap:GainLossOnDispositionOfAssets1': { label: 'gain (loss) on asset disposals', statement: 'cashflow' },
     'us-gaap:OtherNoncashIncomeExpense': { label: 'other non-cash items', statement: 'cashflow' },
     'us-gaap:IncreaseDecreaseInReceivables': { label: 'change in receivables', statement: 'cashflow' },
@@ -159,4 +173,58 @@ export const CONCEPT_MAP: Record<string, ConceptEntry> = {
     'us-gaap:ProceedsFromShortTermDebt': { label: 'proceeds from short-term debt', statement: 'cashflow' },
     'us-gaap:RepaymentsOfShortTermDebt': { label: 'repayments of short-term debt', statement: 'cashflow' },
     'us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation': { label: 'tax withholding on stock awards', statement: 'cashflow' },
+};
+
+// ── Sector-specific concept groups ────────────────────────────────────────────
+// Each key is a sector name; values are additional concepts for companies in that sector.
+// These are merged with CONCEPT_MAP at parse time for matching CIKs.
+
+export const SECTOR_CONCEPTS: Record<string, Record<string, ConceptEntry>> = {
+    energy: {
+        'us-gaap:CrudeOilAndProductPurchases': { label: 'crude oil and product purchases', statement: 'income' },
+        'us-gaap:ProductionAndManufacturingExpense': { label: 'production and manufacturing', statement: 'income' },
+        'us-gaap:ExplorationExpense': { label: 'exploration expense', statement: 'income' },
+        'us-gaap:OilAndGasProductionExpense': { label: 'oil and gas production expense', statement: 'income' },
+        'us-gaap:TaxesExcludingIncomeAndExciseTaxes': { label: 'taxes other than income taxes', statement: 'income' },
+        'us-gaap:ResultsOfOperationsProductionOrLiftingCosts': { label: 'lifting costs', statement: 'income' },
+    },
+    restaurant: {
+        'us-gaap:FoodAndBeverageCosts': { label: 'food, beverage and packaging', statement: 'income' },
+        'us-gaap:LaborAndRelatedExpense': { label: 'labor costs', statement: 'income' },
+        'us-gaap:OccupancyNet': { label: 'occupancy costs', statement: 'income' },
+        'us-gaap:FoodAndBeverageRevenue': { label: 'food and beverage revenue', statement: 'income' },
+        'us-gaap:PreOpeningCosts': { label: 'pre-opening costs', statement: 'income' },
+    },
+    ecommerce: {
+        'us-gaap:FulfillmentExpense': { label: 'fulfillment', statement: 'income' },
+        'us-gaap:TechnologyAndInfrastructure': { label: 'technology and infrastructure', statement: 'income' },
+        'us-gaap:MarketingExpense': { label: 'marketing', statement: 'income' },
+    },
+    logistics: {
+        'us-gaap:LaborAndRelatedExpense': { label: 'compensation and benefits', statement: 'income' },
+        'us-gaap:FuelCosts': { label: 'fuel', statement: 'income' },
+        'us-gaap:PurchasedTransportation': { label: 'purchased transportation', statement: 'income' },
+    },
+    semiconductor: {
+        'us-gaap:ResearchAndDevelopmentExpenseExcludingAcquiredInProcessCost': { label: 'research and development', statement: 'income' },
+        'us-gaap:CostOfGoodsSold': { label: 'cost of revenue', statement: 'income' },
+    },
+};
+
+// ── CIK → sector mapping ──────────────────────────────────────────────────────
+// Add a CIK here to automatically apply its sector's concept group.
+
+export const CIK_SECTORS: Record<string, keyof typeof SECTOR_CONCEPTS> = {
+    '34088':   'energy',      // XOM
+    '87347':   'energy',      // SLB
+    '1707925': 'energy',      // LIN (Linde)
+    '1058090': 'restaurant',  // CMG
+    '63908':   'restaurant',  // MCD
+    '829224':  'restaurant',  // SBUX
+    '1866581': 'restaurant',  // BROS
+    '1018724': 'ecommerce',   // AMZN
+    '100885':  'logistics',   // UNP
+    '1090727': 'logistics',   // UPS
+    '1045810': 'semiconductor', // NVDA
+    '1413447': 'semiconductor', // NXPI
 };

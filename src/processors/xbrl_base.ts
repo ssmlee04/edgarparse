@@ -1,5 +1,5 @@
 import * as fs from 'fs';
-import { CONCEPT_MAP, StatementType } from '../concept-map';
+import { CONCEPT_MAP, SECTOR_CONCEPTS, CIK_SECTORS, StatementType } from '../concept-map';
 import type { XBRLFact, PeriodFacts, ContextInfo, RawFact } from '../xbrl_types';
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
@@ -134,11 +134,15 @@ export default class XBRLStatementProcessor {
         const seen = new Set<string>();
         const facts: XBRLFact[] = [];
 
+        // Build effective concept map: global + any sector-specific additions for this CIK
+        const sectorKey = CIK_SECTORS[this.cik];
+        const sectorEntries = sectorKey ? SECTOR_CONCEPTS[sectorKey] ?? {} : {};
+        const effectiveMap = { ...CONCEPT_MAP, ...sectorEntries };
+
         for (const raw of this.rawFacts) {
             if (!contextIds.has(raw.contextRef)) continue;
-            if (!raw.unitRef.toUpperCase().includes('USD')) continue;
 
-            const entry = CONCEPT_MAP[raw.concept];
+            const entry = effectiveMap[raw.concept];
             if (!entry) continue;
             const stmts = Array.isArray(entry.statement) ? entry.statement : [entry.statement];
             if (!stmts.includes(statementType)) continue;

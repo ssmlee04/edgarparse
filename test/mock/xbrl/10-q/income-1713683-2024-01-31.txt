@@ -53,6 +53,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:InvestmentIncomeInterest",
+        "label": "interest income",
+        "value": 28385000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:InterestExpense",
         "label": "interest expense",
         "value": 3605000,
@@ -89,6 +95,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 148951000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:ComprehensiveIncomeNetOfTax",
         "label": "comprehensive income",
         "value": -13523000,
@@ -98,6 +110,12 @@
         "concept": "us-gaap:AmortizationOfIntangibleAssets",
         "label": "amortization of intangibles",
         "value": 3100000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestExpenseDebt",
+        "label": "interest expense",
+        "value": 1337000,
         "unit": "USD"
       },
       {

@@ -17,6 +17,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:LaborAndRelatedExpense",
+        "label": "labor and related expense",
+        "value": 205314000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:OperatingExpenses",
         "label": "total operating expenses",
         "value": 396524000,
@@ -51,6 +57,18 @@
         "label": "earnings per share - diluted",
         "value": 3.37,
         "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 51730000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 53879000,
+        "unit": "USD"
       }
     ]
   },
@@ -69,6 +87,12 @@
         "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
         "label": "revenue",
         "value": 14012000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:LaborAndRelatedExpense",
+        "label": "labor and related expense",
+        "value": 574843000,
         "unit": "USD"
       },
       {
@@ -105,6 +129,18 @@
         "concept": "us-gaap:EarningsPerShareDiluted",
         "label": "earnings per share - diluted",
         "value": 7.34,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 51635000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 53734000,
         "unit": "USD"
       },
       {

@@ -9,6 +9,79 @@
     "startDate": "2022-01-01",
     "endDate": "2022-09-30",
     "months": 10,
-    "facts": []
+    "facts": [
+      {
+        "concept": "us-gaap:DepreciationAndAmortization",
+        "label": "depreciation and amortization",
+        "value": 281000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInAccountsReceivable",
+        "label": "change in accounts receivable",
+        "value": 27000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInInventories",
+        "label": "change in inventories",
+        "value": -102000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+        "label": "net cash from operating activities",
+        "value": 1398000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToAcquireInvestments",
+        "label": "purchases of investments",
+        "value": 9266000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromSaleMaturityAndCollectionsOfInvestments",
+        "label": "proceeds from investments",
+        "value": 7861000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+        "label": "capital expenditures",
+        "value": 342000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInInvestingActivities",
+        "label": "net cash from investing activities",
+        "value": -3225000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
+        "label": "repurchase of common stock",
+        "value": 115000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInFinancingActivities",
+        "label": "net cash from financing activities",
+        "value": 928000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents",
+        "label": "effect of exchange rate on cash",
+        "value": -221000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
+        "label": "net change in cash",
+        "value": -1120000000,
+        "unit": "USD"
+      }
+    ]
   }
 }

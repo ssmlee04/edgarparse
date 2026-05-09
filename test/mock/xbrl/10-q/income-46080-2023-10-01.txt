@@ -53,6 +53,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:InvestmentIncomeInterest",
+        "label": "interest income",
+        "value": 3800000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:OtherNonoperatingIncomeExpense",
         "label": "other non-operating income (expense)",
         "value": -2200000,
@@ -125,6 +131,18 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 138800000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 138800000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:Revenues",
         "label": "revenue",
         "value": 1503400000,
@@ -189,6 +207,12 @@
         "concept": "us-gaap:InterestExpense",
         "label": "interest expense",
         "value": 140000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InvestmentIncomeInterest",
+        "label": "interest income",
+        "value": 15600000,
         "unit": "USD"
       },
       {
@@ -258,6 +282,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:GainLossOnSaleOfBusiness",
+        "label": "gain (loss) on sale of business",
+        "value": -473000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:ShareBasedCompensation",
         "label": "stock-based compensation",
         "value": 55900000,
@@ -267,6 +297,18 @@
         "concept": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
         "label": "net income attributable to common stockholders",
         "value": -428200000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 138700000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 138700000,
         "unit": "USD"
       },
       {

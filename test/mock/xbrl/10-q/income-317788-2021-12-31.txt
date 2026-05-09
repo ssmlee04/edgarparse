@@ -53,6 +53,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ForeignCurrencyTransactionGainLossBeforeTax",
+        "label": "foreign currency gain (loss)",
+        "value": 2122000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:OtherNonoperatingIncomeExpense",
         "label": "other non-operating income (expense)",
         "value": -86000,
@@ -113,6 +119,18 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 96548000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 103287000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:GrossProfit",
         "label": "gross profit",
         "value": 107765000,
@@ -122,6 +140,12 @@
         "concept": "us-gaap:AmortizationOfIntangibleAssets",
         "label": "amortization of intangibles",
         "value": 13773000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestExpenseDebt",
+        "label": "interest expense",
+        "value": 2195000,
         "unit": "USD"
       }
     ]
@@ -177,6 +201,12 @@
         "concept": "us-gaap:InterestIncomeExpenseNet",
         "label": "interest income (expense), net",
         "value": -5307000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ForeignCurrencyTransactionGainLossBeforeTax",
+        "label": "foreign currency gain (loss)",
+        "value": 1603000,
         "unit": "USD"
       },
       {
@@ -240,6 +270,18 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 94620000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 101346000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:DepreciationAndAmortization",
         "label": "depreciation and amortization",
         "value": 40946000,
@@ -261,6 +303,12 @@
         "concept": "us-gaap:AmortizationOfIntangibleAssets",
         "label": "amortization of intangibles",
         "value": 34873000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestExpenseDebt",
+        "label": "interest expense",
+        "value": 5307000,
         "unit": "USD"
       }
     ]

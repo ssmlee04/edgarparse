@@ -93,6 +93,12 @@
         "label": "stock-based compensation",
         "value": 25432000,
         "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 46946000,
+        "unit": "USD"
       }
     ]
   },
@@ -201,6 +207,12 @@
         "concept": "us-gaap:ShareBasedCompensation",
         "label": "stock-based compensation",
         "value": 70219000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 46417000,
         "unit": "USD"
       }
     ]

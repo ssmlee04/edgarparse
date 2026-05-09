@@ -47,6 +47,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:InvestmentIncomeInterest",
+        "label": "interest income",
+        "value": 1226000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:NonoperatingIncomeExpense",
         "label": "other income (expense)",
         "value": 2513000,
@@ -68,6 +74,12 @@
         "concept": "us-gaap:EarningsPerShareBasic",
         "label": "earnings per share - basic",
         "value": -0.08,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 188389000,
         "unit": "USD"
       },
       {
@@ -132,6 +144,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:InvestmentIncomeInterest",
+        "label": "interest income",
+        "value": 3567000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:NonoperatingIncomeExpense",
         "label": "other income (expense)",
         "value": 1989000,
@@ -153,6 +171,12 @@
         "concept": "us-gaap:EarningsPerShareBasic",
         "label": "earnings per share - basic",
         "value": -0.28,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 170665000,
         "unit": "USD"
       },
       {

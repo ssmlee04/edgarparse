@@ -11,6 +11,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:OccupancyNet",
+        "label": "occupancy costs",
+        "value": 135699000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:GeneralAndAdministrativeExpense",
         "label": "general and administrative",
         "value": 204625000,
@@ -20,6 +26,12 @@
         "concept": "us-gaap:DepreciationDepletionAndAmortization",
         "label": "depreciation, depletion and amortization",
         "value": 83243000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PreOpeningCosts",
+        "label": "pre-opening costs",
+        "value": 7211000,
         "unit": "USD"
       },
       {
@@ -68,6 +80,18 @@
         "concept": "us-gaap:EarningsPerShareDiluted",
         "label": "earnings per share - diluted",
         "value": 13.01,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 27444000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 27624000,
         "unit": "USD"
       },
       {

@@ -23,6 +23,24 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:GainLossOnInvestments",
+        "label": "gain (loss) on investments",
+        "value": 775000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:LaborAndRelatedExpense",
+        "label": "labor and related expense",
+        "value": 75920000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OccupancyNet",
+        "label": "occupancy costs",
+        "value": 10569000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
         "label": "income before income taxes",
         "value": 67209000,
@@ -80,6 +98,18 @@
         "concept": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
         "label": "net income attributable to common stockholders",
         "value": 47300000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 73381269,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 73637093,
         "unit": "USD"
       }
     ]

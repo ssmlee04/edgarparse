@@ -95,6 +95,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 575932000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:OtherComprehensiveIncomeLossNetOfTax",
         "label": "other comprehensive income (loss)",
         "value": -4000,
@@ -110,6 +116,12 @@
         "concept": "us-gaap:AmortizationOfIntangibleAssets",
         "label": "amortization of intangibles",
         "value": 2700000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 575932000,
         "unit": "USD"
       },
       {
@@ -213,6 +225,12 @@
         "concept": "us-gaap:EarningsPerShareBasic",
         "label": "earnings per share - basic",
         "value": -0.73,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 480357000,
         "unit": "USD"
       },
       {

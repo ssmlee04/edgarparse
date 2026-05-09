@@ -23,6 +23,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ExplorationExpense",
+        "label": "exploration expense",
+        "value": 148000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:InterestExpense",
         "label": "interest expense",
         "value": 221000000,
@@ -86,6 +92,12 @@
         "concept": "us-gaap:ComprehensiveIncomeNetOfTax",
         "label": "comprehensive income",
         "value": 7040000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 3998000000,
         "unit": "USD"
       }
     ]
