@@ -9,15 +9,19 @@ export default class XBRLCashflowQuarterlyProcessor extends XBRLStatementProcess
     protected statementType = 'cashflow';
 
     extract(): CashflowResult {
-        // Prefer the YTD context (Q2/Q3 filings, diff 4–9 months).
-        // Fall back to quarterly context for Q1 filings where YTD == Q1 (diff 1–3 months).
+        // Prefer the longest available YTD context:
+        //   4–9 months  → Q2/Q3 filings
+        //   10–13 months → Q4 or fiscal-year-end filings in the 10-q data directory
+        //   1–3 months  → Q1 filings where YTD == Q1
         const ytdIds  = this.getConsolidatedContextIds('ytd');
         const ytdMeta = this.getPeriodMeta('ytd');
+        const annIds  = this.getConsolidatedContextIds('annual');
+        const annMeta = this.getPeriodMeta('annual');
         const qIds    = this.getConsolidatedContextIds('quarterly');
         const qMeta   = this.getPeriodMeta('quarterly');
 
-        const meta = ytdMeta ?? qMeta;
-        const ids  = ytdMeta ? ytdIds : qIds;
+        const meta = ytdMeta ?? annMeta ?? qMeta;
+        const ids  = ytdMeta ? ytdIds : annMeta ? annIds : qIds;
 
         if (!meta) throw new Error(`No cashflow context found for ${this.cik} ${this.datestr}`);
 

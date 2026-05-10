@@ -68,8 +68,11 @@ type PeriodFacts = {
     facts: XBRLFact[]; // ordered as they appear in the filing
 };
 
-// Income / cashflow processors return:
+// Income processor returns:
 { quarterly: PeriodFacts; ytd?: PeriodFacts }
+
+// Cashflow processor returns (always YTD; derive standalone quarter by differencing consecutive filings):
+{ ytd: PeriodFacts }
 
 // Balance sheet processor returns:
 { endDate: string; facts: XBRLFact[] }
@@ -110,14 +113,13 @@ The parser filters the 500+ context definitions down to the handful of consolida
 npm test
 ```
 
-To add a new ticker to the test suite, generate a fixture file then re-run:
+## Generating mocks
 
-```ts
-const processor = new XBRLIncomeQuarterlyProcessor();
-processor.initialize('320193', '2023-09-30');  // 320193 = AAPL's CIK
-processor.process(processor.extract(), true);  // writes test/mock/xbrl/quarterly/income-320193-2023-09-30.txt
-```
+Mock files are pre-computed snapshots of `extract()` output stored under `test/mock/xbrl/`. To generate mocks for all filings in `data/txt/`:
 
 ```sh
-npm test
+npm run gen-mocks          # generate mocks only for filings that don't have them yet
+npm run gen-mocks:force    # regenerate all mocks unconditionally
 ```
+
+This is useful after adding new filings, updating the concept map, or changing parser logic. The script prints a summary of how many mocks were generated, skipped, and errored.

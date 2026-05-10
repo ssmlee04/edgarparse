@@ -77,9 +77,12 @@ const findAccession = async (cik: string, period: string): Promise<string> => {
         if (form[i] === '10-Q' && reportDate[i] === period) {
             return accessionNumber[i];
         }
+        if (form[i] === '10-K' && reportDate[i] === period) {
+            return accessionNumber[i];
+        }
     }
     // check older filings pages if not found in recent
-    throw new Error(`No 10-Q found for CIK ${cik} period ${period}`);
+    throw new Error(`No 10-Q or 10-K found for CIK ${cik} period ${period}`);
 };
 
 const downloadFiling = async (cik: string, accession: string, ticker: string, period: string) => {

@@ -14,7 +14,9 @@
     "test": "jest --forceExit",
     "test:10q": "jest xbrl.spec --forceExit",
     "test:10k": "jest xbrl_10k --forceExit",
-    "download": "npx ts-node scripts/download-filings.ts"
+    "download": "npx ts-node scripts/download-filings.ts",
+    "gen-mocks": "npx ts-node scripts/gen-mocks.ts",
+    "gen-mocks:force": "npx ts-node scripts/gen-mocks.ts --force"
   },
   "devDependencies": {
     "@types/jest": "^29.5.12",

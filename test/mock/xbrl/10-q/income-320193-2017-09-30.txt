@@ -1,0 +1,39 @@
+{
+  "quarterly": {
+    "startDate": "2017-07-02",
+    "endDate": "2017-09-30",
+    "months": 3,
+    "facts": [
+      {
+        "concept": "us-gaap:EarningsPerShareBasic",
+        "label": "earnings per share - basic",
+        "value": 2.08,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EarningsPerShareDiluted",
+        "label": "earnings per share - diluted",
+        "value": 2.07,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:GrossProfit",
+        "label": "gross profit",
+        "value": 19931000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetIncomeLoss",
+        "label": "net income",
+        "value": 10714000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:SalesRevenueNet",
+        "label": "revenue",
+        "value": 52579000000,
+        "unit": "USD"
+      }
+    ]
+  }
+}
