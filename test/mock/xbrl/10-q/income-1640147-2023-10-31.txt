@@ -1,266 +1,272 @@
 {
   "quarterly": {
-    "startDate": "2023-11-01",
-    "endDate": "2024-01-31",
+    "startDate": "2023-08-01",
+    "endDate": "2023-10-31",
     "months": 4,
     "facts": [
       {
         "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
         "label": "revenue",
-        "value": 524999000,
+        "value": 734173000,
         "unit": "USD"
       },
       {
-        "concept": "us-gaap:CostOfRevenue",
+        "concept": "us-gaap:CostOfGoodsAndServicesSold",
         "label": "cost of revenue",
-        "value": 117199000,
+        "value": 228948000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:GrossProfit",
         "label": "gross profit",
-        "value": 407800000,
+        "value": 505225000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:SellingAndMarketingExpense",
         "label": "sales and marketing",
-        "value": 276481000,
+        "value": 355079000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:ResearchAndDevelopmentExpense",
         "label": "research and development",
-        "value": 122181000,
+        "value": 332065000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:GeneralAndAdministrativeExpense",
         "label": "general and administrative",
-        "value": 54595000,
+        "value": 78704000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:OperatingExpenses",
         "label": "total operating expenses",
-        "value": 453257000,
+        "value": 765848000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:OperatingIncomeLoss",
         "label": "operating income",
-        "value": -45457000,
+        "value": -260623000,
         "unit": "USD"
       },
       {
-        "concept": "us-gaap:InvestmentIncomeInterest",
-        "label": "interest income",
-        "value": 28385000,
-        "unit": "USD"
-      },
-      {
-        "concept": "us-gaap:InterestExpense",
-        "label": "interest expense",
-        "value": 3605000,
+        "concept": "us-gaap:InterestIncomeExpenseNonoperatingNet",
+        "label": "interest income (expense), net",
+        "value": 53491000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:OtherNonoperatingIncomeExpense",
         "label": "other non-operating income (expense)",
-        "value": 172000,
+        "value": -4170000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
         "label": "income before income taxes",
-        "value": -20505000,
+        "value": -211302000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:IncomeTaxExpenseBenefit",
         "label": "income tax expense (benefit)",
-        "value": 7964000,
+        "value": 3392000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProfitLoss",
+        "label": "net income including noncontrolling interests",
+        "value": -214694000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetIncomeLossAttributableToNoncontrollingInterest",
+        "label": "net income attributable to noncontrolling interests",
+        "value": -443000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:NetIncomeLoss",
         "label": "net income",
-        "value": -28469000,
+        "value": -214251000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:EarningsPerShareDiluted",
         "label": "earnings per share - diluted",
-        "value": -0.19,
+        "value": -0.65,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
         "label": "weighted-average shares - basic",
-        "value": 148951000,
+        "value": 329310000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OtherComprehensiveIncomeLossNetOfTax",
+        "label": "other comprehensive income (loss)",
+        "value": 5036000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:ComprehensiveIncomeNetOfTax",
         "label": "comprehensive income",
-        "value": -13523000,
+        "value": -209215000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:AmortizationOfIntangibleAssets",
         "label": "amortization of intangibles",
-        "value": 3100000,
-        "unit": "USD"
-      },
-      {
-        "concept": "us-gaap:InterestExpenseDebt",
-        "label": "interest expense",
-        "value": 1337000,
-        "unit": "USD"
-      },
-      {
-        "concept": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
-        "label": "net income attributable to common stockholders",
-        "value": -28469000,
-        "unit": "USD"
-      },
-      {
-        "concept": "us-gaap:EarningsPerShareBasic",
-        "label": "earnings per share - basic",
-        "value": -0.19,
+        "value": 22500000,
         "unit": "USD"
       }
     ]
   },
   "ytd": {
-    "startDate": "2023-08-01",
-    "endDate": "2024-01-31",
-    "months": 7,
+    "startDate": "2023-02-01",
+    "endDate": "2023-10-31",
+    "months": 10,
     "facts": [
       {
         "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
         "label": "revenue",
-        "value": 1021702000,
+        "value": 2031790000,
         "unit": "USD"
       },
       {
-        "concept": "us-gaap:CostOfRevenue",
+        "concept": "us-gaap:CostOfGoodsAndServicesSold",
         "label": "cost of revenue",
-        "value": 228593000,
+        "value": 656754000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:GrossProfit",
         "label": "gross profit",
-        "value": 793109000,
+        "value": 1375036000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:SellingAndMarketingExpense",
         "label": "sales and marketing",
-        "value": 543592000,
+        "value": 1029925000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:ResearchAndDevelopmentExpense",
         "label": "research and development",
-        "value": 235720000,
+        "value": 923473000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:GeneralAndAdministrativeExpense",
         "label": "general and administrative",
-        "value": 105311000,
+        "value": 240906000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:OperatingExpenses",
         "label": "total operating expenses",
-        "value": 884623000,
+        "value": 2194304000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:OperatingIncomeLoss",
         "label": "operating income",
-        "value": -91514000,
+        "value": -819268000,
         "unit": "USD"
       },
       {
-        "concept": "us-gaap:InvestmentIncomeInterest",
-        "label": "interest income",
-        "value": 54327000,
-        "unit": "USD"
-      },
-      {
-        "concept": "us-gaap:InterestExpense",
-        "label": "interest expense",
-        "value": 6764000,
+        "concept": "us-gaap:InterestIncomeExpenseNonoperatingNet",
+        "label": "interest income (expense), net",
+        "value": 146902000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:OtherNonoperatingIncomeExpense",
         "label": "other non-operating income (expense)",
-        "value": -1040000,
+        "value": -2646000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
         "label": "income before income taxes",
-        "value": -44991000,
+        "value": -675012000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:IncomeTaxExpenseBenefit",
         "label": "income tax expense (benefit)",
-        "value": 16961000,
+        "value": -6934000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProfitLoss",
+        "label": "net income including noncontrolling interests",
+        "value": -668078000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetIncomeLossAttributableToNoncontrollingInterest",
+        "label": "net income attributable to noncontrolling interests",
+        "value": -1333000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:NetIncomeLoss",
         "label": "net income",
-        "value": -61952000,
+        "value": -666745000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:EarningsPerShareBasic",
         "label": "earnings per share - basic",
-        "value": -0.42,
+        "value": -2.04,
         "unit": "USD"
       },
       {
-        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
-        "label": "weighted-average shares - diluted",
-        "value": 148287000,
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 326964000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OtherComprehensiveIncomeLossNetOfTax",
+        "label": "other comprehensive income (loss)",
+        "value": 11064000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:ComprehensiveIncomeNetOfTax",
         "label": "comprehensive income",
-        "value": -63385000,
+        "value": -655681000,
         "unit": "USD"
       },
       {
-        "concept": "us-gaap:AmortizationOfIntangibleAssets",
-        "label": "amortization of intangibles",
-        "value": 6119000,
+        "concept": "us-gaap:DepreciationDepletionAndAmortization",
+        "label": "depreciation, depletion and amortization",
+        "value": 84917000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:ShareBasedCompensation",
         "label": "stock-based compensation",
-        "value": 269570000,
+        "value": 862517000,
         "unit": "USD"
       },
       {
-        "concept": "us-gaap:InterestExpenseDebt",
-        "label": "interest expense",
-        "value": 2673000,
+        "concept": "us-gaap:AmortizationOfIntangibleAssets",
+        "label": "amortization of intangibles",
+        "value": 58900000,
         "unit": "USD"
       },
       {
-        "concept": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
-        "label": "net income attributable to common stockholders",
-        "value": -61952000,
+        "concept": "us-gaap:EarningsPerShareDiluted",
+        "label": "earnings per share - diluted",
+        "value": -2.04,
         "unit": "USD"
       }
     ]

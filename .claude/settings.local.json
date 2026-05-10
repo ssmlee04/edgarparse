@@ -16,7 +16,9 @@
       "Bash(git commit *)",
       "Bash(ln -sf 0000320193-2026-03-28.txt data/txt/10-q/320193-2026-03-28.txt)",
       "Bash(npx ts-node *)",
-      "Bash(npx jest *)"
+      "Bash(npx jest *)",
+      "Bash(python3 -c 'import json,sys; d=json.load\\(open\\('\\\\''__TRACKED_VAR__'\\\\''\\)\\); q=d.get\\('\\\\''quarterly'\\\\'',d\\); print\\('\\\\''quarterly facts:'\\\\'', len\\(q.get\\('\\\\''facts'\\\\'',[]\\)\\), '\\\\''| ytd facts:'\\\\'', len\\(d.get\\('\\\\''ytd'\\\\'',{}\\).get\\('\\\\''facts'\\\\'',[]\\)\\)\\)')",
+      "Bash(python3 *)"
     ]
   }
 }

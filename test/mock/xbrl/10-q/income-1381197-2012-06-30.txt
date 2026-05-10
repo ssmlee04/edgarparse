@@ -4,5 +4,11 @@
     "endDate": "2012-06-30",
     "months": 4,
     "facts": []
+  },
+  "ytd": {
+    "startDate": "2012-01-01",
+    "endDate": "2012-06-30",
+    "months": 7,
+    "facts": []
   }
 }
