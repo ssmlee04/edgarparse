@@ -1,128 +1,158 @@
 {
   "quarterly": {
-    "startDate": "2023-11-01",
-    "endDate": "2024-01-31",
+    "startDate": "2023-08-01",
+    "endDate": "2023-10-31",
     "months": 4,
     "facts": [
       {
-        "concept": "us-gaap:AmortizationOfFinancingCosts",
-        "label": "amortization of financing costs",
-        "value": 978000,
+        "concept": "us-gaap:EquitySecuritiesFvNiUnrealizedGainLoss",
+        "label": "unrealized gain (loss) on equity securities",
+        "value": -1790000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
+        "label": "repurchase of common stock",
+        "value": -400038000,
         "unit": "USD"
       }
     ]
   },
   "ytd": {
-    "startDate": "2023-08-01",
-    "endDate": "2024-01-31",
-    "months": 7,
+    "startDate": "2023-02-01",
+    "endDate": "2023-10-31",
+    "months": 10,
     "facts": [
       {
-        "concept": "us-gaap:AmortizationOfFinancingCosts",
-        "label": "amortization of financing costs",
-        "value": 1955000,
+        "concept": "us-gaap:DepreciationDepletionAndAmortization",
+        "label": "depreciation, depletion and amortization",
+        "value": 84917000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:ShareBasedCompensation",
         "label": "stock-based compensation",
-        "value": 269570000,
+        "value": 862517000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EquitySecuritiesFvNiUnrealizedGainLoss",
+        "label": "unrealized gain (loss) on equity securities",
+        "value": 1105000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:DeferredIncomeTaxExpenseBenefit",
+        "label": "deferred income taxes",
+        "value": -13107000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:OtherNoncashIncomeExpense",
         "label": "other non-cash items",
-        "value": -1403000,
+        "value": -14286000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:IncreaseDecreaseInAccountsReceivable",
         "label": "change in accounts receivable",
-        "value": -102374000,
-        "unit": "USD"
-      },
-      {
-        "concept": "us-gaap:IncreaseDecreaseInContractWithCustomerAsset",
-        "label": "change in contract assets",
-        "value": 67744000,
+        "value": -205138000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets",
         "label": "change in prepaid and other assets",
-        "value": -2660000,
+        "value": -51574000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:IncreaseDecreaseInAccountsPayable",
         "label": "change in accounts payable",
-        "value": -2412000,
-        "unit": "USD"
-      },
-      {
-        "concept": "us-gaap:IncreaseDecreaseInEmployeeRelatedLiabilities",
-        "label": "change in accrued compensation",
-        "value": 562000,
+        "value": 51672000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:IncreaseDecreaseInContractWithCustomerLiability",
         "label": "change in deferred revenue",
-        "value": 62477000,
+        "value": -67409000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
         "label": "net cash from operating activities",
-        "value": 402875000,
+        "value": 503542000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": -59553000,
+        "value": -22014000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsToAcquireBusinessesNetOfCashAcquired",
         "label": "acquisitions, net of cash",
-        "value": -4377000,
+        "value": -279534000,
         "unit": "USD"
       },
       {
-        "concept": "us-gaap:PaymentsToAcquireAvailableForSaleSecuritiesDebt",
+        "concept": "us-gaap:PaymentsToAcquireIntangibleAssets",
+        "label": "purchases of intangible assets",
+        "value": -28744000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToAcquireInvestments",
         "label": "purchases of investments",
-        "value": -761796000,
+        "value": -2095329000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:ProceedsFromMaturitiesPrepaymentsAndCallsOfAvailableForSaleSecurities",
         "label": "maturities of investments",
-        "value": 594687000,
+        "value": 2751148000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:NetCashProvidedByUsedInInvestingActivities",
         "label": "net cash from investing activities",
-        "value": -248750000,
+        "value": 309689000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:ProceedsFromStockOptionsExercised",
         "label": "proceeds from stock option exercises",
-        "value": 3848000,
+        "value": 38854000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
+        "label": "tax withholding on stock awards",
+        "value": -273828000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
+        "label": "repurchase of common stock",
+        "value": -591732000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:NetCashProvidedByUsedInFinancingActivities",
         "label": "net cash from financing activities",
-        "value": 22255000,
+        "value": -765472000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents",
+        "label": "effect of exchange rate on cash",
+        "value": -4595000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
         "label": "net change in cash",
-        "value": 176380000,
+        "value": 43164000,
         "unit": "USD"
       }
     ]

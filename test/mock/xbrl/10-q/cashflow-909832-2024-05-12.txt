@@ -1,115 +1,134 @@
 {
   "quarterly": {
-    "startDate": "2020-04-01",
-    "endDate": "2020-06-30",
+    "startDate": "2024-02-19",
+    "endDate": "2024-05-12",
     "months": 4,
-    "facts": []
+    "facts": [
+      {
+        "concept": "us-gaap:ShareBasedCompensation",
+        "label": "stock-based compensation",
+        "value": 106000000,
+        "unit": "USD"
+      }
+    ]
   },
   "ytd": {
-    "startDate": "2020-01-01",
-    "endDate": "2020-06-30",
-    "months": 7,
+    "startDate": "2023-09-04",
+    "endDate": "2024-05-12",
+    "months": 9,
     "facts": [
       {
         "concept": "us-gaap:DepreciationDepletionAndAmortization",
         "label": "depreciation, depletion and amortization",
-        "value": 1827000000,
+        "value": 1531000000,
         "unit": "USD"
       },
       {
-        "concept": "us-gaap:OtherNoncashIncomeExpense",
-        "label": "other non-cash items",
-        "value": -245000000,
-        "unit": "USD"
-      },
-      {
-        "concept": "us-gaap:IncreaseDecreaseInAccountsReceivable",
-        "label": "change in accounts receivable",
-        "value": 1177000000,
+        "concept": "us-gaap:ShareBasedCompensation",
+        "label": "stock-based compensation",
+        "value": 686000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:IncreaseDecreaseInInventories",
         "label": "change in inventories",
-        "value": 226000000,
+        "value": 831000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:IncreaseDecreaseInAccountsPayable",
         "label": "change in accounts payable",
-        "value": -216000000,
+        "value": 1380000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
         "label": "net cash from operating activities",
-        "value": 4976000000,
-        "unit": "USD"
-      },
-      {
-        "concept": "us-gaap:ProceedsFromMaturitiesPrepaymentsAndCallsOfAvailableForSaleSecurities",
-        "label": "maturities of investments",
-        "value": 238000000,
+        "value": 8381000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
-        "value": -300000000,
+        "value": -3133000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsForProceedsFromOtherInvestingActivities",
         "label": "other investing activities",
-        "value": 48000000,
+        "value": 7000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:NetCashProvidedByUsedInInvestingActivities",
         "label": "net cash from investing activities",
-        "value": -2389000000,
+        "value": -2706000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:RepaymentsOfShortTermDebt",
+        "label": "repayments of short-term debt",
+        "value": -637000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromShortTermDebt",
+        "label": "proceeds from short-term debt",
+        "value": 628000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:ProceedsFromIssuanceOfLongTermDebt",
         "label": "proceeds from long-term debt",
-        "value": 9002000000,
+        "value": 498000000,
         "unit": "USD"
       },
       {
-        "concept": "us-gaap:RepaymentsOfLongTermDebt",
-        "label": "repayments of long-term debt",
-        "value": -5000000000,
+        "concept": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
+        "label": "tax withholding on stock awards",
+        "value": -313000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
         "label": "repurchase of common stock",
-        "value": -1516000000,
+        "value": -484000000,
         "unit": "USD"
       },
       {
-        "concept": "us-gaap:PaymentsOfDividendsCommonStock",
-        "label": "dividends paid - common",
-        "value": -1887000000,
+        "concept": "us-gaap:PaymentsOfDividends",
+        "label": "dividends paid",
+        "value": -8527000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:FinanceLeasePrincipalPayments",
+        "label": "finance lease principal payments",
+        "value": -112000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:ProceedsFromPaymentsForOtherFinancingActivities",
         "label": "other financing activities",
-        "value": -78000000,
+        "value": -1000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:NetCashProvidedByUsedInFinancingActivities",
         "label": "net cash from financing activities",
-        "value": 521000000,
+        "value": -8948000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents",
+        "label": "effect of exchange rate on cash",
+        "value": -23000000,
         "unit": "USD"
       },
       {
         "concept": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
         "label": "net change in cash",
-        "value": 3108000000,
+        "value": -3296000000,
         "unit": "USD"
       }
     ]

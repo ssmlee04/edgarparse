@@ -121,10 +121,10 @@ export default class XBRLStatementProcessor {
             } else if (ctx.type === 'duration' && ctx.endDate === this.datestr) {
                 const diff = monthDiff(ctx.startDate!, ctx.endDate);
                 // quarterly → month diff ≈ 2 (Jul–Sep, Oct–Dec, etc.)
-                // ytd (9m)  → month diff ≈ 8
+                // ytd       → month diff 4–9 (covers Q2 6m, Q3 9m YTD periods)
                 // annual    → month diff ≈ 11 (fiscal year, any start month)
                 if (periodType === 'quarterly' && diff >= 1 && diff <= 3) ids.add(id);
-                if (periodType === 'ytd' && diff >= 7 && diff <= 9) ids.add(id);
+                if (periodType === 'ytd' && diff >= 4 && diff <= 9) ids.add(id);
                 if (periodType === 'annual' && diff >= 10 && diff <= 13) ids.add(id);
             }
         }
@@ -138,7 +138,7 @@ export default class XBRLStatementProcessor {
             if (periodType === 'quarterly' && diff >= 1 && diff <= 3) {
                 return { startDate: ctx.startDate!, endDate: ctx.endDate, months: diff + 1 };
             }
-            if (periodType === 'ytd' && diff >= 7 && diff <= 9) {
+            if (periodType === 'ytd' && diff >= 4 && diff <= 9) {
                 return { startDate: ctx.startDate!, endDate: ctx.endDate, months: diff + 1 };
             }
             if (periodType === 'annual' && diff >= 10 && diff <= 13) {
