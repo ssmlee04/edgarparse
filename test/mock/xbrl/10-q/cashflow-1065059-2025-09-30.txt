@@ -1,23 +1,4 @@
 {
-  "quarterly": {
-    "startDate": "2025-07-01",
-    "endDate": "2025-09-30",
-    "months": 4,
-    "facts": [
-      {
-        "concept": "us-gaap:ForeignCurrencyTransactionGainLossUnrealized",
-        "label": "unrealized foreign currency gain (loss)",
-        "value": -100000,
-        "unit": "USD"
-      },
-      {
-        "concept": "us-gaap:AmortizationOfFinancingCosts",
-        "label": "amortization of financing costs",
-        "value": 900000,
-        "unit": "USD"
-      }
-    ]
-  },
   "ytd": {
     "startDate": "2025-01-01",
     "endDate": "2025-09-30",

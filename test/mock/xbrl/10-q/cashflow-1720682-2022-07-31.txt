@@ -1,23 +1,4 @@
 {
-  "quarterly": {
-    "startDate": "2022-05-01",
-    "endDate": "2022-07-31",
-    "months": 4,
-    "facts": [
-      {
-        "concept": "us-gaap:IncreaseDecreaseInContractWithCustomerAsset",
-        "label": "change in contract assets",
-        "value": -687000,
-        "unit": "USD"
-      },
-      {
-        "concept": "us-gaap:DepreciationAndAmortization",
-        "label": "depreciation and amortization",
-        "value": 1000000,
-        "unit": "USD"
-      }
-    ]
-  },
   "ytd": {
     "startDate": "2022-02-01",
     "endDate": "2022-07-31",

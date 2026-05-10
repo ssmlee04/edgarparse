@@ -1,17 +1,4 @@
 {
-  "quarterly": {
-    "startDate": "2023-11-01",
-    "endDate": "2024-01-31",
-    "months": 4,
-    "facts": [
-      {
-        "concept": "us-gaap:AmortizationOfFinancingCosts",
-        "label": "amortization of financing costs",
-        "value": 978000,
-        "unit": "USD"
-      }
-    ]
-  },
   "ytd": {
     "startDate": "2023-08-01",
     "endDate": "2024-01-31",

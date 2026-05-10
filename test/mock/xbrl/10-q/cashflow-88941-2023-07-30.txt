@@ -1,17 +1,4 @@
 {
-  "quarterly": {
-    "startDate": "2023-05-01",
-    "endDate": "2023-07-30",
-    "months": 4,
-    "facts": [
-      {
-        "concept": "us-gaap:AmortizationOfDebtDiscountPremium",
-        "label": "amortization of debt discount/premium",
-        "value": 1689000,
-        "unit": "USD"
-      }
-    ]
-  },
   "ytd": {
     "startDate": "2023-01-30",
     "endDate": "2023-07-30",

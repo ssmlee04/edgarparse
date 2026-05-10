@@ -1,17 +1,4 @@
 {
-  "quarterly": {
-    "startDate": "2024-01-01",
-    "endDate": "2024-03-31",
-    "months": 4,
-    "facts": [
-      {
-        "concept": "us-gaap:DepreciationAndAmortization",
-        "label": "depreciation and amortization",
-        "value": 371900000,
-        "unit": "USD"
-      }
-    ]
-  },
   "ytd": {
     "startDate": "2023-10-02",
     "endDate": "2024-03-31",

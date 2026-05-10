@@ -1,23 +1,4 @@
 {
-  "quarterly": {
-    "startDate": "2023-07-01",
-    "endDate": "2023-09-30",
-    "months": 4,
-    "facts": [
-      {
-        "concept": "us-gaap:InventoryWriteDown",
-        "label": "inventory write-down",
-        "value": 1300000000,
-        "unit": "USD"
-      },
-      {
-        "concept": "us-gaap:DepreciationDepletionAndAmortization",
-        "label": "depreciation, depletion and amortization",
-        "value": 246000000,
-        "unit": "USD"
-      }
-    ]
-  },
   "ytd": {
     "startDate": "2023-01-01",
     "endDate": "2023-09-30",

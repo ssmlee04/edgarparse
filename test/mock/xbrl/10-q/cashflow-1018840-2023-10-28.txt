@@ -1,17 +1,4 @@
 {
-  "quarterly": {
-    "startDate": "2023-07-30",
-    "endDate": "2023-10-28",
-    "months": 4,
-    "facts": [
-      {
-        "concept": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
-        "label": "tax withholding on stock awards",
-        "value": -10310000,
-        "unit": "USD"
-      }
-    ]
-  },
   "ytd": {
     "startDate": "2023-01-29",
     "endDate": "2023-10-28",

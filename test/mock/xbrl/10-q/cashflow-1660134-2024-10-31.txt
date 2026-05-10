@@ -1,10 +1,4 @@
 {
-  "quarterly": {
-    "startDate": "2024-08-01",
-    "endDate": "2024-10-31",
-    "months": 4,
-    "facts": []
-  },
   "ytd": {
     "startDate": "2024-02-01",
     "endDate": "2024-10-31",

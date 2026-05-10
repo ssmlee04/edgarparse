@@ -1,5 +1,5 @@
 {
-  "annual": {
+  "ytd": {
     "startDate": "2022-08-29",
     "endDate": "2023-09-03",
     "months": 14,

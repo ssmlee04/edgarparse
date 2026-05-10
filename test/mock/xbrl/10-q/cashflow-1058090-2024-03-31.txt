@@ -1,5 +1,5 @@
 {
-  "quarterly": {
+  "ytd": {
     "startDate": "2024-01-01",
     "endDate": "2024-03-31",
     "months": 4,

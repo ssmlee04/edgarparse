@@ -1,23 +1,4 @@
 {
-  "quarterly": {
-    "startDate": "2023-07-03",
-    "endDate": "2023-10-01",
-    "months": 3,
-    "facts": [
-      {
-        "concept": "us-gaap:IncomeLossFromEquityMethodInvestmentsNetOfDividendsOrDistributions",
-        "label": "equity method investment income, net",
-        "value": -2000000,
-        "unit": "USD"
-      },
-      {
-        "concept": "us-gaap:DepreciationDepletionAndAmortization",
-        "label": "depreciation, depletion and amortization",
-        "value": 273000000,
-        "unit": "USD"
-      }
-    ]
-  },
   "ytd": {
     "startDate": "2023-01-01",
     "endDate": "2023-10-01",

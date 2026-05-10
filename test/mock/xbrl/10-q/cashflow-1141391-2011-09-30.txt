@@ -1,17 +1,4 @@
 {
-  "quarterly": {
-    "startDate": "2011-07-01",
-    "endDate": "2011-09-30",
-    "months": 4,
-    "facts": [
-      {
-        "concept": "us-gaap:DepreciationAndAmortization",
-        "label": "depreciation and amortization",
-        "value": 51000000,
-        "unit": "USD"
-      }
-    ]
-  },
   "ytd": {
     "startDate": "2011-01-01",
     "endDate": "2011-09-30",

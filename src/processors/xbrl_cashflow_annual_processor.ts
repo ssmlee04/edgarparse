@@ -2,7 +2,7 @@ import XBRLStatementProcessor from './xbrl_base';
 import type { PeriodFacts } from '../xbrl_types';
 
 export type AnnualCashflowResult = {
-    annual: PeriodFacts;
+    ytd: PeriodFacts;
 };
 
 export default class XBRLCashflowAnnualProcessor extends XBRLStatementProcessor {
@@ -16,7 +16,7 @@ export default class XBRLCashflowAnnualProcessor extends XBRLStatementProcessor 
         if (!meta) throw new Error(`No annual consolidated context found for ${this.cik} ${this.datestr}`);
 
         return {
-            annual: {
+            ytd: {
                 startDate: meta.startDate,
                 endDate: meta.endDate,
                 months: meta.months,

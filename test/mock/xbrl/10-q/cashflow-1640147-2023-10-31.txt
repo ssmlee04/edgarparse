@@ -1,23 +1,4 @@
 {
-  "quarterly": {
-    "startDate": "2023-08-01",
-    "endDate": "2023-10-31",
-    "months": 4,
-    "facts": [
-      {
-        "concept": "us-gaap:EquitySecuritiesFvNiUnrealizedGainLoss",
-        "label": "unrealized gain (loss) on equity securities",
-        "value": -1790000,
-        "unit": "USD"
-      },
-      {
-        "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
-        "label": "repurchase of common stock",
-        "value": -400038000,
-        "unit": "USD"
-      }
-    ]
-  },
   "ytd": {
     "startDate": "2023-02-01",
     "endDate": "2023-10-31",

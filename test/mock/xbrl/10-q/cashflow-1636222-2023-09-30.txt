@@ -1,23 +1,4 @@
 {
-  "quarterly": {
-    "startDate": "2023-07-02",
-    "endDate": "2023-09-30",
-    "months": 3,
-    "facts": [
-      {
-        "concept": "us-gaap:DepreciationDepletionAndAmortization",
-        "label": "depreciation, depletion and amortization",
-        "value": 3384000,
-        "unit": "USD"
-      },
-      {
-        "concept": "us-gaap:GainLossOnDispositionOfAssets1",
-        "label": "gain (loss) on asset disposals",
-        "value": -18000,
-        "unit": "USD"
-      }
-    ]
-  },
   "ytd": {
     "startDate": "2023-01-01",
     "endDate": "2023-09-30",

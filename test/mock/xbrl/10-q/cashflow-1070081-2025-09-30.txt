@@ -1,23 +1,4 @@
 {
-  "quarterly": {
-    "startDate": "2025-07-01",
-    "endDate": "2025-09-30",
-    "months": 4,
-    "facts": [
-      {
-        "concept": "us-gaap:InventoryWriteDown",
-        "label": "inventory write-down",
-        "value": 500000,
-        "unit": "USD"
-      },
-      {
-        "concept": "us-gaap:ProvisionForDoubtfulAccounts",
-        "label": "provision for credit losses",
-        "value": 800000,
-        "unit": "USD"
-      }
-    ]
-  },
   "ytd": {
     "startDate": "2025-01-01",
     "endDate": "2025-09-30",
