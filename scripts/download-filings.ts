@@ -67,21 +67,36 @@ const getBuffer = (url: string): Promise<Buffer> =>
 
 const sleep = (ms: number) => new Promise(r => setTimeout(r, ms));
 
-const findAccession = async (cik: string, period: string): Promise<string> => {
-    const paddedCik = cik.padStart(10, '0');
-    const url = `https://data.sec.gov/submissions/CIK${paddedCik}.json`;
-    const body = await get(url);
-    const data = JSON.parse(body);
-    const { form, reportDate, accessionNumber } = data.filings.recent;
+const searchFilings = (filings: { form: string[]; reportDate: string[]; accessionNumber: string[] }, period: string): string | null => {
+    const { form, reportDate, accessionNumber } = filings;
     for (let i = 0; i < form.length; i++) {
-        if (form[i] === '10-Q' && reportDate[i] === period) {
-            return accessionNumber[i];
-        }
-        if (form[i] === '10-K' && reportDate[i] === period) {
+        if ((form[i] === '10-Q' || form[i] === '10-K') && reportDate[i] === period) {
             return accessionNumber[i];
         }
     }
-    // check older filings pages if not found in recent
+    return null;
+};
+
+const findAccession = async (cik: string, period: string): Promise<string> => {
+    const paddedCik = cik.padStart(10, '0');
+    const body = await get(`https://data.sec.gov/submissions/CIK${paddedCik}.json`);
+    const data = JSON.parse(body);
+
+    const accession = searchFilings(data.filings.recent, period);
+    if (accession) return accession;
+
+    // Walk paginated older filings if not found in recent
+    for (const file of data.filings.files ?? []) {
+        await sleep(200);
+        try {
+            const pageBody = await get(`https://data.sec.gov/submissions/${file.name}`);
+            const found = searchFilings(JSON.parse(pageBody), period);
+            if (found) return found;
+        } catch {
+            // skip pages that fail to load
+        }
+    }
+
     throw new Error(`No 10-Q or 10-K found for CIK ${cik} period ${period}`);
 };
 
