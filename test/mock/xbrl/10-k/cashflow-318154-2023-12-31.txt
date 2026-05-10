@@ -35,9 +35,21 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:IncreaseDecreaseInOtherOperatingAssets",
+        "label": "change in other operating assets",
+        "value": 564000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:IncreaseDecreaseInAccountsPayable",
         "label": "change in accounts payable",
         "value": -402000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInOtherOperatingLiabilities",
+        "label": "change in other operating liabilities",
+        "value": 731000000,
         "unit": "USD"
       },
       {

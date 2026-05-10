@@ -53,6 +53,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:IncreaseDecreaseInOtherOperatingAssets",
+        "label": "change in other operating assets",
+        "value": -11698000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:IncreaseDecreaseInDeferredRevenue",
         "label": "change in deferred revenue",
         "value": 9873000,

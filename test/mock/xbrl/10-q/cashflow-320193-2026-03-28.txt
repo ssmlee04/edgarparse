@@ -35,9 +35,21 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:IncreaseDecreaseInOtherOperatingAssets",
+        "label": "change in other operating assets",
+        "value": 14329000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:IncreaseDecreaseInAccountsPayable",
         "label": "change in accounts payable",
         "value": -12297000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInOtherOperatingLiabilities",
+        "label": "change in other operating liabilities",
+        "value": 7301000000,
         "unit": "USD"
       },
       {
@@ -101,6 +113,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ProceedsFromRepaymentsOfCommercialPaper",
+        "label": "net commercial paper",
+        "value": -5911000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:ProceedsFromPaymentsForOtherFinancingActivities",
         "label": "other financing activities",
         "value": -126000000,
@@ -116,6 +134,18 @@
         "concept": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
         "label": "net change in cash",
         "value": 9638000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromRepaymentsOfShortTermDebtMaturingInThreeMonthsOrLess",
+        "label": "net short-term debt (≤3 months)",
+        "value": -2123000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:RepaymentsOfShortTermDebtMaturingInMoreThanThreeMonths",
+        "label": "repayments of short-term debt",
+        "value": -3788000000,
         "unit": "USD"
       }
     ]

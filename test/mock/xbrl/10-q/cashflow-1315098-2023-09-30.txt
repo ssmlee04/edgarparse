@@ -41,6 +41,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:IncreaseDecreaseInOtherOperatingAssets",
+        "label": "change in other operating assets",
+        "value": 6189000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:IncreaseDecreaseInOtherNoncurrentLiabilities",
         "label": "change in other non-current liabilities",
         "value": 4971000,

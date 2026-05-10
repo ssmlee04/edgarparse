@@ -53,6 +53,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:IncreaseDecreaseInOtherOperatingAssets",
+        "label": "change in other operating assets",
+        "value": 346000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:IncreaseDecreaseInAccountsPayable",
         "label": "change in accounts payable",
         "value": 18208000,
@@ -74,6 +80,12 @@
         "concept": "us-gaap:IncreaseDecreaseInContractWithCustomerLiability",
         "label": "change in deferred revenue",
         "value": 33374000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInOtherOperatingLiabilities",
+        "label": "change in other operating liabilities",
+        "value": 3853000,
         "unit": "USD"
       },
       {

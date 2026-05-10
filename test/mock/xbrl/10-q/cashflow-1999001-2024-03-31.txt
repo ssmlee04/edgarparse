@@ -29,6 +29,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:IncreaseDecreaseInOtherOperatingAssets",
+        "label": "change in other operating assets",
+        "value": 16949000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:IncreaseDecreaseInAccountsPayable",
         "label": "change in accounts payable",
         "value": 9218000,
@@ -44,6 +50,12 @@
         "concept": "us-gaap:IncreaseDecreaseInIncomeTaxesReceivable",
         "label": "change in income taxes receivable",
         "value": 30325000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInOtherOperatingLiabilities",
+        "label": "change in other operating liabilities",
+        "value": -738000,
         "unit": "USD"
       },
       {

@@ -59,6 +59,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:NetCashProvidedByUsedInOperatingActivitiesContinuingOperations",
+        "label": "net cash from operating activities",
+        "value": 84738000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
         "label": "net cash from operating activities",
         "value": 84738000,

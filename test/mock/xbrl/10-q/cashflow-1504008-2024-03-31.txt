@@ -5,6 +5,12 @@
     "months": 4,
     "facts": [
       {
+        "concept": "us-gaap:DepreciationAmortizationAndAccretionNet",
+        "label": "depreciation, amortization and accretion",
+        "value": -3690000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:ShareBasedCompensation",
         "label": "stock-based compensation",
         "value": 5883000,
@@ -20,6 +26,18 @@
         "concept": "us-gaap:DeferredIncomeTaxExpenseBenefit",
         "label": "deferred income taxes",
         "value": -5865000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInOtherOperatingAssets",
+        "label": "change in other operating assets",
+        "value": 17523000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInOtherOperatingLiabilities",
+        "label": "change in other operating liabilities",
+        "value": -29443000,
         "unit": "USD"
       },
       {

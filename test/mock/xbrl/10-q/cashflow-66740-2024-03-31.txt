@@ -83,6 +83,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ProceedsFromRepaymentsOfShortTermDebtMaturingInThreeMonthsOrLess",
+        "label": "net short-term debt (≤3 months)",
+        "value": -205000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
         "label": "repurchase of common stock",
         "value": -21000000,

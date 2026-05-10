@@ -41,6 +41,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:RepaymentsOfShortTermDebtMaturingInMoreThanThreeMonths",
+        "label": "repayments of short-term debt",
+        "value": -1106000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:PaymentsOfDividendsCommonStock",
         "label": "dividends paid - common",
         "value": -3808000000,

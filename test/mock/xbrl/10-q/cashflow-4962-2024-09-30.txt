@@ -5,6 +5,12 @@
     "months": 10,
     "facts": [
       {
+        "concept": "us-gaap:DepreciationAmortizationAndAccretionNet",
+        "label": "depreciation, amortization and accretion",
+        "value": 1248000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:ShareBasedCompensation",
         "label": "stock-based compensation",
         "value": 393000000,
@@ -14,6 +20,12 @@
         "concept": "us-gaap:OtherNoncashIncomeExpense",
         "label": "other non-cash items",
         "value": 333000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInOtherOperatingAssets",
+        "label": "change in other operating assets",
+        "value": 222000000,
         "unit": "USD"
       },
       {

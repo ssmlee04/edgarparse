@@ -47,6 +47,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ProceedsFromRepaymentsOfCommercialPaper",
+        "label": "net commercial paper",
+        "value": -1030000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:RepaymentsOfLongTermDebt",
         "label": "repayments of long-term debt",
         "value": -500000000,

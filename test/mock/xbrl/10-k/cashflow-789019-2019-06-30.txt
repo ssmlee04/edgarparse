@@ -71,6 +71,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ProceedsFromRepaymentsOfShortTermDebtMaturingInThreeMonthsOrLess",
+        "label": "net short-term debt (≤3 months)",
+        "value": 0,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:ProceedsFromIssuanceOfCommonStock",
         "label": "proceeds from issuance of common stock",
         "value": 1142000000,

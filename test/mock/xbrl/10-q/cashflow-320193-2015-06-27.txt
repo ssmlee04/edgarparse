@@ -5,6 +5,24 @@
     "months": 10,
     "facts": [
       {
+        "concept": "us-gaap:NetCashProvidedByUsedInOperatingActivitiesContinuingOperations",
+        "label": "net cash from operating activities",
+        "value": 67791000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInOtherOperatingAssets",
+        "label": "change in other operating assets",
+        "value": -2286000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:RepaymentsOfShortTermDebtMaturingInMoreThanThreeMonths",
+        "label": "repayments of short-term debt",
+        "value": -4988000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
         "value": -7629000000,
@@ -71,9 +89,27 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ProceedsFromShortTermDebtMaturingInMoreThanThreeMonths",
+        "label": "proceeds from short-term debt",
+        "value": 2601000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInFinancingActivitiesContinuingOperations",
+        "label": "net cash from financing activities",
+        "value": -11417000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:ProceedsFromMaturitiesPrepaymentsAndCallsOfAvailableForSaleSecurities",
         "label": "maturities of investments",
         "value": 9916000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromRepaymentsOfShortTermDebtMaturingInThreeMonthsOrLess",
+        "label": "net short-term debt (≤3 months)",
+        "value": 579000000,
         "unit": "USD"
       },
       {
@@ -107,15 +143,39 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:IncreaseDecreaseInOtherOperatingLiabilities",
+        "label": "change in other operating liabilities",
+        "value": 4448000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:IncreaseDecreaseInAccountsPayable",
         "label": "change in accounts payable",
         "value": -3263000000,
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:DepreciationAmortizationAndAccretionNet",
+        "label": "depreciation, amortization and accretion",
+        "value": 8138000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:ShareBasedCompensation",
         "label": "stock-based compensation",
         "value": 2671000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromRepaymentsOfCommercialPaper",
+        "label": "net commercial paper",
+        "value": -1808000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInInvestingActivitiesContinuingOperations",
+        "label": "net cash from investing activities",
+        "value": -54899000000,
         "unit": "USD"
       }
     ]

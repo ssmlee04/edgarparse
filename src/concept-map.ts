@@ -171,8 +171,11 @@ export const CONCEPT_MAP: Record<string, ConceptEntry> = {
     // ── Cash Flow ─────────────────────────────────────────────────────────────
     // Section totals — already signed in XBRL (positive = inflow, negative = outflow)
     'us-gaap:NetCashProvidedByUsedInOperatingActivities': { label: 'net cash from operating activities', statement: 'cashflow' },
+    'us-gaap:NetCashProvidedByUsedInOperatingActivitiesContinuingOperations': { label: 'net cash from operating activities', statement: 'cashflow' },
     'us-gaap:NetCashProvidedByUsedInInvestingActivities': { label: 'net cash from investing activities', statement: 'cashflow' },
+    'us-gaap:NetCashProvidedByUsedInInvestingActivitiesContinuingOperations': { label: 'net cash from investing activities', statement: 'cashflow' },
     'us-gaap:NetCashProvidedByUsedInFinancingActivities': { label: 'net cash from financing activities', statement: 'cashflow' },
+    'us-gaap:NetCashProvidedByUsedInFinancingActivitiesContinuingOperations': { label: 'net cash from financing activities', statement: 'cashflow' },
     'us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect': { label: 'net change in cash', statement: 'cashflow' },
     'us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect': { label: 'net change in cash (excl. fx)', statement: 'cashflow' },
     'us-gaap:CashAndCashEquivalentsPeriodIncreaseDecrease': { label: 'net change in cash', statement: 'cashflow' },
@@ -180,6 +183,7 @@ export const CONCEPT_MAP: Record<string, ConceptEntry> = {
     'us-gaap:EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents': { label: 'effect of exchange rate on cash', statement: 'cashflow' },
 
     // Operating — non-cash add-backs (already signed in XBRL)
+    'us-gaap:DepreciationAmortizationAndAccretionNet': { label: 'depreciation, amortization and accretion', statement: 'cashflow' },
     'us-gaap:DeferredIncomeTaxExpenseBenefit': { label: 'deferred income taxes', statement: 'cashflow' },
     'us-gaap:IncomeLossFromEquityMethodInvestmentsNetOfDividendsOrDistributions': { label: 'equity method investment income, net', statement: 'cashflow' },
     'us-gaap:GainLossOnDispositionOfAssets1': { label: 'gain (loss) on asset disposals', statement: 'cashflow' },
@@ -210,6 +214,8 @@ export const CONCEPT_MAP: Record<string, ConceptEntry> = {
     'us-gaap:IncreaseDecreaseInDeferredRevenue': { label: 'change in deferred revenue', statement: 'cashflow' },
     'us-gaap:IncreaseDecreaseInContractWithCustomerLiability': { label: 'change in deferred revenue', statement: 'cashflow' },
     'us-gaap:IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets': { label: 'change in prepaid and other assets', statement: 'cashflow' },
+    'us-gaap:IncreaseDecreaseInOtherOperatingAssets': { label: 'change in other operating assets', statement: 'cashflow' },
+    'us-gaap:IncreaseDecreaseInOtherOperatingLiabilities': { label: 'change in other operating liabilities', statement: 'cashflow' },
     'us-gaap:IncreaseDecreaseInOtherCurrentAssets': { label: 'change in other current assets', statement: 'cashflow' },
     'us-gaap:IncreaseDecreaseInOtherCurrentLiabilities': { label: 'change in other current liabilities', statement: 'cashflow' },
     'us-gaap:IncreaseDecreaseInOtherNoncurrentAssets': { label: 'change in other non-current assets', statement: 'cashflow' },
@@ -253,6 +259,10 @@ export const CONCEPT_MAP: Record<string, ConceptEntry> = {
     'us-gaap:ProceedsFromIssuanceOfLongTermDebt': { label: 'proceeds from long-term debt', statement: 'cashflow' },
     'us-gaap:ProceedsFromLinesOfCredit': { label: 'proceeds from revolving credit', statement: 'cashflow' },
     'us-gaap:ProceedsFromShortTermDebt': { label: 'proceeds from short-term debt', statement: 'cashflow' },
+    'us-gaap:ProceedsFromShortTermDebtMaturingInMoreThanThreeMonths': { label: 'proceeds from short-term debt', statement: 'cashflow' },
+    'us-gaap:RepaymentsOfShortTermDebtMaturingInMoreThanThreeMonths': { label: 'repayments of short-term debt', statement: 'cashflow', negate: true },
+    'us-gaap:ProceedsFromRepaymentsOfShortTermDebtMaturingInThreeMonthsOrLess': { label: 'net short-term debt (≤3 months)', statement: 'cashflow' },
+    'us-gaap:ProceedsFromRepaymentsOfCommercialPaper': { label: 'net commercial paper', statement: 'cashflow' },
     'us-gaap:ProceedsFromMinorityShareholders': { label: 'proceeds from noncontrolling interests', statement: 'cashflow' },
     'us-gaap:ProceedsFromIssuanceOfCommonStock': { label: 'proceeds from issuance of common stock', statement: 'cashflow' },
     'us-gaap:ProceedsFromPaymentsForOtherFinancingActivities': { label: 'other financing activities', statement: 'cashflow' },

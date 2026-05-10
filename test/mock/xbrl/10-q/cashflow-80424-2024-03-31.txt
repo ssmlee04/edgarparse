@@ -71,6 +71,24 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ProceedsFromShortTermDebtMaturingInMoreThanThreeMonths",
+        "label": "proceeds from short-term debt",
+        "value": 2961000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:RepaymentsOfShortTermDebtMaturingInMoreThanThreeMonths",
+        "label": "repayments of short-term debt",
+        "value": -7523000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromRepaymentsOfShortTermDebtMaturingInThreeMonthsOrLess",
+        "label": "net short-term debt (≤3 months)",
+        "value": 2331000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:ProceedsFromIssuanceOfLongTermDebt",
         "label": "proceeds from long-term debt",
         "value": 1598000000,

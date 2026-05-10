@@ -5,6 +5,12 @@
     "months": 13,
     "facts": [
       {
+        "concept": "us-gaap:DepreciationAmortizationAndAccretionNet",
+        "label": "depreciation, amortization and accretion",
+        "value": 201920000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:ShareBasedCompensation",
         "label": "stock-based compensation",
         "value": 398463000,
