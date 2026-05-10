@@ -3,6 +3,133 @@
     "startDate": "2018-02-01",
     "endDate": "2019-01-31",
     "months": 13,
-    "facts": []
+    "facts": [
+      {
+        "concept": "us-gaap:AmortizationOfFinancingCostsAndDiscounts",
+        "label": "amortization of financing costs",
+        "value": 7399000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
+        "label": "net change in cash",
+        "value": 85920000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:DeferredIncomeTaxExpenseBenefit",
+        "label": "deferred income taxes",
+        "value": -4970000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:DepreciationDepletionAndAmortization",
+        "label": "depreciation, depletion and amortization",
+        "value": 5792000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents",
+        "label": "effect of exchange rate on cash",
+        "value": -48000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInAccountsPayable",
+        "label": "change in accounts payable",
+        "value": -913000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInAccountsReceivable",
+        "label": "change in accounts receivable",
+        "value": 19445000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInAccruedLiabilities",
+        "label": "change in accrued liabilities",
+        "value": 13564000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInContractWithCustomerLiability",
+        "label": "change in deferred revenue",
+        "value": 36680000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInOtherNoncurrentAssets",
+        "label": "change in other non-current assets",
+        "value": 214000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets",
+        "label": "change in prepaid and other assets",
+        "value": 5362000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInFinancingActivities",
+        "label": "net cash from financing activities",
+        "value": 288236000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInInvestingActivities",
+        "label": "net cash from investing activities",
+        "value": -160279000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+        "label": "net cash from operating activities",
+        "value": -41989000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
+        "label": "repurchase of common stock",
+        "value": -327000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToAcquireBusinessesNetOfCashAcquired",
+        "label": "acquisitions, net of cash",
+        "value": -55517000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+        "label": "capital expenditures",
+        "value": -6848000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromIssuanceOfCommonStock",
+        "label": "proceeds from issuance of common stock",
+        "value": 10532000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromSaleAndMaturityOfAvailableForSaleSecurities",
+        "label": "proceeds from investments",
+        "value": 450000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromStockOptionsExercised",
+        "label": "proceeds from stock option exercises",
+        "value": 22244000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ShareBasedCompensation",
+        "label": "stock-based compensation",
+        "value": 37403000,
+        "unit": "USD"
+      }
+    ]
   }
 }

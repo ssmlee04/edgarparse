@@ -9,6 +9,73 @@
     "startDate": "2012-01-01",
     "endDate": "2012-06-30",
     "months": 7,
-    "facts": []
+    "facts": [
+      {
+        "concept": "us-gaap:ForeignCurrencyTransactionGainLossUnrealized",
+        "label": "unrealized foreign currency gain (loss)",
+        "value": 8333000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:DeferredIncomeTaxExpenseBenefit",
+        "label": "deferred income taxes",
+        "value": 9924000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ShareBasedCompensation",
+        "label": "stock-based compensation",
+        "value": 37048000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OtherNoncashIncomeExpense",
+        "label": "other non-cash items",
+        "value": 441000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+        "label": "net cash from operating activities",
+        "value": 519558000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInInvestingActivities",
+        "label": "net cash from investing activities",
+        "value": -30208000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsOfDividends",
+        "label": "dividends paid",
+        "value": -9306000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsOfDividendsMinorityInterest",
+        "label": "dividends to noncontrolling interests",
+        "value": -70129000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInFinancingActivities",
+        "label": "net cash from financing activities",
+        "value": -174259000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:CashAndCashEquivalentsPeriodIncreaseDecrease",
+        "label": "net change in cash",
+        "value": 308010000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:RepaymentsOfLinesOfCredit",
+        "label": "repayments of revolving credit",
+        "value": 0,
+        "unit": "USD"
+      }
+    ]
   }
 }

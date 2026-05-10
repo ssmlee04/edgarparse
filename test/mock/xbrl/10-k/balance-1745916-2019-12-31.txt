@@ -1,4 +1,71 @@
 {
   "endDate": "2019-12-31",
-  "facts": []
+  "facts": [
+    {
+      "concept": "us-gaap:Assets",
+      "label": "total assets",
+      "value": 10204017000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:Liabilities",
+      "label": "total liabilities",
+      "value": 8142510000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:LiabilitiesAndStockholdersEquity",
+      "label": "total liabilities and equity",
+      "value": 10204017000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:LongTermDebt",
+      "label": "long-term debt",
+      "value": 1493466000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:OperatingLeaseRightOfUseAsset",
+      "label": "operating lease right-of-use assets",
+      "value": 73090000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:PropertyPlantAndEquipmentNet",
+      "label": "property, plant and equipment, net",
+      "value": 30480000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:RestrictedCash",
+      "label": "restricted cash",
+      "value": 287000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:RetainedEarningsAccumulatedDeficit",
+      "label": "retained earnings (accumulated deficit)",
+      "value": 726392000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:ShortTermBorrowings",
+      "label": "short-term borrowings",
+      "value": 4639001000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:ShortTermInvestments",
+      "label": "short-term investments",
+      "value": 74611000,
+      "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+      "label": "total equity",
+      "value": 2061507000,
+      "unit": "USD"
+    }
+  ]
 }

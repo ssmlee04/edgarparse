@@ -3,6 +3,127 @@
     "startDate": "2021-01-01",
     "endDate": "2021-03-31",
     "months": 4,
-    "facts": []
+    "facts": [
+      {
+        "concept": "us-gaap:ProfitLoss",
+        "label": "net income including noncontrolling interests",
+        "value": -136103000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetIncomeLossAttributableToNoncontrollingInterest",
+        "label": "net income attributable to noncontrolling interests",
+        "value": -1886000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
+        "label": "net income attributable to common stockholders",
+        "value": -134217000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:Revenues",
+        "label": "revenue",
+        "value": 386976000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:CostOfRevenue",
+        "label": "cost of revenue",
+        "value": 97937000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ResearchAndDevelopmentExpense",
+        "label": "research and development",
+        "value": 96644000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:GeneralAndAdministrativeExpense",
+        "label": "general and administrative",
+        "value": 94375000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:SellingAndMarketingExpense",
+        "label": "sales and marketing",
+        "value": 20002000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:CostsAndExpenses",
+        "label": "total costs and expenses",
+        "value": 522032000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OperatingIncomeLoss",
+        "label": "operating income",
+        "value": -135056000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestIncomeExpenseNet",
+        "label": "interest income (expense), net",
+        "value": 5000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OtherOperatingIncomeExpenseNet",
+        "label": "other operating income (expense)",
+        "value": -1050000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+        "label": "income before income taxes",
+        "value": -136101000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncomeTaxExpenseBenefit",
+        "label": "income tax expense (benefit)",
+        "value": 2000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetIncomeLoss",
+        "label": "net income",
+        "value": -134217000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OtherComprehensiveIncomeLossNetOfTax",
+        "label": "other comprehensive income (loss)",
+        "value": 0,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ComprehensiveIncomeNetOfTax",
+        "label": "comprehensive income",
+        "value": -134217000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:DepreciationAndAmortization",
+        "label": "depreciation and amortization",
+        "value": 16620000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ShareBasedCompensation",
+        "label": "stock-based compensation",
+        "value": 50744000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:AmortizationOfIntangibleAssets",
+        "label": "amortization of intangibles",
+        "value": 2100000,
+        "unit": "USD"
+      }
+    ]
   }
 }

@@ -1,4 +1,203 @@
 {
   "endDate": "2024-12-31",
-  "facts": []
+  "facts": [
+    {
+      "concept": "ifrs-full:CashAndCashEquivalents",
+      "label": "cash and cash equivalents",
+      "value": 9185742000,
+      "unit": "USD"
+    },
+    {
+      "concept": "ifrs-full:FinancialAssetsAtFairValueThroughProfitOrLoss",
+      "label": "financial assets at fair value through profit or loss",
+      "value": 741042000,
+      "unit": "USD"
+    },
+    {
+      "concept": "ifrs-full:FinancialAssetsAtFairValueThroughOtherComprehensiveIncome",
+      "label": "financial assets at fair value through OCI",
+      "value": 9913517000,
+      "unit": "USD"
+    },
+    {
+      "concept": "ifrs-full:FinancialAssetsAtAmortisedCost",
+      "label": "financial assets at amortised cost",
+      "value": 26701505000,
+      "unit": "USD"
+    },
+    {
+      "concept": "ifrs-full:LoansAndAdvancesToCustomers",
+      "label": "loans and advances to customers",
+      "value": 5321885000,
+      "unit": "USD"
+    },
+    {
+      "concept": "ifrs-full:OtherReceivables",
+      "label": "other receivables",
+      "value": 1413443000,
+      "unit": "USD"
+    },
+    {
+      "concept": "ifrs-full:OtherAssets",
+      "label": "other assets",
+      "value": 663578000,
+      "unit": "USD"
+    },
+    {
+      "concept": "ifrs-full:DeferredTaxAssets",
+      "label": "deferred tax assets",
+      "value": 1818339000,
+      "unit": "USD"
+    },
+    {
+      "concept": "ifrs-full:InvestmentsInAssociates",
+      "label": "investments in associates",
+      "value": 99365000,
+      "unit": "USD"
+    },
+    {
+      "concept": "ifrs-full:RightofuseAssets",
+      "label": "right-of-use assets",
+      "value": 20344000,
+      "unit": "USD"
+    },
+    {
+      "concept": "ifrs-full:PropertyPlantAndEquipment",
+      "label": "property, plant and equipment",
+      "value": 25879000,
+      "unit": "USD"
+    },
+    {
+      "concept": "ifrs-full:IntangibleAssetsOtherThanGoodwill",
+      "label": "intangible assets",
+      "value": 347616000,
+      "unit": "USD"
+    },
+    {
+      "concept": "ifrs-full:Goodwill",
+      "label": "goodwill",
+      "value": 414287000,
+      "unit": "USD"
+    },
+    {
+      "concept": "ifrs-full:Assets",
+      "label": "total assets",
+      "value": 49931214000,
+      "unit": "USD"
+    },
+    {
+      "concept": "ifrs-full:FinancialLiabilitiesAtFairValueThroughProfitOrLoss",
+      "label": "financial liabilities at fair value through profit or loss",
+      "value": 340912000,
+      "unit": "USD"
+    },
+    {
+      "concept": "ifrs-full:FinancialLiabilitiesAtAmortisedCost",
+      "label": "financial liabilities at amortised cost",
+      "value": 39918963000,
+      "unit": "USD"
+    },
+    {
+      "concept": "ifrs-full:DepositsFromCustomers",
+      "label": "deposits from customers",
+      "value": 28855065000,
+      "unit": "USD"
+    },
+    {
+      "concept": "ifrs-full:OtherPayables",
+      "label": "other payables",
+      "value": 9333541000,
+      "unit": "USD"
+    },
+    {
+      "concept": "ifrs-full:Borrowings",
+      "label": "borrowings",
+      "value": 1730357000,
+      "unit": "USD"
+    },
+    {
+      "concept": "ifrs-full:AccrualsAndDeferredIncomeIncludingContractLiabilities",
+      "label": "accruals and deferred income",
+      "value": 71636000,
+      "unit": "USD"
+    },
+    {
+      "concept": "ifrs-full:OtherLiabilities",
+      "label": "other liabilities",
+      "value": 621612000,
+      "unit": "USD"
+    },
+    {
+      "concept": "ifrs-full:Liabilities",
+      "label": "total liabilities",
+      "value": 42284138000,
+      "unit": "USD"
+    },
+    {
+      "concept": "ifrs-full:IssuedCapital",
+      "label": "issued capital",
+      "value": 84000,
+      "unit": "USD"
+    },
+    {
+      "concept": "ifrs-full:SharePremium",
+      "label": "share premium",
+      "value": 5053776000,
+      "unit": "USD"
+    },
+    {
+      "concept": "ifrs-full:AccumulatedOtherComprehensiveIncome",
+      "label": "accumulated other comprehensive income (loss)",
+      "value": -828167000,
+      "unit": "USD"
+    },
+    {
+      "concept": "ifrs-full:EquityAttributableToOwnersOfParent",
+      "label": "equity attributable to owners of parent",
+      "value": 7646289000,
+      "unit": "USD"
+    },
+    {
+      "concept": "ifrs-full:NoncontrollingInterests",
+      "label": "noncontrolling interests",
+      "value": 787000,
+      "unit": "USD"
+    },
+    {
+      "concept": "ifrs-full:Equity",
+      "label": "total equity",
+      "value": 7647076000,
+      "unit": "USD"
+    },
+    {
+      "concept": "ifrs-full:EquityAndLiabilities",
+      "label": "total equity and liabilities",
+      "value": 49931214000,
+      "unit": "USD"
+    },
+    {
+      "concept": "ifrs-full:LoansAndAdvancesToBanks",
+      "label": "loans and advances to banks",
+      "value": 1178603000,
+      "unit": "USD"
+    },
+    {
+      "concept": "ifrs-full:ShorttermBorrowings",
+      "label": "short-term borrowings",
+      "value": 1730357000,
+      "unit": "USD"
+    },
+    {
+      "concept": "ifrs-full:LegalProceedingsProvision",
+      "label": "provisions for legal proceedings",
+      "value": 22551000,
+      "unit": "USD"
+    },
+    {
+      "concept": "ifrs-full:DepositsFromBanks",
+      "label": "deposits from banks",
+      "value": 1365000,
+      "unit": "USD"
+    }
+  ]
 }

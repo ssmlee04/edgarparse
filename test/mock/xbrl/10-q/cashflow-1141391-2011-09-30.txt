@@ -3,12 +3,146 @@
     "startDate": "2011-07-01",
     "endDate": "2011-09-30",
     "months": 4,
-    "facts": []
+    "facts": [
+      {
+        "concept": "us-gaap:DepreciationAndAmortization",
+        "label": "depreciation and amortization",
+        "value": 51000000,
+        "unit": "USD"
+      }
+    ]
   },
   "ytd": {
     "startDate": "2011-01-01",
     "endDate": "2011-09-30",
     "months": 10,
-    "facts": []
+    "facts": [
+      {
+        "concept": "us-gaap:CashAndCashEquivalentsPeriodIncreaseDecrease",
+        "label": "net change in cash",
+        "value": 686000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:DepreciationAndAmortization",
+        "label": "depreciation and amortization",
+        "value": 142000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInAccountsPayable",
+        "label": "change in accounts payable",
+        "value": -8000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInAccountsReceivable",
+        "label": "change in accounts receivable",
+        "value": 100000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInAccruedLiabilities",
+        "label": "change in accrued liabilities",
+        "value": 163000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInIncomeTaxesReceivable",
+        "label": "change in income taxes receivable",
+        "value": 0,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInFinancingActivities",
+        "label": "net cash from financing activities",
+        "value": -1171000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInInvestingActivities",
+        "label": "net cash from investing activities",
+        "value": -55000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+        "label": "net cash from operating activities",
+        "value": 1900000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OtherNoncashIncomeExpense",
+        "label": "other non-cash items",
+        "value": 2000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsForProceedsFromOtherInvestingActivities",
+        "label": "other investing activities",
+        "value": -9000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
+        "label": "repurchase of common stock",
+        "value": -1118000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsOfDividends",
+        "label": "dividends paid",
+        "value": -58000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
+        "label": "tax withholding on stock awards",
+        "value": -33000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToAcquireAvailableForSaleSecurities",
+        "label": "purchases of investments",
+        "value": -188000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToAcquireBusinessesNetOfCashAcquired",
+        "label": "acquisitions, net of cash",
+        "value": -460000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+        "label": "capital expenditures",
+        "value": -51000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromMaturitiesPrepaymentsAndCallsOfAvailableForSaleSecurities",
+        "label": "maturities of investments",
+        "value": 36000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromSaleOfAvailableForSaleSecurities",
+        "label": "proceeds from sales of investments",
+        "value": 371000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromStockOptionsExercised",
+        "label": "proceeds from stock option exercises",
+        "value": 15000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ShareBasedCompensation",
+        "label": "stock-based compensation",
+        "value": 53000000,
+        "unit": "USD"
+      }
+    ]
   }
 }

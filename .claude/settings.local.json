@@ -18,7 +18,8 @@
       "Bash(npx ts-node *)",
       "Bash(npx jest *)",
       "Bash(python3 -c 'import json,sys; d=json.load\\(open\\('\\\\''__TRACKED_VAR__'\\\\''\\)\\); q=d.get\\('\\\\''quarterly'\\\\'',d\\); print\\('\\\\''quarterly facts:'\\\\'', len\\(q.get\\('\\\\''facts'\\\\'',[]\\)\\), '\\\\''| ytd facts:'\\\\'', len\\(d.get\\('\\\\''ytd'\\\\'',{}\\).get\\('\\\\''facts'\\\\'',[]\\)\\)\\)')",
-      "Bash(python3 *)"
+      "Bash(python3 *)",
+      "Bash(awk '/^<TYPE>EX-101.INS/{found=1} found && /<XBRL>/{p=1} p{print; if\\(/<\\\\/XBRL>/\\) exit}' data/txt/10-k/1441816-2019-01-31.txt)"
     ]
   }
 }

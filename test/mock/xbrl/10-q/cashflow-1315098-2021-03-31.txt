@@ -3,6 +3,97 @@
     "startDate": "2021-01-01",
     "endDate": "2021-03-31",
     "months": 4,
-    "facts": []
+    "facts": [
+      {
+        "concept": "us-gaap:DepreciationAndAmortization",
+        "label": "depreciation and amortization",
+        "value": 16620000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ShareBasedCompensation",
+        "label": "stock-based compensation",
+        "value": 50744000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OtherNoncashIncomeExpense",
+        "label": "other non-cash items",
+        "value": 52000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInAccountsReceivable",
+        "label": "change in accounts receivable",
+        "value": -13256000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInAccountsPayable",
+        "label": "change in accounts payable",
+        "value": -782000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets",
+        "label": "change in prepaid and other assets",
+        "value": 10967000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInOtherNoncurrentLiabilities",
+        "label": "change in other non-current liabilities",
+        "value": 304000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInDeferredRevenue",
+        "label": "change in deferred revenue",
+        "value": 269439000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+        "label": "net cash from operating activities",
+        "value": 164469000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+        "label": "capital expenditures",
+        "value": -22133000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToAcquireIntangibleAssets",
+        "label": "purchases of intangible assets",
+        "value": -256000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInInvestingActivities",
+        "label": "net cash from investing activities",
+        "value": -22389000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromIssuanceOfCommonStock",
+        "label": "proceeds from issuance of common stock",
+        "value": 30221000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInFinancingActivities",
+        "label": "net cash from financing activities",
+        "value": 564507000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:CashAndCashEquivalentsPeriodIncreaseDecrease",
+        "label": "net change in cash",
+        "value": 706587000,
+        "unit": "USD"
+      }
+    ]
   }
 }

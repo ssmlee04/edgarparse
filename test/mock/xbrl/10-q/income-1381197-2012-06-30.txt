@@ -3,12 +3,164 @@
     "startDate": "2012-04-01",
     "endDate": "2012-06-30",
     "months": 4,
-    "facts": []
+    "facts": [
+      {
+        "concept": "us-gaap:Revenues",
+        "label": "revenue",
+        "value": 277021000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:LaborAndRelatedExpense",
+        "label": "labor and related expense",
+        "value": 59801000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProfitLoss",
+        "label": "net income including noncontrolling interests",
+        "value": 97530000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetIncomeLossAttributableToNoncontrollingInterest",
+        "label": "net income attributable to noncontrolling interests",
+        "value": 89546000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetIncomeLoss",
+        "label": "net income",
+        "value": 7984000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ComprehensiveIncomeNetOfTax",
+        "label": "comprehensive income",
+        "value": 4278000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EarningsPerShareBasic",
+        "label": "earnings per share - basic",
+        "value": 0.17,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EarningsPerShareDiluted",
+        "label": "earnings per share - diluted",
+        "value": 0.17,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 46686269,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 46957081,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
+        "label": "net income attributable to common stockholders",
+        "value": 7852000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncomeTaxExpenseBenefit",
+        "label": "income tax expense (benefit)",
+        "value": 10977000,
+        "unit": "USD"
+      }
+    ]
   },
   "ytd": {
     "startDate": "2012-01-01",
     "endDate": "2012-06-30",
     "months": 7,
-    "facts": []
+    "facts": [
+      {
+        "concept": "us-gaap:Revenues",
+        "label": "revenue",
+        "value": 600086000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:LaborAndRelatedExpense",
+        "label": "labor and related expense",
+        "value": 122526000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncomeTaxExpenseBenefit",
+        "label": "income tax expense (benefit)",
+        "value": 19711000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProfitLoss",
+        "label": "net income including noncontrolling interests",
+        "value": 238473000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetIncomeLossAttributableToNoncontrollingInterest",
+        "label": "net income attributable to noncontrolling interests",
+        "value": 219405000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetIncomeLoss",
+        "label": "net income",
+        "value": 19068000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EarningsPerShareBasic",
+        "label": "earnings per share - basic",
+        "value": 0.44,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EarningsPerShareDiluted",
+        "label": "earnings per share - diluted",
+        "value": 0.43,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 46131813,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 46452941,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ComprehensiveIncomeNetOfTax",
+        "label": "comprehensive income",
+        "value": 17988000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ShareBasedCompensation",
+        "label": "stock-based compensation",
+        "value": 37048000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
+        "label": "net income attributable to common stockholders",
+        "value": 20176000,
+        "unit": "USD"
+      }
+    ]
   }
 }

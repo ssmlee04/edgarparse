@@ -65,15 +65,16 @@ export default class XBRLStatementProcessor {
     }
 
     private buildContextMap(content: string) {
-        const re = /<xbrli:context id="([^"]+)">(.*?)<\/xbrli:context>/gs;
+        // Match both <xbrli:context> (prefixed) and <context> (default namespace) forms
+        const re = /<(?:xbrli:)?context id="([^"]+)">(.*?)<\/(?:xbrli:)?context>/gs;
         let m;
         while ((m = re.exec(content)) !== null) {
             const [, id, body] = m;
-            const hasSegment = body.includes('<xbrli:segment>');
+            const hasSegment = body.includes('segment>');
 
-            const instant = body.match(/<xbrli:instant>([^<]+)<\/xbrli:instant>/)?.[1]?.trim();
-            const startDate = body.match(/<xbrli:startdate>([^<]+)<\/xbrli:startdate>/i)?.[1]?.trim();
-            const endDate = body.match(/<xbrli:enddate>([^<]+)<\/xbrli:enddate>/i)?.[1]?.trim();
+            const instant = body.match(/<(?:xbrli:)?instant>([^<]+)<\/(?:xbrli:)?instant>/i)?.[1]?.trim();
+            const startDate = body.match(/<(?:xbrli:)?startdate>([^<]+)<\/(?:xbrli:)?startdate>/i)?.[1]?.trim();
+            const endDate = body.match(/<(?:xbrli:)?enddate>([^<]+)<\/(?:xbrli:)?enddate>/i)?.[1]?.trim();
 
             if (instant) {
                 this.contextMap.set(id, { type: 'instant', date: instant, hasSegment });
@@ -84,8 +85,7 @@ export default class XBRLStatementProcessor {
     }
 
     private extractRawFacts(content: string) {
-        // Self-closing nil facts (skip these)
-        // Regular facts: <ix:nonFraction ...>value</ix:nonFraction>
+        // Primary: inline XBRL (iXBRL) — <ix:nonFraction ...>value</ix:nonFraction>
         const re = /<ix:nonFraction([^>]*?)(?:\/>|>([\s\S]*?)<\/ix:nonFraction>)/gi;
         let m;
         while ((m = re.exec(content)) !== null) {
@@ -107,6 +107,37 @@ export default class XBRLStatementProcessor {
                 contextRef: attrs.contextref,
                 unitRef: attrs.unitref,
                 value: num * Math.pow(10, scale) * sign,
+            });
+        }
+
+        // Fallback: traditional XBRL instance document embedded as EX-101.INS (pre-iXBRL filings)
+        if (this.rawFacts.length === 0) {
+            this.extractTraditionalXBRLFacts(content);
+        }
+    }
+
+    private extractTraditionalXBRLFacts(content: string) {
+        const start = content.indexOf('<XBRL>');
+        const end = content.indexOf('</XBRL>');
+        if (start === -1 || end === -1) return;
+        const block = content.slice(start + 6, end);
+
+        // <ns:ConceptName contextRef="..." unitRef="..." ...>value</ns:ConceptName>
+        // Value is already the full numeric amount (no scale attribute in traditional XBRL)
+        // Namespace prefix may contain hyphens (e.g. us-gaap, ifrs-full)
+        const re = /<([\w-]+:[\w]+)([^>]*?)>([\-\d\.]+)<\/[\w-]+:[\w]+>/g;
+        let m;
+        while ((m = re.exec(block)) !== null) {
+            const [, concept, attrStr, text] = m;
+            const attrs = parseAttrs(attrStr);
+            if (!attrs.contextref || !attrs.unitref) continue;
+            const num = parseFloat(text);
+            if (isNaN(num)) continue;
+            this.rawFacts.push({
+                concept,
+                contextRef: attrs.contextref,
+                unitRef: attrs.unitref,
+                value: num,
             });
         }
     }
