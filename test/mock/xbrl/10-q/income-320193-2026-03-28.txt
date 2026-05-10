@@ -1,0 +1,117 @@
+{
+  "quarterly": {
+    "startDate": "2025-12-28",
+    "endDate": "2026-03-28",
+    "months": 4,
+    "facts": [
+      {
+        "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "label": "revenue",
+        "value": 111184000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:CostOfGoodsAndServicesSold",
+        "label": "cost of revenue",
+        "value": 56403000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:GrossProfit",
+        "label": "gross profit",
+        "value": 54781000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ResearchAndDevelopmentExpense",
+        "label": "research and development",
+        "value": 11419000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:SellingGeneralAndAdministrativeExpense",
+        "label": "selling, general and administrative",
+        "value": 7477000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OperatingExpenses",
+        "label": "total operating expenses",
+        "value": 18896000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OperatingIncomeLoss",
+        "label": "operating income",
+        "value": 35885000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NonoperatingIncomeExpense",
+        "label": "other income (expense)",
+        "value": -52000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+        "label": "income before income taxes",
+        "value": 35833000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncomeTaxExpenseBenefit",
+        "label": "income tax expense (benefit)",
+        "value": 6255000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetIncomeLoss",
+        "label": "net income",
+        "value": 29578000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EarningsPerShareBasic",
+        "label": "earnings per share - basic",
+        "value": 2.02,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EarningsPerShareDiluted",
+        "label": "earnings per share - diluted",
+        "value": 2.01,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 14673278000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 14725873000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ComprehensiveIncomeNetOfTax",
+        "label": "comprehensive income",
+        "value": 29057000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:SellingAndMarketingExpense",
+        "label": "sales and marketing",
+        "value": 5201000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:GeneralAndAdministrativeExpense",
+        "label": "general and administrative",
+        "value": 2276000000,
+        "unit": "USD"
+      }
+    ]
+  }
+}
