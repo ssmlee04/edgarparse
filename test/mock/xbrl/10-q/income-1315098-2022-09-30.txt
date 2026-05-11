@@ -47,6 +47,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:InterestIncomeOperating",
+        "label": "interest income",
+        "value": 12764000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:InterestExpense",
         "label": "interest expense",
         "value": 10005000,
@@ -177,6 +183,12 @@
         "concept": "us-gaap:OperatingIncomeLoss",
         "label": "operating income",
         "value": -621885000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestIncomeOperating",
+        "label": "interest income",
+        "value": 17206000,
         "unit": "USD"
       },
       {

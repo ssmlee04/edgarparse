@@ -283,8 +283,10 @@ export const CONCEPT_MAP: Record<string, ConceptEntry> = {
 };
 
 // ── Sector-specific concept groups ────────────────────────────────────────────
-// Each key is a sector name; values are additional concepts for companies in that sector.
-// These are merged with CONCEPT_MAP at parse time for matching CIKs.
+// ALL sectors are always merged into the effective concept map at parse time.
+// Companies only report concepts relevant to their own industry, so cross-sector
+// concepts never appear in unrelated filings — no CIK-to-sector mapping needed.
+// Only include concepts NOT already in the global CONCEPT_MAP above.
 
 export const SECTOR_CONCEPTS: Record<string, Record<string, ConceptEntry>> = {
     energy: {
@@ -296,19 +298,13 @@ export const SECTOR_CONCEPTS: Record<string, Record<string, ConceptEntry>> = {
         'us-gaap:ResultsOfOperationsProductionOrLiftingCosts': { label: 'lifting costs', statement: 'income' },
     },
     restaurant: {
-        'us-gaap:FoodAndBeverageCosts': { label: 'food, beverage and packaging', statement: 'income' },
-        'us-gaap:LaborAndRelatedExpense': { label: 'labor costs', statement: 'income' },
-        'us-gaap:OccupancyNet': { label: 'occupancy costs', statement: 'income' },
         'us-gaap:FoodAndBeverageRevenue': { label: 'food and beverage revenue', statement: 'income' },
         'us-gaap:PreOpeningCosts': { label: 'pre-opening costs', statement: 'income' },
     },
     ecommerce: {
-        'us-gaap:FulfillmentExpense': { label: 'fulfillment', statement: 'income' },
-        'us-gaap:TechnologyAndInfrastructure': { label: 'technology and infrastructure', statement: 'income' },
         'us-gaap:MarketingExpense': { label: 'marketing', statement: 'income' },
     },
     logistics: {
-        'us-gaap:LaborAndRelatedExpense': { label: 'compensation and benefits', statement: 'income' },
         'us-gaap:FuelCosts': { label: 'fuel', statement: 'income' },
         'us-gaap:PurchasedTransportation': { label: 'purchased transportation', statement: 'income' },
     },
@@ -350,26 +346,3 @@ export const SECTOR_CONCEPTS: Record<string, Record<string, ConceptEntry>> = {
     },
 };
 
-// ── CIK → sector mapping ──────────────────────────────────────────────────────
-// Add a CIK here to automatically apply its sector's concept group.
-
-export const CIK_SECTORS: Record<string, keyof typeof SECTOR_CONCEPTS> = {
-    '34088':   'energy',      // XOM
-    '87347':   'energy',      // SLB
-    '1707925': 'energy',      // LIN (Linde)
-    '1058090': 'restaurant',  // CMG
-    '63908':   'restaurant',  // MCD
-    '829224':  'restaurant',  // SBUX
-    '1866581': 'restaurant',  // BROS
-    '1018724': 'ecommerce',   // AMZN
-    '100885':  'logistics',   // UNP
-    '1090727': 'logistics',   // UPS
-    '1045810': 'semiconductor', // NVDA
-    '1413447': 'semiconductor', // NXPI
-    '19617':   'financial',    // JPM
-    '70858':   'financial',    // BAC
-    '72971':   'financial',    // C
-    '78003':   'financial',    // WFC
-    '92122':   'financial',    // GS
-    '895421':  'financial',    // MS
-};

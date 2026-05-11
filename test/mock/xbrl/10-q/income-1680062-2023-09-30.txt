@@ -137,6 +137,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:InterestIncomeDepositsWithFinancialInstitutions",
+        "label": "interest income - deposits",
+        "value": 867000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
         "label": "net income attributable to common stockholders",
         "value": 25679000,
@@ -146,6 +152,12 @@
         "concept": "us-gaap:DepreciationDepletionAndAmortization",
         "label": "depreciation, depletion and amortization",
         "value": 2023000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestExpenseShortTermBorrowings",
+        "label": "interest expense - short-term borrowings",
+        "value": -364000,
         "unit": "USD"
       }
     ]
@@ -300,6 +312,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:InterestIncomeDepositsWithFinancialInstitutions",
+        "label": "interest income - deposits",
+        "value": 2779000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
         "label": "net income attributable to common stockholders",
         "value": 59649000,
@@ -309,6 +327,18 @@
         "concept": "us-gaap:DepreciationDepletionAndAmortization",
         "label": "depreciation, depletion and amortization",
         "value": 5077000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestExpenseShortTermBorrowings",
+        "label": "interest expense - short-term borrowings",
+        "value": -1338000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestExpenseLongTermDebt",
+        "label": "interest expense - long-term debt",
+        "value": -646000,
         "unit": "USD"
       }
     ]

@@ -65,6 +65,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:MarketingAndAdvertisingExpense",
+        "label": "marketing and advertising",
+        "value": 200000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:NetIncomeLoss",
         "label": "net income",
         "value": 717000000,
@@ -189,6 +195,12 @@
         "concept": "us-gaap:InterestIncomeExpenseNonoperatingNet",
         "label": "interest income (expense), net",
         "value": 33000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:MarketingAndAdvertisingExpense",
+        "label": "marketing and advertising",
+        "value": 522000000,
         "unit": "USD"
       },
       {

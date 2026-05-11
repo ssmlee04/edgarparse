@@ -11,6 +11,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:MarketingExpense",
+        "label": "marketing",
+        "value": 53097000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:GeneralAndAdministrativeExpense",
         "label": "general and administrative",
         "value": 12175000,
@@ -99,6 +105,12 @@
         "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
         "label": "revenue",
         "value": 682615000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:MarketingExpense",
+        "label": "marketing",
+        "value": 156797000,
         "unit": "USD"
       },
       {

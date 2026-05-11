@@ -41,6 +41,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ProvisionForLoanLeaseAndOtherLosses",
+        "label": "provision for credit losses",
+        "value": 660663000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:AmortizationOfIntangibleAssets",
         "label": "amortization of intangibles",
         "value": 174044000,

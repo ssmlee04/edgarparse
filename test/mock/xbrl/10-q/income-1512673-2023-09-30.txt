@@ -41,6 +41,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ProvisionForLoanLeaseAndOtherLosses",
+        "label": "provision for credit losses",
+        "value": 177338000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:AmortizationOfIntangibleAssets",
         "label": "amortization of intangibles",
         "value": 56965000,
@@ -171,6 +177,12 @@
         "concept": "us-gaap:GeneralAndAdministrativeExpense",
         "label": "general and administrative",
         "value": 1463003000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProvisionForLoanLeaseAndOtherLosses",
+        "label": "provision for credit losses",
+        "value": 485005000,
         "unit": "USD"
       },
       {

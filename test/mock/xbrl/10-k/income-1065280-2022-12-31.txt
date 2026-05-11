@@ -17,6 +17,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:MarketingExpense",
+        "label": "marketing",
+        "value": 2530502000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:ResearchAndDevelopmentExpense",
         "label": "research and development",
         "value": 2711041000,

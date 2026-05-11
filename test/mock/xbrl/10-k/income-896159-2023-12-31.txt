@@ -107,6 +107,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:UnderwritingIncomeLoss",
+        "label": "underwriting income/loss",
+        "value": 5718000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:InterestIncomeExpenseNet",
         "label": "interest income (expense), net",
         "value": -672000000,

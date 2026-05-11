@@ -5,6 +5,12 @@
     "months": 13,
     "facts": [
       {
+        "concept": "us-gaap:CommunicationsAndInformationTechnology",
+        "label": "technology and communications",
+        "value": 67946000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:DepreciationDepletionAndAmortization",
         "label": "depreciation, depletion and amortization",
         "value": 15021000,
@@ -47,6 +53,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:InterestIncomeOperating",
+        "label": "interest income",
+        "value": 288700000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:LaborAndRelatedExpense",
         "label": "labor and related expense",
         "value": 503458000,
@@ -74,6 +86,12 @@
         "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
         "label": "revenue",
         "value": 8880000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:RevenuesNetOfInterestExpense",
+        "label": "net revenue",
+        "value": 1477404000,
         "unit": "USD"
       },
       {

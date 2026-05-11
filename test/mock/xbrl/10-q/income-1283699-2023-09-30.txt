@@ -234,6 +234,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ProvisionForLoanLeaseAndOtherLosses",
+        "label": "provision for credit losses",
+        "value": 663000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:RestructuringCharges",
         "label": "restructuring charges",
         "value": 257000000,

@@ -114,7 +114,7 @@
       },
       {
         "concept": "us-gaap:LaborAndRelatedExpense",
-        "label": "labor costs",
+        "label": "labor and related expense",
         "value": 2139400000,
         "unit": "USD"
       },
@@ -253,7 +253,7 @@
       },
       {
         "concept": "us-gaap:LaborAndRelatedExpense",
-        "label": "labor costs",
+        "label": "labor and related expense",
         "value": 4348700000,
         "unit": "USD"
       },

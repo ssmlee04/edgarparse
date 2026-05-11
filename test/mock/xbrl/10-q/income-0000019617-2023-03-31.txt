@@ -1,0 +1,249 @@
+{
+  "quarterly": {
+    "startDate": "2023-01-01",
+    "endDate": "2023-03-31",
+    "months": 4,
+    "facts": [
+      {
+        "concept": "us-gaap:InvestmentBankingRevenue",
+        "label": "investment banking revenue",
+        "value": 1649000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PrincipalTransactionsRevenue",
+        "label": "principal transactions",
+        "value": 7615000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NoninterestIncomeOther",
+        "label": "other non-interest income",
+        "value": 1007000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NoninterestIncome",
+        "label": "non-interest income",
+        "value": 17638000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestIncomeOperating",
+        "label": "interest income",
+        "value": 37004000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestExpense",
+        "label": "interest expense",
+        "value": 16293000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestIncomeExpenseNet",
+        "label": "interest income (expense), net",
+        "value": 20711000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:RevenuesNetOfInterestExpense",
+        "label": "net revenue",
+        "value": 38349000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProvisionForLoanLeaseAndOtherLosses",
+        "label": "provision for credit losses",
+        "value": 2275000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:LaborAndRelatedExpense",
+        "label": "labor and related expense",
+        "value": 11676000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OccupancyNet",
+        "label": "occupancy costs",
+        "value": 1115000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:CommunicationsAndInformationTechnology",
+        "label": "technology and communications",
+        "value": 2184000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProfessionalAndContractServicesExpense",
+        "label": "professional services",
+        "value": 2448000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:MarketingAndAdvertisingExpense",
+        "label": "marketing and advertising",
+        "value": 1045000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OtherNoninterestExpense",
+        "label": "other non-interest expense",
+        "value": 1639000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NoninterestExpense",
+        "label": "total non-interest expense",
+        "value": 20107000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+        "label": "income before income taxes",
+        "value": 15967000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncomeTaxExpenseBenefit",
+        "label": "income tax expense (benefit)",
+        "value": 3345000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetIncomeLoss",
+        "label": "net income",
+        "value": 12622000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EarningsPerShareBasic",
+        "label": "earnings per share - basic",
+        "value": 4.11,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EarningsPerShareDiluted",
+        "label": "earnings per share - diluted",
+        "value": 4.1,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 2968500000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 2972700000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ComprehensiveIncomeNetOfTax",
+        "label": "comprehensive income",
+        "value": 15545000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:UnderwritingIncomeLoss",
+        "label": "underwriting income/loss",
+        "value": 905000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:TradingGainsLosses",
+        "label": "trading gains/losses",
+        "value": 7590000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:BrokerageCommissionsRevenue",
+        "label": "brokerage commissions",
+        "value": 747000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestAndFeeIncomeLoansAndLeases",
+        "label": "interest and fee income - loans",
+        "value": 17708000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestIncomeSecuritiesTaxable",
+        "label": "interest income - taxable securities",
+        "value": 3967000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestIncomeSecuritiesTaxExempt",
+        "label": "interest income - tax-exempt securities",
+        "value": 248000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InvestmentIncomeInterest",
+        "label": "interest income",
+        "value": 4215000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestIncomeFederalFundsSoldAndSecuritiesPurchasedUnderAgreementsToResell",
+        "label": "interest income - fed funds sold and reverse repos",
+        "value": 3131000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestIncomeDepositsWithFinancialInstitutions",
+        "label": "interest income - deposits",
+        "value": 4819000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestExpenseDeposits",
+        "label": "interest expense - deposits",
+        "value": -7637000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestExpenseFederalFundsPurchasedAndSecuritiesSoldUnderAgreementsToRepurchase",
+        "label": "interest expense - repos and fed funds",
+        "value": -2804000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestExpenseShortTermBorrowings",
+        "label": "interest expense - short-term borrowings",
+        "value": -421000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestExpenseLongTermDebt",
+        "label": "interest expense - long-term debt",
+        "value": -3313000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestIncomeExpenseAfterProvisionForLoanLoss",
+        "label": "net interest income after provision",
+        "value": 18436000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ShareBasedCompensation",
+        "label": "stock-based compensation",
+        "value": 870000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
+        "label": "net income attributable to common stockholders",
+        "value": 12193000000,
+        "unit": "USD"
+      }
+    ]
+  }
+}

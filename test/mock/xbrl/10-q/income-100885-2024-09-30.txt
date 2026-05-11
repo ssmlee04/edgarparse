@@ -12,7 +12,7 @@
       },
       {
         "concept": "us-gaap:LaborAndRelatedExpense",
-        "label": "compensation and benefits",
+        "label": "labor and related expense",
         "value": 1228000000,
         "unit": "USD"
       },
@@ -115,7 +115,7 @@
       },
       {
         "concept": "us-gaap:LaborAndRelatedExpense",
-        "label": "compensation and benefits",
+        "label": "labor and related expense",
         "value": 3638000000,
         "unit": "USD"
       },

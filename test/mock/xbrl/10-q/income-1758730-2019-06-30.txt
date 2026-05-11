@@ -5,6 +5,12 @@
     "months": 4,
     "facts": [
       {
+        "concept": "us-gaap:CommunicationsAndInformationTechnology",
+        "label": "technology and communications",
+        "value": 9519000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:ComprehensiveIncomeNetOfTax",
         "label": "comprehensive income",
         "value": 12181000,
@@ -119,6 +125,12 @@
     "endDate": "2019-06-30",
     "months": 7,
     "facts": [
+      {
+        "concept": "us-gaap:CommunicationsAndInformationTechnology",
+        "label": "technology and communications",
+        "value": 19559000,
+        "unit": "USD"
+      },
       {
         "concept": "us-gaap:ComprehensiveIncomeNetOfTax",
         "label": "comprehensive income",

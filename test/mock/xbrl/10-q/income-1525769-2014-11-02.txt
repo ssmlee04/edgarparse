@@ -29,6 +29,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:FoodAndBeverageRevenue",
+        "label": "food and beverage revenue",
+        "value": 78179000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:SalesRevenueNet",
         "label": "revenue",
         "value": 163474000,
@@ -74,6 +80,12 @@
         "concept": "us-gaap:IncomeTaxExpenseBenefit",
         "label": "income tax expense (benefit)",
         "value": -2207000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PreOpeningCosts",
+        "label": "pre-opening costs",
+        "value": 3650000,
         "unit": "USD"
       },
       {
@@ -132,6 +144,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:FoodAndBeverageRevenue",
+        "label": "food and beverage revenue",
+        "value": 256077000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:SalesRevenueNet",
         "label": "revenue",
         "value": 539682000,
@@ -177,6 +195,12 @@
         "concept": "us-gaap:IncomeTaxExpenseBenefit",
         "label": "income tax expense (benefit)",
         "value": -4494000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PreOpeningCosts",
+        "label": "pre-opening costs",
+        "value": 7942000,
         "unit": "USD"
       },
       {

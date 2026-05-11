@@ -17,6 +17,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:MarketingExpense",
+        "label": "marketing",
+        "value": 103000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:GeneralAndAdministrativeExpense",
         "label": "general and administrative",
         "value": 924000000,
@@ -116,6 +122,12 @@
         "concept": "us-gaap:AmortizationOfIntangibleAssets",
         "label": "amortization of intangibles",
         "value": 9000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestIncomeOperating",
+        "label": "interest income",
+        "value": 103000000,
         "unit": "USD"
       }
     ]

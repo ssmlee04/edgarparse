@@ -252,6 +252,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:InterestIncomeOperating",
+        "label": "interest income",
+        "value": 240000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:AmortizationOfIntangibleAssets",
         "label": "amortization of intangibles",
         "value": 445000,

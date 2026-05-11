@@ -5,6 +5,36 @@
     "months": 13,
     "facts": [
       {
+        "concept": "us-gaap:NoninterestIncome",
+        "label": "non-interest income",
+        "value": 47381000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestAndFeeIncomeLoansAndLeases",
+        "label": "interest and fee income - loans",
+        "value": 17697000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestIncomeDepositsWithFinancialInstitutions",
+        "label": "interest income - deposits",
+        "value": 2158000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestExpenseDeposits",
+        "label": "interest expense - deposits",
+        "value": -4865000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestExpenseLongTermDebt",
+        "label": "interest expense - long-term debt",
+        "value": -1984000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:InterestExpense",
         "label": "interest expense",
         "value": 6849000000,
@@ -17,9 +47,33 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:RevenuesNetOfInterestExpense",
+        "label": "net revenue",
+        "value": 60515000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:MarketingExpense",
+        "label": "marketing",
+        "value": 5213000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:LaborAndRelatedExpense",
         "label": "labor and related expense",
         "value": 8067000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OtherNoninterestExpense",
+        "label": "other non-interest expense",
+        "value": 6807000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NoninterestExpense",
+        "label": "total non-interest expense",
+        "value": 45079000000,
         "unit": "USD"
       },
       {

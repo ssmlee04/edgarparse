@@ -5,6 +5,12 @@
     "months": 13,
     "facts": [
       {
+        "concept": "us-gaap:MarketingExpense",
+        "label": "marketing",
+        "value": 1700000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:Revenues",
         "label": "revenue",
         "value": 37281000000,

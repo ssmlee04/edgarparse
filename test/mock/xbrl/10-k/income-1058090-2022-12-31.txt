@@ -105,6 +105,12 @@
         "label": "stock-based compensation",
         "value": 98030000,
         "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:MarketingAndAdvertisingExpense",
+        "label": "marketing and advertising",
+        "value": 250673000,
+        "unit": "USD"
       }
     ]
   }

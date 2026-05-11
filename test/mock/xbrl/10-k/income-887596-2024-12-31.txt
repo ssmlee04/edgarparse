@@ -29,6 +29,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:PreOpeningCosts",
+        "label": "pre-opening costs",
+        "value": 27495000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:CostsAndExpenses",
         "label": "total costs and expenses",
         "value": 3403382000,

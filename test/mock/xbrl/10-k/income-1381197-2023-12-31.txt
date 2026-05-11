@@ -5,6 +5,24 @@
     "months": 13,
     "facts": [
       {
+        "concept": "us-gaap:BrokerageCommissionsRevenue",
+        "label": "brokerage commissions",
+        "value": 1360000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NoninterestIncome",
+        "label": "non-interest income",
+        "value": 1546000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestIncomeOperating",
+        "label": "interest income",
+        "value": 6230000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:InterestExpense",
         "label": "interest expense",
         "value": 3436000000,
@@ -17,9 +35,27 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:RevenuesNetOfInterestExpense",
+        "label": "net revenue",
+        "value": 4340000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:LaborAndRelatedExpense",
         "label": "labor and related expense",
         "value": 527000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OtherNoninterestExpense",
+        "label": "other non-interest expense",
+        "value": 211000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NoninterestExpense",
+        "label": "total non-interest expense",
+        "value": 1271000000,
         "unit": "USD"
       },
       {
@@ -92,6 +128,18 @@
         "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
         "label": "revenue",
         "value": 1557000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PrincipalTransactionsRevenue",
+        "label": "principal transactions",
+        "value": 48000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestExpenseShortTermBorrowings",
+        "label": "interest expense - short-term borrowings",
+        "value": 0,
         "unit": "USD"
       }
     ]

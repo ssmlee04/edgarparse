@@ -71,6 +71,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:InterestIncomeOperating",
+        "label": "interest income",
+        "value": 674000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:OtherNonoperatingIncomeExpense",
         "label": "other non-operating income (expense)",
         "value": -1566000,
@@ -231,6 +237,12 @@
         "concept": "us-gaap:InterestIncomeExpenseNonoperatingNet",
         "label": "interest income (expense), net",
         "value": -44681000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestIncomeOperating",
+        "label": "interest income",
+        "value": 1743000,
         "unit": "USD"
       },
       {

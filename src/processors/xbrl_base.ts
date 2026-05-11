@@ -1,5 +1,6 @@
 import * as fs from 'fs';
-import { CONCEPT_MAP, SECTOR_CONCEPTS, CIK_SECTORS, StatementType } from '../concept-map';
+import { CONCEPT_MAP, SECTOR_CONCEPTS, StatementType } from '../concept-map';
+import type { ConceptEntry } from '../concept-map';
 import type { XBRLFact, PeriodFacts, ContextInfo, RawFact } from '../xbrl_types';
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
@@ -183,10 +184,13 @@ export default class XBRLStatementProcessor {
         const seen = new Set<string>();
         const facts: XBRLFact[] = [];
 
-        // Build effective concept map: global + any sector-specific additions for this CIK
-        const sectorKey = CIK_SECTORS[this.cik];
-        const sectorEntries = sectorKey ? SECTOR_CONCEPTS[sectorKey] ?? {} : {};
-        const effectiveMap = { ...CONCEPT_MAP, ...sectorEntries };
+        // Build effective concept map: global + all sector concepts merged unconditionally.
+        // Companies only report XBRL concepts for their own industry, so cross-sector
+        // concepts never produce spurious facts in unrelated filings.
+        const allSectorEntries = Object.values(SECTOR_CONCEPTS).reduce(
+            (acc, s) => ({ ...acc, ...s }), {} as Record<string, ConceptEntry>
+        );
+        const effectiveMap = { ...CONCEPT_MAP, ...allSectorEntries };
 
         for (const raw of this.rawFacts) {
             if (!contextIds.has(raw.contextRef)) continue;

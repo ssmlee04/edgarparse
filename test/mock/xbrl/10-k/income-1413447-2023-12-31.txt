@@ -143,6 +143,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:InterestIncomeDepositsWithFinancialInstitutions",
+        "label": "interest income - deposits",
+        "value": 187000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:InterestExpense",
         "label": "interest expense",
         "value": 438000000,

@@ -59,6 +59,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:InterestIncomeOperating",
+        "label": "interest income",
+        "value": 8625000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
         "label": "income before income taxes",
         "value": 2932000,
@@ -159,6 +165,12 @@
         "concept": "us-gaap:NonoperatingIncomeExpense",
         "label": "other income (expense)",
         "value": -1109000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestIncomeOperating",
+        "label": "interest income",
+        "value": 21807000,
         "unit": "USD"
       },
       {

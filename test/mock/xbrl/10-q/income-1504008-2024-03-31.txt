@@ -5,6 +5,18 @@
     "months": 4,
     "facts": [
       {
+        "concept": "us-gaap:InterestAndFeeIncomeLoansAndLeases",
+        "label": "interest and fee income - loans",
+        "value": 347257000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestExpenseDeposits",
+        "label": "interest expense - deposits",
+        "value": -209998000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:InterestExpense",
         "label": "interest expense",
         "value": 266617000,
@@ -14,6 +26,12 @@
         "concept": "us-gaap:InterestIncomeExpenseNet",
         "label": "interest income (expense), net",
         "value": 214857000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestIncomeExpenseAfterProvisionForLoanLoss",
+        "label": "net interest income after provision",
+        "value": 199572000,
         "unit": "USD"
       },
       {
@@ -29,6 +47,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:NoninterestIncome",
+        "label": "non-interest income",
+        "value": 26877000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:LaborAndRelatedExpense",
         "label": "labor and related expense",
         "value": 75920000,
@@ -38,6 +62,24 @@
         "concept": "us-gaap:OccupancyNet",
         "label": "occupancy costs",
         "value": 10569000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:CommunicationsAndInformationTechnology",
+        "label": "technology and communications",
+        "value": 20315000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OtherNoninterestExpense",
+        "label": "other non-interest expense",
+        "value": 27183000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NoninterestExpense",
+        "label": "total non-interest expense",
+        "value": 159240000,
         "unit": "USD"
       },
       {

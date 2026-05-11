@@ -5,6 +5,18 @@
     "months": 4,
     "facts": [
       {
+        "concept": "us-gaap:BrokerageCommissionsRevenue",
+        "label": "brokerage commissions",
+        "value": 108071000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestIncomeOperating",
+        "label": "interest income",
+        "value": 68621000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:Revenues",
         "label": "revenue",
         "value": 277021000,
@@ -14,6 +26,18 @@
         "concept": "us-gaap:LaborAndRelatedExpense",
         "label": "labor and related expense",
         "value": 59801000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OtherNoninterestExpense",
+        "label": "other non-interest expense",
+        "value": 10966000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NoninterestExpense",
+        "label": "total non-interest expense",
+        "value": 152381000,
         "unit": "USD"
       },
       {
@@ -84,6 +108,18 @@
     "months": 7,
     "facts": [
       {
+        "concept": "us-gaap:BrokerageCommissionsRevenue",
+        "label": "brokerage commissions",
+        "value": 208956000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestIncomeOperating",
+        "label": "interest income",
+        "value": 135197000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:Revenues",
         "label": "revenue",
         "value": 600086000,
@@ -93,6 +129,18 @@
         "concept": "us-gaap:LaborAndRelatedExpense",
         "label": "labor and related expense",
         "value": 122526000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OtherNoninterestExpense",
+        "label": "other non-interest expense",
+        "value": 22254000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NoninterestExpense",
+        "label": "total non-interest expense",
+        "value": 306626000,
         "unit": "USD"
       },
       {

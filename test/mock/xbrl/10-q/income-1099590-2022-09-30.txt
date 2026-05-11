@@ -35,6 +35,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ProvisionForLoanLeaseAndOtherLosses",
+        "label": "provision for credit losses",
+        "value": 288000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:GeneralAndAdministrativeExpense",
         "label": "general and administrative",
         "value": 153000000,
@@ -165,6 +171,12 @@
         "concept": "us-gaap:SellingAndMarketingExpense",
         "label": "sales and marketing",
         "value": 916000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProvisionForLoanLeaseAndOtherLosses",
+        "label": "provision for credit losses",
+        "value": 845000000,
         "unit": "USD"
       },
       {

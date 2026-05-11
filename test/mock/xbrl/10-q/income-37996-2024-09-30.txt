@@ -252,6 +252,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ProvisionForLoanLeaseAndOtherLosses",
+        "label": "provision for credit losses",
+        "value": 433000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:ForeignCurrencyTransactionGainLossBeforeTax",
         "label": "foreign currency gain (loss)",
         "value": -296000000,

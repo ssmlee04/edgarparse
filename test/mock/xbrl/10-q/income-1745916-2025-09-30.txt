@@ -5,6 +5,12 @@
     "months": 4,
     "facts": [
       {
+        "concept": "us-gaap:InterestIncomeOperating",
+        "label": "interest income",
+        "value": 248753000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:InterestIncomeExpenseNet",
         "label": "interest income (expense), net",
         "value": -1147000,
@@ -17,9 +23,27 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:RevenuesNetOfInterestExpense",
+        "label": "net revenue",
+        "value": 632898000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:LaborAndRelatedExpense",
         "label": "labor and related expense",
         "value": 205314000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:CommunicationsAndInformationTechnology",
+        "label": "technology and communications",
+        "value": 44772000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:MarketingExpense",
+        "label": "marketing",
+        "value": 14016000,
         "unit": "USD"
       },
       {
@@ -78,6 +102,12 @@
     "months": 10,
     "facts": [
       {
+        "concept": "us-gaap:InterestIncomeOperating",
+        "label": "interest income",
+        "value": 660553000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:InterestIncomeExpenseNet",
         "label": "interest income (expense), net",
         "value": -37006000,
@@ -90,9 +120,27 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:RevenuesNetOfInterestExpense",
+        "label": "net revenue",
+        "value": 1508531000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:LaborAndRelatedExpense",
         "label": "labor and related expense",
         "value": 574843000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:CommunicationsAndInformationTechnology",
+        "label": "technology and communications",
+        "value": 127226000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:MarketingExpense",
+        "label": "marketing",
+        "value": 35837000,
         "unit": "USD"
       },
       {
