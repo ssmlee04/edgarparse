@@ -5,6 +5,12 @@
     "months": 10,
     "facts": [
       {
+        "concept": "us-gaap:ProvisionForLoanLeaseAndOtherLosses",
+        "label": "provision for credit losses",
+        "value": 433000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:IncomeLossFromEquityMethodInvestmentsNetOfDividendsOrDistributions",
         "label": "equity method investment income, net",
         "value": 216000000,

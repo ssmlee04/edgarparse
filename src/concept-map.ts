@@ -185,6 +185,8 @@ export const CONCEPT_MAP: Record<string, ConceptEntry> = {
     // Operating — non-cash add-backs (already signed in XBRL)
     'us-gaap:DepreciationAmortizationAndAccretionNet': { label: 'depreciation, amortization and accretion', statement: 'cashflow' },
     'us-gaap:DeferredIncomeTaxExpenseBenefit': { label: 'deferred income taxes', statement: 'cashflow' },
+    'us-gaap:ProvisionForLoanLeaseAndOtherLosses': { label: 'provision for credit losses', statement: 'cashflow' },
+    'us-gaap:FinancingReceivableExcludingAccruedInterestCreditLossExpenseReversal': { label: 'credit loss expense', statement: 'cashflow' },
     'us-gaap:IncomeLossFromEquityMethodInvestmentsNetOfDividendsOrDistributions': { label: 'equity method investment income, net', statement: 'cashflow' },
     'us-gaap:GainLossOnDispositionOfAssets1': { label: 'gain (loss) on asset disposals', statement: 'cashflow' },
     'us-gaap:OtherNoncashIncomeExpense': { label: 'other non-cash items', statement: 'cashflow' },
@@ -240,7 +242,17 @@ export const CONCEPT_MAP: Record<string, ConceptEntry> = {
     'us-gaap:ProceedsFromSaleMaturityAndCollectionsOfInvestments': { label: 'proceeds from investments', statement: 'cashflow' },
     'us-gaap:ProceedsFromMaturitiesPrepaymentsAndCallsOfAvailableForSaleSecurities': { label: 'maturities of investments', statement: 'cashflow' },
     'us-gaap:ProceedsFromSaleOfAvailableForSaleSecurities': { label: 'proceeds from sales of investments', statement: 'cashflow' },
+    'us-gaap:ProceedsFromSaleOfAvailableForSaleSecuritiesDebt': { label: 'proceeds from sales of AFS securities', statement: 'cashflow' },
     'us-gaap:ProceedsFromSaleAndMaturityOfAvailableForSaleSecurities': { label: 'proceeds from investments', statement: 'cashflow' },
+    'us-gaap:ProceedsFromMaturitiesPrepaymentsAndCallsOfHeldToMaturitySecurities': { label: 'maturities of HTM securities', statement: 'cashflow' },
+    'us-gaap:PaymentsToAcquireHeldToMaturitySecurities': { label: 'purchases of HTM securities', statement: 'cashflow', negate: true },
+    'us-gaap:PaymentsForOriginationAndPurchasesOfLoansHeldForSale': { label: 'originations of loans held for sale', statement: 'cashflow', negate: true },
+    'us-gaap:ProceedsFromSaleOfFinanceReceivables': { label: 'proceeds from loan sales', statement: 'cashflow' },
+    'us-gaap:IncreaseDecreaseInDeposits': { label: 'change in deposits', statement: 'cashflow' },
+    'us-gaap:IncreaseDecreaseInFederalFundsPurchasedAndSecuritiesSoldUnderAgreementsToRepurchaseNet': { label: 'change in repos and fed funds purchased', statement: 'cashflow' },
+    'us-gaap:IncreaseDecreaseInFinancialInstrumentsUsedInOperatingActivities': { label: 'change in trading assets and liabilities', statement: 'cashflow' },
+    'us-gaap:IncreaseDecreaseInTradingLiabilities': { label: 'change in trading liabilities', statement: 'cashflow' },
+    'us-gaap:ProceedsFromPaymentsForFederalFundsSoldAndSecuritiesPurchasedUnderAgreementsToResellNet': { label: 'net change in fed funds sold and reverse repos', statement: 'cashflow' },
 
     // Financing — outflows (Payments*, Repayments*), negate; inflows (Proceeds*), keep as-is
     'us-gaap:PaymentsForRepurchaseOfCommonStock': { label: 'repurchase of common stock', statement: 'cashflow', negate: true },
@@ -266,6 +278,8 @@ export const CONCEPT_MAP: Record<string, ConceptEntry> = {
     'us-gaap:ProceedsFromMinorityShareholders': { label: 'proceeds from noncontrolling interests', statement: 'cashflow' },
     'us-gaap:ProceedsFromIssuanceOfCommonStock': { label: 'proceeds from issuance of common stock', statement: 'cashflow' },
     'us-gaap:ProceedsFromPaymentsForOtherFinancingActivities': { label: 'other financing activities', statement: 'cashflow' },
+    'us-gaap:ProceedsFromIssuanceOfLongTermDebtAndCapitalSecuritiesNet': { label: 'proceeds from long-term debt', statement: 'cashflow' },
+    'us-gaap:RepaymentsOfLongTermDebtAndCapitalSecurities': { label: 'repayments of long-term debt', statement: 'cashflow', negate: true },
 };
 
 // ── Sector-specific concept groups ────────────────────────────────────────────
@@ -302,6 +316,38 @@ export const SECTOR_CONCEPTS: Record<string, Record<string, ConceptEntry>> = {
         'us-gaap:ResearchAndDevelopmentExpenseExcludingAcquiredInProcessCost': { label: 'research and development', statement: 'income' },
         'us-gaap:CostOfGoodsSold': { label: 'cost of revenue', statement: 'income' },
     },
+    financial: {
+        // Revenue — net interest income + non-interest income is the top line for banks
+        'us-gaap:RevenuesNetOfInterestExpense': { label: 'net revenue', statement: 'income' },
+        'us-gaap:NoninterestIncome': { label: 'non-interest income', statement: 'income' },
+        'us-gaap:NoninterestIncomeOther': { label: 'other non-interest income', statement: 'income' },
+        // Interest income / expense detail
+        'us-gaap:InterestIncomeOperating': { label: 'interest income', statement: 'income' },
+        'us-gaap:InterestAndFeeIncomeLoansAndLeases': { label: 'interest and fee income - loans', statement: 'income' },
+        'us-gaap:InterestIncomeDepositsWithFinancialInstitutions': { label: 'interest income - deposits', statement: 'income' },
+        'us-gaap:InterestIncomeSecuritiesTaxable': { label: 'interest income - taxable securities', statement: 'income' },
+        'us-gaap:InterestIncomeSecuritiesTaxExempt': { label: 'interest income - tax-exempt securities', statement: 'income' },
+        'us-gaap:InterestIncomeFederalFundsSoldAndSecuritiesPurchasedUnderAgreementsToResell': { label: 'interest income - fed funds sold and reverse repos', statement: 'income' },
+        'us-gaap:InterestExpenseDeposits': { label: 'interest expense - deposits', statement: 'income', negate: true },
+        'us-gaap:InterestExpenseLongTermDebt': { label: 'interest expense - long-term debt', statement: 'income', negate: true },
+        'us-gaap:InterestExpenseFederalFundsPurchasedAndSecuritiesSoldUnderAgreementsToRepurchase': { label: 'interest expense - repos and fed funds', statement: 'income', negate: true },
+        'us-gaap:InterestExpenseShortTermBorrowings': { label: 'interest expense - short-term borrowings', statement: 'income', negate: true },
+        'us-gaap:InterestIncomeExpenseAfterProvisionForLoanLoss': { label: 'net interest income after provision', statement: 'income' },
+        // Credit losses
+        'us-gaap:ProvisionForLoanLeaseAndOtherLosses': { label: 'provision for credit losses', statement: 'income' },
+        // Capital markets / fee income
+        'us-gaap:TradingGainsLosses': { label: 'trading gains/losses', statement: 'income' },
+        'us-gaap:PrincipalTransactionsRevenue': { label: 'principal transactions', statement: 'income' },
+        'us-gaap:InvestmentBankingRevenue': { label: 'investment banking revenue', statement: 'income' },
+        'us-gaap:BrokerageCommissionsRevenue': { label: 'brokerage commissions', statement: 'income' },
+        'us-gaap:UnderwritingIncomeLoss': { label: 'underwriting income/loss', statement: 'income' },
+        // Non-interest expense detail
+        'us-gaap:NoninterestExpense': { label: 'total non-interest expense', statement: 'income' },
+        'us-gaap:OtherNoninterestExpense': { label: 'other non-interest expense', statement: 'income' },
+        'us-gaap:CommunicationsAndInformationTechnology': { label: 'technology and communications', statement: 'income' },
+        'us-gaap:ProfessionalAndContractServicesExpense': { label: 'professional services', statement: 'income' },
+        'us-gaap:MarketingAndAdvertisingExpense': { label: 'marketing and advertising', statement: 'income' },
+    },
 };
 
 // ── CIK → sector mapping ──────────────────────────────────────────────────────
@@ -320,4 +366,10 @@ export const CIK_SECTORS: Record<string, keyof typeof SECTOR_CONCEPTS> = {
     '1090727': 'logistics',   // UPS
     '1045810': 'semiconductor', // NVDA
     '1413447': 'semiconductor', // NXPI
+    '19617':   'financial',    // JPM
+    '70858':   'financial',    // BAC
+    '72971':   'financial',    // C
+    '78003':   'financial',    // WFC
+    '92122':   'financial',    // GS
+    '895421':  'financial',    // MS
 };

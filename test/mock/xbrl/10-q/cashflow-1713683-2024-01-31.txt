@@ -89,6 +89,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ProceedsFromSaleOfAvailableForSaleSecuritiesDebt",
+        "label": "proceeds from sales of AFS securities",
+        "value": 2105000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:NetCashProvidedByUsedInInvestingActivities",
         "label": "net cash from investing activities",
         "value": -248750000,

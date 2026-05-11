@@ -95,6 +95,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ProceedsFromSaleOfAvailableForSaleSecuritiesDebt",
+        "label": "proceeds from sales of AFS securities",
+        "value": 424351000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:PaymentsToAcquireIntangibleAssets",
         "label": "purchases of intangible assets",
         "value": -256235000,

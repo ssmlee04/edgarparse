@@ -83,6 +83,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:RepaymentsOfLongTermDebtAndCapitalSecurities",
+        "label": "repayments of long-term debt",
+        "value": -92000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:PaymentsOfDividends",
         "label": "dividends paid",
         "value": -990000000,

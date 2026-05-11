@@ -53,6 +53,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ProceedsFromSaleOfFinanceReceivables",
+        "label": "proceeds from loan sales",
+        "value": 2976941000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
         "label": "capital expenditures",
         "value": -74564000,

@@ -113,6 +113,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ProceedsFromMaturitiesPrepaymentsAndCallsOfHeldToMaturitySecurities",
+        "label": "maturities of HTM securities",
+        "value": 301000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:ProceedsFromSaleOfAvailableForSaleSecurities",
         "label": "proceeds from sales of investments",
         "value": 371000000,

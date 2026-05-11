@@ -65,6 +65,18 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ProceedsFromIssuanceOfLongTermDebtAndCapitalSecuritiesNet",
+        "label": "proceeds from long-term debt",
+        "value": 17319000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:RepaymentsOfLongTermDebtAndCapitalSecurities",
+        "label": "repayments of long-term debt",
+        "value": -16991000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
         "label": "repurchase of common stock",
         "value": -990000000,

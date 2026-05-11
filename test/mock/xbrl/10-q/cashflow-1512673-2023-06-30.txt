@@ -5,6 +5,12 @@
     "months": 7,
     "facts": [
       {
+        "concept": "us-gaap:ProvisionForLoanLeaseAndOtherLosses",
+        "label": "provision for credit losses",
+        "value": 307667000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:DepreciationDepletionAndAmortization",
         "label": "depreciation, depletion and amortization",
         "value": 187718000,
@@ -38,6 +44,12 @@
         "concept": "us-gaap:ProceedsFromMaturitiesPrepaymentsAndCallsOfAvailableForSaleSecurities",
         "label": "maturities of investments",
         "value": 656502000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromSaleOfAvailableForSaleSecuritiesDebt",
+        "label": "proceeds from sales of AFS securities",
+        "value": 24874000,
         "unit": "USD"
       },
       {

@@ -137,6 +137,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ProvisionForLoanLeaseAndOtherLosses",
+        "label": "provision for credit losses",
+        "value": 663000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:IncreaseDecreaseInContractWithCustomerAsset",
         "label": "change in contract assets",
         "value": 83000000,

@@ -71,6 +71,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ProceedsFromSaleOfAvailableForSaleSecuritiesDebt",
+        "label": "proceeds from sales of AFS securities",
+        "value": 1806000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:PaymentsToAcquireAvailableForSaleSecuritiesDebt",
         "label": "purchases of investments",
         "value": -11897000000,

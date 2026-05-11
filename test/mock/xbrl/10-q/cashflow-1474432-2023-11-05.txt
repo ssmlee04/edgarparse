@@ -71,6 +71,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ProceedsFromSaleOfAvailableForSaleSecuritiesDebt",
+        "label": "proceeds from sales of AFS securities",
+        "value": 52495000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:ProceedsFromMaturitiesPrepaymentsAndCallsOfAvailableForSaleSecurities",
         "label": "maturities of investments",
         "value": 495899000,
@@ -86,6 +92,12 @@
         "concept": "us-gaap:ProceedsFromStockOptionsExercised",
         "label": "proceeds from stock option exercises",
         "value": 32904000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:RepaymentsOfLongTermDebtAndCapitalSecurities",
+        "label": "repayments of long-term debt",
+        "value": -584582000,
         "unit": "USD"
       },
       {

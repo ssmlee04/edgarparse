@@ -29,6 +29,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:IncreaseDecreaseInFinancialInstrumentsUsedInOperatingActivities",
+        "label": "change in trading assets and liabilities",
+        "value": 1033000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:IncreaseDecreaseInOtherOperatingAssets",
         "label": "change in other operating assets",
         "value": 103000000,

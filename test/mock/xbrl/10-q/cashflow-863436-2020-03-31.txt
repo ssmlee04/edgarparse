@@ -101,6 +101,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:RepaymentsOfLongTermDebtAndCapitalSecurities",
+        "label": "repayments of long-term debt",
+        "value": -17187000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
         "label": "repurchase of common stock",
         "value": -19329000,

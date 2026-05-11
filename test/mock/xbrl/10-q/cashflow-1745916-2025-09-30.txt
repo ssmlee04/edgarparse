@@ -93,6 +93,12 @@
         "label": "net change in cash",
         "value": 383439000,
         "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:FinancingReceivableExcludingAccruedInterestCreditLossExpenseReversal",
+        "label": "credit loss expense",
+        "value": -22100000,
+        "unit": "USD"
       }
     ]
   }

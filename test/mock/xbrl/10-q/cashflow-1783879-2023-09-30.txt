@@ -53,6 +53,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:PaymentsToAcquireHeldToMaturitySecurities",
+        "label": "purchases of HTM securities",
+        "value": -651000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:PaymentsToAcquireBusinessesNetOfCashAcquired",
         "label": "acquisitions, net of cash",
         "value": -90000000,

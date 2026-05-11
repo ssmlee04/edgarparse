@@ -77,6 +77,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ProceedsFromIssuanceOfLongTermDebtAndCapitalSecuritiesNet",
+        "label": "proceeds from long-term debt",
+        "value": 2170000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:ProceedsFromPaymentsForOtherFinancingActivities",
         "label": "other financing activities",
         "value": 16000000,
@@ -95,9 +101,21 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ProceedsFromSaleOfAvailableForSaleSecuritiesDebt",
+        "label": "proceeds from sales of AFS securities",
+        "value": 0,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:ProceedsFromSaleOfPropertyPlantAndEquipment",
         "label": "proceeds from asset sales",
         "value": 103000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:RepaymentsOfLongTermDebtAndCapitalSecurities",
+        "label": "repayments of long-term debt",
+        "value": -3295000000,
         "unit": "USD"
       },
       {

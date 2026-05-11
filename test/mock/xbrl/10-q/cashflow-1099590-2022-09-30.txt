@@ -5,6 +5,12 @@
     "months": 10,
     "facts": [
       {
+        "concept": "us-gaap:ProvisionForLoanLeaseAndOtherLosses",
+        "label": "provision for credit losses",
+        "value": 845000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:DepreciationAndAmortization",
         "label": "depreciation and amortization",
         "value": 281000000,

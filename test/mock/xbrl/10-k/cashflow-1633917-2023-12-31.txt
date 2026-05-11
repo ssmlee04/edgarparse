@@ -119,6 +119,12 @@
         "unit": "USD"
       },
       {
+        "concept": "us-gaap:ProceedsFromSaleOfAvailableForSaleSecuritiesDebt",
+        "label": "proceeds from sales of AFS securities",
+        "value": 4500000000,
+        "unit": "USD"
+      },
+      {
         "concept": "us-gaap:EquitySecuritiesFvNiUnrealizedGainLoss",
         "label": "unrealized gain (loss) on equity securities",
         "value": -128000000,

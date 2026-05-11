@@ -189,6 +189,12 @@
         "label": "net change in cash",
         "value": 733100000,
         "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromSaleOfAvailableForSaleSecuritiesDebt",
+        "label": "proceeds from sales of AFS securities",
+        "value": 2500000,
+        "unit": "USD"
       }
     ]
   }
