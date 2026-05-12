@@ -115,6 +115,7 @@ export const CONCEPT_MAP: Record<string, ConceptEntry> = {
     'us-gaap:LongTermDebtNoncurrent': { label: 'long-term debt', statement: 'balance' },
     'us-gaap:LongTermDebt': { label: 'long-term debt', statement: 'balance' },
     'us-gaap:LongTermDebtFairValue': { label: 'long-term debt', statement: 'balance' },
+    'us-gaap:LongTermDebtAndCapitalLeaseObligations': { label: 'long-term debt', statement: 'balance' },
     'us-gaap:DebtLongtermAndShorttermCombinedAmount': { label: 'total debt', statement: 'balance' },
     'us-gaap:OperatingLeaseLiabilityNoncurrent': { label: 'operating lease liabilities, non-current', statement: 'balance' },
     'us-gaap:DeferredRevenueNoncurrent': { label: 'deferred revenue, non-current', statement: 'balance' },
