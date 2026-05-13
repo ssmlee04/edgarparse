@@ -7,7 +7,7 @@ description: Use this skill whenever the user asks about historical financial da
 
 Fetch structured historical financial data for US public companies via the EdgarParse API, which parses SEC EDGAR 10-Q and 10-K filings into clean JSON — no scraping, no multiplier guessing.
 
-**API key:** https://edgarparse.com/login — free tier covers 50 major tickers, up to 8 quarterly or 3 annual periods.
+**API key:** https://edgarparse.com/login — free tier covers 100 major tickers, up to 120 quarterly or 10 annual periods.
 
 ## Endpoints
 
