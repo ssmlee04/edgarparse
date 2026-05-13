@@ -1,0 +1,31 @@
+[
+  {
+    "id": "revenue-history",
+    "prompt": "What was Apple's revenue for the last 4 quarters?",
+    "assertions": [
+      "Calls GET /v1/AAPL/income?period=quarterly",
+      "Returns a table with 4 quarterly periods and revenue values",
+      "Formats values in billions (e.g. $94.9B)",
+      "Does not call balance or cashflow endpoints"
+    ]
+  },
+  {
+    "id": "balance-sheet",
+    "prompt": "How much debt and cash does Tesla have on its balance sheet?",
+    "assertions": [
+      "Calls GET /v1/TSLA/balance?period=quarterly",
+      "Surfaces both a debt line item and a cash/equivalents line item",
+      "Does not call income or cashflow endpoints"
+    ]
+  },
+  {
+    "id": "cash-flow",
+    "prompt": "Show me Microsoft's free cash flow over the past year",
+    "assertions": [
+      "Calls GET /v1/MSFT/cashflow",
+      "Returns operating cash flow and capex (or derived free cash flow)",
+      "Covers at least 4 quarterly periods or 1 annual period",
+      "Presents a trend (not just the latest quarter)"
+    ]
+  }
+]

@@ -1,107 +1,53 @@
+---
+name: edgarparse
+description: Use this skill whenever the user asks about historical financial data, earnings, revenue, profit, debt, cash flow, or any financial metrics for a publicly traded US company — even if they don't mention "edgarparse" or "API." Trigger proactively on any question that could be answered with SEC filing data.
+---
+
 # EdgarParse API Skill
 
-Use this skill to fetch historical financial filings data (income statements, balance sheets, cash flow statements) for publicly traded US companies via the EdgarParse API, which parses SEC EDGAR filings.
+Fetch structured historical financial data for US public companies via the EdgarParse API, which parses SEC EDGAR 10-Q and 10-K filings into clean JSON — no scraping, no multiplier guessing.
 
-## Trigger
+**API key:** https://edgarparse.com/login — free tier covers 50 major tickers, up to 8 quarterly or 3 annual periods.
 
-Use this skill when the user asks for:
-- Historical financial data for a stock/company
-- Income statement, balance sheet, or cash flow data
-- Revenue, earnings, EPS, debt, or cash flow history
-- SEC filing data or GAAP financials
+## Endpoints
 
-## API Reference
+Base URL: `https://api.edgarparse.com/v1`
 
-**Base URL:** `https://api.edgarparse.com/v1`
+| What you need | Endpoint |
+|---|---|
+| Revenue, profit, EPS | `GET /v1/{ticker}/income` |
+| Assets, debt, equity, cash | `GET /v1/{ticker}/balance` |
+| Operating/investing/financing cash | `GET /v1/{ticker}/cashflow` |
+| Check free-tier tickers | `GET /free-tickers` |
 
-**Authentication:** Append `?api_key=YOUR_API_KEY` to any request. Without a key, free-tier access covers 50 major tickers (8 quarterly or 3 annual periods). Get a key at https://edgarparse.com/login
+Add `?period=quarterly` (default) or `?period=annual`, and `&api_key=YOUR_KEY`.
 
----
-
-### Endpoints
-
-#### Income Statement
-```
-GET https://api.edgarparse.com/v1/{ticker}/income?period={quarterly|annual}&api_key={key}
-```
-Returns: revenue, gross profit, operating income, net income, EPS (basic/diluted), share counts.
-
-#### Balance Sheet
-```
-GET https://api.edgarparse.com/v1/{ticker}/balance?period={quarterly|annual}&api_key={key}
-```
-Returns: total assets, liabilities, equity, cash, debt, receivables, and other balance sheet items.
-
-#### Cash Flow Statement
-```
-GET https://api.edgarparse.com/v1/{ticker}/cashflow?period={quarterly|annual}&api_key={key}
-```
-Returns: operating, investing, and financing cash flows, capex, stock buybacks, dividends, net change in cash.
-
-#### List Free Tickers
-```
-GET https://api.edgarparse.com/free-tickers
-```
-Returns the 50 tickers available without an API key.
-
-#### List All Tickers
-```
-GET https://api.edgarparse.com/all-tickers
-```
-Returns all tickers tracked by EdgarParse.
-
----
-
-### Response Format
-
-All financial endpoints return JSON:
+## Response
 
 ```json
 {
   "ticker": "AAPL",
   "period": "quarterly",
-  "periods": ["2024-09-30", "2024-06-30", "2024-03-31", ...],
+  "periods": ["2024-09-30", "2024-06-30", "2024-03-31"],
   "line_items": [
     {
       "concept": "us-gaap:Revenues",
       "label": "Revenue",
-      "values": [94930000000, 85777000000, 90753000000, ...],
-      "is_bold": false,
-      "format": "currency"
+      "values": [94930000000, 85777000000, 90753000000],
+      "format": "currency",
+      "is_bold": false
     }
   ]
 }
 ```
 
-- `periods`: dates in descending order (most recent first)
-- `values`: parallel array to `periods` — `values[i]` corresponds to `periods[i]`
-- `format`: `"currency"` | `"per_share"` | `"shares"`
-- `is_bold`: `true` for subtotal/total rows
+`periods[i]` pairs with `values[i]` — zip them to get a time series. `format` is `"currency"`, `"per_share"`, or `"shares"`. Values are raw dollars (not in millions).
 
----
+## Steps
 
-## Usage Steps
+1. **Map to ticker** — if the user named a company, resolve it (Apple → AAPL, Tesla → TSLA).
+2. **Pick one endpoint** — income for P&L questions, balance for assets/debt, cashflow for cash generation. Only call multiple if the user needs data that spans statements.
+3. **Fetch quarterly by default** — switch to annual only if the user asks or if quarterly data would be too granular.
+4. **Present as a table** — zip `periods` + `values` for the relevant line items, format large numbers (e.g. $94.9B), and highlight the trend.
 
-1. **Check if the ticker is available for free** (optional): `GET https://api.edgarparse.com/free-tickers`
-2. **Fetch the desired statement** using the ticker and period type.
-3. **Parse `line_items`** — zip `periods` with each item's `values` to build a time series.
-4. Present data clearly, noting that values are in raw units (e.g., dollars, not millions) unless the user's context suggests otherwise.
-
-## Example
-
-Fetch Apple's last 8 quarters of income data:
-```
-GET https://api.edgarparse.com/v1/AAPL/income?period=quarterly
-```
-
-Fetch Tesla's annual balance sheet:
-```
-GET https://api.edgarparse.com/v1/TSLA/balance?period=annual
-```
-
-## Notes
-
-- Data is sourced from SEC EDGAR filings (10-Q, 10-K) and normalized to US GAAP concepts.
-- Free tier: 50 tickers, up to 8 quarterly or 3 annual periods.
-- Paid tier: all tickers, expanded history.
-- The ticker in the URL is case-insensitive.
+Avoid fetching all three endpoints speculatively — it's slower and most questions need only one.
