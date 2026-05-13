@@ -107,6 +107,52 @@ Modern 10-Q filings use **inline XBRL (iXBRL)** — XBRL facts are embedded dire
 
 The parser filters the 500+ context definitions down to the handful of consolidated (no business-segment dimension) contexts that match the reporting period, then collects all USD facts for those contexts. A concept map converts `us-gaap:*` element names to human-readable labels.
 
+## AI Agent Skill
+
+The `skills/SKILL.md` file in this repo is an **AI agent skill** for the [EdgarParse REST API](https://edgarparse.com/docs/) — a hosted service that exposes pre-parsed historical financial data for US public companies without requiring you to download or process raw EDGAR filings yourself.
+
+### How to install the skill in Claude Code
+
+Run this from your project root:
+
+```sh
+npx skills add https://github.com/ssmlee04/edgarparse
+```
+
+### How to use the skill
+
+Once installed, prompt your AI agent naturally — it will call the API and parse the response for you:
+
+> "Get Apple's last 8 quarters of revenue and net income."
+> "Show me Tesla's annual balance sheet for the past 3 years."
+> "What was Microsoft's operating cash flow last quarter?"
+
+
+### Quick example (direct API call)
+
+```sh
+curl "https://api.edgarparse.com/v1/AAPL/income?period=quarterly&api_key=YOUR_KEY"
+```
+
+```json
+{
+  "ticker": "AAPL",
+  "period": "quarterly",
+  "periods": ["2024-09-30", "2024-06-30", "2024-03-31"],
+  "line_items": [
+    {
+      "concept": "us-gaap:Revenues",
+      "label": "Revenue",
+      "values": [94930000000, 85777000000, 90753000000],
+      "is_bold": false,
+      "format": "currency"
+    }
+  ]
+}
+```
+
+---
+
 ## Test
 
 ```sh
