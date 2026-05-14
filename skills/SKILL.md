@@ -15,9 +15,9 @@ Base URL: `https://api.edgarparse.com/v1`
 
 | What you need | Endpoint |
 |---|---|
-| Revenue, profit, EPS | `GET /v1/{ticker}/income` |
-| Assets, debt, equity, cash | `GET /v1/{ticker}/balance` |
-| Operating/investing/financing cash | `GET /v1/{ticker}/cashflow` |
+| Revenue, profit, EPS | `GET /v1/tickers/{ticker}/income` |
+| Assets, debt, equity, cash | `GET /v1/tickers/{ticker}/balance` |
+| Operating/investing/financing cash | `GET /v1/tickers/{ticker}/cashflow` |
 | Check free-tier tickers | `GET /free-tickers` |
 
 Add `?period=quarterly` (default) or `?period=annual`, and `&api_key=YOUR_KEY`.
