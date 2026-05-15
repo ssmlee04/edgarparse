@@ -4,8 +4,6 @@ Get structured SEC financial statements from EDGAR filings — income, balance s
 
 Uses inline XBRL (iXBRL) embedded in every modern 10-Q and 10-K: values are exact, element names are standardized across companies via the `us-gaap:*` taxonomy, and facts come out in statement order.
 
----
-
 ## Install
 
 ```sh
