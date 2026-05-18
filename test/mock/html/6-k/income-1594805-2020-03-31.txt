@@ -1,0 +1,75 @@
+{
+  "quarterly": {
+    "startDate": "2019-12-01",
+    "endDate": "2020-03-31",
+    "months": 3,
+    "facts": [
+      {
+        "concept": "gross profit",
+        "label": "gross profit",
+        "value": 256950,
+        "unit": "USD"
+      },
+      {
+        "concept": "sales and marketing",
+        "label": "sales and marketing",
+        "value": 154862,
+        "unit": "USD"
+      },
+      {
+        "concept": "research and development",
+        "label": "research and development",
+        "value": 116396,
+        "unit": "USD"
+      },
+      {
+        "concept": "selling, general and administrative",
+        "label": "selling, general and administrative",
+        "value": 44842,
+        "unit": "USD"
+      },
+      {
+        "concept": "total operating expenses",
+        "label": "total operating expenses",
+        "value": 330183,
+        "unit": "USD"
+      },
+      {
+        "concept": "operating income",
+        "label": "operating income",
+        "value": -73233,
+        "unit": "USD"
+      },
+      {
+        "concept": "other income (expense)",
+        "label": "other income (expense)",
+        "value": 13109,
+        "unit": "USD"
+      },
+      {
+        "concept": "income before income taxes",
+        "label": "income before income taxes",
+        "value": -60124,
+        "unit": "USD"
+      },
+      {
+        "concept": "income tax expense (benefit)",
+        "label": "income tax expense (benefit)",
+        "value": 28695,
+        "unit": "USD"
+      },
+      {
+        "concept": "net income",
+        "label": "net income",
+        "value": -31429,
+        "unit": "USD"
+      },
+      {
+        "concept": "earnings per share - diluted",
+        "label": "earnings per share - diluted",
+        "value": -0.27,
+        "unit": "USD"
+      }
+    ]
+  }
+}

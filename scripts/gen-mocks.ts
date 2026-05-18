@@ -68,14 +68,14 @@ const run = (formType: string, processors: any[], dataDir: string) => {
     console.log(`${formType}: ${generated} generated, ${skipped} skipped, ${errored} errors`);
 };
 
-const run8k = (dataDir: string) => {
+const runHtml = (formType: string, dataDir: string) => {
     if (!fs.existsSync(dataDir)) return;
     const files = fs.readdirSync(dataDir).filter(f => f.endsWith('.txt'));
     let generated = 0, skipped = 0, errored = 0;
 
     for (const filename of files) {
         const { cik, datestr } = parseCikDate(filename);
-        const outPath = path.join('test/mock/html/8-k', `income-${cik}-${datestr}.txt`);
+        const outPath = path.join('test/mock/html', formType, `income-${cik}-${datestr}.txt`);
 
         if (!force && fs.existsSync(outPath)) {
             skipped++;
@@ -98,7 +98,7 @@ const run8k = (dataDir: string) => {
         }
     }
 
-    console.log(`8-k html: ${generated} generated, ${skipped} skipped, ${errored} errors`);
+    console.log(`${formType} html: ${generated} generated, ${skipped} skipped, ${errored} errors`);
 };
 
 fs.mkdirSync('test/mock/xbrl/10-q', { recursive: true });
@@ -106,6 +106,7 @@ fs.mkdirSync('test/mock/xbrl/10-k', { recursive: true });
 
 run('10-q', QUARTERLY_PROCESSORS, 'data/txt/10-q');
 run('10-k', ANNUAL_PROCESSORS,    'data/txt/10-k');
-run8k('data/txt/8-k');
+runHtml('8-k', 'data/txt/8-k');
+runHtml('6-k', 'data/txt/6-k');
 
 console.log('done.');
