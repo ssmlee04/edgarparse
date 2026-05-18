@@ -1,0 +1,111 @@
+{
+  "annual": {
+    "startDate": "2024-01-01",
+    "endDate": "2024-12-31",
+    "months": 13,
+    "facts": [
+      {
+        "concept": "ifrs-full:Revenue",
+        "label": "revenue",
+        "value": 2894307700000,
+        "unit": "USD"
+      },
+      {
+        "concept": "ifrs-full:CostOfSales",
+        "label": "cost of revenue",
+        "value": 1269954100000,
+        "unit": "USD"
+      },
+      {
+        "concept": "ifrs-full:GrossProfit",
+        "label": "gross profit",
+        "value": 1624353600000,
+        "unit": "USD"
+      },
+      {
+        "concept": "ifrs-full:ResearchAndDevelopmentExpense",
+        "label": "research and development",
+        "value": 204181800000,
+        "unit": "USD"
+      },
+      {
+        "concept": "ifrs-full:OtherOperatingIncomeExpense",
+        "label": "other operating income (expense)",
+        "value": -1230200000,
+        "unit": "USD"
+      },
+      {
+        "concept": "ifrs-full:ProfitLossFromOperatingActivities",
+        "label": "operating income",
+        "value": 1322053000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "ifrs-full:FinanceIncome",
+        "label": "interest income",
+        "value": 566900000,
+        "unit": "USD"
+      },
+      {
+        "concept": "ifrs-full:FinanceCosts",
+        "label": "interest expense",
+        "value": 10495400000,
+        "unit": "USD"
+      },
+      {
+        "concept": "ifrs-full:ProfitLossBeforeTax",
+        "label": "income before income taxes",
+        "value": 1405840000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "ifrs-full:IncomeTaxExpenseContinuingOperations",
+        "label": "income tax expense (benefit)",
+        "value": 248316100000,
+        "unit": "USD"
+      },
+      {
+        "concept": "ifrs-full:ProfitLoss",
+        "label": "net income including noncontrolling interests",
+        "value": 1157523900000,
+        "unit": "USD"
+      },
+      {
+        "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+        "label": "net income",
+        "value": 1158380200000,
+        "unit": "USD"
+      },
+      {
+        "concept": "ifrs-full:ProfitLossAttributableToNoncontrollingInterests",
+        "label": "net income attributable to noncontrolling interests",
+        "value": -856300000,
+        "unit": "USD"
+      },
+      {
+        "concept": "ifrs-full:BasicEarningsLossPerShare",
+        "label": "earnings per share - basic",
+        "value": 44.68,
+        "unit": "USD"
+      },
+      {
+        "concept": "ifrs-full:DilutedEarningsLossPerShare",
+        "label": "earnings per share - diluted",
+        "value": 44.67,
+        "unit": "USD"
+      },
+      {
+        "concept": "ifrs-full:RevenueFromContractsWithCustomers",
+        "label": "revenue",
+        "value": 2894307700000,
+        "unit": "USD"
+      },
+      {
+        "concept": "ifrs-full:AdjustedWeightedAverageShares",
+        "label": "weighted-average shares - diluted",
+        "value": 25929700000,
+        "unit": "USD"
+      }
+    ]
+  }
+}

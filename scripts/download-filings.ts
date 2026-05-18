@@ -14,7 +14,7 @@ import * as https from 'https';
 import * as fs from 'fs';
 import * as path from 'path';
 
-type Filing = { ticker: string; cik: string; period: string; formType?: '10-q' | '10-k' | '8-k' | '6-k' };
+type Filing = { ticker: string; cik: string; period: string; formType?: '10-q' | '10-k' | '8-k' | '6-k' | '20-f' };
 
 const DEFAULT_FILINGS: Filing[] = [
     { ticker: 'aa',   cik: '1675149', period: '2024-09-30' },
@@ -67,7 +67,7 @@ const getBuffer = (url: string): Promise<Buffer> =>
 
 const sleep = (ms: number) => new Promise(r => setTimeout(r, ms));
 
-const FORM_TYPES = ['10-Q', '10-K', '8-K', '6-K'] as const;
+const FORM_TYPES = ['10-Q', '10-K', '8-K', '6-K', '20-F'] as const;
 
 const searchFilings = (
     filings: { form: string[]; reportDate: string[]; accessionNumber: string[] },

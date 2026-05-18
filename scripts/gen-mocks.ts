@@ -14,6 +14,7 @@ import XBRLCashflowQuarterlyProcessor from '../src/processors/xbrl_cashflow_quar
 import XBRLIncomeAnnualProcessor from '../src/processors/xbrl_income_annual_processor';
 import XBRLBalanceAnnualProcessor from '../src/processors/xbrl_balance_annual_processor';
 import XBRLCashflowAnnualProcessor from '../src/processors/xbrl_cashflow_annual_processor';
+import XBRLIncome20FProcessor from '../src/processors/xbrl_income_20f_processor';
 import HTMLIncomeProcessor from '../src/processors/html_income_processor';
 
 const force = process.argv.includes('--force');
@@ -103,9 +104,11 @@ const runHtml = (formType: string, dataDir: string) => {
 
 fs.mkdirSync('test/mock/xbrl/10-q', { recursive: true });
 fs.mkdirSync('test/mock/xbrl/10-k', { recursive: true });
+fs.mkdirSync('test/mock/xbrl/20-f', { recursive: true });
 
 run('10-q', QUARTERLY_PROCESSORS, 'data/txt/10-q');
 run('10-k', ANNUAL_PROCESSORS,    'data/txt/10-k');
+run('20-f', [XBRLIncome20FProcessor], 'data/txt/20-f');
 runHtml('8-k', 'data/txt/8-k');
 runHtml('6-k', 'data/txt/6-k');
 
