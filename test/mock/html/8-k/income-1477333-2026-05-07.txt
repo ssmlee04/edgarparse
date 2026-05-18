@@ -1,0 +1,99 @@
+{
+  "quarterly": {
+    "startDate": "2025-12-01",
+    "endDate": "2026-03-31",
+    "months": 3,
+    "facts": [
+      {
+        "concept": "revenue",
+        "label": "revenue",
+        "value": 639755000,
+        "unit": "USD"
+      },
+      {
+        "concept": "cost of revenue",
+        "label": "cost of revenue",
+        "value": 184158000,
+        "unit": "USD"
+      },
+      {
+        "concept": "gross profit",
+        "label": "gross profit",
+        "value": 455597000,
+        "unit": "USD"
+      },
+      {
+        "concept": "sales and marketing",
+        "label": "sales and marketing",
+        "value": 271600000,
+        "unit": "USD"
+      },
+      {
+        "concept": "research and development",
+        "label": "research and development",
+        "value": 150972000,
+        "unit": "USD"
+      },
+      {
+        "concept": "selling, general and administrative",
+        "label": "selling, general and administrative",
+        "value": 95019000,
+        "unit": "USD"
+      },
+      {
+        "concept": "total operating expenses",
+        "label": "total operating expenses",
+        "value": 517591000,
+        "unit": "USD"
+      },
+      {
+        "concept": "operating income",
+        "label": "operating income",
+        "value": -61994000,
+        "unit": "USD"
+      },
+      {
+        "concept": "interest income",
+        "label": "interest income",
+        "value": 40166000,
+        "unit": "USD"
+      },
+      {
+        "concept": "interest expense",
+        "label": "interest expense",
+        "value": -2563000,
+        "unit": "USD"
+      },
+      {
+        "concept": "other income (expense)",
+        "label": "other income (expense)",
+        "value": 2990000,
+        "unit": "USD"
+      },
+      {
+        "concept": "income before income taxes",
+        "label": "income before income taxes",
+        "value": -21401000,
+        "unit": "USD"
+      },
+      {
+        "concept": "income tax expense (benefit)",
+        "label": "income tax expense (benefit)",
+        "value": 1526000,
+        "unit": "USD"
+      },
+      {
+        "concept": "net income",
+        "label": "net income",
+        "value": -22927000,
+        "unit": "USD"
+      },
+      {
+        "concept": "earnings per share - diluted",
+        "label": "earnings per share - diluted",
+        "value": 352625,
+        "unit": "USD"
+      }
+    ]
+  }
+}

@@ -56,6 +56,12 @@
       "unit": "USD"
     },
     {
+      "concept": "us-gaap:LongTermDebtAndCapitalLeaseObligations",
+      "label": "long-term debt",
+      "value": 29761000000,
+      "unit": "USD"
+    },
+    {
       "concept": "us-gaap:OperatingLeaseLiabilityNoncurrent",
       "label": "operating lease liabilities, non-current",
       "value": 934000000,

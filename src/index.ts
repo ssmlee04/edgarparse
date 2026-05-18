@@ -16,3 +16,7 @@ export {
 
 export type { XBRLFact, PeriodFacts, ContextInfo, RawFact } from './xbrl_types';
 export type { ConceptEntry, StatementType } from './concept-map';
+
+import HTMLIncomeProcessor from './processors/html_income_processor';
+export { HTMLIncomeProcessor };
+export type { HTMLIncomeResult } from './processors/html_income_processor';

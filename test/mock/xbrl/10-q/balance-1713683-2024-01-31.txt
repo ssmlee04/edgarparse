@@ -162,6 +162,12 @@
       "label": "long-term debt",
       "value": 1141011000,
       "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:LongTermDebtFairValue",
+      "label": "long-term debt",
+      "value": 1843300000,
+      "unit": "USD"
     }
   ]
 }

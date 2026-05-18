@@ -80,6 +80,12 @@
       "unit": "USD"
     },
     {
+      "concept": "us-gaap:LongTermDebtAndCapitalLeaseObligations",
+      "label": "long-term debt",
+      "value": 15133000000,
+      "unit": "USD"
+    },
+    {
       "concept": "us-gaap:OtherLiabilitiesNoncurrent",
       "label": "other liabilities",
       "value": 1080000000,

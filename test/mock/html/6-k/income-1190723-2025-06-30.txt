@@ -1,0 +1,148 @@
+{
+  "quarterly": {
+    "startDate": "2025-03-01",
+    "endDate": "2025-06-30",
+    "months": 3,
+    "facts": [
+      {
+        "concept": "revenue",
+        "label": "revenue",
+        "value": 3085672000,
+        "unit": "USD"
+      },
+      {
+        "concept": "cost of revenue",
+        "label": "cost of revenue",
+        "value": -2013639000,
+        "unit": "USD"
+      },
+      {
+        "concept": "gross profit",
+        "label": "gross profit",
+        "value": 1072033000,
+        "unit": "USD"
+      },
+      {
+        "concept": "selling, general and administrative",
+        "label": "selling, general and administrative",
+        "value": -483633000,
+        "unit": "USD"
+      },
+      {
+        "concept": "operating income",
+        "label": "operating income",
+        "value": 582734000,
+        "unit": "USD"
+      },
+      {
+        "concept": "interest income",
+        "label": "interest income",
+        "value": 63669000,
+        "unit": "USD"
+      },
+      {
+        "concept": "income tax expense (benefit)",
+        "label": "income tax expense (benefit)",
+        "value": 614397000,
+        "unit": "USD"
+      },
+      {
+        "concept": "income before income taxes",
+        "label": "income before income taxes",
+        "value": 647048000,
+        "unit": "USD"
+      },
+      {
+        "concept": "net income",
+        "label": "net income",
+        "value": 541706000,
+        "unit": "USD"
+      },
+      {
+        "concept": "weighted-average shares - basic",
+        "label": "weighted-average shares - basic",
+        "value": 1068721,
+        "unit": "USD"
+      },
+      {
+        "concept": "earnings per share - diluted",
+        "label": "earnings per share - diluted",
+        "value": 0.5,
+        "unit": "USD"
+      }
+    ]
+  },
+  "ytd": {
+    "startDate": "2024-12-01",
+    "endDate": "2025-06-30",
+    "months": 6,
+    "facts": [
+      {
+        "concept": "revenue",
+        "label": "revenue",
+        "value": 6007884000,
+        "unit": "USD"
+      },
+      {
+        "concept": "cost of revenue",
+        "label": "cost of revenue",
+        "value": -3934494000,
+        "unit": "USD"
+      },
+      {
+        "concept": "gross profit",
+        "label": "gross profit",
+        "value": 2073390000,
+        "unit": "USD"
+      },
+      {
+        "concept": "selling, general and administrative",
+        "label": "selling, general and administrative",
+        "value": -940698000,
+        "unit": "USD"
+      },
+      {
+        "concept": "operating income",
+        "label": "operating income",
+        "value": 1132647000,
+        "unit": "USD"
+      },
+      {
+        "concept": "interest income",
+        "label": "interest income",
+        "value": 142113000,
+        "unit": "USD"
+      },
+      {
+        "concept": "income tax expense (benefit)",
+        "label": "income tax expense (benefit)",
+        "value": 1199568000,
+        "unit": "USD"
+      },
+      {
+        "concept": "income before income taxes",
+        "label": "income before income taxes",
+        "value": 1246254000,
+        "unit": "USD"
+      },
+      {
+        "concept": "net income",
+        "label": "net income",
+        "value": 1059570000,
+        "unit": "USD"
+      },
+      {
+        "concept": "weighted-average shares - basic",
+        "label": "weighted-average shares - basic",
+        "value": 1072974,
+        "unit": "USD"
+      },
+      {
+        "concept": "earnings per share - diluted",
+        "label": "earnings per share - diluted",
+        "value": 0.97,
+        "unit": "USD"
+      }
+    ]
+  }
+}

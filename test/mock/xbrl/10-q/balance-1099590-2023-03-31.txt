@@ -152,6 +152,12 @@
       "unit": "USD"
     },
     {
+      "concept": "us-gaap:LongTermDebtAndCapitalLeaseObligations",
+      "label": "long-term debt",
+      "value": 2500000000,
+      "unit": "USD"
+    },
+    {
       "concept": "us-gaap:LongTermDebt",
       "label": "long-term debt",
       "value": 4832000000,

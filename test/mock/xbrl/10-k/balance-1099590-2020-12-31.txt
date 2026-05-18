@@ -170,6 +170,12 @@
       "unit": "USD"
     },
     {
+      "concept": "us-gaap:LongTermDebtAndCapitalLeaseObligations",
+      "label": "long-term debt",
+      "value": 860876000,
+      "unit": "USD"
+    },
+    {
       "concept": "us-gaap:CashCashEquivalentsAndShortTermInvestments",
       "label": "cash, equivalents and short-term investments",
       "value": 2460751000,

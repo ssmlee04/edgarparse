@@ -146,6 +146,12 @@
       "unit": "USD"
     },
     {
+      "concept": "us-gaap:LongTermDebtFairValue",
+      "label": "long-term debt",
+      "value": 47600000000,
+      "unit": "USD"
+    },
+    {
       "concept": "us-gaap:OperatingLeaseRightOfUseAsset",
       "label": "operating lease right-of-use assets",
       "value": 505000000,

@@ -144,6 +144,12 @@
       "label": "total liabilities and equity",
       "value": 49247800000,
       "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:LongTermDebtFairValue",
+      "label": "long-term debt",
+      "value": 33700000000.000004,
+      "unit": "USD"
     }
   ]
 }

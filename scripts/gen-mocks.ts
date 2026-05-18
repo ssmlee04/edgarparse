@@ -14,6 +14,7 @@ import XBRLCashflowQuarterlyProcessor from '../src/processors/xbrl_cashflow_quar
 import XBRLIncomeAnnualProcessor from '../src/processors/xbrl_income_annual_processor';
 import XBRLBalanceAnnualProcessor from '../src/processors/xbrl_balance_annual_processor';
 import XBRLCashflowAnnualProcessor from '../src/processors/xbrl_cashflow_annual_processor';
+import HTMLIncomeProcessor from '../src/processors/html_income_processor';
 
 const force = process.argv.includes('--force');
 
@@ -67,10 +68,45 @@ const run = (formType: string, processors: any[], dataDir: string) => {
     console.log(`${formType}: ${generated} generated, ${skipped} skipped, ${errored} errors`);
 };
 
+const runHtml = (formType: string, dataDir: string) => {
+    if (!fs.existsSync(dataDir)) return;
+    const files = fs.readdirSync(dataDir).filter(f => f.endsWith('.txt'));
+    let generated = 0, skipped = 0, errored = 0;
+
+    for (const filename of files) {
+        const { cik, datestr } = parseCikDate(filename);
+        const outPath = path.join('test/mock/html', formType, `income-${cik}-${datestr}.txt`);
+
+        if (!force && fs.existsSync(outPath)) {
+            skipped++;
+            continue;
+        }
+
+        try {
+            const raw = fs.readFileSync(path.join(dataDir, filename), 'utf8');
+            const p = new HTMLIncomeProcessor();
+            p.initialize(cik, datestr, raw);
+            const result = p.extract();
+            fs.mkdirSync(path.dirname(outPath), { recursive: true });
+            fs.writeFileSync(outPath, JSON.stringify(result, null, 2));
+            const factCount = (result.quarterly?.facts?.length ?? 0) + (result.ytd?.facts?.length ?? 0);
+            console.log(`  ${filename} → ${factCount} facts`);
+            generated++;
+        } catch (e: any) {
+            console.error(`  ERR ${filename}: ${e.message}`);
+            errored++;
+        }
+    }
+
+    console.log(`${formType} html: ${generated} generated, ${skipped} skipped, ${errored} errors`);
+};
+
 fs.mkdirSync('test/mock/xbrl/10-q', { recursive: true });
 fs.mkdirSync('test/mock/xbrl/10-k', { recursive: true });
 
 run('10-q', QUARTERLY_PROCESSORS, 'data/txt/10-q');
 run('10-k', ANNUAL_PROCESSORS,    'data/txt/10-k');
+runHtml('8-k', 'data/txt/8-k');
+runHtml('6-k', 'data/txt/6-k');
 
 console.log('done.');

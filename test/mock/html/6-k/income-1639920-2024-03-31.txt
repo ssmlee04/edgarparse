@@ -1,0 +1,93 @@
+{
+  "quarterly": {
+    "startDate": "2023-12-01",
+    "endDate": "2024-03-31",
+    "months": 3,
+    "facts": [
+      {
+        "concept": "revenue",
+        "label": "revenue",
+        "value": 3636000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "cost of revenue",
+        "label": "cost of revenue",
+        "value": 2632000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "gross profit",
+        "label": "gross profit",
+        "value": 1004000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "research and development",
+        "label": "research and development",
+        "value": 389000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "sales and marketing",
+        "label": "sales and marketing",
+        "value": 324000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "selling, general and administrative",
+        "label": "selling, general and administrative",
+        "value": 123000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "operating income",
+        "label": "operating income",
+        "value": 168000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "interest income",
+        "label": "interest income",
+        "value": 59000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "interest expense",
+        "label": "interest expense",
+        "value": -53000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "income before income taxes",
+        "label": "income before income taxes",
+        "value": 174000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "income tax expense (benefit)",
+        "label": "income tax expense (benefit)",
+        "value": -23000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "net income",
+        "label": "net income",
+        "value": 197000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "earnings per share - basic",
+        "label": "earnings per share - basic",
+        "value": 0.99,
+        "unit": "USD"
+      },
+      {
+        "concept": "earnings per share - diluted",
+        "label": "earnings per share - diluted",
+        "value": 0.97,
+        "unit": "USD"
+      }
+    ]
+  }
+}
