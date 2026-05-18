@@ -283,8 +283,9 @@ export function extractValue(raw: string, multiplier: number): number | null {
 
 // ── Label → concept mapping ───────────────────────────────────────────────────
 
-// Returns the normalized label string (matching concept-map.ts label values)
-// or null if no match.
+// Returns underscore-normalized concept keys that match the output of CONCEPT_NORMALIZATION
+// in income-bar-config.ts (e.g. "revenues", "net_income", "eps_diluted").
+// Returns null if no match found.
 export function labelToConcept(raw: string): string | null {
     const t = raw.toLowerCase()
         .replace(/\(.*?\)/g, '') // strip parenthetical qualifiers like "(loss)"
@@ -297,55 +298,55 @@ export function labelToConcept(raw: string): string | null {
         t === 'revenue' || t === 'revenues' || t === 'net revenue' || t === 'net revenues' ||
         t.startsWith('total revenue') || t === 'net sales' || t === 'total net revenue' ||
         t === 'total revenues' || t.startsWith('revenue from contract')
-    ) return 'revenue';
+    ) return 'revenues';
 
     // Cost
     if (
         t.includes('cost of revenue') || t.includes('cost of sales') ||
         t.includes('cost of goods sold') || t.includes('cost of net revenue') ||
         t.includes('cost of products sold') || t.includes('cost of services')
-    ) return 'cost of revenue';
+    ) return 'cost_of_revenue';
 
-    if (t === 'gross profit' || t === 'gross margin') return 'gross profit';
+    if (t === 'gross profit' || t === 'gross margin') return 'gross_profit';
 
     // Operating expenses
-    if (t.includes('research and development') || t.includes('r&d')) return 'research and development';
+    if (t.includes('research and development') || t.includes('r&d')) return 'research_development';
     if (
-        t.includes('selling, general and administrative') ||
+        t.includes('selling  general and administrative') ||
         t.includes('selling general and administrative') ||
         t === 'sg&a' || t === 'general and administrative' || t === 'g&a'
-    ) return 'selling, general and administrative';
-    if (t === 'sales and marketing' || t.startsWith('selling and marketing')) return 'sales and marketing';
-    if (t.includes('total operating expense') || t.startsWith('operating expenses')) return 'total operating expenses';
-    if (t.includes('total costs and expenses')) return 'total costs and expenses';
+    ) return 'selling_general_administrative';
+    if (t === 'sales and marketing' || t.startsWith('selling and marketing')) return 'selling_general_administrative';
+    if (t.includes('total operating expense') || t.startsWith('operating expenses')) return 'operating_expenses';
+    if (t.includes('total costs and expenses')) return 'operating_expenses';
 
     // Operating income / loss
     if (
         t === 'operating income' || t === 'operating profit' ||
         t === 'operating loss' || t === 'income from operations' ||
         t === 'loss from operations' || t.startsWith('operating income')
-    ) return 'operating income';
+    ) return 'operating_income';
 
     // Below the line
-    if (t.includes('interest expense') || t.includes('finance costs')) return 'interest expense';
-    if (t.includes('interest income') || t.includes('finance income') || t.includes('investment income')) return 'interest income';
-    if (
-        t.includes('interest income') && t.includes('expense') && t.includes('net')
-    ) return 'interest income (expense), net';
-    if (t.includes('other income') || t.includes('other expense') || t.includes('other non-operating')) return 'other income (expense)';
+    if (t.includes('interest expense') || t.includes('finance costs')) return 'interest_expense';
+    if (t.includes('interest income') || t.includes('finance income') || t.includes('investment income')) return 'interest_income';
+    if (t.includes('other income') || t.includes('other expense') || t.includes('other non-operating')) return 'nonoperating_income';
+
+    // Net interest (financial sector)
+    if (t.includes('net interest income') || t.includes('net interest margin')) return 'net_interest_income';
 
     // Pre-tax
     if (
         t.includes('before income tax') || t.includes('before tax') ||
         t === 'pre-tax income' || t === 'pre-tax loss' ||
         t.includes('income loss from continuing operations before')
-    ) return 'income before income taxes';
+    ) return 'pretax_income';
 
     // Tax
     if (
         t.includes('income tax') || t.includes('provision for income taxes') ||
         t.includes('income taxes')
-    ) return 'income tax expense (benefit)';
+    ) return 'income_tax';
 
     // Net income / loss — must not match "profit on disposal/sale", "gross profit", "operating profit"
     if (
@@ -358,33 +359,27 @@ export function labelToConcept(raw: string): string | null {
         t === 'profit' || t === 'loss' ||
         (t.includes('profit') && !t.includes('gross') && !t.includes('operating') &&
          !t.includes('disposal') && !t.includes('sale of') && !t.includes('on sale') &&
-         !t.includes('disposal') && !t.includes('divestiture') && !t.includes('discontinued'))
-    ) return 'net income';
+         !t.includes('divestiture') && !t.includes('discontinued'))
+    ) return 'net_income';
 
-    if (
-        t.includes('net income attributable') || t.includes('net income available to common') ||
-        t.includes('net earnings attributable')
-    ) return 'net income attributable to common stockholders';
-
-    // EPS — handled by context in extractRows; these catch standalone label rows
-    if (t === 'basic' || t === 'basic:') return 'earnings per share - basic';
-    if (t === 'diluted' || t === 'diluted:') return 'earnings per share - diluted';
-    if (t === 'basic and diluted' || t === 'basic and diluted:') return 'earnings per share - basic';
+    // EPS — handled by isInPerShareSection; these catch standalone "basic" / "diluted" sub-rows
+    if (t === 'basic' || t === 'basic:') return 'eps_basic';
+    if (t === 'diluted' || t === 'diluted:') return 'eps_diluted';
+    if (t === 'basic and diluted' || t === 'basic and diluted:') return 'eps_basic';
 
     if (
         t.includes('earnings per share') || t.includes('net income per share') ||
         t.includes('net loss per share') || t.includes('loss per share')
     ) {
-        if (t.includes('diluted')) return 'earnings per share - diluted';
-        if (t.includes('basic')) return 'earnings per share - basic';
-        // undifferentiated EPS label — caller should emit both
-        return 'earnings per share - basic';
+        if (t.includes('diluted')) return 'eps_diluted';
+        if (t.includes('basic')) return 'eps_basic';
+        return 'eps_basic';
     }
 
     // Weighted-average shares
     if (t.includes('weighted') && t.includes('share')) {
-        if (t.includes('diluted')) return 'weighted-average shares - diluted';
-        return 'weighted-average shares - basic';
+        if (t.includes('diluted')) return 'shares_diluted';
+        return 'shares_basic';
     }
 
     return null;
