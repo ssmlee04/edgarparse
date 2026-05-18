@@ -168,6 +168,12 @@
       "label": "intangible assets, net",
       "value": 16234000,
       "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:LongTermDebtAndCapitalLeaseObligations",
+      "label": "long-term debt",
+      "value": 2233255000,
+      "unit": "USD"
     }
   ]
 }

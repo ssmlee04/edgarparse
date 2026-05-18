@@ -1,0 +1,141 @@
+{
+  "ytd": {
+    "startDate": "2013-12-29",
+    "endDate": "2014-09-06",
+    "months": 10,
+    "facts": [
+      {
+        "concept": "us-gaap:AssetImpairmentCharges",
+        "label": "asset impairment charges",
+        "value": 23000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:CashAndCashEquivalentsPeriodIncreaseDecrease",
+        "label": "net change in cash",
+        "value": -2093000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:DepreciationDepletionAndAmortization",
+        "label": "depreciation, depletion and amortization",
+        "value": 1794000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInInventories",
+        "label": "change in inventories",
+        "value": 481000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets",
+        "label": "change in prepaid and other assets",
+        "value": 18000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInFinancingActivities",
+        "label": "net cash from financing activities",
+        "value": -2027000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInInvestingActivities",
+        "label": "net cash from investing activities",
+        "value": -6678000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+        "label": "net cash from operating activities",
+        "value": 6693000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OtherOperatingActivitiesCashFlowStatement",
+        "label": "other operating activities",
+        "value": -278000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsForProceedsFromOtherInvestingActivities",
+        "label": "other investing activities",
+        "value": -3000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
+        "label": "repurchase of common stock",
+        "value": -3207000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsOfDividends",
+        "label": "dividends paid",
+        "value": -2745000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToMinorityShareholders",
+        "label": "payments to noncontrolling interests",
+        "value": 0,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromIssuanceOfLongTermDebt",
+        "label": "proceeds from long-term debt",
+        "value": 3364000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromPaymentsForOtherFinancingActivities",
+        "label": "other financing activities",
+        "value": -32000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromRepaymentsOfShortTermDebtMaturingInThreeMonthsOrLess",
+        "label": "net short-term debt (≤3 months)",
+        "value": 2117000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromSaleOfProductiveAssets",
+        "label": "proceeds from asset sales",
+        "value": 60000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromShortTermDebtMaturingInMoreThanThreeMonths",
+        "label": "proceeds from short-term debt",
+        "value": 32000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromStockOptionsExercised",
+        "label": "proceeds from stock option exercises",
+        "value": 561000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:RepaymentsOfLongTermDebt",
+        "label": "repayments of long-term debt",
+        "value": -2186000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:RepaymentsOfShortTermDebtMaturingInMoreThanThreeMonths",
+        "label": "repayments of short-term debt",
+        "value": -10000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ShareBasedCompensation",
+        "label": "stock-based compensation",
+        "value": 207000000,
+        "unit": "USD"
+      }
+    ]
+  }
+}

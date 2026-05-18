@@ -74,6 +74,12 @@
       "unit": "USD"
     },
     {
+      "concept": "us-gaap:LongTermDebtAndCapitalLeaseObligations",
+      "label": "long-term debt",
+      "value": 156177000,
+      "unit": "USD"
+    },
+    {
       "concept": "us-gaap:DeferredTaxLiabilitiesNoncurrent",
       "label": "deferred tax liabilities",
       "value": 34212000,

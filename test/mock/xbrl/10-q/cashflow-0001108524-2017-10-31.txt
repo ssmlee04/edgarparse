@@ -1,0 +1,111 @@
+{
+  "ytd": {
+    "startDate": "2017-02-01",
+    "endDate": "2017-10-31",
+    "months": 10,
+    "facts": [
+      {
+        "concept": "us-gaap:AmortizationOfDebtDiscountPremium",
+        "label": "amortization of debt discount/premium",
+        "value": 19269000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:AmortizationOfFinancingCosts",
+        "label": "amortization of financing costs",
+        "value": 3996000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:AmortizationOfFinancingCostsAndDiscounts",
+        "label": "amortization of financing costs",
+        "value": 23265000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:CashAndCashEquivalentsPeriodIncreaseDecrease",
+        "label": "net change in cash",
+        "value": 465288000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:DepreciationAndAmortization",
+        "label": "depreciation and amortization",
+        "value": 564911000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInAccountsReceivable",
+        "label": "change in accounts receivable",
+        "value": -1677466000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInDeferredRevenue",
+        "label": "change in deferred revenue",
+        "value": -1150720000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInPrepaidDeferredExpenseAndOtherAssets",
+        "label": "change in prepaid and other assets",
+        "value": 166784000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInFinancingActivities",
+        "label": "net cash from financing activities",
+        "value": 201896000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInInvestingActivities",
+        "label": "net cash from investing activities",
+        "value": -1426620000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+        "label": "net cash from operating activities",
+        "value": 1686645000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToAcquireAvailableForSaleSecurities",
+        "label": "purchases of investments",
+        "value": -1433718000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToAcquireBusinessesNetOfCashAcquired",
+        "label": "acquisitions, net of cash",
+        "value": -19781000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+        "label": "capital expenditures",
+        "value": -396268000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromMaturitiesPrepaymentsAndCallsOfAvailableForSaleSecurities",
+        "label": "maturities of investments",
+        "value": 43089000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromSaleOfAvailableForSaleSecurities",
+        "label": "proceeds from sales of investments",
+        "value": 437248000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ShareBasedCompensation",
+        "label": "stock-based compensation",
+        "value": 759331000,
+        "unit": "USD"
+      }
+    ]
+  }
+}

@@ -156,6 +156,12 @@
       "label": "total equity",
       "value": 21771000000,
       "unit": "USD"
+    },
+    {
+      "concept": "us-gaap:LongTermDebtFairValue",
+      "label": "long-term debt",
+      "value": 6252000000,
+      "unit": "USD"
     }
   ]
 }

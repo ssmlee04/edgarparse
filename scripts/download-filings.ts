@@ -14,7 +14,7 @@ import * as https from 'https';
 import * as fs from 'fs';
 import * as path from 'path';
 
-type Filing = { ticker: string; cik: string; period: string };
+type Filing = { ticker: string; cik: string; period: string; formType?: '10-q' | '10-k' | '8-k' };
 
 const DEFAULT_FILINGS: Filing[] = [
     { ticker: 'aa',   cik: '1675149', period: '2024-09-30' },
@@ -29,7 +29,7 @@ const FILINGS: Filing[] = fs.existsSync(FILINGS_JSON)
     ? JSON.parse(fs.readFileSync(FILINGS_JSON, 'utf8'))
     : DEFAULT_FILINGS;
 
-const OUT_DIR = path.join(__dirname, '../data/txt/10-q');
+const DATA_ROOT = path.join(__dirname, '../data/txt');
 // SEC requires a User-Agent with a name and contact email
 const USER_AGENT = 'edgarparse contact@example.com';
 
@@ -67,64 +67,85 @@ const getBuffer = (url: string): Promise<Buffer> =>
 
 const sleep = (ms: number) => new Promise(r => setTimeout(r, ms));
 
-const searchFilings = (filings: { form: string[]; reportDate: string[]; accessionNumber: string[] }, period: string): string | null => {
+const FORM_TYPES = ['10-Q', '10-K', '8-K'] as const;
+
+const searchFilings = (
+    filings: { form: string[]; reportDate: string[]; accessionNumber: string[] },
+    period: string,
+    formTypeFilter?: string,
+): { accession: string; form: string } | null => {
     const { form, reportDate, accessionNumber } = filings;
     for (let i = 0; i < form.length; i++) {
-        if ((form[i] === '10-Q' || form[i] === '10-K') && reportDate[i] === period) {
-            return accessionNumber[i];
+        const formUpper = form[i].toUpperCase();
+        const matches = formTypeFilter
+            ? formUpper === formTypeFilter.toUpperCase()
+            : (FORM_TYPES as readonly string[]).includes(formUpper);
+        if (matches && reportDate[i] === period) {
+            return { accession: accessionNumber[i], form: form[i] };
         }
     }
     return null;
 };
 
-const findAccession = async (cik: string, period: string): Promise<string> => {
+const findAccession = async (cik: string, period: string, formTypeFilter?: string): Promise<{ accession: string; form: string }> => {
     const paddedCik = cik.padStart(10, '0');
     const body = await get(`https://data.sec.gov/submissions/CIK${paddedCik}.json`);
     const data = JSON.parse(body);
 
-    const accession = searchFilings(data.filings.recent, period);
-    if (accession) return accession;
+    const found = searchFilings(data.filings.recent, period, formTypeFilter);
+    if (found) return found;
 
     // Walk paginated older filings if not found in recent
     for (const file of data.filings.files ?? []) {
         await sleep(200);
         try {
             const pageBody = await get(`https://data.sec.gov/submissions/${file.name}`);
-            const found = searchFilings(JSON.parse(pageBody), period);
-            if (found) return found;
+            const result = searchFilings(JSON.parse(pageBody), period, formTypeFilter);
+            if (result) return result;
         } catch {
             // skip pages that fail to load
         }
     }
 
-    throw new Error(`No 10-Q or 10-K found for CIK ${cik} period ${period}`);
+    throw new Error(`No filing found for CIK ${cik} period ${period}${formTypeFilter ? ` (${formTypeFilter})` : ''}`);
 };
 
-const downloadFiling = async (cik: string, accession: string, ticker: string, period: string) => {
+const formTypeToDir = (form: string): string => {
+    const f = form.toLowerCase().replace('/', '-');
+    return path.join(DATA_ROOT, f);
+};
+
+const downloadFiling = async (cik: string, accession: string, period: string, form: string) => {
     const accNoDash = accession.replace(/-/g, '');
     const url = `https://www.sec.gov/Archives/edgar/data/${cik}/${accNoDash}/${accession}.txt`;
     console.log(`  downloading ${url}`);
     const buf = await getBuffer(url);
-    const dest = path.join(OUT_DIR, `${ticker}-${period}.txt`);
+    const outDir = formTypeToDir(form);
+    fs.mkdirSync(outDir, { recursive: true });
+    const dest = path.join(outDir, `${cik}-${period}.txt`);
     fs.writeFileSync(dest, buf);
     console.log(`  saved → ${dest} (${(buf.length / 1024 / 1024).toFixed(1)} MB)`);
 };
 
 const main = async () => {
-    fs.mkdirSync(OUT_DIR, { recursive: true });
+    for (const { ticker, cik, period, formType } of FILINGS) {
+        // Check if already downloaded in any expected form-type directory
+        const possibleDirs = formType
+            ? [formTypeToDir(formType)]
+            : [path.join(DATA_ROOT, '10-q'), path.join(DATA_ROOT, '10-k'), path.join(DATA_ROOT, '8-k')];
 
-    for (const { ticker, cik, period } of FILINGS) {
-        const dest = path.join(OUT_DIR, `${cik}-${period}.txt`);
-        if (fs.existsSync(dest)) {
+        const alreadyExists = possibleDirs.some(d => fs.existsSync(path.join(d, `${cik}-${period}.txt`)));
+        if (alreadyExists) {
             console.log(`skip ${cik}-${period}.txt (already exists)`);
             continue;
         }
-        console.log(`\nfetching ${ticker} ${period} ...`);
+
+        console.log(`\nfetching ${ticker} ${period}${formType ? ` [${formType}]` : ''} ...`);
         try {
-            const accession = await findAccession(cik, period);
-            console.log(`  accession: ${accession}`);
+            const { accession, form } = await findAccession(cik, period, formType);
+            console.log(`  accession: ${accession} (${form})`);
             await sleep(200); // be polite to SEC servers
-            await downloadFiling(cik, accession, cik, period);
+            await downloadFiling(cik, accession, period, form);
         } catch (err: any) {
             console.error(`  ERROR: ${err.message}`);
         }

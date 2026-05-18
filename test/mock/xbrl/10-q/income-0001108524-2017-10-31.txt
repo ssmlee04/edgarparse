@@ -1,0 +1,322 @@
+{
+  "quarterly": {
+    "startDate": "2017-08-01",
+    "endDate": "2017-10-31",
+    "months": 4,
+    "facts": [
+      {
+        "concept": "us-gaap:ComprehensiveIncomeNetOfTax",
+        "label": "comprehensive income",
+        "value": 37413000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:CostOfServices",
+        "label": "cost of services",
+        "value": 714508000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:DepreciationAndAmortization",
+        "label": "depreciation and amortization",
+        "value": 187546000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EarningsPerShareBasic",
+        "label": "earnings per share - basic",
+        "value": 0.07,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EarningsPerShareDiluted",
+        "label": "earnings per share - diluted",
+        "value": 0.07,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:GainLossOnInvestments",
+        "label": "gain (loss) on investments",
+        "value": 0,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:GeneralAndAdministrativeExpense",
+        "label": "general and administrative",
+        "value": 270614000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:GrossProfit",
+        "label": "gross profit",
+        "value": 1965333000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ImpairmentOfLongLivedAssetsHeldForUse",
+        "label": "impairment charges",
+        "value": 0,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments",
+        "label": "income before income taxes",
+        "value": 106401000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncomeTaxExpenseBenefit",
+        "label": "income tax expense (benefit)",
+        "value": 55007000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestExpense",
+        "label": "interest expense",
+        "value": 21557000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestExpenseDebt",
+        "label": "interest expense",
+        "value": 13561000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InvestmentIncomeInterest",
+        "label": "interest income",
+        "value": 10038000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetIncomeLoss",
+        "label": "net income",
+        "value": 51394000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OperatingExpenses",
+        "label": "total operating expenses",
+        "value": 1849345000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OperatingIncomeLoss",
+        "label": "operating income",
+        "value": 115988000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OtherComprehensiveIncomeLossNetOfTax",
+        "label": "other comprehensive income (loss)",
+        "value": -13981000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OtherNonoperatingIncomeExpense",
+        "label": "other non-operating income (expense)",
+        "value": 1921000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ResearchAndDevelopmentExpense",
+        "label": "research and development",
+        "value": 393998000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:SalesRevenueServicesNet",
+        "label": "service revenue",
+        "value": 2679841000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:SellingAndMarketingExpense",
+        "label": "sales and marketing",
+        "value": 1184733000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ShareBasedCompensation",
+        "label": "stock-based compensation",
+        "value": 251277000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 738106000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 717445000,
+        "unit": "USD"
+      }
+    ]
+  },
+  "ytd": {
+    "startDate": "2017-02-01",
+    "endDate": "2017-10-31",
+    "months": 10,
+    "facts": [
+      {
+        "concept": "us-gaap:AmortizationOfIntangibleAssets",
+        "label": "amortization of intangibles",
+        "value": 219296000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ComprehensiveIncomeNetOfTax",
+        "label": "comprehensive income",
+        "value": 139318000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:CostOfServices",
+        "label": "cost of services",
+        "value": 2035730000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:DepreciationAndAmortization",
+        "label": "depreciation and amortization",
+        "value": 564911000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EarningsPerShareBasic",
+        "label": "earnings per share - basic",
+        "value": 0.08,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EarningsPerShareDiluted",
+        "label": "earnings per share - diluted",
+        "value": 0.08,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:GainLossOnInvestments",
+        "label": "gain (loss) on investments",
+        "value": 0,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:GeneralAndAdministrativeExpense",
+        "label": "general and administrative",
+        "value": 813868000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:GrossProfit",
+        "label": "gross profit",
+        "value": 5593279000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ImpairmentOfLongLivedAssetsHeldForUse",
+        "label": "impairment charges",
+        "value": 0,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments",
+        "label": "income before income taxes",
+        "value": 113891000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncomeTaxExpenseBenefit",
+        "label": "income tax expense (benefit)",
+        "value": 53968000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestExpense",
+        "label": "interest expense",
+        "value": 65382000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestExpenseDebt",
+        "label": "interest expense",
+        "value": 40309000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InvestmentIncomeInterest",
+        "label": "interest income",
+        "value": 24433000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetIncomeLoss",
+        "label": "net income",
+        "value": 59923000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OperatingExpenses",
+        "label": "total operating expenses",
+        "value": 5435380000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OperatingIncomeLoss",
+        "label": "operating income",
+        "value": 157899000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OtherComprehensiveIncomeLossNetOfTax",
+        "label": "other comprehensive income (loss)",
+        "value": 79395000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OtherNonoperatingIncomeExpense",
+        "label": "other non-operating income (expense)",
+        "value": -2695000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ResearchAndDevelopmentExpense",
+        "label": "research and development",
+        "value": 1156526000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:SalesRevenueServicesNet",
+        "label": "service revenue",
+        "value": 7629009000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:SellingAndMarketingExpense",
+        "label": "sales and marketing",
+        "value": 3464986000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ShareBasedCompensation",
+        "label": "stock-based compensation",
+        "value": 759331000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 730212000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 711884000,
+        "unit": "USD"
+      }
+    ]
+  }
+}

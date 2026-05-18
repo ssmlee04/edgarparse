@@ -1,0 +1,123 @@
+{
+  "ytd": {
+    "startDate": "2026-01-01",
+    "endDate": "2026-03-31",
+    "months": 4,
+    "facts": [
+      {
+        "concept": "us-gaap:ShareBasedCompensation",
+        "label": "stock-based compensation",
+        "value": 6751000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OtherNoncashIncomeExpense",
+        "label": "other non-cash items",
+        "value": -1265000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInAccountsReceivable",
+        "label": "change in accounts receivable",
+        "value": 363000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInOtherOperatingAssets",
+        "label": "change in other operating assets",
+        "value": 3403000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInAccountsPayable",
+        "label": "change in accounts payable",
+        "value": -240000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInAccruedLiabilities",
+        "label": "change in accrued liabilities",
+        "value": -6002000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInContractWithCustomerLiability",
+        "label": "change in deferred revenue",
+        "value": 505000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+        "label": "net cash from operating activities",
+        "value": 45790000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+        "label": "capital expenditures",
+        "value": -35674000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsForProceedsFromOtherInvestingActivities",
+        "label": "other investing activities",
+        "value": 996000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInInvestingActivities",
+        "label": "net cash from investing activities",
+        "value": -63389000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
+        "label": "repurchase of common stock",
+        "value": 0,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsOfDividends",
+        "label": "dividends paid",
+        "value": -2542000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProceedsFromMinorityShareholders",
+        "label": "proceeds from noncontrolling interests",
+        "value": 3200000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInFinancingActivities",
+        "label": "net cash from financing activities",
+        "value": 25077000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents",
+        "label": "effect of exchange rate on cash",
+        "value": -123000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
+        "label": "net change in cash",
+        "value": 7355000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EquitySecuritiesFvNiUnrealizedGainLoss",
+        "label": "unrealized gain (loss) on equity securities",
+        "value": 105000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:FinanceLeasePrincipalPayments",
+        "label": "finance lease principal payments",
+        "value": -522000000,
+        "unit": "USD"
+      }
+    ]
+  }
+}

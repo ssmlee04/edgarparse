@@ -1,0 +1,135 @@
+{
+  "quarterly": {
+    "startDate": "2026-01-01",
+    "endDate": "2026-03-31",
+    "months": 4,
+    "facts": [
+      {
+        "concept": "us-gaap:Revenues",
+        "label": "revenue",
+        "value": 109896000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:CostOfRevenue",
+        "label": "cost of revenue",
+        "value": 41271000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ResearchAndDevelopmentExpense",
+        "label": "research and development",
+        "value": 17032000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:SellingAndMarketingExpense",
+        "label": "sales and marketing",
+        "value": 7606000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:GeneralAndAdministrativeExpense",
+        "label": "general and administrative",
+        "value": 4291000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:CostsAndExpenses",
+        "label": "total costs and expenses",
+        "value": 70200000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OperatingIncomeLoss",
+        "label": "operating income",
+        "value": 39696000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NonoperatingIncomeExpense",
+        "label": "other income (expense)",
+        "value": 37716000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+        "label": "income before income taxes",
+        "value": 77412000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncomeTaxExpenseBenefit",
+        "label": "income tax expense (benefit)",
+        "value": 14834000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetIncomeLoss",
+        "label": "net income",
+        "value": 62578000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EarningsPerShareBasic",
+        "label": "earnings per share - basic",
+        "value": 5.17,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EarningsPerShareDiluted",
+        "label": "earnings per share - diluted",
+        "value": 5.11,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ComprehensiveIncomeNetOfTax",
+        "label": "comprehensive income",
+        "value": 62314000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ShareBasedCompensation",
+        "label": "stock-based compensation",
+        "value": 6751000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ForeignCurrencyTransactionGainLossBeforeTax",
+        "label": "foreign currency gain (loss)",
+        "value": 146000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OtherNonoperatingIncomeExpense",
+        "label": "other non-operating income (expense)",
+        "value": -142000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:AmortizationOfIntangibleAssets",
+        "label": "amortization of intangibles",
+        "value": 178000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
+        "label": "net income attributable to common stockholders",
+        "value": 62578000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 12099000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 12238000000,
+        "unit": "USD"
+      }
+    ]
+  }
+}
