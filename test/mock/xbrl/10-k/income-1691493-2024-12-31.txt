@@ -3,6 +3,67 @@
     "startDate": "2024-01-01",
     "endDate": "2024-12-31",
     "months": 13,
-    "facts": []
+    "facts": [
+      {
+        "concept": "ifrs-full:Revenue",
+        "label": "revenue",
+        "value": 11517075000,
+        "unit": "USD"
+      },
+      {
+        "concept": "ifrs-full:GrossProfit",
+        "label": "gross profit",
+        "value": 5252909000,
+        "unit": "USD"
+      },
+      {
+        "concept": "ifrs-full:OtherExpenseByFunction",
+        "label": "other operating expense",
+        "value": 350586000,
+        "unit": "USD"
+      },
+      {
+        "concept": "ifrs-full:ProfitLossBeforeTax",
+        "label": "income before income taxes",
+        "value": 2795198000,
+        "unit": "USD"
+      },
+      {
+        "concept": "ifrs-full:IncomeTaxExpenseContinuingOperations",
+        "label": "income tax expense (benefit)",
+        "value": 823086000,
+        "unit": "USD"
+      },
+      {
+        "concept": "ifrs-full:ProfitLoss",
+        "label": "net income including noncontrolling interests",
+        "value": 1972112000,
+        "unit": "USD"
+      },
+      {
+        "concept": "ifrs-full:ProfitLossAttributableToOwnersOfParent",
+        "label": "net income",
+        "value": 1972112000,
+        "unit": "USD"
+      },
+      {
+        "concept": "ifrs-full:BasicEarningsLossPerShare",
+        "label": "earnings per share - basic",
+        "value": 0.4115,
+        "unit": "USD"
+      },
+      {
+        "concept": "ifrs-full:DilutedEarningsLossPerShare",
+        "label": "earnings per share - diluted",
+        "value": 0.4034,
+        "unit": "USD"
+      },
+      {
+        "concept": "ifrs-full:AdjustedWeightedAverageShares",
+        "label": "weighted-average shares - diluted",
+        "value": 4888918000,
+        "unit": "USD"
+      }
+    ]
   }
 }

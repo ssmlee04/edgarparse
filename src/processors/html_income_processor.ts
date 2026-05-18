@@ -289,9 +289,14 @@ function extractRows(table: HTMLElement, ranges: PeriodRange[], multiplier: numb
             const inPeriod = ranges.some(r => colIdx >= r.periodColLeft && colIdx < r.periodColRight);
             const inAnyRange = ranges.some(r => colIdx >= r.yearColLeft && colIdx < r.yearColRight);
 
-            // Label detection: first non-empty cell that is NOT within any period column span.
-            // This prevents prior-year value cells from being mistaken for labels.
-            if (label === null && !inPeriod && text) {
+            // Label detection: first non-empty cell that is NOT within any period column span
+            // AND does not look like a number (prior-year value columns that sit outside the
+            // current-year period range would otherwise be mistaken for labels).
+            // "(822,299)" → "(822299)" starts with ( then digit → value
+            // "(Loss) income…" → "(Loss)…" starts with ( then letter → label
+            const stripped = text.replace(/[\s,]/g, '');
+            const looksLikeValue = stripped.length > 0 && /^\(?\d/.test(stripped);
+            if (label === null && !inPeriod && text && !looksLikeValue) {
                 label = text;
                 // Update per-share status immediately so value cells in the same row use it
                 const ll = label.toLowerCase();

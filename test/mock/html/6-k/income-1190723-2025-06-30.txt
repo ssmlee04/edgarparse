@@ -5,68 +5,68 @@
     "months": 3,
     "facts": [
       {
-        "concept": "revenue",
-        "label": "revenue",
+        "concept": "revenues",
+        "label": "revenues",
         "value": 3085672000,
         "unit": "USD"
       },
       {
-        "concept": "cost of revenue",
-        "label": "cost of revenue",
+        "concept": "cost_of_revenue",
+        "label": "cost_of_revenue",
         "value": -2013639000,
         "unit": "USD"
       },
       {
-        "concept": "gross profit",
-        "label": "gross profit",
+        "concept": "gross_profit",
+        "label": "gross_profit",
         "value": 1072033000,
         "unit": "USD"
       },
       {
-        "concept": "selling, general and administrative",
-        "label": "selling, general and administrative",
+        "concept": "selling_general_administrative",
+        "label": "selling_general_administrative",
         "value": -483633000,
         "unit": "USD"
       },
       {
-        "concept": "operating income",
-        "label": "operating income",
+        "concept": "operating_income",
+        "label": "operating_income",
         "value": 582734000,
         "unit": "USD"
       },
       {
-        "concept": "interest income",
-        "label": "interest income",
+        "concept": "interest_income",
+        "label": "interest_income",
         "value": 63669000,
         "unit": "USD"
       },
       {
-        "concept": "income tax expense (benefit)",
-        "label": "income tax expense (benefit)",
+        "concept": "income_tax",
+        "label": "income_tax",
         "value": 614397000,
         "unit": "USD"
       },
       {
-        "concept": "income before income taxes",
-        "label": "income before income taxes",
+        "concept": "pretax_income",
+        "label": "pretax_income",
         "value": 647048000,
         "unit": "USD"
       },
       {
-        "concept": "net income",
-        "label": "net income",
+        "concept": "net_income",
+        "label": "net_income",
         "value": 541706000,
         "unit": "USD"
       },
       {
-        "concept": "weighted-average shares - basic",
-        "label": "weighted-average shares - basic",
+        "concept": "shares_basic",
+        "label": "shares_basic",
         "value": 1068721,
         "unit": "USD"
       },
       {
-        "concept": "earnings per share - diluted",
-        "label": "earnings per share - diluted",
+        "concept": "eps_diluted",
+        "label": "eps_diluted",
         "value": 0.5,
         "unit": "USD"
       }
@@ -78,68 +78,68 @@
     "months": 6,
     "facts": [
       {
-        "concept": "revenue",
-        "label": "revenue",
+        "concept": "revenues",
+        "label": "revenues",
         "value": 6007884000,
         "unit": "USD"
       },
       {
-        "concept": "cost of revenue",
-        "label": "cost of revenue",
+        "concept": "cost_of_revenue",
+        "label": "cost_of_revenue",
         "value": -3934494000,
         "unit": "USD"
       },
       {
-        "concept": "gross profit",
-        "label": "gross profit",
+        "concept": "gross_profit",
+        "label": "gross_profit",
         "value": 2073390000,
         "unit": "USD"
       },
       {
-        "concept": "selling, general and administrative",
-        "label": "selling, general and administrative",
+        "concept": "selling_general_administrative",
+        "label": "selling_general_administrative",
         "value": -940698000,
         "unit": "USD"
       },
       {
-        "concept": "operating income",
-        "label": "operating income",
+        "concept": "operating_income",
+        "label": "operating_income",
         "value": 1132647000,
         "unit": "USD"
       },
       {
-        "concept": "interest income",
-        "label": "interest income",
+        "concept": "interest_income",
+        "label": "interest_income",
         "value": 142113000,
         "unit": "USD"
       },
       {
-        "concept": "income tax expense (benefit)",
-        "label": "income tax expense (benefit)",
+        "concept": "income_tax",
+        "label": "income_tax",
         "value": 1199568000,
         "unit": "USD"
       },
       {
-        "concept": "income before income taxes",
-        "label": "income before income taxes",
+        "concept": "pretax_income",
+        "label": "pretax_income",
         "value": 1246254000,
         "unit": "USD"
       },
       {
-        "concept": "net income",
-        "label": "net income",
+        "concept": "net_income",
+        "label": "net_income",
         "value": 1059570000,
         "unit": "USD"
       },
       {
-        "concept": "weighted-average shares - basic",
-        "label": "weighted-average shares - basic",
+        "concept": "shares_basic",
+        "label": "shares_basic",
         "value": 1072974,
         "unit": "USD"
       },
       {
-        "concept": "earnings per share - diluted",
-        "label": "earnings per share - diluted",
+        "concept": "eps_diluted",
+        "label": "eps_diluted",
         "value": 0.97,
         "unit": "USD"
       }

@@ -5,92 +5,86 @@
     "months": 3,
     "facts": [
       {
-        "concept": "revenue",
-        "label": "revenue",
+        "concept": "revenues",
+        "label": "revenues",
         "value": 639755000,
         "unit": "USD"
       },
       {
-        "concept": "cost of revenue",
-        "label": "cost of revenue",
+        "concept": "cost_of_revenue",
+        "label": "cost_of_revenue",
         "value": 184158000,
         "unit": "USD"
       },
       {
-        "concept": "gross profit",
-        "label": "gross profit",
+        "concept": "gross_profit",
+        "label": "gross_profit",
         "value": 455597000,
         "unit": "USD"
       },
       {
-        "concept": "sales and marketing",
-        "label": "sales and marketing",
+        "concept": "selling_general_administrative",
+        "label": "selling_general_administrative",
         "value": 271600000,
         "unit": "USD"
       },
       {
-        "concept": "research and development",
-        "label": "research and development",
+        "concept": "research_development",
+        "label": "research_development",
         "value": 150972000,
         "unit": "USD"
       },
       {
-        "concept": "selling, general and administrative",
-        "label": "selling, general and administrative",
-        "value": 95019000,
-        "unit": "USD"
-      },
-      {
-        "concept": "total operating expenses",
-        "label": "total operating expenses",
+        "concept": "operating_expenses",
+        "label": "operating_expenses",
         "value": 517591000,
         "unit": "USD"
       },
       {
-        "concept": "operating income",
-        "label": "operating income",
+        "concept": "operating_income",
+        "label": "operating_income",
         "value": -61994000,
         "unit": "USD"
       },
       {
-        "concept": "interest income",
-        "label": "interest income",
+        "concept": "interest_income",
+        "label": "interest_income",
         "value": 40166000,
         "unit": "USD"
       },
       {
-        "concept": "interest expense",
-        "label": "interest expense",
+        "concept": "interest_expense",
+        "label": "interest_expense",
         "value": -2563000,
         "unit": "USD"
       },
       {
-        "concept": "other income (expense)",
-        "label": "other income (expense)",
+        "concept": "nonoperating_income",
+        "label": "nonoperating_income",
         "value": 2990000,
         "unit": "USD"
       },
       {
-        "concept": "income before income taxes",
-        "label": "income before income taxes",
+        "concept": "pretax_income",
+        "label": "pretax_income",
         "value": -21401000,
         "unit": "USD"
       },
       {
-        "concept": "income tax expense (benefit)",
-        "label": "income tax expense (benefit)",
+        "concept": "income_tax",
+        "label": "income_tax",
         "value": 1526000,
         "unit": "USD"
       },
       {
-        "concept": "net income",
-        "label": "net income",
+        "concept": "net_income",
+        "label": "net_income",
         "value": -22927000,
         "unit": "USD"
       },
       {
-        "concept": "earnings per share - diluted",
-        "label": "earnings per share - diluted",
+        "concept": "eps_diluted",
+        "label": "eps_diluted",
         "value": 352625,
         "unit": "USD"
       }
