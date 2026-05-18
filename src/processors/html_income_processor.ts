@@ -255,6 +255,7 @@ function buildPeriodRanges(table: HTMLElement): PeriodRange[] {
 
 type RowData = {
     label: string;
+    isSectionTotal: boolean; // true = label came from a preceding section header (e.g. "revenues" total row)
     values: Map<PeriodType, number | null>;
     isPerShare: boolean;
 };
@@ -265,6 +266,8 @@ function extractRows(table: HTMLElement, ranges: PeriodRange[], multiplier: numb
     const { advance, consume } = buildRowCursors(numRows);
     const results: RowData[] = [];
     let isInPerShareSection = false;
+    // Tracks section header labels (e.g. "revenues") for unlabelled total rows that follow
+    let lastSectionLabel: string | null = null;
 
     for (let ri = 0; ri < numRows; ri++) {
         const row = rows[ri];
@@ -281,22 +284,29 @@ function extractRows(table: HTMLElement, ranges: PeriodRange[], multiplier: numb
             const rowspan = rowspanStr ? parseInt(rowspanStr, 10) : 1;
             const text = (td.textContent ?? '').replace(/\s+/g, ' ').trim();
 
-            if (label === null) {
-                const inAnyRange = ranges.some(r => colIdx >= r.yearColLeft && colIdx < r.yearColRight);
-                if (!inAnyRange && text) {
-                    label = text;
-                    // Update per-share status immediately so value cells in the same row use it
-                    const ll = label.toLowerCase();
-                    if (ll.includes('per share') || ll.includes('per common share')) isInPerShareSection = true;
-                    if (ll.includes('weighted') || ll.includes('shares outstanding') || ll.includes('shares used')) isInPerShareSection = true;
-                    if (
-                        isInPerShareSection && !ll.includes('per share') && !ll.includes('weighted') &&
-                        !ll.includes('basic') && !ll.includes('diluted') && !ll.includes('shares') &&
-                        (ll.includes('revenue') || ll.includes('income') || ll.includes('expense'))
-                    ) isInPerShareSection = false;
-                }
-            } else {
-                // Value cell
+            // "in period" = anywhere within the period header span (includes prior-year columns)
+            // "in year range" = only the current-year value columns
+            const inPeriod = ranges.some(r => colIdx >= r.periodColLeft && colIdx < r.periodColRight);
+            const inAnyRange = ranges.some(r => colIdx >= r.yearColLeft && colIdx < r.yearColRight);
+
+            // Label detection: first non-empty cell that is NOT within any period column span.
+            // This prevents prior-year value cells from being mistaken for labels.
+            if (label === null && !inPeriod && text) {
+                label = text;
+                // Update per-share status immediately so value cells in the same row use it
+                const ll = label.toLowerCase();
+                if (ll.includes('per share') || ll.includes('per common share')) isInPerShareSection = true;
+                if (ll.includes('weighted') || ll.includes('shares outstanding') || ll.includes('shares used')) isInPerShareSection = true;
+                if (
+                    isInPerShareSection && !ll.includes('per share') && !ll.includes('weighted') &&
+                    !ll.includes('basic') && !ll.includes('diluted') && !ll.includes('shares') &&
+                    (ll.includes('revenue') || ll.includes('income') || ll.includes('expense'))
+                ) isInPerShareSection = false;
+            }
+
+            // Value collection: always collect from range columns, regardless of whether label is set.
+            // This handles unlabelled total rows (e.g. revenue total under "revenues" header).
+            if (inAnyRange) {
                 for (const r of ranges) {
                     if (colIdx >= r.yearColLeft && colIdx < r.yearColRight) {
                         if ((valuesByPeriod.get(r.periodType) ?? null) === null) {
@@ -317,8 +327,29 @@ function extractRows(table: HTMLElement, ranges: PeriodRange[], multiplier: numb
             consume(ri, colspan, rowspan);
         }
 
-        if (!label || !valuesByPeriod.size) continue;
-        results.push({ label, values: valuesByPeriod, isPerShare: isInPerShareSection });
+        // Labelled rows with values: record them, but keep lastSectionLabel alive so a
+        // following unlabelled total row (e.g. revenue = sub1 + sub2 + [unlabelled total])
+        // can still claim the section header.
+        if (label && valuesByPeriod.size) {
+            results.push({ label, isSectionTotal: false, values: valuesByPeriod, isPerShare: isInPerShareSection });
+            continue;
+        }
+
+        // Label-only rows (section headers with no values): save for unlabelled total
+        if (label && !valuesByPeriod.size) {
+            lastSectionLabel = label;
+            continue;
+        }
+
+        // Unlabelled total rows: values present but no label cell → claim the section label
+        if (!label && valuesByPeriod.size && lastSectionLabel) {
+            const sectionLabel = lastSectionLabel;
+            lastSectionLabel = null; // consumed — reset so only the first unlabelled row wins
+            const ll = sectionLabel.toLowerCase();
+            if (ll.includes('per share') || ll.includes('per common share')) isInPerShareSection = true;
+            if (ll.includes('weighted') || ll.includes('shares outstanding') || ll.includes('shares used')) isInPerShareSection = true;
+            results.push({ label: sectionLabel, isSectionTotal: true, values: valuesByPeriod, isPerShare: isInPerShareSection });
+        }
     }
 
     return results;

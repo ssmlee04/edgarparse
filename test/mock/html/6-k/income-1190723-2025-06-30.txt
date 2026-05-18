@@ -53,6 +53,12 @@
         "unit": "USD"
       },
       {
+        "concept": "net income",
+        "label": "net income",
+        "value": 541706000,
+        "unit": "USD"
+      },
+      {
         "concept": "weighted-average shares - basic",
         "label": "weighted-average shares - basic",
         "value": 1068721,
@@ -117,6 +123,12 @@
         "concept": "income before income taxes",
         "label": "income before income taxes",
         "value": 1246254000,
+        "unit": "USD"
+      },
+      {
+        "concept": "net income",
+        "label": "net income",
+        "value": 1059570000,
         "unit": "USD"
       },
       {

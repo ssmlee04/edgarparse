@@ -5,6 +5,18 @@
     "months": 3,
     "facts": [
       {
+        "concept": "revenue",
+        "label": "revenue",
+        "value": 470001,
+        "unit": "USD"
+      },
+      {
+        "concept": "cost of revenue",
+        "label": "cost of revenue",
+        "value": 213051,
+        "unit": "USD"
+      },
+      {
         "concept": "gross profit",
         "label": "gross profit",
         "value": 256950,

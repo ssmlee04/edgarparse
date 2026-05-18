@@ -237,15 +237,22 @@ export function deriveStartDate(endDate: string, months: number): string {
 
 export function detectMultiplier(text: string): number {
     const t = text.toLowerCase();
-    // Explicit "except per share" patterns take priority (handles "in £ thousands, except", "in USD millions, except", etc.)
-    if (/in\s+[£$€¥₩]?\s*billions?,\s*except/.test(t)) return 1_000_000_000;
-    if (/in\s+[£$€¥₩]?\s*millions?,\s*except/.test(t)) return 1_000_000;
-    if (/in\s+[£$€¥₩]?\s*thousands?,\s*except/.test(t)) return 1_000;
+    // Match "in [optional-currency-or-country] billions/millions/thousands, except"
+    // Handles: "in millions", "in £ millions", "in US millions", "in USD millions", "in NT$ thousands"
+    const units = /in\s+(?:[£$€¥₩]|[a-z]{1,3}\$?\s+)?(?:[£$€¥₩]\s*)?billions?,\s*except/;
+    if (units.test(t)) return 1_000_000_000;
+    const millX = /in\s+(?:[£$€¥₩]|[a-z]{1,3}\$?\s+)?(?:[£$€¥₩]\s*)?millions?,\s*except/;
+    if (millX.test(t)) return 1_000_000;
+    const thouX = /in\s+(?:[£$€¥₩]|[a-z]{1,3}\$?\s+)?(?:[£$€¥₩]\s*)?thousands?,\s*except/;
+    if (thouX.test(t)) return 1_000;
     if (t.includes('($000, except')) return 1_000;
-    // Standalone patterns
-    if (/in\s+[£$€¥₩]?\s*billions?/.test(t)) return 1_000_000_000;
-    if (/in\s+[£$€¥₩]?\s*millions?/.test(t)) return 1_000_000;
-    if (/in\s+[£$€¥₩]?\s*thousands?/.test(t)) return 1_000;
+    // Standalone (no "except") — also match "expressed in US millions"
+    const billS = /in\s+(?:[£$€¥₩]|[a-z]{1,3}\$?\s+)?(?:[£$€¥₩]\s*)?billions?/;
+    if (billS.test(t)) return 1_000_000_000;
+    const millS = /in\s+(?:[£$€¥₩]|[a-z]{1,3}\$?\s+)?(?:[£$€¥₩]\s*)?millions?/;
+    if (millS.test(t)) return 1_000_000;
+    const thouS = /in\s+(?:[£$€¥₩]|[a-z]{1,3}\$?\s+)?(?:[£$€¥₩]\s*)?thousands?/;
+    if (thouS.test(t)) return 1_000;
     if (t.includes("$000's") || t.includes('$000s')) return 1_000;
     return 1;
 }
@@ -345,6 +352,7 @@ export function labelToConcept(raw: string): string | null {
         t === 'net income' || t === 'net loss' ||
         t === 'profit for the period' || t === 'profit for the year' ||
         t === 'loss for the period' || t === 'loss for the year' ||
+        t === 'income for the period' || t === 'income for the year' ||
         t.startsWith('net income') || t.startsWith('net loss') ||
         t === 'net earnings' ||
         t === 'profit' || t === 'loss' ||

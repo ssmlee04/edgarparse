@@ -5,69 +5,81 @@
     "months": 3,
     "facts": [
       {
+        "concept": "revenue",
+        "label": "revenue",
+        "value": 2162000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "cost of revenue",
+        "label": "cost of revenue",
+        "value": 1044000000,
+        "unit": "USD"
+      },
+      {
         "concept": "gross profit",
         "label": "gross profit",
-        "value": 1118,
+        "value": 1118000000,
         "unit": "USD"
       },
       {
         "concept": "sales and marketing",
         "label": "sales and marketing",
-        "value": 331,
+        "value": 331000000,
         "unit": "USD"
       },
       {
         "concept": "research and development",
         "label": "research and development",
-        "value": 332,
+        "value": 332000000,
         "unit": "USD"
       },
       {
         "concept": "selling, general and administrative",
         "label": "selling, general and administrative",
-        "value": 114,
+        "value": 114000000,
         "unit": "USD"
       },
       {
         "concept": "total operating expenses",
         "label": "total operating expenses",
-        "value": 835,
+        "value": 835000000,
         "unit": "USD"
       },
       {
         "concept": "operating income",
         "label": "operating income",
-        "value": 283,
+        "value": 283000000,
         "unit": "USD"
       },
       {
         "concept": "interest income",
         "label": "interest income",
-        "value": 77,
+        "value": 77000000,
         "unit": "USD"
       },
       {
         "concept": "net income",
         "label": "net income",
-        "value": -28,
+        "value": -28000000,
         "unit": "USD"
       },
       {
         "concept": "other income (expense)",
         "label": "other income (expense)",
-        "value": 577,
+        "value": 577000000,
         "unit": "USD"
       },
       {
         "concept": "income before income taxes",
         "label": "income before income taxes",
-        "value": 860,
+        "value": 860000000,
         "unit": "USD"
       },
       {
         "concept": "income tax expense (benefit)",
         "label": "income tax expense (benefit)",
-        "value": -32,
+        "value": -32000000,
         "unit": "USD"
       },
       {
@@ -90,69 +102,81 @@
     "months": 9,
     "facts": [
       {
+        "concept": "revenue",
+        "label": "revenue",
+        "value": 6068000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "cost of revenue",
+        "label": "cost of revenue",
+        "value": 2948000000,
+        "unit": "USD"
+      },
+      {
         "concept": "gross profit",
         "label": "gross profit",
-        "value": 3120,
+        "value": 3120000000,
         "unit": "USD"
       },
       {
         "concept": "sales and marketing",
         "label": "sales and marketing",
-        "value": 1045,
+        "value": 1045000000,
         "unit": "USD"
       },
       {
         "concept": "research and development",
         "label": "research and development",
-        "value": 1016,
+        "value": 1016000000,
         "unit": "USD"
       },
       {
         "concept": "selling, general and administrative",
         "label": "selling, general and administrative",
-        "value": 298,
+        "value": 298000000,
         "unit": "USD"
       },
       {
         "concept": "total operating expenses",
         "label": "total operating expenses",
-        "value": 2510,
+        "value": 2510000000,
         "unit": "USD"
       },
       {
         "concept": "operating income",
         "label": "operating income",
-        "value": 610,
+        "value": 610000000,
         "unit": "USD"
       },
       {
         "concept": "interest income",
         "label": "interest income",
-        "value": 236,
+        "value": 236000000,
         "unit": "USD"
       },
       {
         "concept": "net income",
         "label": "net income",
-        "value": -116,
+        "value": -116000000,
         "unit": "USD"
       },
       {
         "concept": "other income (expense)",
         "label": "other income (expense)",
-        "value": 197,
+        "value": 197000000,
         "unit": "USD"
       },
       {
         "concept": "income before income taxes",
         "label": "income before income taxes",
-        "value": 807,
+        "value": 807000000,
         "unit": "USD"
       },
       {
         "concept": "income tax expense (benefit)",
         "label": "income tax expense (benefit)",
-        "value": -81,
+        "value": -81000000,
         "unit": "USD"
       },
       {
