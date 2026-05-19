@@ -253,7 +253,7 @@ export function detectMultiplier(text: string): number {
     if (millS.test(t)) return 1_000_000;
     const thouS = /in\s+(?:[£$€¥₩]|[a-z]{1,3}\$?\s+)?(?:[£$€¥₩]\s*)?thousands?/;
     if (thouS.test(t)) return 1_000;
-    if (t.includes("$000's") || t.includes('$000s')) return 1_000;
+    if (t.includes("$000's") || t.includes("$000’s") || t.includes('$000s')) return 1_000;
     return 1;
 }
 
@@ -290,6 +290,7 @@ export function labelToConcept(raw: string): string | null {
     const t = raw.toLowerCase()
         .replace(/\(.*?\)/g, '') // strip parenthetical qualifiers like "(loss)"
         .replace(/[,\/]/g, ' ')
+        .replace(/:\s*$/, '')    // strip trailing colon from section headers like "Revenues:"
         .replace(/\s+/g, ' ')
         .trim();
 

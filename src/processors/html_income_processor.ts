@@ -424,7 +424,29 @@ export default class HTMLIncomeProcessor {
             delete result.ytd;
         }
 
-        // Annual 6-K filers
+        // Annual 6-K filers: primary table has only annual data.
+        // Before using it as quarterly, scan other tables for one with a Q range.
+        if (!result.quarterly && !result.ytd) {
+            for (let i = 0; i < Math.min(tables.length, MAX_TABLES); i++) {
+                const t = tables[i];
+                if (t === table) continue;
+                const inner = (t.textContent ?? '').toLowerCase();
+                if (scoreIncomeTable(inner) < 0.7) continue;
+                const tRanges = buildPeriodRanges(t);
+                const tQRange = tRanges.find(r => r.periodType === 'Q');
+                if (!tQRange) continue;
+                const ctx = getContextText(t);
+                const tMult = findMultiplier(t, ctx);
+                const tRows = extractRows(t, tRanges, tMult);
+                const qFacts = buildPeriodFacts(tRows, tQRange);
+                if (qFacts) {
+                    result.quarterly = qFacts;
+                    break;
+                }
+            }
+        }
+
+        // Last resort: use annual column as quarterly
         if (!result.quarterly && !result.ytd) {
             const aRange = ranges.find(r => r.periodType === 'A');
             if (aRange) result.quarterly = buildPeriodFacts(rows, aRange);
