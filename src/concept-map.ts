@@ -375,3 +375,13 @@ export const SECTOR_CONCEPTS: Record<string, Record<string, ConceptEntry>> = {
     },
 };
 
+// Company-specific XBRL namespaces that do not use us-gaap or ifrs-full.
+// Keyed by the company's CIK (as a string) for easy lookup.
+export const COMPANY_SPECIFIC_CONCEPTS: Record<string, Record<string, ConceptEntry>> = {
+    // ExxonMobil (CIK 34088)
+    '34088': {
+        'xom:TotalRevenuesAndOtherIncome': { label: 'revenue', statement: 'income' },
+        'xom:SalesAndOtherOperatingRevenueIncludingSalesBasedTaxes': { label: 'sales and other operating revenue', statement: 'income' },
+    },
+};
+

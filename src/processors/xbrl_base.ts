@@ -1,5 +1,5 @@
 import * as fs from 'fs';
-import { CONCEPT_MAP, SECTOR_CONCEPTS, StatementType } from '../concept-map';
+import { CONCEPT_MAP, SECTOR_CONCEPTS, COMPANY_SPECIFIC_CONCEPTS, StatementType } from '../concept-map';
 import type { ConceptEntry } from '../concept-map';
 import type { XBRLFact, PeriodFacts, ContextInfo, RawFact } from '../xbrl_types';
 
@@ -190,7 +190,8 @@ export default class XBRLStatementProcessor {
         const allSectorEntries = Object.values(SECTOR_CONCEPTS).reduce(
             (acc, s) => ({ ...acc, ...s }), {} as Record<string, ConceptEntry>
         );
-        const effectiveMap = { ...CONCEPT_MAP, ...allSectorEntries };
+        const companyEntries = COMPANY_SPECIFIC_CONCEPTS[this.cik.replace(/^0+/, '')] ?? {};
+        const effectiveMap = { ...CONCEPT_MAP, ...allSectorEntries, ...companyEntries };
 
         for (const raw of this.rawFacts) {
             if (!contextIds.has(raw.contextRef)) continue;
