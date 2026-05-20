@@ -1,79 +1,85 @@
 {
   "quarterly": {
-    "startDate": "2019-12-01",
-    "endDate": "2020-03-31",
+    "startDate": "2025-12-01",
+    "endDate": "2026-03-31",
     "months": 3,
     "facts": [
       {
         "concept": "revenues",
         "label": "revenues",
-        "value": 470001000,
+        "value": 1134103440000,
         "unit": "USD"
       },
       {
         "concept": "cost_of_revenue",
         "label": "cost_of_revenue",
-        "value": 213051000,
+        "value": 382808019000,
         "unit": "USD"
       },
       {
         "concept": "gross_profit",
         "label": "gross_profit",
-        "value": 256950000,
-        "unit": "USD"
-      },
-      {
-        "concept": "selling_general_administrative",
-        "label": "selling_general_administrative",
-        "value": 154862000,
+        "value": 751295421000,
         "unit": "USD"
       },
       {
         "concept": "research_development",
         "label": "research_development",
-        "value": 116396000,
+        "value": 67756685000,
+        "unit": "USD"
+      },
+      {
+        "concept": "selling_general_administrative",
+        "label": "selling_general_administrative",
+        "value": 21833650000,
         "unit": "USD"
       },
       {
         "concept": "operating_expenses",
         "label": "operating_expenses",
-        "value": 330183000,
+        "value": 94005657000,
         "unit": "USD"
       },
       {
         "concept": "operating_income",
         "label": "operating_income",
-        "value": -73233000,
+        "value": 658966142000,
+        "unit": "USD"
+      },
+      {
+        "concept": "interest_income",
+        "label": "interest_income",
+        "value": 28862263000,
         "unit": "USD"
       },
       {
         "concept": "nonoperating_income",
         "label": "nonoperating_income",
-        "value": 13109000,
+        "value": 124339000,
+        "unit": "USD"
+      },
+      {
+        "concept": "interest_expense",
+        "label": "interest_expense",
+        "value": -2716862000,
         "unit": "USD"
       },
       {
         "concept": "pretax_income",
         "label": "pretax_income",
-        "value": -60124000,
+        "value": 687799687000,
         "unit": "USD"
       },
       {
         "concept": "income_tax",
         "label": "income_tax",
-        "value": 28695000,
+        "value": 114998383000,
         "unit": "USD"
       },
       {
         "concept": "net_income",
         "label": "net_income",
-        "value": -31429000,
-        "unit": "USD"
-      },
-      {
-        "concept": "eps_diluted",
-        "label": "eps_diluted",
-        "value": -0.27,
+        "value": 572801304000,
         "unit": "USD"
       }
     ]

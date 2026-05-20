@@ -361,7 +361,8 @@ export function labelToConcept(raw: string): string | null {
         t === 'profit' || t === 'loss' ||
         (t.includes('profit') && !t.includes('gross') && !t.includes('operating') &&
          !t.includes('disposal') && !t.includes('sale of') && !t.includes('on sale') &&
-         !t.includes('divestiture') && !t.includes('discontinued'))
+         !t.includes('divestiture') && !t.includes('discontinued') &&
+         !t.startsWith('share of'))
     ) return 'net_income';
 
     // EPS — handled by isInPerShareSection; these catch standalone "basic" / "diluted" sub-rows

@@ -1,0 +1,148 @@
+{
+  "quarterly": {
+    "startDate": "2018-03-01",
+    "endDate": "2018-06-30",
+    "months": 3,
+    "facts": [
+      {
+        "concept": "revenues",
+        "label": "revenues",
+        "value": 244963000,
+        "unit": "USD"
+      },
+      {
+        "concept": "cost_of_revenue",
+        "label": "cost_of_revenue",
+        "value": 108008000,
+        "unit": "USD"
+      },
+      {
+        "concept": "gross_profit",
+        "label": "gross_profit",
+        "value": 136955000,
+        "unit": "USD"
+      },
+      {
+        "concept": "selling_general_administrative",
+        "label": "selling_general_administrative",
+        "value": 87487000,
+        "unit": "USD"
+      },
+      {
+        "concept": "research_development",
+        "label": "research_development",
+        "value": 54305000,
+        "unit": "USD"
+      },
+      {
+        "concept": "operating_expenses",
+        "label": "operating_expenses",
+        "value": 167716000,
+        "unit": "USD"
+      },
+      {
+        "concept": "operating_income",
+        "label": "operating_income",
+        "value": -30761000,
+        "unit": "USD"
+      },
+      {
+        "concept": "interest_income",
+        "label": "interest_income",
+        "value": 7444000,
+        "unit": "USD"
+      },
+      {
+        "concept": "nonoperating_income",
+        "label": "nonoperating_income",
+        "value": 6808000,
+        "unit": "USD"
+      },
+      {
+        "concept": "net_income",
+        "label": "net_income",
+        "value": -23953000,
+        "unit": "USD"
+      },
+      {
+        "concept": "eps_diluted",
+        "label": "eps_diluted",
+        "value": -0.23,
+        "unit": "USD"
+      }
+    ]
+  },
+  "ytd": {
+    "startDate": "2017-12-01",
+    "endDate": "2018-06-30",
+    "months": 6,
+    "facts": [
+      {
+        "concept": "revenues",
+        "label": "revenues",
+        "value": 459303000,
+        "unit": "USD"
+      },
+      {
+        "concept": "cost_of_revenue",
+        "label": "cost_of_revenue",
+        "value": 198506000,
+        "unit": "USD"
+      },
+      {
+        "concept": "gross_profit",
+        "label": "gross_profit",
+        "value": 260797000,
+        "unit": "USD"
+      },
+      {
+        "concept": "selling_general_administrative",
+        "label": "selling_general_administrative",
+        "value": 163271000,
+        "unit": "USD"
+      },
+      {
+        "concept": "research_development",
+        "label": "research_development",
+        "value": 102021000,
+        "unit": "USD"
+      },
+      {
+        "concept": "operating_expenses",
+        "label": "operating_expenses",
+        "value": 311891000,
+        "unit": "USD"
+      },
+      {
+        "concept": "operating_income",
+        "label": "operating_income",
+        "value": -51094000,
+        "unit": "USD"
+      },
+      {
+        "concept": "interest_income",
+        "label": "interest_income",
+        "value": 12093000,
+        "unit": "USD"
+      },
+      {
+        "concept": "nonoperating_income",
+        "label": "nonoperating_income",
+        "value": 11239000,
+        "unit": "USD"
+      },
+      {
+        "concept": "net_income",
+        "label": "net_income",
+        "value": -39855000,
+        "unit": "USD"
+      },
+      {
+        "concept": "eps_diluted",
+        "label": "eps_diluted",
+        "value": -0.38,
+        "unit": "USD"
+      }
+    ]
+  }
+}
