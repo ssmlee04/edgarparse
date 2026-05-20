@@ -236,7 +236,8 @@ export function deriveStartDate(endDate: string, months: number): string {
 // ── Multiplier detection ──────────────────────────────────────────────────────
 
 export function detectMultiplier(text: string): number {
-    const t = text.toLowerCase();
+    // Normalize Unicode smart single quotes (‘’‚‛) to straight apostrophe
+    const t = text.toLowerCase().replace(/[‘’‚‛]/g, "'");
     // Match "in [optional-currency-or-country] billions/millions/thousands, except"
     // Handles: "in millions", "in £ millions", "in US millions", "in USD millions", "in NT$ thousands"
     const units = /in\s+(?:[£$€¥₩]|[a-z]{1,3}\$?\s+)?(?:[£$€¥₩]\s*)?billions?,\s*except/;
@@ -253,7 +254,7 @@ export function detectMultiplier(text: string): number {
     if (millS.test(t)) return 1_000_000;
     const thouS = /in\s+(?:[£$€¥₩]|[a-z]{1,3}\$?\s+)?(?:[£$€¥₩]\s*)?thousands?/;
     if (thouS.test(t)) return 1_000;
-    if (t.includes("$000's") || t.includes("$000’s") || t.includes('$000s')) return 1_000;
+    if (t.includes("$000's") || t.includes('$000s')) return 1_000;
     return 1;
 }
 

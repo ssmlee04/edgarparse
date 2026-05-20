@@ -59,13 +59,16 @@ function getContextText(table: HTMLElement): string {
         parts.push(el.textContent ?? '');
         el = el.previousElementSibling as HTMLElement | null;
     }
-    const parent = table.parentNode as HTMLElement | null;
-    if (parent) {
-        let pel = parent.previousElementSibling as HTMLElement | null;
-        for (let i = 0; i < 3 && pel; i++) {
+    // Traverse up two ancestor levels to capture multiplier hints that live in
+    // enclosing divs (e.g. "Expressed in US $000's" is often 2 div levels above the <table>)
+    let ancestor = table.parentNode as HTMLElement | null;
+    for (let depth = 0; depth < 2 && ancestor; depth++) {
+        let pel = ancestor.previousElementSibling as HTMLElement | null;
+        for (let i = 0; i < 5 && pel; i++) {
             parts.push(pel.textContent ?? '');
             pel = pel.previousElementSibling as HTMLElement | null;
         }
+        ancestor = ancestor.parentNode as HTMLElement | null;
     }
     return parts.join(' ').toLowerCase();
 }
