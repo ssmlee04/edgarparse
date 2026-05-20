@@ -1,0 +1,93 @@
+{
+  "quarterly": {
+    "startDate": "2026-01-01",
+    "endDate": "2026-04-26",
+    "months": 3,
+    "facts": [
+      {
+        "concept": "revenues",
+        "label": "revenues",
+        "value": 81615000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "cost_of_revenue",
+        "label": "cost_of_revenue",
+        "value": 20458000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "gross_profit",
+        "label": "gross_profit",
+        "value": 61157000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "research_development",
+        "label": "research_development",
+        "value": 6321000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "operating_expenses",
+        "label": "operating_expenses",
+        "value": 7621000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "operating_income",
+        "label": "operating_income",
+        "value": 53536000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "interest_income",
+        "label": "interest_income",
+        "value": 540000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "interest_expense",
+        "label": "interest_expense",
+        "value": -102000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "nonoperating_income",
+        "label": "nonoperating_income",
+        "value": 15929000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "pretax_income",
+        "label": "pretax_income",
+        "value": 69903000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "income_tax",
+        "label": "income_tax",
+        "value": 11582000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "net_income",
+        "label": "net_income",
+        "value": 58321000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "eps_basic",
+        "label": "eps_basic",
+        "value": 2.4,
+        "unit": "USD"
+      },
+      {
+        "concept": "eps_diluted",
+        "label": "eps_diluted",
+        "value": 2.39,
+        "unit": "USD"
+      }
+    ]
+  }
+}

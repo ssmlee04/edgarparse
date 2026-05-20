@@ -223,6 +223,21 @@ function buildPeriodRanges(table: HTMLElement): PeriodRange[] {
                 }
             }
 
+            // 1b. If this cell has only a month-day (no year) and falls within a pending
+            // period's column range, update that pending entry's mmdd. This handles
+            // 3-row headers where month-day and year are in separate rows, e.g.:
+            //   row 1: "Three Months Ended"
+            //   row 2: "April 26,"   "April 27,"
+            //   row 3: "2026"        "2025"
+            const intermediateMmdd = extractMonthDay(text);
+            if (intermediateMmdd && !extractYear(text)) {
+                for (const p of pending) {
+                    if (colIdx >= p.periodColLeft && colIdx < p.periodColRight && !p.mmdd) {
+                        p.mmdd = intermediateMmdd;
+                    }
+                }
+            }
+
             // 2. Check if this cell is a year cell under a pending period header
             const year = extractYear(text);
             if (year) {
