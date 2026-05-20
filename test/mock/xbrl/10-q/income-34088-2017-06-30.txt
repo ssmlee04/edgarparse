@@ -11,7 +11,7 @@
         "unit": "USD"
       },
       {
-        "concept": "xom:TotalRevenuesAndOtherIncome",
+        "concept": "us-gaap:Revenues",
         "label": "revenue",
         "value": 62876000000,
         "unit": "USD"
@@ -138,7 +138,7 @@
         "unit": "USD"
       },
       {
-        "concept": "xom:TotalRevenuesAndOtherIncome",
+        "concept": "us-gaap:Revenues",
         "label": "revenue",
         "value": 126163000000,
         "unit": "USD"

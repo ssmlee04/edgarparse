@@ -207,7 +207,7 @@ export default class XBRLStatementProcessor {
 
             const value = entry.negate ? -raw.value : raw.value;
             facts.push({
-                concept: raw.concept,
+                concept: entry.map_to ?? raw.concept,
                 label: entry.label,
                 value: value || 0, // normalize -0 → 0
                 unit: 'USD',

@@ -4,6 +4,7 @@ export type ConceptEntry = {
     label: string;
     statement: StatementType | StatementType[];
     negate?: boolean; // invert sign at extraction time (e.g. treasury stock, accumulated depreciation)
+    map_to?: string;  // emit this concept key in output instead of the raw tag (e.g. alias xom: → us-gaap:)
 };
 
 export const CONCEPT_MAP: Record<string, ConceptEntry> = {
@@ -380,7 +381,7 @@ export const SECTOR_CONCEPTS: Record<string, Record<string, ConceptEntry>> = {
 export const COMPANY_SPECIFIC_CONCEPTS: Record<string, Record<string, ConceptEntry>> = {
     // ExxonMobil (CIK 34088)
     '34088': {
-        'xom:TotalRevenuesAndOtherIncome': { label: 'revenue', statement: 'income' },
+        'xom:TotalRevenuesAndOtherIncome': { label: 'revenue', statement: 'income', map_to: 'us-gaap:Revenues' },
         'xom:SalesAndOtherOperatingRevenueIncludingSalesBasedTaxes': { label: 'sales and other operating revenue', statement: 'income' },
     },
 };
