@@ -112,16 +112,20 @@ function selectIncomeTable(tables: HTMLElement[]): { table: HTMLElement | null; 
 
         const contextText = getContextText(table);
         const titleMatch = isIncomeTitle(contextText) || isIncomeTitle(inner);
+        const multiplier = findMultiplier(table, contextText);
 
-        if (titleMatch && !hasTitleMatch) {
-            hasTitleMatch = true;
+        const beats = titleMatch && !hasTitleMatch
+            ? true
+            : titleMatch === hasTitleMatch && (
+                score > bestScore ||
+                (score === bestScore && multiplier > bestMultiplier)
+            );
+
+        if (beats) {
+            hasTitleMatch = hasTitleMatch || titleMatch;
             bestTable = table;
             bestScore = score;
-            bestMultiplier = findMultiplier(table, contextText);
-        } else if (titleMatch === hasTitleMatch && score > bestScore) {
-            bestTable = table;
-            bestScore = score;
-            bestMultiplier = findMultiplier(table, contextText);
+            bestMultiplier = multiplier;
         }
     }
 
