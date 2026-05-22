@@ -14,7 +14,7 @@ import * as https from 'https';
 import * as fs from 'fs';
 import * as path from 'path';
 
-type Filing = { ticker: string; cik: string; period: string; formType?: '10-q' | '10-k' | '8-k' | '6-k' | '20-f' };
+type Filing = { ticker: string; cik: string; period: string };
 
 const DEFAULT_FILINGS: Filing[] = [
     { ticker: 'aa',   cik: '1675149', period: '2024-09-30' },
@@ -67,32 +67,45 @@ const getBuffer = (url: string): Promise<Buffer> =>
 
 const sleep = (ms: number) => new Promise(r => setTimeout(r, ms));
 
-const FORM_TYPES = ['10-Q', '10-K', '8-K', '6-K', '20-F'] as const;
+// Priority tiers: earlier tier wins regardless of score.
+// Within a tier, the filing whose reportDate is closest to the target period wins.
+const FORM_TYPE_TIERS: readonly string[][] = [
+    ['10-Q', '10-K'],
+    ['20-F'],
+    ['6-K'],
+    ['8-K'],
+];
+
+const WINDOW_MS = 31 * 24 * 60 * 60 * 1000; // ±1 month
 
 const searchFilings = (
     filings: { form: string[]; reportDate: string[]; accessionNumber: string[] },
     period: string,
-    formTypeFilter?: string,
 ): { accession: string; form: string } | null => {
     const { form, reportDate, accessionNumber } = filings;
-    for (let i = 0; i < form.length; i++) {
-        const formUpper = form[i].toUpperCase();
-        const matches = formTypeFilter
-            ? formUpper === formTypeFilter.toUpperCase()
-            : (FORM_TYPES as readonly string[]).includes(formUpper);
-        if (matches && reportDate[i] === period) {
-            return { accession: accessionNumber[i], form: form[i] };
+    const targetMs = new Date(period + 'T00:00:00Z').getTime();
+
+    for (const tier of FORM_TYPE_TIERS) {
+        let best: { accession: string; form: string; diff: number } | null = null;
+        for (let i = 0; i < form.length; i++) {
+            if (!tier.includes(form[i].toUpperCase())) continue;
+            const diff = Math.abs(new Date(reportDate[i] + 'T00:00:00Z').getTime() - targetMs);
+            if (diff > WINDOW_MS) continue;
+            if (!best || diff < best.diff) {
+                best = { accession: accessionNumber[i], form: form[i], diff };
+            }
         }
+        if (best) return { accession: best.accession, form: best.form };
     }
     return null;
 };
 
-const findAccession = async (cik: string, period: string, formTypeFilter?: string): Promise<{ accession: string; form: string }> => {
+const findAccession = async (cik: string, period: string): Promise<{ accession: string; form: string }> => {
     const paddedCik = cik.padStart(10, '0');
     const body = await get(`https://data.sec.gov/submissions/CIK${paddedCik}.json`);
     const data = JSON.parse(body);
 
-    const found = searchFilings(data.filings.recent, period, formTypeFilter);
+    const found = searchFilings(data.filings.recent, period);
     if (found) return found;
 
     // Walk paginated older filings if not found in recent
@@ -100,14 +113,14 @@ const findAccession = async (cik: string, period: string, formTypeFilter?: strin
         await sleep(200);
         try {
             const pageBody = await get(`https://data.sec.gov/submissions/${file.name}`);
-            const result = searchFilings(JSON.parse(pageBody), period, formTypeFilter);
+            const result = searchFilings(JSON.parse(pageBody), period);
             if (result) return result;
         } catch {
             // skip pages that fail to load
         }
     }
 
-    throw new Error(`No filing found for CIK ${cik} period ${period}${formTypeFilter ? ` (${formTypeFilter})` : ''}`);
+    throw new Error(`No filing found for CIK ${cik} period ${period}`);
 };
 
 const formTypeToDir = (form: string): string => {
@@ -127,22 +140,19 @@ const downloadFiling = async (cik: string, accession: string, period: string, fo
     console.log(`  saved → ${dest} (${(buf.length / 1024 / 1024).toFixed(1)} MB)`);
 };
 
-const main = async () => {
-    for (const { ticker, cik, period, formType } of FILINGS) {
-        // Check if already downloaded in any expected form-type directory
-        const possibleDirs = formType
-            ? [formTypeToDir(formType)]
-            : [path.join(DATA_ROOT, '10-q'), path.join(DATA_ROOT, '10-k'), path.join(DATA_ROOT, '8-k')];
+const ALL_FORM_DIRS = ['10-q', '10-k', '20-f', '6-k', '8-k'].map(f => path.join(DATA_ROOT, f));
 
-        const alreadyExists = possibleDirs.some(d => fs.existsSync(path.join(d, `${cik}-${period}.txt`)));
+const main = async () => {
+    for (const { ticker, cik, period } of FILINGS) {
+        const alreadyExists = ALL_FORM_DIRS.some(d => fs.existsSync(path.join(d, `${cik}-${period}.txt`)));
         if (alreadyExists) {
             console.log(`skip ${cik}-${period}.txt (already exists)`);
             continue;
         }
 
-        console.log(`\nfetching ${ticker} ${period}${formType ? ` [${formType}]` : ''} ...`);
+        console.log(`\nfetching ${ticker} ${period} ...`);
         try {
-            const { accession, form } = await findAccession(cik, period, formType);
+            const { accession, form } = await findAccession(cik, period);
             console.log(`  accession: ${accession} (${form})`);
             await sleep(200); // be polite to SEC servers
             await downloadFiling(cik, accession, period, form);
@@ -155,4 +165,4 @@ const main = async () => {
     console.log('\ndone.');
 };
 
-main();
+main().then(() => process.exit(0)).catch(err => { console.error(err); process.exit(1); });
