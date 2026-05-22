@@ -2,8 +2,6 @@
 
 Get structured SEC financial statements from EDGAR filings — income, balance sheet, and cash flow — without scraping HTML or guessing multipliers.
 
-![how to use it](https://assets.edgarparse.com/agents-how-to-use-it.gif)
-
 ## Install
 
 ```sh
@@ -133,6 +131,8 @@ Then ask naturally:
 /edgarparse Show me Tesla's annual balance sheet for the past 3 years.
 /edgarparse What was Microsoft's operating cash flow last quarter?
 ```
+
+![how to use it](https://assets.edgarparse.com/agents-how-to-use-it.gif)
 
 ## License
 
