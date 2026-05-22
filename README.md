@@ -2,7 +2,7 @@
 
 Get structured SEC financial statements from EDGAR filings — income, balance sheet, and cash flow — without scraping HTML or guessing multipliers.
 
-Uses inline XBRL (iXBRL) embedded in every modern 10-Q and 10-K: values are exact, element names are standardized across companies via the `us-gaap:*` taxonomy, and facts come out in statement order.
+![how to use it](https://assets.edgarparse.com/agents-how-to-use-it.gif)
 
 ## Install
 
@@ -78,22 +78,6 @@ type PeriodFacts = {
 
 Facts are returned in document order — revenue → gross profit → operating income → net income — matching the actual filing layout.
 
-## Input data
-
-Raw EDGAR filing files go in:
-
-```
-data/txt/10-q/{cik}-{date}.txt
-```
-
-To download the filings needed for the test suite:
-
-```sh
-npm run download
-```
-
-To add a filing for any other company, download it from [EDGAR full-text search](https://efts.sec.gov/LATEST/search-index?q=10-Q&forms=10-Q) and drop the `.txt` file in that directory. The CIK is the stable EDGAR company identifier — it never changes unlike tickers.
-
 ## How it works
 
 Modern 10-Q and 10-K filings embed XBRL facts directly in HTML via `<ix:nonFraction>` tags. Each tag carries:
@@ -149,8 +133,6 @@ Then ask naturally:
 /edgarparse Show me Tesla's annual balance sheet for the past 3 years.
 /edgarparse What was Microsoft's operating cash flow last quarter?
 ```
-
----
 
 ## License
 
