@@ -298,8 +298,8 @@ export function labelToConcept(raw: string): string | null {
     // Revenue
     if (
         t === 'revenue' || t === 'revenues' || t === 'net revenue' || t === 'net revenues' ||
-        t.startsWith('total revenue') || t === 'net sales' || t === 'total net revenue' ||
-        t === 'total revenues' || t.startsWith('revenue from contract')
+        t.startsWith('total revenue') || t === 'net sales' || t === 'total net sales' ||
+        t === 'total net revenue' || t === 'total revenues' || t.startsWith('revenue from contract')
     ) return 'revenues';
 
     // Cost

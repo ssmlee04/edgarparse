@@ -352,7 +352,8 @@ function extractRows(table: HTMLElement, ranges: PeriodRange[], multiplier: numb
                 label = text;
                 // Update per-share status immediately so value cells in the same row use it
                 const ll = label.toLowerCase();
-                if (ll.includes('per share') || ll.includes('per common share')) isInPerShareSection = true;
+                // "except per share" is an accounting footnote in header rows, not a section label
+                if ((ll.includes('per share') || ll.includes('per common share')) && !ll.includes('except per share')) isInPerShareSection = true;
                 if (ll.includes('weighted') || ll.includes('shares outstanding') || ll.includes('shares used')) isInPerShareSection = true;
                 if (
                     isInPerShareSection && !ll.includes('per share') && !ll.includes('weighted') &&
@@ -403,7 +404,7 @@ function extractRows(table: HTMLElement, ranges: PeriodRange[], multiplier: numb
             const sectionLabel = lastSectionLabel;
             lastSectionLabel = null; // consumed — reset so only the first unlabelled row wins
             const ll = sectionLabel.toLowerCase();
-            if (ll.includes('per share') || ll.includes('per common share')) isInPerShareSection = true;
+            if ((ll.includes('per share') || ll.includes('per common share')) && !ll.includes('except per share')) isInPerShareSection = true;
             if (ll.includes('weighted') || ll.includes('shares outstanding') || ll.includes('shares used')) isInPerShareSection = true;
             results.push({ label: sectionLabel, isSectionTotal: true, values: valuesByPeriod, isPerShare: isInPerShareSection });
         }
