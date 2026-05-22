@@ -79,18 +79,42 @@ function findMultiplier(table: HTMLElement, contextText: string): number {
 
     const rows = table.querySelectorAll('tr');
     for (let i = 0; i < Math.min(rows.length, 10); i++) {
-        const text = (rows[i].textContent ?? '').toLowerCase();
-        if (text.length > 300) continue;
-        const m = detectMultiplier(text);
-        if (m > 1) return m;
+        const row = rows[i];
+        const text = (row.textContent ?? '').toLowerCase();
+        // Check the whole row first (fast path for short rows)
+        if (text.length <= 300) {
+            const m = detectMultiplier(text);
+            if (m > 1) return m;
+        } else {
+            // Row is long (e.g. many GAAP/Non-GAAP columns concatenated); check each cell
+            for (const cell of row.querySelectorAll('td, th')) {
+                const ct = (cell.textContent ?? '').toLowerCase().replace(/\s+/g, ' ').trim();
+                const m = detectMultiplier(ct);
+                if (m > 1) return m;
+            }
+        }
     }
     return 1;
+}
+
+// Extract the most recent 4-digit year appearing in a table's header rows.
+function tableMaxYear(table: HTMLElement): number {
+    let max = 0;
+    const rows = table.querySelectorAll('tr');
+    for (let i = 0; i < Math.min(rows.length, 10); i++) {
+        const matches = (rows[i].textContent ?? '').match(/\b(20\d{2})\b/g);
+        if (matches) {
+            for (const m of matches) { const y = parseInt(m, 10); if (y > max) max = y; }
+        }
+    }
+    return max;
 }
 
 function selectIncomeTable(tables: HTMLElement[]): { table: HTMLElement | null; multiplier: number } {
     let bestTable: HTMLElement | null = null;
     let bestScore = -1;
     let bestMultiplier = 1;
+    let bestYear = 0;
     let hasTitleMatch = false;
 
     for (let i = 0; i < Math.min(tables.length, MAX_TABLES); i++) {
@@ -113,12 +137,17 @@ function selectIncomeTable(tables: HTMLElement[]): { table: HTMLElement | null; 
         const contextText = getContextText(table);
         const titleMatch = isIncomeTitle(contextText) || isIncomeTitle(inner);
         const multiplier = findMultiplier(table, contextText);
+        const year = tableMaxYear(table);
 
+        // Priority: titleMatch > most-recent year > score > multiplier.
+        // Using year before score prevents a prior-year comparison table from winning
+        // purely because its column headers happen to contain extra scoring keywords.
         const beats = titleMatch && !hasTitleMatch
             ? true
             : titleMatch === hasTitleMatch && (
-                score > bestScore ||
-                (score === bestScore && multiplier > bestMultiplier)
+                year > bestYear ||
+                (year === bestYear && score > bestScore) ||
+                (year === bestYear && score === bestScore && multiplier > bestMultiplier)
             );
 
         if (beats) {
@@ -126,6 +155,7 @@ function selectIncomeTable(tables: HTMLElement[]): { table: HTMLElement | null; 
             bestTable = table;
             bestScore = score;
             bestMultiplier = multiplier;
+            bestYear = year;
         }
     }
 

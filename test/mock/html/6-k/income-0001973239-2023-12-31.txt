@@ -1,0 +1,160 @@
+{
+  "quarterly": {
+    "startDate": "2023-10-01",
+    "endDate": "2023-12-31",
+    "months": 3,
+    "facts": [
+      {
+        "concept": "revenues",
+        "label": "revenues",
+        "value": 824000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "cost_of_revenue",
+        "label": "cost_of_revenue",
+        "value": -36000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "gross_profit",
+        "label": "gross_profit",
+        "value": 788000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "research_development",
+        "label": "research_development",
+        "value": -432000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "selling_general_administrative",
+        "label": "selling_general_administrative",
+        "value": -216000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "operating_expenses",
+        "label": "operating_expenses",
+        "value": -654000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "operating_income",
+        "label": "operating_income",
+        "value": 134000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "interest_income",
+        "label": "interest_income",
+        "value": 28000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "nonoperating_income",
+        "label": "nonoperating_income",
+        "value": -15000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "pretax_income",
+        "label": "pretax_income",
+        "value": 146000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "income_tax",
+        "label": "income_tax",
+        "value": -59000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "net_income",
+        "label": "net_income",
+        "value": 87000000,
+        "unit": "USD"
+      }
+    ]
+  },
+  "ytd": {
+    "startDate": "2023-03-01",
+    "endDate": "2023-12-31",
+    "months": 9,
+    "facts": [
+      {
+        "concept": "revenues",
+        "label": "revenues",
+        "value": 2305000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "cost_of_revenue",
+        "label": "cost_of_revenue",
+        "value": -113000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "gross_profit",
+        "label": "gross_profit",
+        "value": 2192000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "research_development",
+        "label": "research_development",
+        "value": -1395000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "selling_general_administrative",
+        "label": "selling_general_administrative",
+        "value": -702000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "operating_expenses",
+        "label": "operating_expenses",
+        "value": -2103000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "operating_income",
+        "label": "operating_income",
+        "value": 89000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "interest_income",
+        "label": "interest_income",
+        "value": 80000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "nonoperating_income",
+        "label": "nonoperating_income",
+        "value": -2000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "pretax_income",
+        "label": "pretax_income",
+        "value": 154000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "income_tax",
+        "label": "income_tax",
+        "value": -72000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "net_income",
+        "label": "net_income",
+        "value": 82000000,
+        "unit": "USD"
+      }
+    ]
+  }
+}
