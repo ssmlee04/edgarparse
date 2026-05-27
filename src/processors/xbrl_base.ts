@@ -152,11 +152,12 @@ export default class XBRLStatementProcessor {
                 if (ctx.type === 'instant' && ctx.date === this.datestr) ids.add(id);
             } else if (ctx.type === 'duration' && ctx.endDate === this.datestr) {
                 const diff = monthDiff(ctx.startDate!, ctx.endDate);
-                // quarterly → month diff ≈ 2 (Jul–Sep, Oct–Dec, etc.)
-                // ytd       → month diff 4–9 (covers Q2 6m, Q3 9m YTD periods)
+                // quarterly → month diff ≈ 2–4 (covers standard 3-month quarters and
+                //             off-calendar Q1s that span a 4-month-index gap, e.g. Jun 28–Oct 3)
+                // ytd       → month diff 5–9 (covers Q2 6m, Q3 9m YTD periods)
                 // annual    → month diff ≈ 11 (fiscal year, any start month)
-                if (periodType === 'quarterly' && diff >= 1 && diff <= 3) ids.add(id);
-                if (periodType === 'ytd' && diff >= 4 && diff <= 9) ids.add(id);
+                if (periodType === 'quarterly' && diff >= 1 && diff <= 4) ids.add(id);
+                if (periodType === 'ytd' && diff >= 5 && diff <= 9) ids.add(id);
                 if (periodType === 'annual' && diff >= 10 && diff <= 13) ids.add(id);
             }
         }
@@ -167,10 +168,10 @@ export default class XBRLStatementProcessor {
         for (const [, ctx] of this.contextMap) {
             if (ctx.hasSegment || ctx.type !== 'duration' || ctx.endDate !== this.datestr) continue;
             const diff = monthDiff(ctx.startDate!, ctx.endDate);
-            if (periodType === 'quarterly' && diff >= 1 && diff <= 3) {
+            if (periodType === 'quarterly' && diff >= 1 && diff <= 4) {
                 return { startDate: ctx.startDate!, endDate: ctx.endDate, months: diff + 1 };
             }
-            if (periodType === 'ytd' && diff >= 4 && diff <= 9) {
+            if (periodType === 'ytd' && diff >= 5 && diff <= 9) {
                 return { startDate: ctx.startDate!, endDate: ctx.endDate, months: diff + 1 };
             }
             if (periodType === 'annual' && diff >= 10 && diff <= 13) {

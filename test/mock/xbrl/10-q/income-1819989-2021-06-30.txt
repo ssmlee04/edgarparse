@@ -1,0 +1,58 @@
+{
+  "quarterly": {
+    "startDate": "2021-04-01",
+    "endDate": "2021-06-30",
+    "months": 4,
+    "facts": [
+      {
+        "concept": "us-gaap:OperatingIncomeLoss",
+        "label": "operating income",
+        "value": -1090125,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NonoperatingIncomeExpense",
+        "label": "other income (expense)",
+        "value": 46653,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProfitLoss",
+        "label": "net income including noncontrolling interests",
+        "value": -1043472,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetIncomeLoss",
+        "label": "net income",
+        "value": -1043472,
+        "unit": "USD"
+      }
+    ]
+  },
+  "ytd": {
+    "startDate": "2021-01-01",
+    "endDate": "2021-06-30",
+    "months": 7,
+    "facts": [
+      {
+        "concept": "us-gaap:OperatingIncomeLoss",
+        "label": "operating income",
+        "value": -2032419,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NonoperatingIncomeExpense",
+        "label": "other income (expense)",
+        "value": -26563,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProfitLoss",
+        "label": "net income including noncontrolling interests",
+        "value": -2058982,
+        "unit": "USD"
+      }
+    ]
+  }
+}

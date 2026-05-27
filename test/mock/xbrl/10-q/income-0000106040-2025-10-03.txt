@@ -1,0 +1,141 @@
+{
+  "quarterly": {
+    "startDate": "2025-06-28",
+    "endDate": "2025-10-03",
+    "months": 5,
+    "facts": [
+      {
+        "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "label": "revenue",
+        "value": 2818000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:CostOfGoodsAndServicesSold",
+        "label": "cost of revenue",
+        "value": 1591000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:GrossProfit",
+        "label": "gross profit",
+        "value": 1227000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ResearchAndDevelopmentExpenseExcludingAcquiredInProcessCost",
+        "label": "research and development",
+        "value": 294000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:SellingGeneralAndAdministrativeExpense",
+        "label": "selling, general and administrative",
+        "value": 138000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OperatingExpenses",
+        "label": "total operating expenses",
+        "value": 435000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OperatingIncomeLoss",
+        "label": "operating income",
+        "value": 792000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InvestmentIncomeInterest",
+        "label": "interest income",
+        "value": 17000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OtherNonoperatingIncomeExpense",
+        "label": "other non-operating income (expense)",
+        "value": -24000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NonoperatingIncomeExpense",
+        "label": "other income (expense)",
+        "value": 545000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+        "label": "income before income taxes",
+        "value": 1337000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncomeTaxExpenseBenefit",
+        "label": "income tax expense (benefit)",
+        "value": 155000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncomeLossFromContinuingOperations",
+        "label": "income from continuing operations",
+        "value": 1182000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetIncomeLoss",
+        "label": "net income",
+        "value": 1182000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EarningsPerShareBasic",
+        "label": "earnings per share - basic",
+        "value": 3.34,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EarningsPerShareDiluted",
+        "label": "earnings per share - diluted",
+        "value": 3.07,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ComprehensiveIncomeNetOfTax",
+        "label": "comprehensive income",
+        "value": 1176000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:DepreciationAndAmortization",
+        "label": "depreciation and amortization",
+        "value": 88000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ShareBasedCompensation",
+        "label": "stock-based compensation",
+        "value": 53000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
+        "label": "net income attributable to common stockholders",
+        "value": 1152000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 345000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 376000000,
+        "unit": "USD"
+      }
+    ]
+  }
+}

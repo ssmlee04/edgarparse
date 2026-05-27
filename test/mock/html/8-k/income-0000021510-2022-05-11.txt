@@ -1,0 +1,148 @@
+{
+  "quarterly": {
+    "startDate": "2022-10-01",
+    "endDate": "2022-12-31",
+    "months": 3,
+    "facts": [
+      {
+        "concept": "revenues",
+        "label": "revenues",
+        "value": 370204000,
+        "unit": "USD"
+      },
+      {
+        "concept": "cost_of_revenue",
+        "label": "cost_of_revenue",
+        "value": 215670000,
+        "unit": "USD"
+      },
+      {
+        "concept": "gross_profit",
+        "label": "gross_profit",
+        "value": 154534000,
+        "unit": "USD"
+      },
+      {
+        "concept": "operating_expenses",
+        "label": "operating_expenses",
+        "value": 99803000,
+        "unit": "USD"
+      },
+      {
+        "concept": "operating_income",
+        "label": "operating_income",
+        "value": 54731000,
+        "unit": "USD"
+      },
+      {
+        "concept": "nonoperating_income",
+        "label": "nonoperating_income",
+        "value": -5729000,
+        "unit": "USD"
+      },
+      {
+        "concept": "pretax_income",
+        "label": "pretax_income",
+        "value": 49002000,
+        "unit": "USD"
+      },
+      {
+        "concept": "income_tax",
+        "label": "income_tax",
+        "value": 15326000,
+        "unit": "USD"
+      },
+      {
+        "concept": "net_income",
+        "label": "net_income",
+        "value": 33676000,
+        "unit": "USD"
+      },
+      {
+        "concept": "eps_basic",
+        "label": "eps_basic",
+        "value": 1.36,
+        "unit": "USD"
+      },
+      {
+        "concept": "eps_diluted",
+        "label": "eps_diluted",
+        "value": 1.35,
+        "unit": "USD"
+      }
+    ]
+  },
+  "ytd": {
+    "startDate": "2022-07-01",
+    "endDate": "2022-12-31",
+    "months": 6,
+    "facts": [
+      {
+        "concept": "revenues",
+        "label": "revenues",
+        "value": 754711000,
+        "unit": "USD"
+      },
+      {
+        "concept": "cost_of_revenue",
+        "label": "cost_of_revenue",
+        "value": 432613000,
+        "unit": "USD"
+      },
+      {
+        "concept": "gross_profit",
+        "label": "gross_profit",
+        "value": 322098000,
+        "unit": "USD"
+      },
+      {
+        "concept": "operating_expenses",
+        "label": "operating_expenses",
+        "value": 224888000,
+        "unit": "USD"
+      },
+      {
+        "concept": "operating_income",
+        "label": "operating_income",
+        "value": 97210000,
+        "unit": "USD"
+      },
+      {
+        "concept": "nonoperating_income",
+        "label": "nonoperating_income",
+        "value": -11914000,
+        "unit": "USD"
+      },
+      {
+        "concept": "pretax_income",
+        "label": "pretax_income",
+        "value": 85296000,
+        "unit": "USD"
+      },
+      {
+        "concept": "income_tax",
+        "label": "income_tax",
+        "value": 21355000,
+        "unit": "USD"
+      },
+      {
+        "concept": "net_income",
+        "label": "net_income",
+        "value": 63941000,
+        "unit": "USD"
+      },
+      {
+        "concept": "eps_basic",
+        "label": "eps_basic",
+        "value": 2.6,
+        "unit": "USD"
+      },
+      {
+        "concept": "eps_diluted",
+        "label": "eps_diluted",
+        "value": 2.57,
+        "unit": "USD"
+      }
+    ]
+  }
+}

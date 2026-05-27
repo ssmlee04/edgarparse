@@ -1,0 +1,123 @@
+{
+  "quarterly": {
+    "startDate": "2023-10-30",
+    "endDate": "2024-02-04",
+    "months": 5,
+    "facts": [
+      {
+        "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+        "label": "revenue",
+        "value": 11961000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:CostOfRevenue",
+        "label": "cost of revenue",
+        "value": 4586000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:GrossProfit",
+        "label": "gross profit",
+        "value": 7375000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ResearchAndDevelopmentExpense",
+        "label": "research and development",
+        "value": 2308000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:SellingGeneralAndAdministrativeExpense",
+        "label": "selling, general and administrative",
+        "value": 1572000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OperatingExpenses",
+        "label": "total operating expenses",
+        "value": 5292000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OperatingIncomeLoss",
+        "label": "operating income",
+        "value": 2083000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:InterestExpense",
+        "label": "interest expense",
+        "value": 926000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OtherNonoperatingIncomeExpense",
+        "label": "other non-operating income (expense)",
+        "value": 185000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+        "label": "income before income taxes",
+        "value": 1342000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncomeTaxExpenseBenefit",
+        "label": "income tax expense (benefit)",
+        "value": 68000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ProfitLoss",
+        "label": "net income including noncontrolling interests",
+        "value": 1325000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EarningsPerShareBasic",
+        "label": "earnings per share - basic",
+        "value": 2.93,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EarningsPerShareDiluted",
+        "label": "earnings per share - diluted",
+        "value": 2.84,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",
+        "label": "weighted-average shares - basic",
+        "value": 452000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+        "label": "weighted-average shares - diluted",
+        "value": 467000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ShareBasedCompensation",
+        "label": "stock-based compensation",
+        "value": 1582000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetIncomeLossAvailableToCommonStockholdersBasic",
+        "label": "net income attributable to common stockholders",
+        "value": 1325000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:RestructuringCharges",
+        "label": "restructuring charges",
+        "value": 712000000,
+        "unit": "USD"
+      }
+    ]
+  }
+}

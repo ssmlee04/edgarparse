@@ -1,0 +1,123 @@
+{
+  "ytd": {
+    "startDate": "2025-06-28",
+    "endDate": "2025-10-03",
+    "months": 5,
+    "facts": [
+      {
+        "concept": "us-gaap:EquitySecuritiesFvNiUnrealizedGainLoss",
+        "label": "unrealized gain (loss) on equity securities",
+        "value": 611000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:DepreciationAndAmortization",
+        "label": "depreciation and amortization",
+        "value": 88000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:ShareBasedCompensation",
+        "label": "stock-based compensation",
+        "value": 53000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:OtherOperatingActivitiesCashFlowStatement",
+        "label": "other operating activities",
+        "value": 4000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInAccountsReceivable",
+        "label": "change in accounts receivable",
+        "value": -131000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInInventories",
+        "label": "change in inventories",
+        "value": 101000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInAccountsPayableTrade",
+        "label": "change in accounts payable",
+        "value": 248000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInAccruedLiabilities",
+        "label": "change in accrued liabilities",
+        "value": -21000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:IncreaseDecreaseInEmployeeRelatedLiabilities",
+        "label": "change in accrued compensation",
+        "value": 6000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+        "label": "net cash from operating activities",
+        "value": 672000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+        "label": "capital expenditures",
+        "value": -73000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsForProceedsFromOtherInvestingActivities",
+        "label": "other investing activities",
+        "value": -16000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInInvestingActivities",
+        "label": "net cash from investing activities",
+        "value": -57000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
+        "label": "repurchase of common stock",
+        "value": -553000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsOfDividendsCommonStock",
+        "label": "dividends paid - common",
+        "value": -34000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:PaymentsOfDividendsPreferredStockAndPreferenceStock",
+        "label": "dividends paid - preferred",
+        "value": -5000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:NetCashProvidedByUsedInFinancingActivities",
+        "label": "net cash from financing activities",
+        "value": -678000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:EffectOfExchangeRateOnCashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents",
+        "label": "effect of exchange rate on cash",
+        "value": -3000000,
+        "unit": "USD"
+      },
+      {
+        "concept": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
+        "label": "net change in cash",
+        "value": -66000000,
+        "unit": "USD"
+      }
+    ]
+  }
+}
