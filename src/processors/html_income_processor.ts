@@ -437,8 +437,18 @@ function buildPeriodFacts(rows: RowData[], range: PeriodRange): PeriodFacts | un
 
 export default class HTMLIncomeProcessor {
     private content: string = '';
+    private datestr: string = '';
+    private filedAsOfDate: string = '';
 
-    initialize(cik: string, _datestr: string, rawFilingString: string): void {
+    initialize(cik: string, datestr: string, rawFilingString: string): void {
+        this.datestr = datestr;
+        const m = rawFilingString.match(/filed as of date:\s*(\d{8})/i);
+        if (m) {
+            const d = m[1];
+            this.filedAsOfDate = `${d.slice(0, 4)}-${d.slice(4, 6)}-${d.slice(6, 8)}`;
+        } else {
+            this.filedAsOfDate = datestr;
+        }
         this.content = rawFilingString
             .replace(/three-month period ended/gi, 'three months ended')
             .replace(/three month period ended/gi, 'three months ended')
@@ -503,6 +513,14 @@ export default class HTMLIncomeProcessor {
         if (!result.quarterly && !result.ytd) {
             const aRange = ranges.find(r => r.periodType === 'A');
             if (aRange) result.quarterly = buildPeriodFacts(rows, aRange);
+        }
+
+        const totalFacts = (result.quarterly?.facts.length ?? 0) + (result.ytd?.facts.length ?? 0);
+        if (totalFacts < 6) return {};
+
+        if (this.filedAsOfDate) {
+            if (result.quarterly?.endDate && result.quarterly.endDate > this.filedAsOfDate) return {};
+            if (result.ytd?.endDate && result.ytd.endDate > this.filedAsOfDate) return {};
         }
 
         return result;
